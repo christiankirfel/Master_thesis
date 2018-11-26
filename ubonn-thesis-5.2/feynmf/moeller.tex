@@ -1,0 +1,31 @@
+%
+% Moeller scattering
+%
+% Comment in the lines from \documentclass to \begin{document}
+% and from \write18 to \end{document}
+% to use the standalone package for testing the Feynman graphs
+% You should also change the fmffile name to moeller-mp
+% \documentclass{standalone}
+
+% \usepackage{feynmp}
+% \DeclareGraphicsRule{*}{mps}{*}{}
+
+% \unitlength=1mm
+% \begin{document}
+\begin{fmffile}{moeller}
+  \begin{fmfgraph*}(40,30)
+    \fmfleft{i1,i2}
+    \fmflabel{$e^{-}$}{i1}
+    \fmflabel{$e^{-}$}{i2}
+    \fmfright{o1,o2}
+    \fmflabel{$e^{-}$}{o1}
+    \fmflabel{$e^{-}$}{o2}
+    \fmf{fermion, fore=blue}{i1,v1,o1}
+    \fmf{fermion, fore=blue}{i2,v2,o2}
+    \fmf{photon,label=$\gamma$}{v1,v2}
+    \fmfdot{v1,v2}
+  \end{fmfgraph*}
+\end{fmffile}
+% Include this command for Metapost
+% \write18{mpost moeller-mp}
+% \end{document}

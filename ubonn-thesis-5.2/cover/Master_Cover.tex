@@ -1,0 +1,56 @@
+%
+% Cover page layout for the department library version
+%
+% Make the top margin on the title page larger and also increase the
+% size of the left margin to allow for binding. These parameters may
+% have to be adjusted if you change the fraction of the page area that
+% is used for the text.
+% Changing margins works well. Changing the text height has a bad
+% effect on the table of contents.
+%
+{\thispagestyle{empty}
+  \addtolength{\oddsidemargin}{1.0cm}\addtolength{\topmargin}{1.0cm}
+  \rmfamily\setlength{\parindent}{0pt}
+  \begin{center}
+    {\fontsize{44}{50}\selectfont
+      Universität Bonn}
+
+    \vspace*{20pt}
+
+    \begin{singlespace}
+      \fontsize{30}{40}\selectfont
+      \InstituteName
+    \end{singlespace}
+
+    \vspace*{40pt}
+
+    \begin{onehalfspace}
+      \bfseries\huge
+      \thesistitle
+    \end{onehalfspace}
+
+    \vspace*{20pt}
+
+    {\huge
+      \thesisauthor
+    }
+  \end{center}
+
+  \vspace*{\fill}
+
+  \thesisabstract
+
+  \vspace*{\fill}
+
+  {\normalfont\normalsize
+    \parbox{0.3\textwidth}{\InstituteAddress}
+    \parbox{0.4\textwidth}{%
+      \centering
+      \includegraphics[width=5cm]{instituts_siegel}
+    }
+    \parbox{0.3\textwidth}{%
+      \thesisnumber\\
+      \thesismonth{} \thesisyear
+    }
+  }
+}

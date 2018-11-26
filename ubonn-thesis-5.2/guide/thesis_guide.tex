@@ -1,0 +1,254 @@
+\documentclass[a4paper,twoside,ngerman,USenglish,UKenglish]{scrbook}
+%-------------------------------------------------------------------------------
+% This file contains the guide to writing theses for the
+% physics and astronomy institutes, Universität Bonn
+
+% Specify the language(s) in the class and then use babel.
+% If you need more than one language, give the defalt language last,
+% e.g. ngerman,british for a thesis in British (UK) English where you want
+% to be able to set the language to German for some part of it
+
+%-------------------------------------------------------------------------------
+% Main thesis style file
+\newcommand*{\guideversion}{5.2}
+\newcommand*{\texlive}{2014}
+\usepackage{ifthen}
+
+% Adjustments to biblatex output are in this style file:
+\ifthenelse{\texlive < 2011} {%
+  \usepackage[biblatex=false,feynmp]{../ubonn-thesis}
+}{%
+  \usepackage[newtx,bibstyle=alphabetic,feynmp]{../ubonn-thesis}
+  \usepackage{../ubonn-biblatex}
+}
+
+% TikZ
+\ifthenelse{\texlive < 2010} {%
+}{%
+  \usepackage{import}
+  \usepackage{standalone}
+  \usepackage{tikz}
+  \usepackage{tikz-3dplot}
+  \usepackage{pgfplots}
+  \usetikzlibrary{positioning,shapes,arrows}
+  \usetikzlibrary{decorations.pathmorphing}
+  \usetikzlibrary{decorations.markings}
+}
+% Other packages needed for the guide
+\usepackage{physics}
+\usepackage{makeidx}
+\usepackage[acronym,toc,nosuper]{glossaries}
+\usepackage{../thesis_skel/thesis_defs}
+\usepackage{guide_defs}
+\usepackage[italic]{hepnicenames}
+
+% Add many more possibilities to break URLs
+\makeatletter
+\g@addto@macro{\UrlBreaks}{\UrlOrds}
+\makeatother
+
+% In order to check if your labels are referenced try the refcheck package
+% \usepackage{refcheck}
+
+%-------------------------------------------------------------------------------
+% Instead of colouring  links, cites, table of contents etc.
+% put them in a coloured box for the screen version.
+% This is probably a good idea when you print your thesis.
+% \hypersetup{colorlinks=false,
+%   linkbordercolor=blue,citebordercolor=magenta,urlbordercolor=darkgreen
+% }
+
+%-------------------------------------------------------------------------------
+% biblatex is included by ubonn-thesis. Look there for the settings used.
+% See the options for settings that can be changed easily.
+% For further changes copy the \RequirePackage here and include
+% ubonn-thesis with the option biblatex=false.
+% Specify the bibliography files here and not at the end!
+\ifthenelse{\texlive > 2010} {%
+  \addbibresource{guide_refs.bib}
+  \addbibresource{./refs/zeus_2009.bib}
+  \addbibresource{./refs/zeus_2010.bib}
+  \addbibresource{../refs/standard_refs-biber.bib}
+  \addbibresource{./refs/example_refs-utf8.bib}
+}
+
+%-------------------------------------------------------------------------------
+% When writing your thesis it is often helpful to have the date and
+% time in the output file. Comment this out for the final version.
+%\ifoot[\today{} \thistime]{\today{} \thistime}
+
+%-------------------------------------------------------------------------------
+% The following definitions are used to produce the title pages
+% needed at various stages
+\newcommand{\thesistitle}{Users Guide to Writing a Thesis
+  in a Physics/Astronomy Institute
+  of the University of Bonn}
+\newcommand*{\thesisauthor}{Ian C. Brock}
+\newcommand*{\thesistown}{Stoke-on-Trent}
+% \renewcommand*{\InstituteName}{\PI}
+% \renewcommand*{\inInstitute}{\inPI}
+% \renewcommand*{\InstituteAddress}{\PIaddress}
+% Adjust \thesisreferee...text depending on male/female referee
+\newcommand*{\thesisrefereeonetext}{1.\ Gutachter}
+\newcommand*{\thesisrefereeone}{Prof.\ Dr.\ John Smith}
+\newcommand*{\thesisrefereetwotext}{2.\ Gutachterin}
+\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
+% Date when thesis was submitted (Master/Diplom)
+% Year or Month, Year when thesis was submitted (PhD)
+\newcommand*{\thesissubmit}{XX.YY.2016}
+% \newcommand*{\thesissubmit}{Month 2016}
+% Date of thesis examination (PhD)
+\newcommand*{\thesispromotion}{XX.YY.2016}
+% Month and year of the final printed version of the thesis
+\newcommand*{\thesismonth}{March}
+\newcommand*{\thesisyear}{2016}
+\newcommand*{\thesisnumber}{BONN-IR-2016-XXX}
+
+%-------------------------------------------------------------------------------
+% The abstract is only needed for the printed version. and should be in
+% English regardless of the language of the thesis
+\newcommand{\thesisabstract}{%
+  \begin{otherlanguage}{UKenglish}
+    This document is supposed to provide both a skeleton as well as
+    some guidelines as how to format a thesis using \LaTeX\ for the
+    Department of Physics and Astronomy of the University of Bonn. The
+    recommendations should also be valid for any other department in
+    the Faculty of Mathematics and Natural Sciences. The guide
+    contains examples and recommendations on what packages to use and
+    how to use them. Title pages for PhD, Diplom, Master and Bachelor
+    theses are included. It makes no attempt to be an introduction to
+    \LaTeX. Indeed some basic \LaTeX{} knowledge is assumed. While the
+    guide is primarily geared to (particle) physics theses, it should
+    also be useful for others.
+  \end{otherlanguage}
+}
+
+%-------------------------------------------------------------------------------
+% \includeonly can be used to select which chapters you want to process
+% A simple \include command just inserts a \clearpage before and after
+% the file.
+% Note that \includeonly can be quite picky! Do not forget to put a
+% comma after the filename, otherwise it will simply be ignored!
+% \includeonly{%
+%   guide_acknowledge1,
+%   guide_intro,
+%   guide_tips,
+%   guide_submit,
+%   guide_package,
+%   guide_figs,
+%   guide_tables,
+%   guide_refs,
+%   guide_layout,
+%   guide_appendix,
+%   guide_acknowledge2
+% }
+
+%-------------------------------------------------------------------------------
+% Give a list of directories where figures can be found. Do not leave
+% any spaces in the list and end the directory name with a /
+\graphicspath{%
+  {../figs/}%
+  {../figs/cover/}%
+  {../figs/graphics/}%
+}
+
+%-------------------------------------------------------------------------------
+% Make an index and a glossary
+\makeindex
+\makeglossaries
+
+% Glossary entries
+\input{../guide/guide_glossary}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+\frontmatter
+%-------------------------------------------------------------------------------
+% Title page
+\input{../cover/Guide_Submit_Title}
+
+\pagestyle{scrplain}
+
+%-------------------------------------------------------------------------------
+\include{guide_acknowledge1}
+
+\tableofcontents
+
+\mainmatter
+\pagestyle{scrheadings}
+
+%-------------------------------------------------------------------------------
+\include{guide_intro}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_tips}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_submit}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_package}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_figs}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_tables}
+%\printbibliography[heading=subbibliography]
+
+\input{guide_refs}
+%\printbibliography[heading=subbibliography]
+
+\include{guide_layout}
+%\printbibliography[heading=subbibliography]
+
+%-------------------------------------------------------------------------------
+% Appendices etc.
+\appendix
+
+% \part*{Appendix}
+\include{guide_appendix}
+%\printbibliography[heading=subbibliography]
+
+%-------------------------------------------------------------------------------
+\ifthenelse{\texlive > 2010} {%
+  % Use biblatex for the bibliography and add bibliography to Table of Contents
+  \printbibliography[heading=bibintoc]
+}{% 
+  % Use traditional BibTeX for the bibliography.
+  {\raggedright
+    \bibliographystyle{../refs/atlasBibStyleWithTitle.bst}
+    %\bibliographystyle{unsrt}
+    \bibliography{./guide_refs.bib,%
+      ./refs/zeus_2009,%
+      ./refs/zeus_2010,%
+      ../refs/standard_refs-bibtex,./refs/example_refs-ascii}
+  }
+}
+
+%-------------------------------------------------------------------------------
+% Declare lists of figures and tables and acknowledgements as backmatter
+% Chapter/section numbers are turned off
+\backmatter
+
+\listoffigures
+\listoftables
+
+%-------------------------------------------------------------------------------
+% Print the glossary
+\printglossaries
+
+%-------------------------------------------------------------------------------
+% Print the index
+\printindex
+
+%-------------------------------------------------------------------------------
+% Acknowledgements
+\include{guide_acknowledge2}
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

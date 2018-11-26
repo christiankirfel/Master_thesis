@@ -1,0 +1,1 @@
+/begin.*fmfgraph/ {gsub(/[\{\}(),]/," "); print $3; print $4}

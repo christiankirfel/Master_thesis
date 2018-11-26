@@ -1,0 +1,65 @@
+#! /bin/sh
+#
+# Script to take fmffile input and run pdflatex and metapost
+# to produce a PDF file that can then be included in a document
+# It assumes there is only one fmfgraph entry in the file
+# and that the fmffile name that is given is the same as the
+# filename with the input
+#
+if [ $# -le 0 ]; then
+   echo "Must give filename"
+   exit 1
+fi
+#
+# if [ ! -f $1 ]; then
+#    echo "File $1 does not exist"
+#    exit 1
+# fi
+#
+dir=`dirname $1`
+file=`basename $1 .tex`
+#
+# Extract picture size from file
+# If you use pdfcrop this is not really necessary
+# However, it took me a while to get it working so I leave it in!
+#
+eval `awk '/begin.*fmfgraph/ || /begin.*fmfchar/ {gsub(/[\{\}(),]/," "); print "size1="$3 ; print "size2="$4 }' $1`
+# size3=`awk '/begin.*fmfgraph/ {gsub(/[\{\}(),]/," "); print $4}' $1`
+# echo "Sizes are $size1 and $size2 and $size3"
+psize1=`expr $size1 + 5`
+psize2=`expr $size2 + 5`
+#
+test -d mpost_tmp || mkdir mpost_tmp
+cd mpost_tmp
+#
+# Create LaTeX file
+#
+echo '\\documentclass{article}'        >${file}_mp.tex
+echo "\\usepackage[papersize={${psize1}mm,${psize2}mm},total={${size1}mm,${size2}mm,centering}]{geometry}" >>${file}_mp.tex
+echo '\\usepackage{feynmp}'           >>${file}_mp.tex
+echo '\\usepackage{color}'            >>${file}_mp.tex
+echo '\\usepackage[pdftex]{graphicx}' >>${file}_mp.tex
+echo '\\DeclareGraphicsRule{*}{mps}{*}{}' >>${file}_mp.tex 
+echo '\\begin{document}'              >>${file}_mp.tex
+echo '\\setlength{\\unitlength}{1mm}' >>${file}_mp.tex
+echo '{\\centering'                   >>${file}_mp.tex
+echo "\\input{../$1}"                 >>${file}_mp.tex
+echo '}'                              >>${file}_mp.tex
+echo '\\end{document}'                >>${file}_mp.tex
+#
+echo "Directory: <$dir>"
+echo "File: <$file>"
+#
+# Run pdflatext and metapost
+#
+pdflatex ${file}_mp
+mpost ${file}
+pdflatex ${file}_mp
+pdflatex ${file}_mp
+#
+# Crop the resulting PDF file leaving a margin of 5 points
+#
+pdfcrop --margins=5 ${file}_mp ${file}.pdf
+mv ${file}.pdf ../$dir
+cd ..
+# rm -r mpost_tmp

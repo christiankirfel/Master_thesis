@@ -1,0 +1,325 @@
+%==============================================================================
+\chapter{Layout and language}
+\label{sec:layout}
+%==============================================================================
+
+\LaTeX\ file: \url{./guide_layout.tex}\\[1ex]
+\noindent
+If you are not happy with the layout, fonts, etc.\ that are used in
+this guide or the thesis skeleton, this chapter includes some examples
+on how you can change things.
+
+
+%------------------------------------------------------------------------------
+\section{Page layout}
+\label{sec:layout:page}\index{page}
+%------------------------------------------------------------------------------
+
+
+Page geometry can be changed using either the \Package{typearea} or
+the \Package{geometry} package. In this guide I use \Package{typearea}
+as it is closely tied into \KOMAScript. The basic command is to
+specify how many pieces to divide the page into. This guide uses
+\Option{DIV=14} by default with a binding correction of
+\Option{BCOR=8mm}.  You can then let \KOMAScript{} and
+\Package{typearea} sort out the rest. Note that \Package{typearea}
+will issue a warning that you have \enquote{Bad type area settings}
+when using \Option{DIV=14}. If you want to avoid this warning, you can
+set \Option{DIV} to 11 or smaller, but then the amount of text on each
+page is reduced by quite a bit and your thesis will cover more pages.
+
+The alternative is to use \Package{geometry}, where by default I say
+that the text should cover about 75\% of the page. In practice, I have
+found \Package{geometry} easier to use if you want to specify exactly
+the layout, e.g. making single Feynman graphs with
+\Package{feynmf}. \Package{typearea} is probably to be preferred for
+documents on normal paper sizes.
+
+See the beginning of the \KOMAScript{} guide for a detailed
+introduction on how a page should be laid out.
+
+The \Package{setspace} package has a number of useful options to change
+spacing in a fairly easy way, if such options are not already
+available in \KOMAScript.
+
+
+%------------------------------------------------------------------------------
+\section{Footnotes}
+\label{sec:layout:footnote}\index{footnote}
+%------------------------------------------------------------------------------
+
+A few tweaks may well be useful in order to get footnotes looking the
+way you want them rather than using the default \KOMAScript{}
+settings.
+
+The default setting of \KOMAScript{} is:
+\begin{verbatim}
+  \deffootnote[1em]{1.5em}{1em}{\textsuperscript{\thefootnotemark}}
+\end{verbatim}
+In this guide and in \texttt{ubonn-thesis.sty} I have changed this to:
+\begin{verbatim}
+  \deffootnote{1em}{1em}{\textsuperscript{\thefootnotemark}\ }
+\end{verbatim}
+The differences are:
+\begin{itemize}
+\item The optional argument is missing that sets the box width for the
+  footnote mark (which is right-adjusted). In this case the width of
+  the first required argument is used instead, which also defines how
+  much all other lines are indented. Hence all lines in the footnote
+  are now left-aligned, while in the default setting the first line is
+  indented more than the others.
+\item In the last argument an extra space has been added so that the
+  footnote mark is not quite so close to the text.
+\end{itemize}
+
+You might think that a nice way to write footnotes is:
+\begin{verbatim}
+We want to include a footnote
+\footnote{
+  This is the footnote text.
+}
+about what the footnote should look like.
+\end{verbatim}
+If you do this you will find some extra space where it should not be.
+This is illustrated in footnote~\footref{foot:short}.
+To try out footnotes we try first an example which is probably how you
+would first try to write a footnote:
+\footnote{
+  This is an example of a footnote with extra space at the beginning.
+  \label{foot:short}
+}
+As you can see this is not really satisfactory. You have a spurious
+space between the colon and the footnote mark $^{1}$. If may even
+be the case that the footnote mark appears on the next line! To get the spacing
+correct and still have \enquote{nice} \LaTeX{} you have to add some
+judicious \texttt{\%} signs:
+\begin{verbatim}
+We want to include a footnote%
+\footnote{%
+  This is the footnote text.
+}
+about what the footnote should look like.
+\end{verbatim}
+To show how this works%
+\footnote{\label{foot:long}%
+  This is a longer footnote about nothing in particular that goes
+  over more than one line to make sure that we can also have a proper
+  look at the effect of indentation.}
+have a look at the footnote referred to above.
+
+In standard \LaTeX{} you can use
+\Macro{footnotemark} to set the symbol for a
+footnote and refer to it. \KOMAScript{} has a better solution for
+this. You define a \Macro{label} inside the footnote and
+then refer to it via the label and \Macro{footref}. You
+can see how to do this in footnote~\footref{foot:long} and if you were
+paying attention you will have seen that I also used it to refer to
+footnote~\footref{foot:short}. Using this mechanism it is even
+possible to click on the reference if you use PDF\LaTeX.
+
+When a footnote contains a complete sentence, people still often
+forget to add a full stop at the end of it -- try not to!
+
+If you try to use footnotes in tables, you will probably have some
+problems. The \Package{ctable} package allows you to include footnotes
+that are part of the table. It also supports \Package{booktabs}, so it
+should be possible to keep the same format. If you use the package
+\Package{xtab} you can use the environment \Env{mpxtabular} 
+instead of \Env{xtabular} to get footnotes
+-- see Appendix~\ref{sec:app:tables} for an example. 
+If you use the \Package{longtable} package, use \Env{longtable}
+rather than \Env{table} and \Env{tabular} in order to easily include
+footnotes.
+Another recent package (\TeXLive 2011) is
+\Package{tablefootnote} which provides the command
+\Macro{tablefootnote}. This is advertised to also work in sideways tables.
+
+
+%------------------------------------------------------------------------------
+\section{Thesis in German}
+\label{sec:layout:german}\index{German}
+%---------------------------------------------------- --------------------------
+
+\Package{babel} is a powerful package for handling different
+languages. The languages to be used in a document can either be given
+as options to \Macro{documentclass} or to \Package{babel}. I choose to
+use \Macro{documentclass} here so that the style file
+\texttt{ubonn-thesis.sty} is independent of the thesis language. If
+you give more than one language make sure that the default language
+comes last.
+
+Your thesis is in German rather than English. What do you have to
+worry about? First, set the languages in the \Macro{documentclass} to
+\Option{UKenglish,ngerman} rather than the other way round.
+
+Second, if you want to use a comma rather than a full stop for the
+decimal point you may notice that numbers are sometimes not written
+properly. In text mode they are OK, e.g. 91,1234, while in math mode
+there is a small space after the comma, e.g. $91,1234$.
+
+If you use the \Package{siunitx} package, you can simply specify the
+locale: \Macro{sisetup}\texttt{\{locale = DE\}}. This is already done
+for you in \texttt{ubonn-thesis.sty} in such a way that if you
+select \Option{ngerman} as the language of your document
+\Macro{num}\texttt{\{2.3\}} will be printed as \num[locale=DE]{2.3}. I find this
+by far the best way to handle such things.
+
+You can also do such things locally in a
+single table for example by using constructions such as
+\enquote{\texttt{S[decimalsymbol=comma]}} in the column description of a table to
+change full stops into commas -- see Chapter~\ref{sec:table}.
+
+Another way to avoid this problem by using the \Package{ziffer} package. It is
+commented out in \texttt{ubonn-thesis.sty}. An alternative
+is to remove the comments on the \TeX{} code snippet at the top
+of the file \texttt{thesis\_defs.sty}:
+\begin{verbatim}
+\mathchardef\CommaOrdinary="013B
+\mathchardef\CommaPunct   ="613B
+\mathcode`,="8000   % , im Math-Mode aktiv ("8000) machen
+{\catcode`\,=\active
+ \gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+\def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}
+\end{verbatim}
+As far as I have able to tell this above code does just what one wants
+and so is probably better than trying to use \Package{ziffer}.
+
+I have spent some effort to try to get around the problems that occur
+if you try to use \Package{ziffer} and \Package{dcolumn} together. A way
+that seems to work is to use the full stop as the decimal point in
+columns that are formatted using \Package{dcolumn} and then just change
+full stop to a comma, i.e.\ use the form \verb+D{.}{,}{2}+. The table
+below illustrates this usage:
+\begin{otherlanguage}{ngerman}
+\begin{center}
+  \begin{tabular}{l|D{.}{,}{4}@{$\,\pm\,$}D{.}{,}{4}}
+    Teilchen & \multicolumn{2}{c}{Masse [\si{\GeVovercsq}]}\\
+    \midrule
+    $Z$ boson & 91.0372 & 0.0002\\
+    $W$ boson & 83 & 0.035\\
+    Top quark & 173.3 & 1.1\\
+  \end{tabular}
+\end{center}
+\end{otherlanguage}
+If you use \Package{ziffer} and want to keep the decimal symbol,
+e.g. \verb+D{.}{.}+ or \verb+D{,}{,}+ this does
+not seem to work. Hence if you try to use \Package{ziffer} with this
+guide you will get error messages.
+
+The other question is whether to use the traditional \TeX{} way of
+writing letter with umlauts: \verb+\"{u}+ to get \"{u}, or \verb+\"a+
+to get \"a, or just to type in the character directly. I strongly
+recommend typing the characters directly. It makes your \LaTeX{} much
+easier to read and spell-check. You can either switch your keyboard to
+German (this is simple under Windows, MacOSX, KDE or Gnome (Unity)) or set the
+compose key and then type the sequence \texttt{Compose " a} to get ä
+for example.
+
+
+%------------------------------------------------------------------------------
+\section{Fonts}
+\label{sec:layout:font}
+%------------------------------------------------------------------------------
+
+Fonts to use for the various parts of a
+document can usually be set using the \Macro{setkomafont} command. I
+have set a few such fonts in \texttt{ubonn-thesis.sty}. In particular
+I set the fonts for the title page so that it conforms more closely to
+the requirements for theses and also have a few more commented out
+examples there.
+
+Which font should I use?
+\url{http://tug.ctan.org/tex-archive/info/Free_Math_Font_Survey/en/survey.html}
+has a list of fonts that one can consider using. I have included
+commented out packages that use some of these in the style file. Good
+alternatives to Package(newtx) and \Package{txfonts} (with the \Option{varg} option) seem
+to be either \Package{lmodern} or \Package{pxfonts}. See
+Section~\ref{sec:tips:units} for some of the things you have to worry
+about if you use a font for which the text mode and math mode display
+numbers differently.
+
+
+%------------------------------------------------------------------------------
+\section{Other languages}
+\label{sec:layout:lang}
+%------------------------------------------------------------------------------
+
+If you have a few words in the foreign language just use
+\Macro{foreignlanguage},\\
+e.g. \texttt{\textbackslash foreignlanguage\{ngerman\}\{Das
+  Physikalische Institut der Universität Bonn\}}  to produce \foreignlanguage{ngerman}{Das
+  Physikalische Institut der Universität Bonn}. You might ask why
+bother? Hyphenation, in particular, is not the same in different
+languages, so telling \LaTeX{} which language the text is in certainly
+helps. To change the language at a certain point in the document use
+\Macro{selectlanguage}. To set a block of text (inside an environment)
+use the \Env{otherlanguage} environment. I used this in the title
+pages, as (except for the cover page) they are in German. It certainly
+does no harm to specify the language of the abstract
+within \Macro{thesisabstract}.
+
+The \Package{csquotes} package advertises itself as the way to cope
+with quoting\index{quotes} things in different languages. The basic
+command to use is \Macro{enquote}\index{quotation
+  marks} for quoting things in the current default language, while you
+use \Macro{foreignquote} to quote things in another language. For
+example, John said \enquote{I have too much to do at the moment},
+while \foreignlanguage{ngerman}{Johannes sagte}
+\foreignquote{ngerman}{ich habe im Moment alle Zeit der Welt}. Note
+that \Package{babel} uses \Option{ngerman} for \enquote{new} German
+spelling, while \Package{csquotes} options calls the same thing
+\Option{german}. However, this only affects the setting of options. If
+you use commands such as \Macro{foreignquote} you can specify
+\Option{ngerman} as the language.
+
+Having used \Package{csquotes} for several years now, I find it a
+really nice way of quoting things properly in the language you are
+writing your text in without having to worry about using the correct
+opening and closing quotes, so I warmly recommend it.
+
+
+%------------------------------------------------------------------------------
+\section{Coloured links}
+\label{sec:layout:link}\index{color!link}
+%------------------------------------------------------------------------------
+
+In the default version of the thesis, links in the table of contents
+are coloured blue, citations are coloured dark magenta and URLs are
+coloured dark green. These settings are in \texttt{ubonn-thesis.sty}.
+
+For the printed version you probably do not want these things to be
+coloured. You can change the \Package{hyperref} options using the
+\Macro{hypersetup} command as indicated in the main file of your
+thesis. Using these changes, such links will be surrounded by a
+coloured box when viewed on the screen, while the box will not be shown when the thesis
+is printed.
+
+
+%------------------------------------------------------------------------------
+\section{Chapter headings}
+\label{sec:layout:chapter}\index{chapter!heading}
+%------------------------------------------------------------------------------
+
+The standard appearance of the chapter headings is not very exciting!
+You can make some changes with the \KOMAScript\ options, but nothing
+very radical.
+A number of packages exist that can make larger changes. 
+I tried out \Package{fncychap}, \Package{quotchap} and \Package{titlesec}.
+A variant of \Package{titlesec} was used for this guide and for theses (version 3.0).
+As combining \Package{titlesec} with \KOMAScript{} is not recommended,
+the settings are now done by hand by default.
+The problem with this version was that the bibliography was given a chapter number,
+if it was part of \Macro{mainmatter} rather than \Macro{backmatter}.
+As of version 4.0, I use a very similar style,
+but this time the changes are made using \KOMAScript{} adjustment as suggested by the author.\footnote{%
+\url{http://www.komascript.de/chapterwithlines}}
+This seems to work better.
+If you want to get back to the
+usual style, just comment out the appropriate lines in
+\texttt{ubonn-thesis.sty}. See the documentation on
+\Package{titlesec} on how to make further adjustments.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "./thesis_guide"
+%%% End:

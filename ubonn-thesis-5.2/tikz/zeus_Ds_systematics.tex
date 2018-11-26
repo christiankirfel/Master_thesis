@@ -1,0 +1,55 @@
+% This figure only works with \TeXLive 2011 and later.
+\documentclass{standalone}
+
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning,shapes,arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+\newcommand*{\fcsone}{\ensuremath{f(c \rightarrow D_{s 1}^+)}}
+\newcommand*{\BranStrangeLOW}{\ensuremath{%
+    \mathcal{B}_{D_{s1}^{+} \rightarrow D^{*+} K^0_S}/
+    \mathcal{B}_{D_{s1}^{+} \rightarrow D^{*0} K^+}}}
+\sisetup{retain-explicit-plus}
+\begin{tikzpicture}
+  \begin{axis}[width=0.98\textwidth,height=0.38\textwidth,
+    major grid style={color=red},
+    xmin=-0.4,xmax=57.4,
+    xticklabels={},xtick=data,name=pic1,ylabel=$\BranStrangeLOW$,
+    ylabel shift ={-1cm,0 },
+    extra x ticks={0.5,40.5,44.5,49.5,53.5},
+    extra x tick style={grid=major,
+      tick label style={rotate=-90,anchor=east}},
+    extra x tick labels={},
+    clip=false]
+    \addplot+[only marks,mark size=1.5pt,error bars/.cd,y dir=both,y explicit]
+    table[x=x,y=y,x error= errorx,y error=errory
+    ]{../tikz/BRANCHINGSTRANGE0.dat}  ;%node [pos=0] {$R=2$};
+    \node at (axis cs:22,  2.795)    {{\Large $\delta_1$}};
+    \node at (axis cs:42.5,  2.795)   {{\Large $\delta_2$}};
+    \node at (axis cs:47.5,2.795) {{\Large $\delta_3$}};
+    \node at (axis cs:51,  2.795)   {{\Large $\delta_4$}};
+    \node at (axis cs:55,  2.795)   {{\Large $\delta_5$}};
+    \addplot [const plot,draw=blue] coordinates {(0,1.60) (57.4,1.60)};
+  \end{axis}
+  \begin{axis}[width=0.98\textwidth,height=0.38\textwidth,
+    major grid style={color=red},
+    xmin=-0.4,xmax=57.4,
+    xticklabels from table={../tikz/BRANCHINGSTRANGE_titles.dat}{label},
+    x tick label style={rotate=90,anchor=east,font=\tiny},xtick=data,
+    name=pic3,at={($(pic1.south)-(pic1.north)$)},
+    ylabel=$f(c \rightarrow D_{s 1}^+)$,
+    extra x ticks={0.5,40.5,44.5,49.5,53.5},
+    extra x tick style={grid=major,
+      tick label style={rotate=-90,anchor=east}},
+    extra x tick labels={}]
+    \addplot+[only marks,mark size=1.5pt,error bars/.cd,y dir=both,y explicit]
+    table[x=x,y=y,x error= errorx,y error=errory]{../tikz/BRANCHINGSTRANGE1.dat};
+    \addplot [const plot,draw=blue] coordinates {(0,0.76) (100,0.76)};
+  \end{axis}
+\end{tikzpicture}
+\end{document}

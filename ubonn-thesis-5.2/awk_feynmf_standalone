@@ -1,0 +1,21 @@
+BEGIN { 
+    print "\\documentclass{standalone}"
+    print "%"
+    print "\\usepackage{feynmf}"
+    print "\\usepackage{color}"
+    print "%"
+    print "\\begin{document}"
+    print "\\setlength{\\unitlength}{1mm}"
+}
+END {
+    print "\\end{document}"
+}
+{if (/feynmf_/) {} 
+else {print ""
+    printf "File: \\verb+%s+\n",$1
+    print "\\begin{center}"
+    printf "  \\fbox{%s%s%s}\n","\\input{",$1,"}"
+    print "\\end{center}"
+    print "\\vspace{1ex}"
+    print ""
+}}
