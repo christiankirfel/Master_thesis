@@ -1,0 +1,20 @@
+[0] Config.pm:302> INFO - This is Biber 2.9
+[0] Config.pm:305> INFO - Logfile is 'mythesis.blg'
+[21] biber:313> INFO - === Mon Nov 26, 2018, 17:22:03
+[86] Biber.pm:371> INFO - Reading 'mythesis.bcf'
+[147] Biber.pm:857> INFO - Found 11 citekeys in bib section 0
+[160] Biber.pm:3981> INFO - Processing section 0
+[168] Biber.pm:4154> INFO - Looking for bibtex format file 'thesis_refs.bib' for section 0
+[173] bibtex.pm:1468> INFO - LaTeX decoding ...
+[177] bibtex.pm:1294> INFO - Found BibTeX data source 'thesis_refs.bib'
+[186] Biber.pm:4154> INFO - Looking for bibtex format file '../refs/standard_refs-biber.bib' for section 0
+[192] bibtex.pm:1468> INFO - LaTeX decoding ...
+[202] bibtex.pm:1294> INFO - Found BibTeX data source '../refs/standard_refs-biber.bib'
+[252] Utils.pm:169> WARN - BibTeX subsystem: /tmp/SchUOtRiXt/standard_refs-biber.bib_509070.utf8, line 122, warning: undefined macro "feb"
+[263] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[263] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[263] Biber.pm:3809> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-UK'
+[264] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-UK'
+[275] bbl.pm:617> INFO - Writing 'mythesis.bbl' with encoding 'UTF-8'
+[279] bbl.pm:720> INFO - Output to mythesis.bbl
+[283] Biber.pm:110> INFO - WARNINGS: 1
