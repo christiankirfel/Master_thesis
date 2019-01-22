@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.12)  26 NOV 2018 17:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.12)  7 JAN 2019 13:18
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -2370,10 +2370,6 @@ LaTeX Info: Redefining \nameref on input line 137.
 \@outlinefile=\write6
 \openout6 = `mythesis.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Info: Redefining \microtypecontext on input line 137.
 Package microtype Info: Generating DVI output.
 Package microtype Info: Character protrusion enabled (level 2).
@@ -2382,6 +2378,7 @@ Package microtype Info: No font expansion.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
+
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
@@ -2589,12 +2586,12 @@ Package logreq Info: Writing requests to 'mythesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 44403 strings out of 494758
- 852603 string characters out of 6175810
- 1437055 words of memory out of 5000000
- 47066 multiletter control sequences out of 15000+600000
+ 44401 strings out of 494758
+ 852557 string characters out of 6175810
+ 1437075 words of memory out of 5000000
+ 47064 multiletter control sequences out of 15000+600000
  620276 words of font info for 193 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
  75i,10n,82p,10387b,3405s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on mythesis.dvi (15 pages, 48032 bytes).
+Output written on mythesis.dvi (15 pages, 48080 bytes).
