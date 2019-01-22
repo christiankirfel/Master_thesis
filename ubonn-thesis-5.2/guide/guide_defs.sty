@@ -1,0 +1,151 @@
+% Definitions needed by the thesis guide
+
+\RequirePackage{suffix}
+\newcommand*\Package[1]{\textsf{#1}\index{#1}}
+\newcommand*\PackageG[1]{\textsf{\gls{#1}}\index{#1}}
+\newcommand*\Option[1]{\texttt{#1}}
+\newcommand*\Macro[1]{\texttt{\textbackslash#1}\index{#1@\textbackslash#1}}
+\WithSuffix\newcommand\Macro*[1]{\texttt{\textbackslash#1}}
+\newcommand*\Env[1]{\texttt{#1}\index{#1}}
+\newcommand*\BegEnv[1]{\texttt{\textbackslash begin\{#1\}}}
+\newcommand*\EndEnv[1]{\texttt{\textbackslash end\{#1\}}}
+\newcommand*{\BibTeX}{\textsc{Bib}\TeX}
+% \newcommand*{\biblatex}{\texttt{biblatex}}
+\newcommand*{\TeXLive}{\TeX\ Live\xspace}
+\newcommand*{\TeXnicCenter}{\TeX nic Center\xspace}
+\newcommand*{\TeXmaker}{Texmaker\xspace}
+\newcommand*{\TeXstudio}{\TeX studio\xspace}
+\newcommand*{\TeXworks}{\TeX works\xspace}
+\newcommand*{\TikZ}{Ti\textit{k}Z\xspace}
+
+\newcommand*{\pT}{\ensuremath{p_{\text{T}}}\xspace}
+\newcommand*{\pTjet}{\ensuremath{p_{\text{T}}^{\text{jet}}}\xspace}
+\newcommand*{\etajet}{\ensuremath{\eta^{\text{jet}}}\xspace}
+\newcommand*{\diffptb}{\ensuremath{\dif\sigma_{b}/\dif \pT^{b}}\xspace}
+\newcommand*{\diffnloptb}{\ensuremath{\dif\sigma_{b}^{\text{NLO}}/\dif \pT^{b}}\xspace}
+\newcommand*{\diffetab}{\ensuremath{\dif\sigma_{b}/\dif \eta^{b}}\xspace}
+\newcommand*{\diffnloetab}{\ensuremath{\dif\sigma_{b}^{\text{NLO}}/\dif \pT^{b}}\xspace}
+\newcommand*{\Cbhad}{\ensuremath{\mathcal{C}_{b}^{\text{had}}}\xspace}
+
+\newcommand*{\Bo}{\ensuremath{B^{0}}\xspace}
+\newcommand*{\Bobar}{\ensuremath{\bar{B}^{0}}\xspace}
+
+\newcommand*{\stat}{\ensuremath{\text{stat.}}}
+\newcommand*{\sys}{\ensuremath{\text{sys.}}}
+
+% Extra commands to copy with separate statistical and systematic
+% errors as well as asymmetric errors
+\newcommand*\valuesep{\,}
+% \newcommand*\valuesep{\quad}
+\ifthenelse {\texlive < 2011} {%
+  \sisetup{valuesep = \valuesep}
+}{%
+  \sisetup{number-unit-product = \valuesep}
+}
+\newcommand*\numerrt[3][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{\pm \num{#2}\valuesep\text{(#3)}}%
+  \endgroup
+}
+\ifthenelse {\texlive < 2011} {%
+  \newcommand*\numpmerr[3][]{%
+    \begingroup
+    \sisetup{#1}%
+    \ensuremath{^{\num[addsign=mant,sign=plus]{#2}}_{\num[addsign=mantissa,sign=minus]{#3}}}%
+    \endgroup
+  }
+  \newcommand*\numpmerrt[4][]{%
+    \begingroup
+    \sisetup{#1}%
+    \ensuremath{^{\num[addsign=mant,sign=plus]{#2}}_{\num[addsign=mantissa,sign=minus]{#3}}%
+      \valuesep\text{(#4)}}%
+    \endgroup
+  }
+}{%
+  \newcommand*\numpmerr[3][]{%
+    \begingroup
+    \sisetup{#1}%
+    \ensuremath{^{\num[explicit-sign = +]{#2}}_{\num[explicit-sign = -]{#3}}}%
+    \endgroup
+  }
+  \newcommand*\numpmerrt[4][]{%
+    \begingroup
+    \sisetup{#1}%
+    \ensuremath{^{\num[explicit-sign = +]{#2}}_{\num[explicit-sign = -]{#3}}%
+      \valuesep\text{(#4)}}%
+    \endgroup
+  }
+}
+\newcommand*\SIpmerr[5][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}\valuesep\numpmerr{#3}{#4})\valuesep{\si{#5}}}%
+  \endgroup
+}
+\newcommand*\SIerrt[5][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}\valuesep\numerrt{#3}{#4})\valuesep{(#5)}}%
+  \endgroup
+}
+\newcommand*\SIerrtt[7][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}%
+    \valuesep\numerrt{#3}{#4}%
+    \valuesep\numerrt{#5}{#6})%
+    \valuesep{(#7)}}%
+  \endgroup
+}
+\newcommand*\SIpmerrt[6][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}%
+    \valuesep\numpmerrt{#3}{#4}{#5})%
+    \valuesep\si{#6}}%
+  \endgroup
+}
+\newcommand*\SIpmerrtt[9][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}%
+    \valuesep\numpmerrt{#3}{#4}{#5}%
+    \valuesep\numpmerrt{#6}{#7}{#8})%
+    \valuesep\si{#9}}%
+  \endgroup
+}
+\newcommand*\SIerrs[5][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}%
+    \valuesep\numerrt{#3}{stat.}%
+    \valuesep\numerrt{#4}{sys.})%
+    \valuesep\si{#5}}%
+  \endgroup
+}
+\newcommand*\SIpmerrs[7][]{%
+  \begingroup
+  \sisetup{#1}%
+  \ensuremath{(\num{#2}
+    \valuesep\numpmerrt{#3}{#4}{stat.}
+    \valuesep\numpmerrt{#5}{#6}{sys.})%
+    \valuesep\si{#7}}%
+  \endgroup
+}
+
+% If you use the siunitx package include any decimal number in \SI or \num
+% e.g. \num{2.3} \SI{2.3E4}{\GeV}. The decimal point will be replaced
+% by a comma if you switch your document language to German!
+% You do this by specifying the locale in siunitx
+%
+% The old way to achieve this is commented out here.
+% Include the following definition to
+% make ',' an ordinary symbol in decimal numbers
+%\DecimalMathComma
+% \mathchardef\CommaOrdinary="013B
+% \mathchardef\CommaPunct   ="613B
+% \mathcode`,="8000   % , im Math-Mode aktiv ("8000) machen
+% {\catcode`\,=\active
+%  \gdef ,{\obeyspaces\futurelet\next\CommaCheck}}
+% \def\CommaCheck{\if\space\next\CommaPunct\else\CommaOrdinary\fi}

@@ -1,0 +1,25 @@
+#! /bin/sh
+#
+# Script to run mf locally in directory given in filename
+#
+if [ $# -le 0 ]; then
+   echo "Must give filename"
+   exit 1
+fi
+#
+# if [ ! -f $1 ]; then
+#    echo "File $1 does not exist"
+#    exit 1
+# fi
+#
+dir=`dirname $1`
+file=`basename $1 .tex`
+#
+# Do not process files that start with feynmf_
+#
+# echo $file | grep "^feynmf_" && exit
+#
+echo "Directory: <$dir>"
+echo "File: <$file>"
+# cd $dir
+mf "\mode=localfont; input $file"

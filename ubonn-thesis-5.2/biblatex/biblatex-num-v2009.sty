@@ -1,0 +1,52 @@
+%
+% This file contains adjustments to the numeric-comp (and numeric)
+% biblatex styles that are suggested for PI theses
+%
+% Titles all in italics or in quotes
+%
+% \DeclareFieldFormat[article]{title}{\emph{#1}\isdot}
+\DeclareFieldFormat[report]{title}{\mkbibquote{#1}\isdot}
+%
+% Change punctuation to comma
+%
+\renewcommand*{\newunitpunct}{\addcomma\space}
+%
+% You can include the following line(s) if you want to shorten your
+% bibliography by not including url fields
+% \AtEveryBibitem{\clearfield{url}}
+% \AtEveryCitekey{\clearfield{url}}
+%
+% Do not add "In:"
+%
+\renewbibmacro{in:}{}
+% \renewbibmacro{in:}{%
+%   \ifentrytype{article}{}{%
+%   \printtext{\bibstring{in}\intitlepunct}}}
+%
+% Remove p. or pp. by pages - this has to be done for every language
+% separately as these strings depend on the language
+%
+\renewcommand{\bibpagespunct}{\space}
+\DefineBibliographyStrings{UKenglish}{%
+  page = {},
+  pages = {}
+}
+\DefineBibliographyStrings{USenglish}{%
+  page = {},
+  pages = {}
+}
+\DefineBibliographyStrings{ngerman}{%
+  page = {},
+  pages = {}
+}
+% If you get an error here use institution+location+year
+% \renewbibmacro*{institution+location+year}{%
+\renewbibmacro*{institution+location+date}{%
+  % \printlist{location}%
+  \iflistundef{institution}
+    {\setunit*{\addcomma\space}}
+    {\setunit*{\addcolon\space}}%
+  \printlist{institution}%
+  \setunit*{\addcomma\space}%
+  \usebibmacro{date}%
+  \newunit}

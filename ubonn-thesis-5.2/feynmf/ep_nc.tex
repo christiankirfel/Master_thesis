@@ -1,0 +1,33 @@
+%
+% Electron-proton NC scattering
+%
+% Comment in the lines from \documentclass to \begin{document}
+% and from \write18 to \end{document}
+% to use the standalone package for testing the Feynman graphs
+% You should also change the fmffile name to ep_cc-mp
+% \documentclass{standalone}
+
+% \usepackage{feynmp}
+% \DeclareGraphicsRule{*}{mps}{*}{}
+
+% \unitlength=1mm
+% \begin{document}
+\begin{fmffile}{ep_nc}
+\begin{fmfgraph*}(50,50) \fmfpen{thin}
+  \fmfleft{i1,i2} \fmfright{o1,o2}
+  \fmfv{label=$X$,l.angle=10,l.dist=3*thick}{o1}
+  \fmf{heavy,label=$p(P)$,l.side=left}{i1,v1}
+  \fmf{plain}{v1,o1}
+  \fmf{fermion,lab=$e(k)$,l.side=right}{i2,v2}
+  \fmf{fermion,lab=$e^\prime(k^\prime)$}{v2,o2}
+  \fmf{photon,lab=$\gamma,, Z(q)$,l.side=right}{v1,v2}
+  \fmfv{decor.shape=circle,decor.filled=.5,decor.size=.20w}{v1}
+  \fmfdot{v2}
+  \fmffreeze
+  \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(0.7,2))}
+  \fmfi{plain}{vpath (__v1,__o1) shifted (thick*(-1,-2))}
+\end{fmfgraph*}
+\end{fmffile}
+% Include this command for Metapost
+% \write18{mpost ep_nc-mp}
+% \end{document}

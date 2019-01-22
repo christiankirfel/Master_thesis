@@ -1,0 +1,124 @@
+\documentclass[a4paper,twoside,ngerman,UKenglish]{scrbook}
+%------------------------------------------------------------------------------
+% Wrapper for testing cover pages for theses for the
+% physics and astronomy institutes in the University of Bonn
+
+%------------------------------------------------------------------------------
+% Set to 2009 for biblatex and bibtex8 (TeX Live 2009)
+% Set to 2011 for biblatex and biber   (TeX Live 2011 or later)
+% This must be set before \usepackage{ubonn-thesis}
+\newcommand*{\texlive}{2011}
+
+\usepackage[backref=false]{../ubonn-thesis}
+\usepackage{../ubonn-biblatex}
+\usepackage{../thesis_skel/thesis_defs}
+
+%------------------------------------------------------------------------------
+% Specify the bibliography files here and not at the end!
+\addbibresource{../refs/standard_refs-biber.bib}
+\addbibresource{../thesis_skel/thesis_refs.bib}
+
+%------------------------------------------------------------------------------
+% The following definitions are used to produce the title pages
+% needed at various stages
+\newcommand{\thesistitle}{Title of the Thesis}
+\newcommand*{\thesisauthor}{Author's name}
+\newcommand*{\thesistown}{Place of birth}
+\renewcommand*{\InstituteName}{\PI}
+\renewcommand*{\inInstitute}{\inPI}
+\renewcommand*{\InstituteAddress}{\PIaddress}
+% Adjust \thesisreferee...text depending on male/female referee
+\newcommand*{\thesisrefereeonetext}{1.\ Gutachter}
+\newcommand*{\thesisrefereeone}{Prof.\ Dr.\ John Smith}
+\newcommand*{\thesisrefereetwotext}{2.\ Gutachterin}
+\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
+% Date when thesis was submitted (Master/Diplom)
+% Year or Month, Year when thesis was submitted (PhD)
+\newcommand*{\thesissubmit}{XX.YY.2015}
+% \newcommand*{\thesissubmit}{Month 2015}
+% Date of thesis examination (PhD)
+\newcommand*{\thesispromotion}{XX.YY.2015}
+% Month and year of the final printed version of the thesis
+\newcommand*{\thesismonth}{MMM}
+\newcommand*{\thesisyear}{2015}
+\newcommand*{\thesisnumber}{BONN-IR-2015-XXX}
+
+%------------------------------------------------------------------------------
+% The abstract is only needed for the printed version and should be in
+% English regardless of the language of the thesis
+\newcommand{\thesisabstract}{%
+  This thesis is the result of many years of research into how to format
+  a document using \LaTeX. It contains examples and recommendations on
+  what packages to use and how to use them. It makes no attempt to be
+  an introduction to \LaTeX. Indeed some basic \LaTeX{} knowledge is
+  assumed. It is very much geared to (particle) physics theses, but
+  may be useful for others.
+  This thesis is the result of many years of research into how to format
+  a document using \LaTeX. It contains examples and recommendations on
+  what packages to use and how to use them. It makes no attempt to be
+  an introduction to \LaTeX. Indeed some basic \LaTeX{} knowledge is
+  assumed. It is very much geared to (particle) physics theses, but
+  may be useful for others.
+}
+
+%------------------------------------------------------------------------------
+% Give a list of directories where figures can be found. Do not leave
+% any spaces in the list and end the directory name with a /
+\graphicspath{{./figs/cover/}}
+
+%------------------------------------------------------------------------------
+% Set all headers and footers so I can see if they are used properly
+\ihead[Scrplain ihead]{Scrheadings ihead}
+\chead[Scrplain chead]{Scrheadings chead}
+\ohead[Scrplain ohead]{Scrheadings ohead}
+\ifoot[Scrplain ifoot]{Scrheadings ifoot}
+\cfoot[Scrplain cfoot]{Scrheadings cfoot}
+\ofoot[Scrplain ofoot]{Scrheadings ofoot}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+%
+% Cover page of thesis - this is only needed for the printed final version
+% \input{cover/PhD_Cover}
+% \input{cover/Master_Cover}
+% \input{cover/Diplom_Cover}
+%
+% Start counting pages from the title page
+%
+\frontmatter
+% Dedication has to come before \maketitle
+\dedication{For my friends and supporters}
+% Use this version when you submit your thesis
+% \input{../cover/PhD_Submit_Title}
+\input{../cover/Master_Submit_Title}
+% \input{../cover/Diplom_Submit_Title}
+% \input{../cover/Bachelor_Title}
+% Use this command for the print version
+% \input{../cover/PhD_Final_Title}
+% \input{../cover/Master_Final_Title}
+% \input{..cover/Diplom_Final_Title}
+
+\pagestyle{scrplain}
+
+\tableofcontents
+
+\mainmatter
+\pagestyle{scrheadings}
+
+\input{../thesis_skel/thesis_intro}
+
+\chapter{2nd Chapter}
+
+\section{Blabla}
+\label{sec:blabla}
+
+Here I just add a bit more text on another page to check that heading
+etc. work as expected!
+\clearpage
+
+It is also good to have a 3rd page!
+
+\backmatter
+\printbibliography[heading=bibintoc]
+
+\end{document}

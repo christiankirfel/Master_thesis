@@ -1,0 +1,31 @@
+% This figure only works with \TeXLive 2011 and later.
+% The ZEUS coordinate system
+\documentclass{standalone}
+
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning,shapes,arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+% \setstretch{1.0}
+\tdplotsetmaincoords{60}{160}
+\begin{tikzpicture}[tdplot_main_coords]
+  \draw[thick,->] (-1,0,0) -- (3,0,0) node[anchor=north east]{$z$};
+  \draw[thick,->] (0,0,0)  -- (0,4,0) node[anchor=north west]{$x$};
+  \draw[thick,->] (0,0,0)  -- (0,0,4) node[anchor=south]{$y$};
+  \tdplotdefinepoints(0,0,0)(5,0,0)(3,3,3)
+  \draw[dashed,black]  (\tdplotbx,\tdplotby,\tdplotbz) -- (\tdplotvertexx,\tdplotvertexy,\tdplotvertexz);
+  \tdplotdrawpolytopearc[thick]{1}{anchor=east}{$\theta$}
+  \tdplotdefinepoints(0,0,0)(0,5,0)(0,5,5)
+  \draw[dashed,black]  (\tdplotbx,\tdplotby,\tdplotbz) -- (\tdplotvertexx,\tdplotvertexy,\tdplotvertexz);
+  \tdplotdrawpolytopearc[thick]{1}{anchor=west}{$\phi$}
+  \draw[->,thick,red]  (0,0,0)  -- (3,3,3);
+  \draw[black,dashed]  (3,3,3)  -- (0,3,3);
+  \draw[blue,thick,->] (6,0,0)  -- (4,0,0)  node[anchor=south east]{$e$};
+  \draw[blue,thick,->] (-4,0,0) -- (-2,0,0) node[anchor=south west]{$p$};
+\end{tikzpicture}
+\end{document}

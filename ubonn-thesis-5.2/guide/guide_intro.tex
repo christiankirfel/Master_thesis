@@ -1,0 +1,149 @@
+%==============================================================================
+\chapter{Introduction}
+\label{sec:intro}
+%==============================================================================
+
+\LaTeX{} file: \url{./guide_intro.tex}\\[1ex]
+\noindent
+When you want to start writing your thesis you usually ask a (more
+senior) colleague if he or she has a \gls{LaTeX} framework that you can
+start with. He or she in turn had asked their (more senior) colleague
+for an example thesis several years earlier etc.! Maybe it is
+surprising that we are actually using \LaTeX{} and not \TeX{} to write
+theses!
+
+\LaTeX\index{LaTeX@\LaTeX} (or more precisely the packages that one
+can use in \LaTeX) is actually in a state of continual development
+and improvement, so it certainly makes sense to review what packages
+are available, how they should be used and whether there are better
+ways of doing things than methods used 10 or more years ago.
+
+The aim of this guide is to break with the tradition of just adapting
+what your predecessor used and provide up-to-date guidelines on the
+layout and packages that can or should be used for thesis writing. The
+guide should also provide you with enough information for you to
+concentrate on the content of your thesis, rather than having to spend
+too much time making it look nice!
+
+You may ask why bother? First and foremost a thesis is something that
+you should be proud of! I therefore think it is actually worth
+devoting some effort to not only making it look good, but also to
+using correct and consistent notation when you write it. Figures and
+tables should be legible and understandable (including the size of the
+axis labels!). You should, however, not have to spend too much time
+working out how to make the thesis look the way you want it to. It is
+also good if you can avoid annoying or irritating your supervisor if he
+or she also thinks that \si{\GeVovercsq} should be written like this and
+not as GeV/c$^{2}$ or $GeV/c^{2}$ etc.\ or some mixture of the two.
+
+The recommendations are based on experience I gained:
+\begin{itemize}
+\item  preparing the
+lecture course \foreignquote{ngerman}{EDV für Physiker} in WS06/07, WS13/14 and WS15/16;
+\item editing the book \enquote{Physics at the Terascale}, which was
+  published in April 2011;
+\item rewriting and maintaining the ATLAS \LaTeX\ document class and style files;
+\item regular reading of the \foreignquote{ngerman}{TeXnische Komödie},
+  which is published by \foreignlanguage{ngerman}{Dante
+    (Deutschsprachige Anwendervereinigung \TeX)} 4 times a year;
+\item general interest in preparing good quality documents;
+\item reading quite a lot of theses!
+\end{itemize}
+
+This document does not attempt to explain how to write \LaTeX. I
+assume a basic level of knowledge. The aim is more to give some
+practical tips and solutions to solve problems that often occur when
+you are writing your thesis. There are many books and online documents
+to help you get started, so many in fact that it is difficult to know
+where to start. My favourite is \enquote{Guide to \LaTeX} from
+Kopka~\cite{kopka04}. Be sure to read the Fourth Edition though. It
+was originally written in German where the title is
+\foreignquote{ngerman}{\LaTeX: Eine Einführung}. When you want to know
+what packages exist, what they can do and how to use them, consult
+\enquote{The \LaTeX\ Companion} from M.~Goossens et al.~\cite{goossens04}.
+A fairly comprehensive online guide is the
+\enquote{A (Not So) Short Introduction to LaTeX2e.}~\cite{lshort},
+which is available in many languages.
+Help on getting started and a list of online
+documents can be found on the CTAN (Comprehensive \TeX\ Archive
+Network) information page
+\url{http://tug.ctan.org/starter.html}. Other useful sources of
+information that I and others use are:
+\begin{itemize}
+\item \url{http://www.tex.ac.uk/faq}:
+  This contains an extensive FAQ (maybe even a bit better than the German
+  one maintained by Dante). An interesting feature is the \enquote{Visual FAQ}
+  that serves as a rather unorthodox, but very intuitive kind of index:
+  \url{http://www.tex.ac.uk/tex-archive/info/visualFAQ/visualFAQ.pdf}.
+\item \url{http://tex.stackexchange.com} often comes up in Google
+  searches and contains a lot of very useful tips.
+\item \url{http://detexify.kirelabs.org/classify.html} contains a
+  little online tool to find \LaTeX\ names of symbols. It works quite
+  well and can be a lot quicker than searching through the written
+  documentation.
+\end{itemize}
+
+Not everyone knows about the \texttt{texdoc}\index{texdoc} command
+which should be available for Linux and MacOSX \TeX{} installations. To get help
+on a package, you can simply give the command \texttt{texdoc
+  geometry}, etc. Note that to see the \KOMAScript{} manual you have
+to know the name of the PDF file: \texttt{texdoc scrguide} or
+\texttt{texdoc scrguien} for the German and English versions,
+respectively. The AMS Math users guide also does not have a totally
+obvious name -- try \texttt{texdoc amsldoc}.\index{AMS math} It
+contains a whole host of useful information on typesetting
+(complicated) equations.
+
+The Physikalisches Institut is a member of Dante and so receives three
+copies of each issue of \foreignquote{ngerman}{der TeXnische Komödie},
+one of which is available in the department library in PI.  The
+booklet often contains useful hints on typesetting. We also get a DVD
+every year with \TeX\index{TeX distribution@\TeX\ distribution}
+distributions for Unix, MacOSX and Windows. Details on how to install
+a \LaTeX\ distribution can be found in Appendix~\ref{sec:app:tex}.
+
+If you write your thesis in English,\index{English} questions are sure
+to occur on how things should be written in English, what is the
+correct punctuation and hyphenation, and what do you have to worry
+about when you construct sentences. I will not attempt to answer such
+questions here. \enquote{The guide to writing ZEUS
+  papers}\index{ZEUS paper guide} from Brian Foster~\cite{ZEUSGuide}
+contains a wealth of useful information. Brian kindly gave me
+permission to package a PDF file of the note with this guide.
+
+This document is structured as follows. Chapter~\ref{sec:tips} tells
+you how to get started with the files and package. It also contains
+several tips and tricks that it is probably good to include early. It
+is sometimes not clear which version of the cover should be used when
+submitting and/or printing your thesis. Some instructions are given in
+Chapter~\ref{sec:submit}.  This is followed by
+Chapter~\ref{sec:package}, which lists the packages used in this
+document and says what they are good for. Chapters~\ref{sec:fig} and
+\ref{sec:table} give some guidelines for figures and
+tables. Chapter~\ref{sec:ref} discusses the tricky business of
+references and their formatting. Some hints on how to solve common
+layout problems, which fonts one can use and how to handle multiple
+languages in a document are given in Chapter~\ref{sec:layout}. 
+In the appendix I include some more
+information on the \TeX{} setup I have used to test things. I have
+seen a glossary (list of acronyms) in a few theses and think this is a
+nice idea. The appendix shows how you can create such a list.
+As big
+tables are often moved to the appendix, an example of how to create
+such tables is given there as well.
+
+While this guide is structured pretty much like a thesis, I have
+included a couple of extra features that are usually not needed in a
+thesis. The first is a link to the relevant \LaTeX{} file at the
+beginning of each chapter. I have also added an index, as
+that is probably a useful complement to the table of contents.
+
+Regular updates are made to the guide, so it is worth checking every
+so often to see if a new version is available. Corrections and
+suggestions for improvements are very welcome.
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "./thesis_guide"
+%%% End:

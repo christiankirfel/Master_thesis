@@ -1,0 +1,626 @@
+%==============================================================================
+\chapter{References}
+\label{sec:ref}
+%==============================================================================
+
+\LaTeX{} file: \url{./guide_refs.tex}\\[1ex]
+\noindent
+Every thesis should also include a list of references, called the
+bibliography in \LaTeX{} terminology. You \enquote{cite} a reference using
+the \Macro{cite} command. For example, the book of
+Kopka~\cite{kopka04} is my favourite \LaTeX{} book. In general you
+should include a non-breaking space, i.e.\ \enquote{\textasciitilde} between
+the text and the \Macro{cite} command. In British (UK) English the reference
+should come before the punctuation; in American English it comes after
+it.\footnote{After some research, it appears to me that the footnote
+  number should come after the punctuation, unless the footnote only
+  refers to the last word of the phrase or sentence.}
+
+That is the easy part!  Where do you get the references from and how
+do you format them? Sources of references are discussed in
+Section~\ref{sec:ref:sources}.
+There are two options for the formatting. Either you do it by
+hand, formatting \Macro{bibitem} entries yourself or you use
+\BibTeX. 
+More precisely you should use the \Package{biblatex} package.
+which is a replacement for traditional \BibTeX.
+While \Package{biblatex} and/or \BibTeX\ may appear to be the more complicated option
+at the beginning, I strongly recommend that you use it.
+
+In addition, you have to make sure that authors' names are
+printed consistently, you include the appropriate collaboration
+name, the title is formatted correctly and journals are given
+consistent abbreviations. Such topics are discussed in
+Section~\ref{sec:ref:bib}.
+
+What about citing a series of articles? Can you
+include them in one reference or do you want to keep one article per
+reference?
+I give some hints on
+useful options and settings for \Package{biblatex} below (Section~\ref{sec:ref:bbx}).
+If you use traditional \BibTeX\ (which I do not recommend), then you probably have to use the \Package{mcite}
+package -- see Section~\ref{sec:ref:mcite}.
+Just to take a silly example. The ZEUS collaboration
+publications in
+2010~\cite{Abramowicz:2010ih,Abramowicz:2010xc,Abramowicz:2010nj} were
+not as numerous as in previous years. If you use the standard
+\Macro{cite} command and the \Option{unsrt} option or its equivalent,
+you get a list of numbers.  In the past one could use the
+\Package{mcite} package to make the references nicer, put them all in
+one, write the list as [m--n] etc.
+
+
+%------------------------------------------------------------------------------
+\section{Formatting by hand}
+\label{sec:ref:bibitem}
+%------------------------------------------------------------------------------
+
+Don't! The number of references that you will need will probably grow
+fast. It is quite likely that at some point you will decide that they
+are not really formatted as you would like them to be. You will almost
+certainly add references when you correct your thesis. How do you
+make sure they are in the order you want? How do you make sure that
+only articles that you actually refer to are in the bibliography?
+
+Suppose you want to use some of the references in your thesis in
+conference proceedings or a paper in a journal. Every place where you
+publish will have it's own preferred format for the references that
+almost certainly will not be the one you chose for your thesis.
+
+If you insist on following this route, consult a book on \LaTeX!
+
+
+%------------------------------------------------------------------------------
+\section{Using \BibTeX\ and \Package{biblatex}}
+\label{sec:ref:bibtex}\index{BibTeX@\BibTeX}
+%------------------------------------------------------------------------------
+
+I won't pretend that \BibTeX{} is the most user-friendly way of
+handling references and there are several things that you have to pay
+attention to when you use it for your references.
+
+The two big advantages of \Package{biblatex} and/or \BibTeX{} are: only references that you
+actually refer to appear in the bibliography; you can change the
+format (consistently) of all articles in the bibliography simply by
+changing the style!
+
+The first step is to put your references in one or more \texttt{.bib}
+files. For this document they can be found in:
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item \url{../guide/guide_refs.bib};
+\item \url{../refs/standard_refs-biber.bib} or
+  \url{../refs/standard_refs-bibtex.bib};
+\item \url{../guide/refs/example_refs-utf8.bib} or
+  \url{../guide/refs/example_refs-ascii.bib};
+\item \url{../guide/refs/zeus_2009.bib} and
+  \url{../guide/refs/zeus_2010.bib}.
+\end{itemize}
+For each article you specify things like its
+title, author, journal etc.
+
+You then include these files into your \LaTeX{} document and
+specify which style should be used.
+You also have to indicate where you want the bibliography to appear.
+
+At this point you also have to decide which interface to the contents
+of the \texttt{.bib} files you want to use. You have a choice of the
+original \BibTeX\index{BibTeX@\BibTeX} or the more modern
+\Package{biblatex}. If you use \Package{biblatex} you
+need something like:
+\begin{verbatim}
+% Use biblatex for the bibliography
+\usepackage[backend=biber,
+  style=numeric-comp,sorting=none,block=ragged,firstinits=true]{biblatex}
+% \usepackage[backend=bibtex,hyperref=true,
+%   style=numeric-comp,sorting=none,block=ragged,firstinits=true]{biblatex}
+
+% Adjustments to output are in this style file:
+\usepackage{ubonn-biblatex}
+
+\addbibresource{../mythesis/thesis_refs.bib}
+\addbibresource{../refs/standard_refs-biber.bib}
+\end{verbatim}
+in the document preamble and \Macro{printbibliography} where they
+should be printed.
+Note that as of version 3.0 of the thesis package,
+the \Package{biblatex} command is included in \Package{ubonn-thesis} directly.
+To turn it off add the option \Option{biblatex=false}.
+\par\noindent
+If you use traditional \BibTeX{} you need something like:
+\begin{verbatim}
+% Use BibTeX for the bibliography
+\bibliographystyle{../refs/atlasBibStyleWithTitle.bst}
+% \bibliographystyle{unsrt}
+\bibliography{../mythesis/thesis_refs,%
+  ../refs/standard_refs-bibtex}
+\end{verbatim}
+at the point where the references should be printed.
+Note that \LaTeX{} is sometimes picky about spaces in lists of files,
+so you either terminate each line in \Macro{bibliography} with a \% or include all files on one line.
+
+Which should you use? Traditional \BibTeX{} has been around for a long time and is
+therefore better known. However, it has many problems when it comes to
+sorting, handling more modern sources of information (e.g.\ the web),
+etc. 
+By now (2015) \Package{biblatex} is rather stable,
+so future changes should be minor.
+It supports things like online references and enables you to click on references
+using the preprint number or DOI to look at a reference. It is also
+easier to change the way your references look. I therefore
+strongly recommend that you use \Package{biblatex}.
+
+Another serious problem with \BibTeX{} is that it cannot handle
+umlauts etc.\ properly. While I have said elsewhere in this document
+that you should use UTF-8 encoding so that you can enter ä
+etc.\ directly, this does not work with \BibTeX. You can use the
+old syntax \verb+\"{a}+.\footnote{%
+  In fact you have to write this as \texttt{author = "Br\{\textbackslash"\{u\}\}ning, Oliver"} for it to work properly!
+  As an aside, if you look at the \LaTeX\ source code for this footnote,
+  it might seem natural to use \Macro{verb} for \texttt{author = ...}.
+  However, verbatim does not work in footnotes,
+  unless you include other packages such as \Package{fancyvrb}.}
+This problem is completely solved if you use
+\Package{biblatex} and the \Option{biber} backend.\footnote{%
+If for some reason you want to use \Package{biblatex} with the \Option{bibtex8} backend
+you have to encode your \texttt{.bib}
+files with latin1 instead of UTF-8 if they includes umlauts and use the line:\\
+\Macro*{usepackage[backend=bibtex8,bibencoding=latin1]\{biblatex\}}.}
+As indicated above, the references in the guide include two versions of the file with some example references:
+\begin{itemize}
+\setlength{\parskip}{0pt}\setlength{\itemsep}{0pt}
+\item \texttt{./guide/refs/examples\_refs-utf8.bib} with UTF-8 encoding;
+\item \texttt{./guide/refs/examples\_refs-ascii.bib} without any umlauts.
+\end{itemize}
+If you try to compile the guide with the wrong file using \BibTeX, you
+will get some errors as I have included some umlauts in the example
+references.
+The thesis skeletons use traditional \BibTeX\ with \TeXLive older than 2011
+and \Package{biblatex} with the \Option{biber} backend for newer versions.
+See the skeleton \texttt{thesis\_skel/theis\_2009\_skel.tex} for the complete syntax
+if you want to use traditional \BibTeX.
+
+That's it? Well almost! First, you will have to make sure that the
+entry type that you use corresponds to the type of document that you
+are citing. Second, you will probably get some or all of your
+references from standard sources such as Spires\footnote{I
+  will refer to both as Inspire in this chapter.}, Inspire or CDS, you will have
+to change the entries a bit so that they get formatted the way you want.
+
+
+%------------------------------------------------------------------------------
+\section{\BibTeX{} entries}
+\label{sec:ref:bib}
+
+In this section I discuss how to format your \BibTeX\ databases,
+i.e.\ the \texttt{.bib} files. In the following section I talk about
+how you make your references look the way you want them to be in your
+thesis.
+
+%------------------------------------------------------------------------------
+\subsection{Entry types}
+\label{sec:ref:entry}
+
+One question is what entry type you should use for what? I give here
+recommendations on what to use for \Package{biblatex}. Some of the entry
+types that \Package{biblatex} has are not part of \BibTeX.
+
+\begin{description}
+\item[@article] This is easy -- use it for articles\index{article} published in
+  journals, e.g.~\cite{Abramowicz:2010ih}.
+\item[@book] Just as easy -- use it for books,\index{book} e.g.~\cite{kopka04}.
+\item[@proceedings, @inproceedings] The name says it all. Use
+  \Option{@inproceedings} for a paper in the proceedings\index{proceedings} and
+  \Option{@proceedings} for the whole volume.
+\item[@collection] Use it for things such as the ATLAS Technical Design
+  Report~\cite{lhc:vol1}\index{report!technical} where the names that you find are the
+  editors. Use \Option{@incollection} for a single article in a
+  collection.
+\item[@report] Use it for conference\index{conference note}\index{note!conference} and
+  internal\index{internal note}\index{note!internal} notes. This is
+  probably also the best type to use for preprints. You can also use
+  \Option{@booklet} or \Option{@online}.
+\item[@online] Use it for things that are only available online,
+  e.g.~\cite{lshort}.
+\item[@thesis] The name says it all.\index{thesis}
+  \Option{@phdthesis}\index{PhD thesis}\index{thesis!PhD}  and
+  \Option{@mastersthesis}\index{Master thesis}\index{thesis!Master}
+  also exist. If you are using \Package{biblatex} you can and should specify
+  the thesis type, e.g.\ \texttt{type = \{PhD\}}, see for example a
+  PhD thesis~\cite{tlodd:2012}.
+\end{description}
+
+\Package{biblatex} also knows about multivolume proceedings etc. See
+the manual for more details.
+
+Note that Inspire will always give you a \BibTeX{} entry of type
+\Option{@article}, so you should adjust it by hand according to what
+the document you refer to really is. CDS tries a bit harder, but you
+probably still have to set the entry type by hand.
+
+As indicated above, \Package{biblatex} knows about preprint archives,
+online references with a url etc.\ and can format the references so
+that you can click on a DOI or arXiv number. Details of how these are
+handled are well documented in the manual.  In order to make use of
+these abilities you have to modify the Inspire format of the references
+a bit so that it is fully compatible with what \Package{biblatex}
+expects for preprints etc. More details on this are given below.
+
+What else do you have to be careful about? The first thing to know is
+that \Package{biblatex} and \BibTeX{} will try to format your author
+names and titles. Thus, if you want the title to remain in exactly the
+form you have typed it in include it in \enquote{"\{Title\}"}, i.e.\
+both double quotes and braces. If not, collaborations and accelerators
+tend to be converted to lowercase, e.g.\ \enquote{lhc} instead of
+\enquote{LHC}. If you use an author such as ``ATLAS Collaboration'' it
+gets printed as \enquote{A.\ Collaboration}.
+If part of a title should not have its case changed enclose it in \{...\},
+e.g.\ \enquote{"The \{ATLAS\} Detector"}
+
+
+%------------------------------------------------------------------------------
+\subsection{Entries from Inspire and CDS}
+\index{spires}\index{inspire}\index{CDS}
+\label{sec:ref:cds}
+
+Things like the LHC Design Report\index{design report} are by default
+called \Option{@article} in Inspire~\cite{Bruning:2004ej-inspire} or
+\Option{@book} in CDS~\cite{Bruening:782076-CDS}. They are in fact
+best declared as \Option{@collection} with the \Option{author} field
+replaced by \texttt{editor} and a field indicating the
+\texttt{institution} instead of
+\texttt{publisher}~\cite{lhc:vol1-final}. You can also add the CDS
+link as a \texttt{url} field.
+
+Conference notes,\index{conference note} e.g.\ from ATLAS, are defined
+as \Option{@techreport} by CDS~\cite{ATLAS-CONF-2011-008-CDS}. It is
+better to just call them \Option{@report}. You should add an author,
+usually just \texttt{author = "\{ATLAS
+  Collaboration\}",}~\cite{ATLAS-CONF-2011-008-final}. You may also
+have to change the month format to avoid error messages. For internal
+notes, also call them report and add \texttt{type = {internal report}}
+to the entry. Again you could add the CDS link as a \texttt{url}
+field. For preprints,\index{preprint} I also think it is best to use
+the \Option{@report} entry type.
+
+Books\index{book} need to be changed from \Option{@article} to
+\Option{@book} and it is better to give the ISBN in the \texttt{isbn}
+field~\cite{Halzen:1984mc-final} rather than the \texttt{reportNumber}
+field as given in Inspire~\cite{Halzen:1984mc-inspire}.
+
+Theses\index{thesis} should used the \Option{@thesis} entry type and
+then add a \texttt{type} field. Alternatively you can use
+\Option{@mastersthesis} or \Option{@phdthesis}.
+
+In all cases you probably have to edit the titles a bit to get
+things like $\sqrt{s} = \SI{7}{\TeV}$ printed properly. An open
+question is whether you should assume the use of a units package in
+the formatting of the title. If you want to make your \texttt{.bib}
+files usable by others, it is probably best to do the formatting by
+hand.
+
+An example of a typical ATLAS paper as it comes from
+Inspire~\cite{Aad:2010ey-inspire} needs a bit of work.  With \TeXLive
+2011 the link to DOI and arXiv both work well~\cite{Aad:2010ey-final}.
+
+%\textcolor{red}{Check if this is still true:
+%With \TeXLive 2009, it worked on my laptop, but did not work properly
+%on ATLAS machines (Ubuntu 10.04) that had version 0.8e of \Package{biblatex}.
+%It may be that one can get it to work with a bit of help, but I have
+%not tried all possible options.}
+
+% Depending on which\TeXLive 2009 version you actually have, you might
+% have to give a bit of help for the arXiv link to
+% work%~\cite{Aad:2010ey-tex2009}.
+
+
+%------------------------------------------------------------------------------
+\subsection{More on names}
+\label{sec:ref:names}
+
+The best way to format author names so that they appear correctly
+whatever \BibTeX{} style you use is \texttt{Surname, Name}. Any other
+syntax is likely to get mangled.
+
+What about collaboration names? If you use Inspire as the source of
+your \BibTeX{} entries, you will see that it has a field for the
+collaboration. This is often, but not always, formatted
+correctly. 
+However, very few \BibTeX{} styles, and as far as I know no \Package{biblatex} styles, 
+pay any attention to this field.
+The ones from Inpire listed below will work properly. The
+only other reliable alternative I have found is to use the following
+syntax:
+\begin{verbatim}
+@Article{Chekanov:2009qja,
+     author    = "{ZEUS Collab.} and Chekanov, S. and others",
+\end{verbatim}
+which then usually gets formatted as \enquote{ZEUS Collab., S.\ Chekanov et
+al.,}.
+I went through and changed the references in \texttt{zeus\_2009.bib}
+accordingly.
+
+
+%------------------------------------------------------------------------------
+\section{Formatting references}
+\label{sec:ref:format}
+
+While \BibTeX{} or \Package{biblatex} format the references for you
+from the \texttt{.bib} files, you have to tell them what format you
+want!  For a start, you have to choose between an alphabetic and a
+numeric scheme for the references. Most journals use a numeric
+style. This corresponds to style \Option{unsrt} or a variant thereof
+using traditional \BibTeX.  If you use \Package{biblatex} you include the
+package with option \Option{numeric-comp} or
+\Option{numeric}. \Option{numeric-comp} produces more compact
+citations (e.g.\ [1-4,7,9]) than \Option{numeric} (e.g.\
+[1,2,3,4,7,9].
+
+For this guide (for a change) I use an alphabetic style:
+\Option{alpha} with \BibTeX{} or option \Option{alphabetic} with
+\Package{biblatex}. In the thesis skeleton I use a more usual unsorted
+numeric style.
+
+
+%------------------------------------------------------------------------------
+\subsection{\Package{biblatex} styles}
+\label{sec:ref:bbx}
+
+My experience with \Package{biblatex} has taken off in the last year, 
+since I started rewriting the ATLAS \LaTeX\ templates.
+The first official stable release of \Package{biblatex} was 19 Oct 2010.
+Active and rapid development is ongoing -- there were many updates in 2011.
+Some things I recommend below may work a bit differently depending on which version
+you have. See Appendix~\ref{sec:app:tex} on how to install a newer
+version of \TeXLive if you want a more up-do-date version of \LaTeX.
+
+Looking for numeric styles you can either use the built-in
+\Option{numeric} or \Option{numeric-comp}.  The \Option{numeric-comp}
+style is used by default in the thesis skeleton. I made a few
+adjustments that are included in the file
+\texttt{ubonn-biblatex.sty}%
+\footnote{In the past (before version 3.0) these files were called
+  \texttt{./biblatex/biblatex-num-v2009.sty} and
+  \texttt{./biblatex/biblatex-num-v2011.sty}. Which file was used
+  by default was steered by the \Macro{texlive} macro which is set in the
+  main file.}
+
+You can change some of the things in the style file by passing options to it.
+The syntax \Option{articletitle} and \Option{articletitle=true} is equivalent.
+Use \Option{articletitle=false} to turn off an option.
+The following options exist:
+
+\begin{tabular}{llp{10.0cm}}
+  \toprule
+  Option & Default & Description \\
+  \midrule
+  texlive & 2014 & Specify the \TeXLive version.
+  You can also use the older command \verb|\newcommand*{\texlive}{2014}|.\\
+  articletitle & true & Show the titles of articles and reports;\\
+  titlequote & false & Enclose the title in quotes rather than using a slanted font.\\
+  boldvol & false & Show the volume in bold face.\\
+  showurl & true & Show the URL field.\\
+  showdoi & false & Show the DOI separately. Otherwise it is linked from the journal reference.\\
+  eprint & true & Show the arXiv entry.\\
+  \bottomrule
+\end{tabular}
+
+You can fine tune things even more by using hooks that are
+available. For example, the way I turn off the URL field is
+to include the command:
+\begin{verbatim}
+\AtEveryBibitem{\clearfield{url}}
+\end{verbatim}
+in the preamble or in the relevant style file given in the previous
+paragraph. It is not clear to me if you also need
+\verb+\AtEveryCitekey{\clearfield{url}}+.
+
+A fairly nice-looking style is \Option{ieee}. This is only be
+available in recent releases ($\geq 2011$) of \TeXLive. After playing around
+a bit with the \Option{ieee} style, I decided it is too new and has
+too many settings that depend on having a new version of
+\Package{biblatex} for now.
+
+There are slowly more and more \Package{biblatex} styles around, but
+not as many as traditional \BibTeX. It is, however, much easier to change things
+(usually you can just change an option) with \Package{biblatex} than it
+was for traditional \BibTeX, so you can probably start with a standard file and
+just make adjustments in your preamble. I have found a number of very
+useful hints on how to make changes in
+\url{http://tex.stackexchange.com/} -- just search for \Package{biblatex}.
+
+If you include \Package{ubonn-thesis} with the option \Option{astrobib},
+the references will be formatted in the style usually used in astrophysics publications.\index{astronomy}\index{astrophysics}
+Version 3.0 contains a first version of this option.
+A few more tweaks may still be needed. You can use the command
+\verb|make astro| instead of \verb|make new| to make a thesis skeleton with the appropriate
+options set and the template introduction uses typical citation commands.
+The option \Option{astrobib} only works for \TeXLive 2011 and later, i.e.\ with \Package{biblatex}.
+
+If it is available, \Option{biber} is the preferred backend over
+\Option{bibtex} or \Option{bibtex8}.
+However, the backend is mostly relevant for
+sorting, so it probably does not matter which you use if you use an
+option that gives the references in the order that they were
+cited. \Option{biber} seems to work well with \TeXLive 2012 and later and hence is the default.
+For older versions of \TeXLive, a better solution is probably \texttt{make new09}
+followed by \texttt{make thesis09} that then uses traditional \BibTeX.\footnote{%
+You can still try to use \Package{biblatex} if you want to -- use \texttt{make new} to create a new skeleton --
+as \texttt{ubonn-thesis} switches to \Option{bibtex} automatically for \TeXLive
+versions earlier than 2011.
+Compile the thesis with \texttt{make thesis09} though.
+If you want to set the backend yourself, use the option \Option{backend}.
+Set the encoding with the option \Option{bibencoding} if necessary.}
+
+If you want to find out where your references are actually cited, you
+can include the option \Option{backref=true}.
+
+If you get an error such as:
+{\scriptsize
+\begin{verbatim}
+biber     thesis_guide
+data source /tmp/par-62726f636b/cache-ab06f20732bfab23dfa35f56998ad4edca61bee1//inc/lib/Biber/LaTeX/recode_data.xml not found in .
+Compilation failed in require at Biber/Utils.pm line 21.
+\end{verbatim}
+}
+\noindent
+then you should delete the directory \texttt{/tmp/par-...} and try to
+run again. The directory name depends on the operating system you are using.
+Use the command \verb|biber --cache| to find out where it is.
+If you are adventurous, the command \verb|rm -rf `biber --cache`| will do it all for you!
+
+%------------------------------------------------------------------------------
+\subsection{Traditional \BibTeX{} styles}
+\label{sec:ref:bst}
+
+If you use references directly from Spires or Inspire, then it is
+probably best to use one of the style files that is compatible with
+their format. A list can be found on
+\url{http://www.slac.stanford.edu/spires/hep/refs/bibstyles.shtml}. I
+have used \Option{utphys} a few times and it works OK. I see that
+there are also style files available there for common HEP journals,
+which could save quite a bit of work. The big advantage of
+\Option{utphys} is that it also knows about the arXiv and preprints.
+
+The equivalent of \Package{biblatex}'s \Option{ieee} style in \BibTeX\ is
+\Option{ieeetr}. It also knows about arXiv and preprints. However, it
+does not know about collaborations.
+
+There are also standard ATLAS style files that work fairly well:
+\texttt{atlasBibStyleWithTitle.bst} and \texttt{atlasBibStyleWoTitle.bst}
+These are included in the \texttt{refs} directory.
+
+
+%------------------------------------------------------------------------------
+\section{Sources for references}
+\label{sec:ref:sources}
+%------------------------------------------------------------------------------
+
+The ZEUS collaboration kept a reasonably up-to-date list of ZEUS and
+H1 publications (as well as some others) in \BibTeX{} format. ATLAS
+also keeps such a list and I assume that other collaborations keep
+similar lists.
+
+Within experimental high energy physics the standard way to get a
+reference is to use Inspire
+(\url{http://inspirehep.net}).\footnote{This has now replaced Spires
+(\url{http://www.slac.stanford.edu/spires/}).
+One problem with Spires was that it was very slow and regularly
+timed out when you perform searches.} You can get the appropriate
+Inspire entry by using the Inspire search engine. Alternatively if you
+know the arXiv preprint number you can go from its entry to Inspire
+directly.
+
+To get the ZEUS references I used above I first tried the following
+command in Inspire:
+\begin{verbatim}
+find exp zeus and date 2009
+\end{verbatim}
+This does not really give you the references you expect though! It
+seems much more reliable to use an author name so I used:
+\begin{verbatim}
+find a chekanov and date 2009
+\end{verbatim}
+and then selecting \BibTeX{} format, saving the resulting page in a file
+and removing the \texttt{<pre>} and \texttt{</pre>} entries between
+references. This worked better, even though I got a whole load of
+ATLAS papers as well.
+
+If you then try to use the references, you get complaints that
+something is not in math mode. You have to go through by hand and
+change things such as \verb+Q^2+ to \verb+$Q^{2}$+.
+
+
+%------------------------------------------------------------------------------
+\section{Common wishes}
+\label{sec:ref:tips}
+%------------------------------------------------------------------------------
+
+It is possible that you would like to combine several articles into a
+single reference. The \Package{mcite} package was designed to do this,
+but is not compatible with \Package{biblatex} and
+\Package{hyperref}. \Package{biblatex} has another solution that it
+calls sets.
+
+In \texttt{standard\_refs-biber.bib} and
+\texttt{standard\_refs-bibtex.bib} I have put in the three standard
+references for the Standard Model~\cite{gsw}. They are combined by
+using \Option{@Set}\index{biblatex!Set option@"@Set option} and the relevant
+keys. If you use a recent version of \texttt{biber} (\TeXLive 2012 and later)
+this is all you have to do.  If, however, you are using \TeXLive
+2011 or earlier with \Package{biblatex}, and therefore the \texttt{bibtex} or \texttt{bibtex8} backend, the
+\texttt{crossref} field must contain the same key as the first one in
+\texttt{entryset}.
+
+One thing you should always do is include all references in a single
+\Macro{cite}. e.g.\ there were quite a few ZEUS publications in
+2009~\cite{Chekanov:2009qja,Chekanov:2009zz,Chekanov:2009tu} is better
+than~\cite{Chekanov:2009qja}\cite{Chekanov:2009zz}\cite{Chekanov:2009tu}.
+If you want to get a list of references printed in the form \enquote{[m--n]},
+then with \Package{biblatex} you should use the style
+\Option{numeric-comp}. In 2009 there were many papers published by the
+ZEUS
+collaboration~\cite{Chekanov:2009qja,Chekanov:2009zz,Chekanov:2009tu}
+as well as several articles from both the H1 and ZEUS
+collaborations\cite{Chekanov:2009wt,Aaron:2009wg}. See
+Section~\ref{sec:ref:mcite} on how to do this with \BibTeX.
+
+In some areas, it is more common to give a bibliography per chapter,
+rather than collecting all references at the end of the thesis.
+This is straightforward to achieve with \Package{biblatex}.
+Simply add the option \Option{refsection=chapter} when you include \Package{biblatex}.
+This and more can be done by passing the option \Option{astrobib} to \Package{ubonn-thesis}.
+In addition you have give the command\\
+\Macro{printbibliography[heading=subbibliography]} at the end of each chapter.
+The thesis skeleton contains such commands commented out.
+The command \texttt{make astro} uses a skeleton with a bilbiogrpaphy per chapter.
+The option \Option{astrobib} also sets things up so that the \Package{natbib} citation
+commands \Macro{citep}, \Macro{citet} and \Macro{citealt} can be used,
+so that the citation appears as expected for astronomy publications.
+
+You are nearing the end of your thesis and have to properly format all
+the references that you have. However, they are spread over several
+files and these files also contain many references that you do not use
+or want to correct. How best to proceed?
+\begin{verbatim}
+bibtool -x mythesis.aux -o refs.bib
+\end{verbatim}\index{bibtool}
+will extract the entries that you use and in future you can use and
+correct \texttt{refs.bib}, which only contains the references that you
+actually cite.\footnote{%
+I got this tip from
+\url{http://tex.stackexchange.com/questions/417/how-to-split-all-bibtex-referenced-entries-from-a-big-bibtex-database-to-a-copy}.
+Do not forget to change \texttt{mythesis.tex} to use
+\texttt{refs.bib} instead of the previous sources.}
+
+
+%------------------------------------------------------------------------------
+\section{Using \Package{mcite}}
+\label{sec:ref:mcite}
+%------------------------------------------------------------------------------
+
+As mentioned above, the \Package{mcite} package used to be a good way
+of combining several articles into a single references and also
+getting them to be printed out in the form \enquote{[m--n]}, rather
+than \enquote{[l,m,n]} or \enquote{[l],[m],[n]}. How do you achieve
+this?  Just put all the articles in a single \Macro{cite} and prefix
+those that should be lumped together with a \enquote{*}, e.g.\
+\verb+\cite{Chekanov:2009wt,*Aaron:2009wg,*Aaron:2009sma}+.  The
+problem is that this package does not appear to be compatible with the
+\Package{hyperref} package, so you have to choose between the
+two. Given the ability that the \Package{hyperref} package offers to
+jump directly to sections, equations, references referred to in a
+document, I guess most of you will go with \Package{hyperref} rather
+than \Package{mcite}.
+
+As mentioned above the \Package{biblatex} package offers a
+more modern alternative and different ways of achieving the same
+results! It is also not compatible with \Package{mcite}.
+
+A modified version \Package{mcite} is used by ZEUS in its LaTeX4ZEUS
+environment, which is why I include a short description here.
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "./thesis_guide"
+%%% End:

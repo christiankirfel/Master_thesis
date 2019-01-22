@@ -1,0 +1,81 @@
+\documentclass{standalone}
+
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{tikz-3dplot}
+\usepackage{pgfplots}
+\usetikzlibrary{positioning,shapes,arrows}
+\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{decorations.markings}
+
+\begin{document}
+% \setstretch{1.0}
+\tikzstyle{decision} = [diamond, draw, fill=blue!20,
+    text width=4.5em, text badly centered, node distance=3cm, inner sep=0pt]
+\tikzstyle{block} = [rectangle, draw, fill=blue!20,
+    text width=5em, text centered, rounded corners, minimum height=4em]
+\tikzstyle{block2} = [rectangle, draw, fill=blue!20,
+    text width=5em, text centered, rounded corners, minimum height=4em, minimum width=10em]
+\tikzstyle{line} = [draw, -latex']
+\tikzstyle{cloud} = [draw, ellipse,fill=red!20, node distance=3cm,
+minimum height=2em]
+\begin{tikzpicture}
+  [scale=1.68]
+  \clip (-6.0cm,0.6cm) rectangle (2.6cm,-9.6cm);
+  \node[draw,    ellipse,fill=red!20,   text centered,minimum height=16mm, text width=24mm](Generator) at (-1cm,0mm){Event generator};
+  \node[draw,    ellipse,fill=red!20,   text centered,minimum height=16mm, text width=24mm](Collision) at (0.8cm,0mm){Collision};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](MOZART)    at (-1cm,-1.5cm){MOZART};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](Detector)  at (0.8cm, -1.5cm){Detector};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](ZGANA)     at (-1cm,-3.0cm){ZGANA};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](Trigger)   at (0.8cm, -3.0cm){Trigger};
+  \node[rectangle, draw, fill=white!20, text width=22mm, minimum height=12mm, text centered, rounded corners](Rejection) at (1.8cm, -4.5cm){Event rejection};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](ZEPHYR)    at (-0.1cm, -4.5cm){ZEPHYR};
+  \node[rectangle, draw, fill=blue!20,  text width=22mm, minimum height=12mm, text centered, rounded corners](Orange)    at (-0.1cm, -6.0cm){ORANGE and PHANTOM};
+  \node[rectangle, draw, fill=white!20, text width=22mm, minimum height=12mm, text centered, rounded corners](NTP)       at (-0.1cm, -7.5cm){NTuples};
+  \node[rectangle, draw, fill=white!20, text width=22mm, minimum height=12mm, text centered, rounded corners](AN)        at (-0.1cm, -9.0cm){Analysis};
+
+
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (MCC)   at (-4cm,-1.15cm) {MOZART control cards};
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (MGF)   at (-4cm,-1.65cm) {MOZART GAFs};
+
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (ZCC)   at (-4cm,-2.65cm) {ZGANA control cards};
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (ZGF)   at (-4cm,-3.15cm) {ZGANA GAFs};
+
+
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (ZPCC)  at (-4cm,-4.15cm) {ZEPHYR control cards};
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (ZPGF)  at (-4cm,-4.65cm) {ZEPHYR GAFs};
+
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (OCC)   at (-4cm,-5.65cm) {ORANGE control cards};
+  \node [draw, ellipse,fill=red!20,    minimum height=3mm,  text centered, text width=45.0mm]  (OGF)   at (-4cm,-6.15cm) {ORANGE GAFs};
+
+
+  \path [line,dashed] (Generator) -- (MOZART);
+  \path [line,dashed] (Collision) -- (Detector);
+
+
+  \path [line,dashed] (MCC) -- (MOZART);
+  \path [line,dashed] (MGF) -- (MOZART);
+
+
+  \path [line,dashed] (ZCC) -- (ZGANA);
+  \path [line,dashed] (ZGF) -- (ZGANA);
+
+  \path [line,dashed] (ZPCC) -- (ZEPHYR);
+  \path [line,dashed] (ZPGF) -- (ZEPHYR);
+
+  \path [line,dashed] (OCC) -- (Orange);
+  \path [line,dashed] (OGF) -- (Orange);
+
+
+  \path [line] (MOZART) -- (ZGANA);
+  \path [line]  (ZGANA) -- (ZEPHYR);
+
+  \path [line] (Detector) -- (Trigger);
+  \path [line]  (Trigger) -- (ZEPHYR);
+  \path [line]  (Trigger) -- (Rejection);
+
+  \path [line]  (ZEPHYR) -- (Orange);
+  \path [line]  (Orange) -- (NTP);
+  \path [line]  (NTP) -- (AN);
+\end{tikzpicture}
+\end{document}

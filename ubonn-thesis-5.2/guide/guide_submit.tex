@@ -1,0 +1,101 @@
+%------------------------------------------------------------------------------
+\chapter{Submitting your thesis}
+\label{sec:submit}\index{submit}
+%------------------------------------------------------------------------------
+
+\LaTeX{} file: \url{./guide_submit.tex}\\[1ex]
+\noindent
+Questions often come up when your thesis is finished and now you have
+to print it and submit it. Both the
+\foreignquote{ngerman}{Promotionsbüro} and the
+\foreignquote{ngerman}{Prüfungsamt} have instructions on what you have
+to do, but it is sometimes not clear what this means in terms of the
+cover pages offered by this thesis framework.
+
+For the printed version of your thesis, you probably want
+\Package{hyperref} links and the table of contents to be black. In
+order to do this, you should uncomment the \Macro{hypersetup} command
+that is in the thesis main file, just after the
+\Macro{usepackage}\texttt{\{thesis\_defs\}}.
+
+
+%------------------------------------------------------------------------------
+\section{PhD thesis}
+\label{sec:submit:phd}\index{submit!PhD thesis}\index{PhD}
+
+\input{./guide_phdsubmit}
+
+Appendix~\ref{app:printer} suggests some print shops that can make copies
+of your thesis in good enough quality to be accepted by the university
+library.
+
+
+%------------------------------------------------------------------------------
+\section{Master/Diplom/Bachelor thesis}
+\label{sec:submit:other}\index{submit!MSc thesis}\index{submit!Diplom thesis}\index{submit!BSc thesis}
+
+\subsection{Submission}
+
+\begin{enumerate}
+\item Use the file \texttt{Master\_Submit\_Title.tex},\index{MSc}
+  \texttt{Diplom\_Submit\_Title.tex}\index{Diplom} or\\
+  \texttt{Bachelor\_Title.tex}\index{BSc} for the title pages.
+  These are selected by passing one of the options
+  \Option{Master}, \Option{Diplom} or \Option{Bachelor}
+  to the \Macro{documentclass} or the \Package{ubonn-thesis} package.
+  In addition, pass the option \Option{Submit} to 
+  to the \Macro{documentclass} or the \Package{ubonn-thesis} package.
+\item You have to print and bind three copies of your thesis
+  to be submitted to the
+  \foreignlanguage{ngerman}{Prüfungsamt}. Nowadays these are usually in
+  colour.
+\item The first and second referees for your thesis often like to
+  have an extra copy of the thesis so that they can make comments when they read
+  your thesis -- ask them if they want one. You can usually save the
+  institute some money and print these copies in black \& white.
+\end{enumerate}
+
+Note that a CV does not have to be included in a Master/Diplom/Bachelor
+thesis. This is only needed when you submit a PhD thesis.
+
+
+\subsection{MSc/Diplom theses for the department library}
+
+\begin{enumerate}
+\item Use the file \texttt{Master\_Cover.tex} for the cover and
+  \texttt{Master\_Final\_Title.tex}\footnote{Replace Master with Diplom
+    as appropriate.} for the title pages.
+  These are selected by passing the options \Option{Master, PILibrary}\footnote{%
+    or \Option{Diplom, PILibrary}}
+  to the \Macro{documentclass} or the \Package{ubonn-thesis} package.
+\item There are probably some small corrections you or the referees
+  found during the time between submission and the completion of the
+  referees' reports and grades. These should be corrected before you
+  submit your thesis to the department library.
+\item The department
+  library\index{department library}\index{library!department} (in the Physikalisches
+  Institut) needs 2 printed copies with the file\\
+  \texttt{Master\_Cover.tex} as the cover.
+  This is selected by passing the options \Option{Master, PILibrary}
+  to the \Macro{documentclass} or the \Package{ubonn-thesis} package.
+  You have to get
+  the \enquote{BONN-IB-YYYY-nnn} number from the librarian. You
+  should also include an abstract (in English) on the cover page.
+\item This version of the thesis is the one that you usually print if
+  you need extra copies for your experiment or research group.
+\end{enumerate}
+
+
+\subsection{BSc theses}
+
+\begin{enumerate}
+\item There are probably some small corrections you or the referees
+  found during the time between submission and the completion of the
+  referees' reports and grades. These should be corrected before you
+  print some extra copies of your thesis if your group wants them.
+\end{enumerate}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: "./thesis_guide"
+%%% End:

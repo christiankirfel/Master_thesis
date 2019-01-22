@@ -1,0 +1,66 @@
+%==============================================================================
+\chapter{Introduction}
+\label{sec:intro}
+%==============================================================================
+
+The introduction usually gives a few pages of introduction to the
+whole subject, maybe even starting with the Greeks.
+
+For more information on \LaTeX{} and the packages that are available
+see for example the books of Kopka~\citep{kopka04} and Goossens et
+al~\citep{goossens04}.
+
+A lot of useful information on particle physics can be found in the
+\enquote{Particle Data Book}~\citep{pdg2010}.
+
+I have resisted the temptation to put a lot of definitions into the
+file \texttt{thesis\_defs.sty}, as everyone has their own taste as
+to what scheme they want to use for names. However, a few examples
+are included to help you get started:
+\begin{itemize}
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}
+\item cross-sections are measured in \si{\pb} and integrated
+  luminosity in \si{\invpb};
+\item the \KoS is an interesting particle;
+\item the missing transverse momentum, \pTmiss, is often called
+  missing transverse energy, even though it is calculated using a vector sum.
+\end{itemize}
+Note that the examples of units assume that you are using the
+\textsf{siunitx} package.
+
+It also is probably a good idea to include a few well formatted
+references in the thesis skeleton. More detailed suggestions on what
+citation types to use can be found in the thesis
+guide~\citep{thesis-guide}:
+\begin{itemize}
+\item articles in refereed journals\citep{pdg2010,Aad:2010ey};
+\item a book~\citep{Halzen:1984mc};
+\item a PhD thesis~\citep{tlodd:2012} and a Diplom thesis~\citep{mergelmeyer:2011};
+\item a collection of articles~\citep{lhc:vol1};
+\item a conference note~\citep{ATLAS-CONF-2011-008};
+\item a preprint~\citep{atlas:perf:2009} (you can also use
+  \texttt{@online} or \texttt{@booklet}for such things;
+\item something that is only available online~\citep{thesis-guide}.
+\end{itemize}
+Note that astronomy publications use citation commands defined by \textsf{natbib}.
+You should choose which one you want to use:
+\begin{itemize}
+\item \textbackslash citep: a citation~\citep{pdg2010,Aad:2010ey};
+\item \textbackslash citet: a citation~\citet{pdg2010,Aad:2010ey};
+\item \textbackslash citealt: a citation~\citealt{pdg2010,Aad:2010ey}.
+\end{itemize}
+
+At the end of the introduction it is normal to say briefly what comes
+in the following chapters.
+
+The lines at the end of this file are used by AUCTeX to specify which
+is the master \LaTeX{} file, so that you can compile your thesis
+directly within \texttt{emacs}.
+
+% Print the bibliography at the end of the chapter.
+\printbibliography[heading=subbibliography]
+
+%%% Local Variables: 
+%%% mode: latex
+%%% TeX-master: "../mythesis"
+%%% End: 

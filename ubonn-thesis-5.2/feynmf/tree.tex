@@ -1,0 +1,33 @@
+%
+% Complicated Feynman graph
+%
+% Comment in the lines from \documentclass to \begin{document}
+% and from \write18 to \end{document}
+% to use the standalone package for testing the Feynman graphs
+% You should also change the fmffile name to tree-mp
+% \documentclass{standalone}
+
+% \usepackage{feynmp}
+% \DeclareGraphicsRule{*}{mps}{*}{}
+
+% \unitlength=1mm
+% \begin{document}
+\begin{fmffile}{tree}
+\begin{fmfgraph*}(50,30)
+  \fmfleftn{i}{2} \fmfrightn{o}{4}
+  \fmflabel{$e_-$}{i1}\fmflabel{$e_+$}{i2}
+  \fmflabel{$\mu_+$}{o1}
+  \fmflabel{$\nu_{\mu}$}{o2}
+  \fmflabel{$s$}{o3}
+  \fmflabel{$\noexpand\bar c$}{o4}
+  \fmf{fermion}{i1,v1,i2}
+  \fmf{boson,label=$\gamma,,Z$}{v1,v2}
+  \fmf{boson}{v3,v2,v4}
+  \fmf{fermion}{o1,v3,o2}
+  \fmf{fermion}{o4,v4,o3}
+  \fmfdot{v1,v3,v4}\fmfblob{.12w}{v2}
+\end{fmfgraph*}
+\end{fmffile}
+% Include this command for Metapost
+% \write18{mpost tree-mp}
+% \end{document}

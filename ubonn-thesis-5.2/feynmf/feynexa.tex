@@ -1,0 +1,24 @@
+% Comment in the lines from \documentclass to \begin{document}
+% and from \write18 to \end{document}
+% to use the standalone package for testing the Feynman graphs
+% You should also change the fmffile name to ep_cc-mp
+% \documentclass{standalone}
+
+% \usepackage{feynmp}
+% \DeclareGraphicsRule{*}{mps}{*}{}
+
+% \unitlength=1mm
+% \begin{document}
+\begin{fmffile}{feynexa}
+\begin{fmfchar*}(40,25)
+  \fmfleft{em,ep}
+  \fmf{fermion}{em,Zee,ep}
+  \fmf{photon,label=$Z$}{Zee,Zff}
+  \fmf{fermion}{fb,Zff,f}
+  \fmfright{fb,f}
+  \fmfdot{Zee,Zff}
+\end{fmfchar*}
+\end{fmffile}
+% Include this command for Metapost
+% \write18{mpost feynexa-mp}
+% \end{document}
