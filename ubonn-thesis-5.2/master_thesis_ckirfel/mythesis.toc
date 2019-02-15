@@ -9,15 +9,17 @@
 \contentsline {section}{\numberline {1}The LHC}{iv}{section.0.1}
 \contentsline {section}{\numberline {2}Machine Learning}{v}{section.0.2}
 \contentsline {subsection}{\numberline {2.1}The concept of machine learning}{v}{subsection.0.2.1}
-\contentsline {subsection}{\numberline {2.2}Neural Networks}{v}{subsection.0.2.2}
-\contentsline {subsection}{\numberline {2.3}Adversarial Neural Networks}{v}{subsection.0.2.3}
-\contentsline {subsection}{\numberline {2.4}Hyperparamters}{v}{subsection.0.2.4}
-\contentsline {section}{\numberline {3}Tuning and Results of a simple NN}{vi}{section.0.3}
-\contentsline {subsection}{\numberline {3.1}keras}{vi}{subsection.0.3.1}
-\contentsline {section}{\numberline {4}Choice of nodes and layers}{vi}{section.0.4}
-\contentsline {section}{\numberline {5}Choice of the Optimizer}{vi}{section.0.5}
+\contentsline {subsection}{\numberline {2.2}Neural Networks}{vi}{subsection.0.2.2}
+\contentsline {subsubsection}{\nonumberline The input layer}{vi}{section*.2}
+\contentsline {subsubsection}{\nonumberline Decision making process}{vi}{section*.3}
+\contentsline {subsection}{\numberline {2.3}Adversarial Neural Networks}{vii}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Hyperparamters}{vii}{subsection.0.2.4}
+\contentsline {section}{\numberline {3}Tuning and Results of a simple NN}{viii}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}keras}{viii}{subsection.0.3.1}
+\contentsline {section}{\numberline {4}Choice of nodes and layers}{viii}{section.0.4}
+\contentsline {section}{\numberline {5}Choice of the Optimizer}{viii}{section.0.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\nonumberline Bibliography}{3}{chapter*.3}
+\contentsline {chapter}{\nonumberline Bibliography}{3}{chapter*.5}
 \contentsline {chapter}{\numberline {A}Useful information}{5}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{7}{chapter*.4}
-\contentsline {chapter}{\nonumberline List of Tables}{9}{chapter*.5}
+\contentsline {chapter}{\nonumberline List of Figures}{7}{chapter*.6}
+\contentsline {chapter}{\nonumberline List of Tables}{9}{chapter*.7}
