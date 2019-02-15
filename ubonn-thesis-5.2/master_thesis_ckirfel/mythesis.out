@@ -1,4 +1,15 @@
-\BOOKMARK [0][]{chapter.1}{Introduction}{}% 1
-\BOOKMARK [0][]{appendix.A}{Useful information}{}% 2
-\BOOKMARK [0][]{chapter*.3}{List of Figures}{}% 3
-\BOOKMARK [0][]{chapter*.4}{List of Tables}{}% 4
+\BOOKMARK [1][]{section.0.1}{The LHC}{}% 1
+\BOOKMARK [1][]{section.0.2}{Machine Learning}{}% 2
+\BOOKMARK [2][]{subsection.0.2.1}{The concept of machine learning}{section.0.2}% 3
+\BOOKMARK [2][]{subsection.0.2.2}{Neural Networks}{section.0.2}% 4
+\BOOKMARK [2][]{subsection.0.2.3}{Adversarial Neural Networks}{section.0.2}% 5
+\BOOKMARK [2][]{subsection.0.2.4}{Hyperparamters}{section.0.2}% 6
+\BOOKMARK [1][]{section.0.3}{Tuning and Results of a simple NN}{}% 7
+\BOOKMARK [2][]{subsection.0.3.1}{keras}{section.0.3}% 8
+\BOOKMARK [1][]{section.0.4}{Choice of nodes and layers}{}% 9
+\BOOKMARK [1][]{section.0.5}{Choice of the Optimizer}{}% 10
+\BOOKMARK [0][]{chapter.1}{Introduction}{}% 11
+\BOOKMARK [0][]{chapter*.3}{Bibliography}{}% 12
+\BOOKMARK [0][]{appendix.A}{Useful information}{}% 13
+\BOOKMARK [0][]{chapter*.4}{List of Figures}{}% 14
+\BOOKMARK [0][]{chapter*.5}{List of Tables}{}% 15

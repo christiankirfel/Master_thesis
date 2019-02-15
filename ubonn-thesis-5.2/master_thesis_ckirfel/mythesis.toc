@@ -1,13 +1,23 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
-\select@language {UKenglish}
-\select@language {ngerman}
-\select@language {UKenglish}
-\select@language {UKenglish}
-\select@language {UKenglish}
-\select@language {ngerman}
-\select@language {UKenglish}
+\babel@toc {UKenglish}{}
+\babel@toc {ngerman}{}
+\babel@toc {UKenglish}{}
+\babel@toc {UKenglish}{}
+\babel@toc {UKenglish}{}
+\babel@toc {ngerman}{}
+\babel@toc {UKenglish}{}
+\contentsline {section}{\numberline {1}The LHC}{iv}{section.0.1}
+\contentsline {section}{\numberline {2}Machine Learning}{v}{section.0.2}
+\contentsline {subsection}{\numberline {2.1}The concept of machine learning}{v}{subsection.0.2.1}
+\contentsline {subsection}{\numberline {2.2}Neural Networks}{v}{subsection.0.2.2}
+\contentsline {subsection}{\numberline {2.3}Adversarial Neural Networks}{v}{subsection.0.2.3}
+\contentsline {subsection}{\numberline {2.4}Hyperparamters}{v}{subsection.0.2.4}
+\contentsline {section}{\numberline {3}Tuning and Results of a simple NN}{vi}{section.0.3}
+\contentsline {subsection}{\numberline {3.1}keras}{vi}{subsection.0.3.1}
+\contentsline {section}{\numberline {4}Choice of nodes and layers}{vi}{section.0.4}
+\contentsline {section}{\numberline {5}Choice of the Optimizer}{vi}{section.0.5}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {A}Useful information}{3}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{5}{chapter*.3}
-\contentsline {chapter}{\nonumberline List of Tables}{7}{chapter*.4}
+\contentsline {chapter}{\nonumberline Bibliography}{3}{chapter*.3}
+\contentsline {chapter}{\numberline {A}Useful information}{5}{appendix.A}
+\contentsline {chapter}{\nonumberline List of Figures}{7}{chapter*.4}
+\contentsline {chapter}{\nonumberline List of Tables}{9}{chapter*.5}
