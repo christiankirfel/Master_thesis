@@ -13,7 +13,15 @@ A very commonly used machine learning algorithm is the artificial neural network
 \subsection{Neural Networks}
 
 The artificial neural network, or just neural network, is the most commonly known approach to machine learning. Its structure is inspired by the neurons forming the human brain which is also where it gets its name from.\\
-Instead of neurons a neural network consists of numerous very simple processors, called nodes. These nodes are usually structured into several layers. As presented in fig 1. Also there is several ways to structure and connect these nodes often times matching a certain problem in this explanation only the most commonly way is explained. In that case each node of a layer is getting input from each node in the last layer and is outputting to each node of the following layer. Such a network structure is shown in figure x and equation y describes the step between two node connections as described later.
+Instead of neurons a neural network consists of numerous very simple processors, called nodes. These nodes are usually structured into several layers. As presented in fig (todo). Also there is several ways to structure and connect these nodes often times matching a certain problem in this explanation only the most commonly way is explained. In that case each node of a layer is getting input from each node in the last layer and is outputting to each node of the following layer. Such a network structure is shown in figure \ref{fig:nodes_nomenclature}. It describes the step between a node and the previous layer. The math will be explained in detail later.
+
+\begin{figure}
+	\centering
+	\includegraphics[scale=0.18]{figures_ML/nodes_nomenclature.eps}
+	\caption{Network propagation from layer $(L-1)$ to layer $L$}
+	\label{fig:nodes_nomenclature}
+\end{figure}
+
 
 \subsubsection{The input layer}
 
