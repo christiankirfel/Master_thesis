@@ -155,7 +155,7 @@ In this work the first network is not a generator but a classifier separating si
 Mathematically this comes down to a minimax game of two neural networks. Let us call the Classifier $Net1$ and the Adversary $Net2$ then the problem becomes:
 
 \begin{align}
-    minmax...
+    minmax V(Net1, Net2) = \mathbb{E}_{\mathsf{x} \sim \rho_{data}} [ log Net1(\mathcal{x}) ] + \mathcal{E}_{\mathcal{z} \sim \rho_{sys}} [ log (1 - Net2(\mathcal{z}) ) ]
 \end{align}
 
 The loss function is just the difference of the two separate loss functions with a hyperparameter $\lambda$ to control the impact of the adversary:
@@ -169,5 +169,6 @@ The loss function is just the difference of the two separate loss functions with
 \subsubsection{Setup of the adversarial neural network}
 
 Setting up the adversarial neural network is straightforward. Both networks are standard networks they are just trained on different target labels.\\
-The training is performed iteratively following the loss function equation \eqref{eq:adversarial_loss}
+The training is performed iteratively following the loss function equation \eqref{eq:adversarial_loss}.
+
 
