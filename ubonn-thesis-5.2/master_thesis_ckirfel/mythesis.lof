@@ -6,7 +6,19 @@
 \babel@toc {UKenglish}{}
 \babel@toc {ngerman}{}
 \babel@toc {UKenglish}{}
-\contentsline {figure}{\numberline {\relax 1}{\ignorespaces Network propagation from layer $(L-1)$ to layer $L$\relax }}{vi}{figure.caption.2}% 
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Sketch of the LHC ring.}}{8}{figure.caption.3}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Sketch of the ATLAS detector\relax }}{9}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Scheme of the ATLAS-detector.}}{10}{figure.caption.5}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network propagation from layer $(L-1)$ to layer $L$\relax }}{17}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.\relax }}{21}{figure.caption.14}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

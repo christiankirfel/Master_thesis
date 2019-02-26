@@ -1,0 +1,40 @@
+\BOOKMARK [0][]{chapter.1}{Introduction}{}% 1
+\BOOKMARK [0][]{chapter.2}{The Standard Model of Particle Physics}{}% 2
+\BOOKMARK [1][]{section.2.1}{Interactions}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{Particles}{chapter.2}% 4
+\BOOKMARK [1][]{section.2.3}{Open questions}{chapter.2}% 5
+\BOOKMARK [0][]{chapter.3}{The LHC and the ATLAS detector}{}% 6
+\BOOKMARK [1][]{section.3.1}{The LHC}{chapter.3}% 7
+\BOOKMARK [1][]{section.3.2}{The ATLAS detector}{chapter.3}% 8
+\BOOKMARK [2][]{subsection.3.2.1}{Tracking Detectors}{section.3.2}% 9
+\BOOKMARK [2][]{subsection.3.2.2}{Calorimeter \(split\)}{section.3.2}% 10
+\BOOKMARK [2][]{subsection.3.2.3}{Muon Spectrometer}{section.3.2}% 11
+\BOOKMARK [2][]{subsection.3.2.4}{How the detector works}{section.3.2}% 12
+\BOOKMARK [2][]{subsection.3.2.5}{The LHC}{section.3.2}% 13
+\BOOKMARK [2][]{subsection.3.2.6}{The ATLAS Detector}{section.3.2}% 14
+\BOOKMARK [2][]{subsection.3.2.7}{The ATLAS coordinate system}{section.3.2}% 15
+\BOOKMARK [2][]{subsection.3.2.8}{Tracking detectors}{section.3.2}% 16
+\BOOKMARK [2][]{subsection.3.2.9}{Calorimeters}{section.3.2}% 17
+\BOOKMARK [0][]{chapter.4}{The tW Channel}{}% 18
+\BOOKMARK [0][]{chapter.5}{Machine Learning}{}% 19
+\BOOKMARK [1][]{section.5.1}{The concept of machine learning}{chapter.5}% 20
+\BOOKMARK [1][]{section.5.2}{Neural Networks}{chapter.5}% 21
+\BOOKMARK [1][]{section.5.3}{Regularisation and Optimisation}{chapter.5}% 22
+\BOOKMARK [2][]{subsection.5.3.1}{Dropout}{section.5.3}% 23
+\BOOKMARK [2][]{subsection.5.3.2}{Batch normalization}{section.5.3}% 24
+\BOOKMARK [1][]{section.5.4}{Adversarial Neural Networks}{chapter.5}% 25
+\BOOKMARK [2][]{subsection.5.4.1}{The adversarial neural network}{section.5.4}% 26
+\BOOKMARK [0][]{chapter.6}{Tuning and Results of a simple NN}{}% 27
+\BOOKMARK [1][]{section.6.1}{Choice of nodes and layers}{chapter.6}% 28
+\BOOKMARK [1][]{section.6.2}{Choice of the Optimizer}{chapter.6}% 29
+\BOOKMARK [0][]{chapter.7}{Adversarial Neural Network}{}% 30
+\BOOKMARK [1][]{section.7.1}{Setup of the first network}{chapter.7}% 31
+\BOOKMARK [1][]{section.7.2}{Setup of the second network}{chapter.7}% 32
+\BOOKMARK [0][]{chapter.8}{Conclusions}{}% 33
+\BOOKMARK [0][]{chapter.9}{Machine Learning Tools}{}% 34
+\BOOKMARK [1][]{section.9.1}{Keras}{chapter.9}% 35
+\BOOKMARK [1][]{section.9.2}{Tensorflow}{chapter.9}% 36
+\BOOKMARK [0][]{chapter*.15}{Bibliography}{}% 37
+\BOOKMARK [0][]{appendix.A}{Useful information}{}% 38
+\BOOKMARK [0][]{chapter*.16}{List of Figures}{}% 39
+\BOOKMARK [0][]{chapter*.17}{List of Tables}{}% 40

@@ -1,4 +1,4 @@
-\documentclass[Master,ngerman,UKenglish, palatino]{scrbook}
+\documentclass[Master,ngerman,UKenglish, palatino, biblatex = true]{scrbook}
 %------------------------------------------------------------------------------
 % This file contains a skeleton thesis for
 % a Physics or Astronomy Institute in the University of Bonn
@@ -60,7 +60,7 @@
 % Use standard_refs-bibtex if you use bibtex or bibtex8
 % and standard_refs-biber  if you use biber
 \addbibresource{thesis_refs.bib}
-\addbibresource{../refs/standard_refs-biber.bib}
+%\addbibresource{../refs/standard_refs-biber.bib}
 
 %------------------------------------------------------------------------------
 % The following definitions are used to produce the title pages
@@ -177,11 +177,7 @@
 %------------------------------------------------------------------------------
 % You can add your acknowledgements here - don't forget to also add
 % them to \includeonly above
-\include{thesis_acknowledge}
-\include{lhc_atlas}
-\include{machine_learning}
-\include{simple_NN}
-\include{sigmoid}
+
 
 \tableofcontents
 
@@ -200,6 +196,16 @@
 %------------------------------------------------------------------------------
 % Add your chapters here - don't forget to also add them to \includeonly above
 \include{thesis_intro}
+\include{thesis_acknowledge}
+\include{standard_model}
+\include{lhc_atlas}
+\include{tW_channel}
+\include{machine_learning}
+\include{simple_NN}
+\include{sigmoid}
+\include{adversarial_NN}
+\include{Conclusions}
+\include{Keras}
 % Uncomment the following command to get references per chapter.
 % Put it inside the file or change \include to \input if you do not want the references
 % on a separate page

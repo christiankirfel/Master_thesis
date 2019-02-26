@@ -41,7 +41,7 @@
   >
 ]>
 <requests version="1.0">
-  <internal package="biblatex" priority="9" active="0">
+  <internal package="biblatex" priority="9" active="1">
     <generic>latex</generic>
     <provides type="dynamic">
       <file>mythesis.bcf</file>
@@ -53,16 +53,16 @@
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>standard.bbx</file>
-      <file>numeric.bbx</file>
       <file>numeric-comp.bbx</file>
+      <file>numeric.bbx</file>
+      <file>standard.bbx</file>
       <file>numeric-comp.cbx</file>
       <file>biblatex.cfg</file>
+      <file>UKenglish.lbx</file>
       <file>british.lbx</file>
       <file>english.lbx</file>
-      <file>UKenglish.lbx</file>
-      <file>german.lbx</file>
       <file>ngerman.lbx</file>
+      <file>german.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">
@@ -85,7 +85,6 @@
     </requires>
     <requires type="editable">
       <file>thesis_refs.bib</file>
-      <file>../refs/standard_refs-biber.bib</file>
     </requires>
   </external>
 </requests>
