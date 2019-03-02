@@ -93,14 +93,14 @@ This process of optimization is called stochastic gradient descent and can be ca
     \sum_k \epsilon_k^2 < \infty
 \end{align}
 
-Often times a second hyperparameter of an optimizer as SGD can be the momentum $\nu$. Momentum makes sure that each step is scaled  by how aligned previous steps were. Momentum also takes a single scaling hyperparamter $\alpha$ and is updated each step following:
+Often times a second hyperparameter of an optimizer as SGD can be the momentum $\nu$~\cite{chollet2015keras}. Momentum makes sure that each step is scaled by how aligned previous steps were. That means it will allow avoiding local minima by enlarging steps at the beginning of the training but also will slow down at the end of the training when the steps become shorter. It promises to speed up the training with less risk of large oscillations as a large learning rate would probably result in. Momentum also takes a single scaling hyperparamter $\alpha$ and is updated each step following: 
 
 \begin{align}
     \nu^{\prime} = \alpha \nu - \epsilon \frac{1}{m} \nabla_{\theta} \sum_j L(f(\hat{y}^j; \theta), y^j)\\
     \theta^{\prime} = \theta + \nu
 \end{align}
 
-Alternatively one can use Nesterov momentum and update the step after applying the gradient:
+Alternatively one can use Nesterov momentum~\cite{chollet2015keras} and update the step after applying the gradient: 
 
 \begin{align}
     \nu^{\prime} = \alpha \nu - \epsilon \frac{1}{m} \nabla_{\theta} \sum_j L(f(\hat{y}^j; \theta + \alpha \times \nu), y^j)\\
@@ -114,6 +114,9 @@ Lastly it can be helpful to decrease the learning rate of the network stepwise w
 \end{align}
 
 Another commonly used optimiser is Adam. The name is derived from adaptive moments.
+
+https://jamesmccaffrey.wordpress.com/2017/06/06/neural-network-momentum/
+
 
 \section{Regularisation and Optimisation}
 

@@ -1945,8 +1945,10 @@
     <bcf:citekey order="19">leo</bcf:citekey>
     <bcf:citekey order="20">atlas_report</bcf:citekey>
     <bcf:citekey order="21">griffith</bcf:citekey>
-    <bcf:citekey order="22">2014arXiv1406.2661G</bcf:citekey>
+    <bcf:citekey order="22">chollet2015keras</bcf:citekey>
     <bcf:citekey order="23">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="24">2014arXiv1406.2661G</bcf:citekey>
+    <bcf:citekey order="25">chollet2015keras</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
