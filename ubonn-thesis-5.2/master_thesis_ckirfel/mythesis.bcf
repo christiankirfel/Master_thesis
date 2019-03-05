@@ -1923,32 +1923,24 @@
     <bcf:datasource type="file" datatype="bibtex">thesis_refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">kopka04</bcf:citekey>
-    <bcf:citekey order="2">goossens04</bcf:citekey>
-    <bcf:citekey order="3">pdg2010</bcf:citekey>
-    <bcf:citekey order="4">thesis-guide</bcf:citekey>
-    <bcf:citekey order="5">pdg2010</bcf:citekey>
-    <bcf:citekey order="5">Aad:2010ey</bcf:citekey>
-    <bcf:citekey order="6">Halzen:1984mc</bcf:citekey>
-    <bcf:citekey order="7">tlodd:2012</bcf:citekey>
-    <bcf:citekey order="8">mergelmeyer:2011</bcf:citekey>
-    <bcf:citekey order="9">lhc:vol1</bcf:citekey>
-    <bcf:citekey order="10">ATLAS-CONF-2011-008</bcf:citekey>
-    <bcf:citekey order="11">atlas:perf:2009</bcf:citekey>
-    <bcf:citekey order="12">thesis-guide</bcf:citekey>
-    <bcf:citekey order="13">atlas_pictures</bcf:citekey>
-    <bcf:citekey order="14">atlas_pictures</bcf:citekey>
-    <bcf:citekey order="15">atlas_pictures</bcf:citekey>
-    <bcf:citekey order="16">atlas_pictures</bcf:citekey>
-    <bcf:citekey order="17">leo</bcf:citekey>
-    <bcf:citekey order="18">leo</bcf:citekey>
-    <bcf:citekey order="19">leo</bcf:citekey>
-    <bcf:citekey order="20">atlas_report</bcf:citekey>
-    <bcf:citekey order="21">griffith</bcf:citekey>
-    <bcf:citekey order="22">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="23">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="24">2014arXiv1406.2661G</bcf:citekey>
-    <bcf:citekey order="25">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="1">Mobs:2636343</bcf:citekey>
+    <bcf:citekey order="2">Mobs:2636343</bcf:citekey>
+    <bcf:citekey order="3">Jean-Luc:841555</bcf:citekey>
+    <bcf:citekey order="4">Jean-Luc:841555</bcf:citekey>
+    <bcf:citekey order="5">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="6">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="7">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="8">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="9">leo</bcf:citekey>
+    <bcf:citekey order="10">leo</bcf:citekey>
+    <bcf:citekey order="11">leo</bcf:citekey>
+    <bcf:citekey order="12">atlas_report</bcf:citekey>
+    <bcf:citekey order="13">griffith</bcf:citekey>
+    <bcf:citekey order="14">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="15">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="16">2014arXiv1406.2661G</bcf:citekey>
+    <bcf:citekey order="17">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="18">tensorflow2015-whitepaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

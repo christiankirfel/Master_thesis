@@ -79,6 +79,87 @@
       \field{title}{The \LaTeX{} Companion}
       \field{year}{2004}
     \endentry
+    \entry{Mobs:2636343}{article}{}
+      \name{author}{1}{}{%
+        {{hash=82d4e07edfdc97e832a49645cbd08ff5}{%
+           family={Mobs},
+           familyi={M\bibinitperiod},
+           given={Esma},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{fullhash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{bibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authorbibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authornamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authorfullhash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{General Photo}
+      \field{title}{{The CERN accelerator complex - August 2018. Complexe des accélérateurs du CERN - Août 2018}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/2636343
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/2636343
+      \endverb
+    \endentry
+    \entry{Pequenao:1095924}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=09e214119185ac51997b4face21351a1}{%
+           family={Pequenao},
+           familyi={P\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{09e214119185ac51997b4face21351a1}
+      \strng{fullhash}{09e214119185ac51997b4face21351a1}
+      \strng{bibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorbibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authornamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorfullhash}{09e214119185ac51997b4face21351a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{{Computer generated image of the whole ATLAS detector}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+    \endentry
+    \entry{chollet2015keras}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{fullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{bibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://keras.io}}
+      \field{title}{Keras}
+      \field{year}{2015}
+    \endentry
     \entry{2014arXiv1406.2661G}{article}{}
       \name{author}{8}{}{%
         {{hash=b8309a3e80e90bd0b1aa74558c5e9741}{%
@@ -145,30 +226,6 @@
       \verb 1406.2661
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
-    \endentry
-    \entry{chollet2015keras}{misc}{}
-      \true{moreauthor}
-      \true{morelabelname}
-      \name{author}{1}{}{%
-        {{hash=14134a39113404b1f80969c9ccc1f71e}{%
-           family={Chollet},
-           familyi={C\bibinitperiod},
-           given={François},
-           giveni={F\bibinitperiod}}}%
-      }
-      \strng{namehash}{2f3cf4de7406c8a08275677188d056f8}
-      \strng{fullhash}{2f3cf4de7406c8a08275677188d056f8}
-      \strng{bibnamehash}{2f3cf4de7406c8a08275677188d056f8}
-      \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
-      \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
-      \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{\url{https://keras.io}}
-      \field{title}{Keras}
-      \field{year}{2015}
     \endentry
   \enddatalist
   \missing{ATLAS-CONF-2011-008}
