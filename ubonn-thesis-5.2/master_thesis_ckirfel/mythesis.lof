@@ -9,14 +9,14 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces \cite {Mobs:2636343}\relax }}{8}{figure.caption.3}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Sketch of the LHC ring.}}{8}{figure.caption.4}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Sketch of the ATLAS detector\cite {Pequenao:1095924}\relax }}{9}{figure.caption.5}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Scheme of the ATLAS-detector.}}{10}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces \cite {Mobs:2636343}\relax }}{8}{figure.caption.3}% 
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Sketch of the LHC ring.}}{8}{figure.caption.4}% 
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Sketch of the ATLAS detector\cite {Pequenao:1095924}\relax }}{9}{figure.caption.5}% 
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Scheme of the ATLAS-detector.}}{10}{figure.caption.6}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network propagation from layer $(L-1)$ to layer $L$\relax }}{17}{figure.caption.11}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.\relax }}{21}{figure.caption.15}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network propagation from layer $(L-1)$ to layer $L$\relax }}{16}{figure.caption.11}% 
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.\relax }}{22}{figure.caption.17}% 
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
