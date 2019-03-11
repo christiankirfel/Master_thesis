@@ -19,123 +19,6 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
-    \entry{kopka04}{book}{}
-      \name{author}{2}{}{%
-        {{hash=7ad513520366785f926861843001ed4e}{%
-           family={Kopka},
-           familyi={K\bibinitperiod},
-           given={Helmut},
-           giveni={H\bibinitperiod}}}%
-        {{hash=02ead3a9630b74661d52be004235dc87}{%
-           family={Daly},
-           familyi={D\bibinitperiod},
-           given={Patrick\bibnamedelima W.},
-           giveni={P\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \strng{fullhash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \strng{bibnamehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \strng{authorbibnamehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \strng{authornamehash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \strng{authorfullhash}{fc4b6a294b7aff12b1c68fb3aa59426d}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{4}
-      \field{title}{Guide to \LaTeX}
-      \field{year}{2004}
-    \endentry
-    \entry{goossens04}{book}{}
-      \name{author}{2}{}{%
-        {{hash=9355edd511e3f6fdd880ee98722a53fb}{%
-           family={Mittelbach},
-           familyi={M\bibinitperiod},
-           given={Frank},
-           giveni={F\bibinitperiod}}}%
-        {{hash=0743efb276e9219ee664a9b3dbd60619}{%
-           family={Goossens},
-           familyi={G\bibinitperiod},
-           given={Michel},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Addison-Wesley}%
-      }
-      \strng{namehash}{588d1d6a8974db190596907e433f57be}
-      \strng{fullhash}{588d1d6a8974db190596907e433f57be}
-      \strng{bibnamehash}{588d1d6a8974db190596907e433f57be}
-      \strng{authorbibnamehash}{588d1d6a8974db190596907e433f57be}
-      \strng{authornamehash}{588d1d6a8974db190596907e433f57be}
-      \strng{authorfullhash}{588d1d6a8974db190596907e433f57be}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{2}
-      \field{title}{The \LaTeX{} Companion}
-      \field{year}{2004}
-    \endentry
-    \entry{Mobs:2636343}{article}{}
-      \name{author}{1}{}{%
-        {{hash=82d4e07edfdc97e832a49645cbd08ff5}{%
-           family={Mobs},
-           familyi={M\bibinitperiod},
-           given={Esma},
-           giveni={E\bibinitperiod}}}%
-      }
-      \strng{namehash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \strng{fullhash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \strng{bibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \strng{authorbibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \strng{authornamehash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \strng{authorfullhash}{82d4e07edfdc97e832a49645cbd08ff5}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{8}
-      \field{note}{General Photo}
-      \field{title}{{The CERN accelerator complex - August 2018. Complexe des accélérateurs du CERN - Août 2018}}
-      \field{year}{2018}
-      \verb{urlraw}
-      \verb http://cds.cern.ch/record/2636343
-      \endverb
-      \verb{url}
-      \verb http://cds.cern.ch/record/2636343
-      \endverb
-    \endentry
-    \entry{Pequenao:1095924}{unpublished}{}
-      \name{author}{1}{}{%
-        {{hash=09e214119185ac51997b4face21351a1}{%
-           family={Pequenao},
-           familyi={P\bibinitperiod},
-           given={Joao},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{09e214119185ac51997b4face21351a1}
-      \strng{fullhash}{09e214119185ac51997b4face21351a1}
-      \strng{bibnamehash}{09e214119185ac51997b4face21351a1}
-      \strng{authorbibnamehash}{09e214119185ac51997b4face21351a1}
-      \strng{authornamehash}{09e214119185ac51997b4face21351a1}
-      \strng{authorfullhash}{09e214119185ac51997b4face21351a1}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{3}
-      \field{title}{{Computer generated image of the whole ATLAS detector}}
-      \field{year}{2008}
-      \verb{urlraw}
-      \verb http://cds.cern.ch/record/1095924
-      \endverb
-      \verb{url}
-      \verb http://cds.cern.ch/record/1095924
-      \endverb
-    \endentry
     \entry{chollet2015keras}{misc}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -152,13 +35,50 @@
       \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
       \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
       \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{howpublished}{\url{https://keras.io}}
       \field{title}{Keras}
       \field{year}{2015}
+    \endentry
+    \entry{2014arXiv1412.6980K}{article}{}
+      \name{author}{2}{}{%
+        {{hash=1e072d74f4ac1094c9c26e1b592cea4a}{%
+           family={{Kingma}},
+           familyi={K\bibinitperiod},
+           given={Diederik\bibnamedelima P.},
+           giveni={D\bibinitperiod\bibinitdelim P\bibinitperiod}}}%
+        {{hash=8aa66e8231cc2fdbe67aa4f18ca970c6}{%
+           family={{Ba}},
+           familyi={B\bibinitperiod},
+           given={Jimmy},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{fullhash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{bibnamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authorbibnamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authornamehash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \strng{authorfullhash}{c1670936fba733d1cb2d4c23bce95c6e}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1412.6980}
+      \field{eprintclass}{cs.LG}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{12}
+      \field{title}{{Adam: A Method for Stochastic Optimization}}
+      \field{year}{2014}
+      \field{pages}{arXiv:1412.6980}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 1412.6980
+      \endverb
+      \keyw{Computer Science - Machine Learning}
     \endentry
     \entry{2014arXiv1406.2661G}{article}{}
       \name{author}{8}{}{%
@@ -209,8 +129,8 @@
       \strng{authorbibnamehash}{28c80b82fce5cf9430bd3acb1557943f}
       \strng{authornamehash}{28c80b82fce5cf9430bd3acb1557943f}
       \strng{authorfullhash}{013d741ee9b7741be2bb987dd83f1374}
-      \field{sortinit}{2}
-      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{sortinit}{9}
+      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eid}{arXiv:1406.2661}
@@ -228,19 +148,6 @@
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
     \endentry
   \enddatalist
-  \missing{ATLAS-CONF-2011-008}
-  \missing{Aad:2010ey}
-  \missing{Halzen:1984mc}
-  \missing{atlas:perf:2009}
-  \missing{atlas_pictures}
-  \missing{atlas_report}
-  \missing{griffith}
-  \missing{leo}
-  \missing{lhc:vol1}
-  \missing{mergelmeyer:2011}
-  \missing{pdg2010}
-  \missing{thesis-guide}
-  \missing{tlodd:2012}
 \endrefsection
 \endinput
 
