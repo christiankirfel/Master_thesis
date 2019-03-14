@@ -16,7 +16,8 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network propagation from layer $(L-1)$ to layer $L$\relax }}{16}{figure.caption.2}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.\relax }}{22}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.\relax }}{23}{figure.caption.8}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Sketch of the network setup. The main part is the classifier. The model generated is fed into both the second network and the classifier's output. This way the two losses $L_{net1}$ and $L_{net2}$ are generated. Furthermore the training of the classifier immediately affects both output models.\relax }}{25}{figure.caption.9}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

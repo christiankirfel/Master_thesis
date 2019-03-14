@@ -1935,6 +1935,7 @@
     <bcf:citekey order="7">chollet2015keras</bcf:citekey>
     <bcf:citekey order="8">2014arXiv1412.6980K</bcf:citekey>
     <bcf:citekey order="9">2014arXiv1406.2661G</bcf:citekey>
+    <bcf:citekey order="10">Louppe:2016ylz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

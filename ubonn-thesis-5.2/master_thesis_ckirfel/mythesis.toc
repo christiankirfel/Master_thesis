@@ -31,20 +31,20 @@
 \contentsline {chapter}{\numberline {5}Machine Learning}{15}{chapter.5}
 \contentsline {section}{\numberline {5.1}The concept of machine learning}{15}{section.5.1}
 \contentsline {section}{\numberline {5.2}Neural Networks}{16}{section.5.2}
-\contentsline {subsubsection}{\nonumberline The input layer}{16}{section*.3}
+\contentsline {subsubsection}{\nonumberline The input layer}{17}{section*.3}
 \contentsline {subsubsection}{\nonumberline Decision making process}{17}{section*.4}
 \contentsline {subsubsection}{\nonumberline Optimizers - Choosing the next step}{19}{section*.6}
 \contentsline {subsubsection}{\nonumberline Adaptive optimisers}{21}{section*.7}
-\contentsline {section}{\numberline {5.3}Regularisation and Optimisation}{21}{section.5.3}
+\contentsline {section}{\numberline {5.3}Regularisation and Optimisation}{22}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Dropout}{22}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Batch normalization}{23}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.2}Batch normalization}{22}{subsection.5.3.2}
 \contentsline {section}{\numberline {5.4}Adversarial Neural Networks}{23}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}The adversarial neural network}{23}{subsection.5.4.1}
-\contentsline {chapter}{\numberline {6}Hyperparameter optimisation of a classifying neural network}{25}{chapter.6}
-\contentsline {section}{\numberline {6.1}The input variables}{25}{section.6.1}
-\contentsline {section}{\numberline {6.2}The network architecture}{25}{section.6.2}
-\contentsline {section}{\numberline {6.3}Setup of the optimisation}{26}{section.6.3}
-\contentsline {section}{\numberline {6.4}Regularisation}{26}{section.6.4}
+\contentsline {subsection}{\numberline {5.4.1}The adversarial neural network}{24}{subsection.5.4.1}
+\contentsline {chapter}{\numberline {6}Hyperparameter optimisation of a classifying neural network}{27}{chapter.6}
+\contentsline {section}{\numberline {6.1}The input variables}{27}{section.6.1}
+\contentsline {section}{\numberline {6.2}The network architecture}{27}{section.6.2}
+\contentsline {section}{\numberline {6.3}Setup of the optimisation}{28}{section.6.3}
+\contentsline {section}{\numberline {6.4}Regularisation}{29}{section.6.4}
 \contentsline {chapter}{\numberline {7}Adversarial Neural Network}{27}{chapter.7}
 \contentsline {section}{\numberline {7.1}Setup of the first network}{27}{section.7.1}
 \contentsline {section}{\numberline {7.2}Setup of the second network}{27}{section.7.2}

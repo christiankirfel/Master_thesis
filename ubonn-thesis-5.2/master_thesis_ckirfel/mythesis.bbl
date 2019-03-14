@@ -147,6 +147,42 @@
       \endverb
       \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
     \endentry
+    \entry{Louppe:2016ylz}{article}{}
+      \name{author}{3}{}{%
+        {{hash=832b9967410c05c324eec6e9b19da71e}{%
+           family={Louppe},
+           familyi={L\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=778b55a021579eb233fa0b710c1b543f}{%
+           family={Kagan},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0003024ea8011848862cbf896b544a27}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{fullhash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{bibnamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authorbibnamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authornamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authorfullhash}{b1ef0c222753069509c0f0ba27920f08}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ME}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Learning to Pivot with Adversarial Networks}}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1611.01046
+      \endverb
+    \endentry
   \enddatalist
 \endrefsection
 \endinput
