@@ -23,10 +23,10 @@ A very commonly used machine learning technique is the artificial neural network
 The artificial neural network, or just neural network, is one of the most commonly known approaches to machine learning. Its structure is inspired by the neurons forming the human brain which is also where it gets its name from.\\
 Instead of neurons, a neural network consists of numerous very simple processors, called nodes. These nodes are usually structured into several layers. As presented in fig (todo). In addition to that there are several ways to structure and connect these nodes often times matching a certain problem. In this explanation only the most commonly way is explained. In that case each node of a layer is getting input from each node in the last layer and is outputting to each node of the following layer. Such a network structure is shown in figure \ref{fig:nodes_nomenclature}. It describes the step between a node and the previous layer. The underlying math will be explained in detail later. This is called a feed-forward neural network.
 
-\begin{figure}
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.18]{figures_ML/nodes_nomenclature.eps}
-	\caption{Network propagation from layer $(L-1)$ to layer $L$}
+	\caption[Network parameter nomenclature]{Network propagation from layer $(L-1)$ to layer $L$}
 	\label{fig:nodes_nomenclature}
 \end{figure}
 
@@ -188,10 +188,10 @@ Dropout is attempting to keep the network from relying on subdominant features t
 
 Dropout is added to each layer of a network and can also be  restricted to a subset of layers too. It slows down the training as the additional motion slows down the process of finding a minimum but it also accelerates each epoch slightly as it simplifies the network architecture. 
 
-\begin{figure}
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[scale = 0.1]{figures_ML/dropout.eps}
-	\caption{Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.}
+	\caption[Dropout Sketch]{Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.}
 	\label{fig:dropout}
 \end{figure}
 
@@ -248,13 +248,26 @@ In the first step of each iteration the first network is trained using the combi
 
 In this work the adversarial network is setup by building a classifying network. The information of the classifier is then fed into both the classifier's output layer and the adversarial network creating a second model based on the first network's model. The networks are then trained successively controlling the combined and separate losses. Figure \ref{fig:ANN_sketch} shows a sketch of the setup.
 
-\begin{figure}
+\begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures_ML/ANN_sketch.png}
 	\label{fig:ANN_sketch}
-	\caption{Sketch of the network setup. The main part is the classifier. The model generated is fed into both the second network and the classifier's output. This way the two losses $L_{net1}$ and $L_{net2}$ are generated. Furthermore the training of the classifier immediately affects both output models.}
+	\caption[Adversarial setup sketched]{Sketch of the network setup. The main part is the classifier. The model generated is fed into both the second network and the classifier's output. This way the two losses $L_{net1}$ and $L_{net2}$ are generated. Furthermore the training of the classifier immediately affects both output models.}
 \end{figure}
 
-The hyperparameter $\lambda$ is set to tune the impact of the second network on the model. A large $\lambda$ leads to a very pivotal model but can also decrease the overall quality of the classifier. 
+The hyperparameter $\lambda$ is set to tune the impact of the second network on the model. A large $\lambda$ leads to a very pivotal model but can also decrease the overall quality of the classifier.
+
+In order to better understand the figures shown in chapter \ref{chp:ANN} the three loss values of an adversarial neural network will be introduced as the last part of this chapter.
+The first loss belongs to the classifier and is expected to first increase as the adversary finds a good model and to decrease once a more pivotal model is found. 
+The second loss displays the adversary's performance ideally decreasing at first to then increase and saturate as a pivotal model renders it impossible to extract any information.
+Lastly the combined loss is displayed showing the overall performance and decreasing as good models are found for both the classifier and the adversary.
+Figure \ref{fig:losses_paper} shows an example for this loss functions taken from the paper "Learning to Pivot with Adversarial Networks".~\cite{Louppe:2016ylz}
+
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=\textwidth]{figures_ML/losses_paper}
+	\caption[Exemplary loss of an adversarial network structure]{Three losses of an adversarial network for $\lambda = 10$ taken from a toy example.~\cite{Louppe:2016ylz} From top to bottom the classifier, adversary and combined loss is presented. $T$ is the number of training iterations.}
+	\label{fig:losses_paper}
+\end{figure}
 
 

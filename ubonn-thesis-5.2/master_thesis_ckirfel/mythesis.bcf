@@ -1926,16 +1926,37 @@
     <bcf:datasource type="file" datatype="bibtex">sm_refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="2">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="3">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="4">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="5">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="6">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="7">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="8">2014arXiv1412.6980K</bcf:citekey>
-    <bcf:citekey order="9">2014arXiv1406.2661G</bcf:citekey>
-    <bcf:citekey order="10">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="1">atlas</bcf:citekey>
+    <bcf:citekey order="2">lhc_machine</bcf:citekey>
+    <bcf:citekey order="3">lhc_machine</bcf:citekey>
+    <bcf:citekey order="4">atlas</bcf:citekey>
+    <bcf:citekey order="5">cms</bcf:citekey>
+    <bcf:citekey order="6">lhcb</bcf:citekey>
+    <bcf:citekey order="7">alice</bcf:citekey>
+    <bcf:citekey order="8">Mobs:2636343</bcf:citekey>
+    <bcf:citekey order="9">Mobs:2636343</bcf:citekey>
+    <bcf:citekey order="10">Jean-Luc:841555</bcf:citekey>
+    <bcf:citekey order="11">Jean-Luc:841555</bcf:citekey>
+    <bcf:citekey order="12">wermes</bcf:citekey>
+    <bcf:citekey order="13">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="14">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="15">leo</bcf:citekey>
+    <bcf:citekey order="16">pixel_run2</bcf:citekey>
+    <bcf:citekey order="17">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="18">Pequenao:1095924</bcf:citekey>
+    <bcf:citekey order="19">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="20">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="21">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="22">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="23">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="24">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="25">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="26">2014arXiv1412.6980K</bcf:citekey>
+    <bcf:citekey order="27">2014arXiv1406.2661G</bcf:citekey>
+    <bcf:citekey order="28">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="29">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="30">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="31">Louppe:2016ylz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

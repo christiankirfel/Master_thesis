@@ -19,6 +19,312 @@
 
 \refsection{0}
   \datalist[entry]{none/global//global/global}
+    \entry{atlas}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=9ecfda666f0459b6c19c8c962038a023}{%
+           family={Aad},
+           familyi={A\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{fullhash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{bibnamehash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{authorbibnamehash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{authornamehash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{authorfullhash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{The ATLAS Experiment at the CERN Large Hadron Collider}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08003}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08003
+      \endverb
+    \endentry
+    \entry{lhc_machine}{article}{}
+      \name{author}{2}{}{%
+        {{hash=29a80b4592e6086f593501c4decfbdee}{%
+           family={Evans},
+           familyi={E\bibinitperiod},
+           given={Lyndon},
+           giveni={L\bibinitperiod}}}%
+        {{hash=41f2644da40bcd4713a96eaebb76449c}{%
+           family={Bryant},
+           familyi={B\bibinitperiod},
+           given={Philip},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{7f72fc335ecb8657f6c5536563996deb}
+      \strng{fullhash}{7f72fc335ecb8657f6c5536563996deb}
+      \strng{bibnamehash}{7f72fc335ecb8657f6c5536563996deb}
+      \strng{authorbibnamehash}{7f72fc335ecb8657f6c5536563996deb}
+      \strng{authornamehash}{7f72fc335ecb8657f6c5536563996deb}
+      \strng{authorfullhash}{7f72fc335ecb8657f6c5536563996deb}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{LHC Machine}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08001}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08001
+      \endverb
+    \endentry
+    \entry{cms}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=d4b281ede3a5e6bb867cf7307256ebb3}{%
+           family={Chatrchyan},
+           familyi={C\bibinitperiod},
+           given={S.},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{0a71497434f162556922a9b814ad8ca8}
+      \strng{fullhash}{0a71497434f162556922a9b814ad8ca8}
+      \strng{bibnamehash}{0a71497434f162556922a9b814ad8ca8}
+      \strng{authorbibnamehash}{0a71497434f162556922a9b814ad8ca8}
+      \strng{authornamehash}{0a71497434f162556922a9b814ad8ca8}
+      \strng{authorfullhash}{0a71497434f162556922a9b814ad8ca8}
+      \field{sortinit}{5}
+      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{The CMS Experiment at the CERN LHC}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08004}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08004
+      \endverb
+    \endentry
+    \entry{lhcb}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=fb0ef5f0687f618fc2cc56da4ff90fd0}{%
+           family={Alves},
+           familyi={A\bibinitperiod},
+           given={A.\bibnamedelimi Augusto},
+           giveni={A\bibinitperiod\bibinitdelim A\bibinitperiod},
+           suffix={Jr.},
+           suffixi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{936185a5c214f5928b582e105171c97d}
+      \strng{fullhash}{936185a5c214f5928b582e105171c97d}
+      \strng{bibnamehash}{936185a5c214f5928b582e105171c97d}
+      \strng{authorbibnamehash}{936185a5c214f5928b582e105171c97d}
+      \strng{authornamehash}{936185a5c214f5928b582e105171c97d}
+      \strng{authorfullhash}{936185a5c214f5928b582e105171c97d}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{The LHCb Detector at the LHC}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08005}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08005
+      \endverb
+    \endentry
+    \entry{alice}{article}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=ca12aa2bff7428389c38d609471dcfcf}{%
+           family={Aamodt},
+           familyi={A\bibinitperiod},
+           given={K.},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{eb62253f779985547ecdcf082f7f17b2}
+      \strng{fullhash}{eb62253f779985547ecdcf082f7f17b2}
+      \strng{bibnamehash}{eb62253f779985547ecdcf082f7f17b2}
+      \strng{authorbibnamehash}{eb62253f779985547ecdcf082f7f17b2}
+      \strng{authornamehash}{eb62253f779985547ecdcf082f7f17b2}
+      \strng{authorfullhash}{eb62253f779985547ecdcf082f7f17b2}
+      \field{sortinit}{7}
+      \field{sortinithash}{c818dd9105a2852444fc9f5e145c294e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{JINST}
+      \field{title}{{The ALICE experiment at the CERN LHC}}
+      \field{volume}{3}
+      \field{year}{2008}
+      \field{pages}{S08002}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/3/08/S08002
+      \endverb
+    \endentry
+    \entry{Mobs:2636343}{article}{}
+      \name{author}{1}{}{%
+        {{hash=82d4e07edfdc97e832a49645cbd08ff5}{%
+           family={Mobs},
+           familyi={M\bibinitperiod},
+           given={Esma},
+           giveni={E\bibinitperiod}}}%
+      }
+      \strng{namehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{fullhash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{bibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authorbibnamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authornamehash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \strng{authorfullhash}{82d4e07edfdc97e832a49645cbd08ff5}
+      \field{sortinit}{8}
+      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{8}
+      \field{note}{General Photo}
+      \field{title}{{The CERN accelerator complex - August 2018. Complexe des accélérateurs du CERN - Août 2018}}
+      \field{year}{2018}
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/2636343
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/2636343
+      \endverb
+    \endentry
+    \entry{Jean-Luc:841555}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=5e03c1e9d7e338a026ea1a42d7f3efd3}{%
+           family={Caron},
+           familyi={C\bibinitperiod},
+           given={Jean-Luc},
+           giveni={J\bibinithyphendelim L\bibinitperiod}}}%
+      }
+      \strng{namehash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \strng{fullhash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \strng{bibnamehash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \strng{authorbibnamehash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \strng{authornamehash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \strng{authorfullhash}{5e03c1e9d7e338a026ea1a42d7f3efd3}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{note}{AC Collection. Legacy of AC. Pictures from 1992 to 2002.}
+      \field{title}{{Overall view of LHC experiments.. Vue d'ensemble des experiences du LHC.}}
+      \field{year}{1998}
+      \verb{urlraw}
+      \verb https://cds.cern.ch/record/841555
+      \endverb
+      \verb{url}
+      \verb https://cds.cern.ch/record/841555
+      \endverb
+    \endentry
+    \entry{wermes}{book}{}
+      \name{author}{2}{}{%
+        {{hash=f5ee2b81fdcc2af5637e063906fe3918}{%
+           family={Wermes},
+           familyi={W\bibinitperiod},
+           given={Norbert},
+           giveni={N\bibinitperiod}}}%
+        {{hash=cdb61438aeb4f18b81555a6e90e78f5d}{%
+           family={Kolanoski},
+           familyi={K\bibinitperiod},
+           given={Hermann},
+           giveni={H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Verlag}%
+      }
+      \strng{namehash}{67a7582a771f6adef3274fe95c3d64c6}
+      \strng{fullhash}{67a7582a771f6adef3274fe95c3d64c6}
+      \strng{bibnamehash}{67a7582a771f6adef3274fe95c3d64c6}
+      \strng{authorbibnamehash}{67a7582a771f6adef3274fe95c3d64c6}
+      \strng{authornamehash}{67a7582a771f6adef3274fe95c3d64c6}
+      \strng{authorfullhash}{67a7582a771f6adef3274fe95c3d64c6}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Teilchendetektoren Grundlagen und Anwendungen}
+      \field{year}{2016}
+    \endentry
+    \entry{Pequenao:1095924}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=09e214119185ac51997b4face21351a1}{%
+           family={Pequenao},
+           familyi={P\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{09e214119185ac51997b4face21351a1}
+      \strng{fullhash}{09e214119185ac51997b4face21351a1}
+      \strng{bibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorbibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authornamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorfullhash}{09e214119185ac51997b4face21351a1}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{{Computer generated image of the whole ATLAS detector}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+    \endentry
+    \entry{pixel_run2}{article}{}
+      \name{author}{1}{}{%
+        {{hash=4015ced69e4765dc6b79ba4fbfbb10df}{%
+           family={Takubo},
+           familyi={T\bibinitperiod},
+           given={Y.},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \strng{fullhash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \strng{bibnamehash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \strng{authorbibnamehash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \strng{authornamehash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \strng{authorfullhash}{4015ced69e4765dc6b79ba4fbfbb10df}
+      \field{sortinit}{1}
+      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{{Proceedings, 10th International Conference on Position Sensitive Detectors (PSD10): Surrey, UK, September 7-12, 2014}}
+      \field{eprintclass}{physics.ins-det}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{JINST}
+      \field{number}{02}
+      \field{title}{{The Pixel Detector of the ATLAS experiment for the Run2 at the Large Hadron Collider}}
+      \field{volume}{10}
+      \field{year}{2015}
+      \field{pages}{C02001}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1088/1748-0221/10/02/C02001, 10.1088/1748-0221/10/12/C12001
+      \endverb
+      \verb{eprint}
+      \verb 1411.5338
+      \endverb
+    \endentry
     \entry{chollet2015keras}{misc}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -62,8 +368,8 @@
       \strng{authorbibnamehash}{c1670936fba733d1cb2d4c23bce95c6e}
       \strng{authornamehash}{c1670936fba733d1cb2d4c23bce95c6e}
       \strng{authorfullhash}{c1670936fba733d1cb2d4c23bce95c6e}
-      \field{sortinit}{8}
-      \field{sortinithash}{07edf88d4ea82509b9c4b4d13f41c452}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eid}{arXiv:1412.6980}
@@ -129,8 +435,8 @@
       \strng{authorbibnamehash}{28c80b82fce5cf9430bd3acb1557943f}
       \strng{authornamehash}{28c80b82fce5cf9430bd3acb1557943f}
       \strng{authorfullhash}{013d741ee9b7741be2bb987dd83f1374}
-      \field{sortinit}{9}
-      \field{sortinithash}{1dd72ab054147731c9d824b49aba0534}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eid}{arXiv:1406.2661}
@@ -171,8 +477,8 @@
       \strng{authorbibnamehash}{b1ef0c222753069509c0f0ba27920f08}
       \strng{authornamehash}{b1ef0c222753069509c0f0ba27920f08}
       \strng{authorfullhash}{b1ef0c222753069509c0f0ba27920f08}
-      \field{sortinit}{1}
-      \field{sortinithash}{2174f786c6195e7fe2ee1c229b416e29}
+      \field{sortinit}{2}
+      \field{sortinithash}{cbff857e587bcb4635511624d773949e}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{stat.ME}
@@ -184,6 +490,7 @@
       \endverb
     \endentry
   \enddatalist
+  \missing{leo}
 \endrefsection
 \endinput
 
