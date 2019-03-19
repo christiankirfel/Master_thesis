@@ -1,0 +1,25 @@
+\BOOKMARK [0][]{chapter.2}{The Standard Model of Particle Physics}{}% 2
+\BOOKMARK [1][]{section.2.1}{Interactions}{chapter.2}% 3
+\BOOKMARK [1][]{section.2.2}{Particles}{chapter.2}% 4
+\BOOKMARK [1][]{section.2.3}{Open questions}{chapter.2}% 5
+\BOOKMARK [0][]{chapter.3}{The LHC and the ATLAS detector}{}% 6
+\BOOKMARK [1][]{section.3.1}{Large Hadron Collider}{chapter.3}% 7
+\BOOKMARK [1][]{section.3.2}{The ATLAS detector}{chapter.3}% 8
+\BOOKMARK [2][]{subsection.3.2.1}{Tracking detectors}{section.3.2}% 9
+\BOOKMARK [2][]{subsection.3.2.2}{The ATLAS calorimeter system}{section.3.2}% 10
+\BOOKMARK [2][]{subsection.3.2.3}{The Muon spectrometer}{section.3.2}% 11
+\BOOKMARK [2][]{subsection.3.2.4}{The ATLAS coordinate system}{section.3.2}% 12
+\BOOKMARK [2][]{subsection.3.2.5}{Particle Detection in the ATLAS detector}{section.3.2}% 13
+\BOOKMARK [1][]{section.3.3}{Monte Carlo Simulation}{chapter.3}% 14
+\BOOKMARK [1][]{section.3.4}{tW event topology}{chapter.3}% 15
+\BOOKMARK [0][]{chapter.5}{Machine Learning}{}% 19
+\BOOKMARK [1][]{section.5.1}{The concept of machine learning}{chapter.5}% 20
+\BOOKMARK [1][]{section.5.2}{Neural Networks}{chapter.5}% 21
+\BOOKMARK [1][]{section.5.3}{Regularisation and Optimisation}{chapter.5}% 22
+\BOOKMARK [2][]{subsection.5.3.1}{Dropout}{section.5.3}% 23
+\BOOKMARK [2][]{subsection.5.3.2}{Batch normalization}{section.5.3}% 24
+\BOOKMARK [1][]{section.5.4}{Adversarial Neural Networks}{chapter.5}% 25
+\BOOKMARK [2][]{subsection.5.4.1}{The adversarial neural network}{section.5.4}% 26
+\BOOKMARK [0][]{chapter*.16}{Bibliography}{}% 37
+\BOOKMARK [0][]{chapter*.17}{List of Figures}{}% 39
+\BOOKMARK [0][]{chapter*.18}{List of Tables}{}% 40

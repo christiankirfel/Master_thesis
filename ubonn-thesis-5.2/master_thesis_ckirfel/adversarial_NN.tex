@@ -1,4 +1,16 @@
 \chapter{Adversarial Neural Network}
 \label{chp:ANN}
+
+In this chapter the setup and training of the Adversarial Neural Network is described. The Network did not achieve the desired results in its initial configuration.
+For this reason different configurations for the implementation of the network structure are presented in addition to the hyperparamter investigations.
+The first part of the chapter focuses on the initial run of the ANN using the base network presented in chapter~\ref{chp:simple_NN}. The results are investigated and the hyperparameters are adapted using an initial setup for the second network.
+The second network is investigated trying out a number of significantly differetn setups.
+
+Furthermore the problems with this setup are discussed and used to motivate a different approach adapting the network input which is then also investigated.
+Lasttly the effectiveness of the two models is discussed presenting possible future steps as the training and setup were strongly limited by the time constraint of this work.
 \section{Setup of the first network}
+
+The adversarial setup uses the classifier trained and tunes in chapter~\ref{chp:simple_NN} as a basis. For the classical setup this output is used as input for the adversarial network.
+To tune the hyperparameters of the second network the classifier was left unchanged. 
+
 \section{Setup of the second network}
