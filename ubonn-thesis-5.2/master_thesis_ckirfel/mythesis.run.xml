@@ -65,7 +65,7 @@
       <file>german.lbx</file>
     </requires>
   </internal>
-  <external package="biblatex" priority="5" active="1">
+  <external package="biblatex" priority="5" active="0">
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
@@ -88,6 +88,7 @@
       <file>ml_refs.bib</file>
       <file>atlas_refs.bib</file>
       <file>sm_refs.bib</file>
+      <file>montecarlo_refs.bib</file>
     </requires>
   </external>
 </requests>

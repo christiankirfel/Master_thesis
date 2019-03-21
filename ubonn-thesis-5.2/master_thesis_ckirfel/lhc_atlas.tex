@@ -7,15 +7,15 @@
 \label{lhc_atlas}
 
 
-For most researches in modern particle physics there are two main constraints. The first one arises from the statistical nature of decay and creation processes in particle physics. Many of the most interesting events occur extremely rarely and call for large amount of data, more precisely high luminosity, to achieve significant results. Secondly the energy scale of particle physics is enormously high to allow breaking the structure of particles below the nuclear scale. 
+For most researches in modern particle physics there are two main constraints. The first one arises from the statistical nature of decay and creation processes in particle physics. Many of the most interesting events occur extremely rarely and call for large amount of data, more precisely high luminosity, to achieve significant results. Secondly the energy scale of particle physics is enormously high and therefor also the energy needed to allow breaking the structure of particles below the nuclear scale. 
 
-This work was carried out using simulations based on the ATLAS~\cite{atlas} detector at the Large Hadron Collider (LHC)~\cite{lhc_machine} which offers both a record energy and luminosity. This chapter gives a summary of both machines and the knowledge necessary to understand the simulations used. First of a summary of the machines' parts and their technical details to are given, followed by a description of how the detector detects particles and how their properties are measured.
+This work was carried out using simulations based on the ATLAS~\cite{atlas} detector at the Large Hadron Collider (LHC)~\cite{lhc_machine} which offers both a record energy and luminosity. This chapter gives a summary of both machines and the knowledge necessary to understand the simulations used. First of a summary of the machines' parts and their technical details to are given, followed by a description of how the detector detects particles and how their properties are measured. Simulations of detector events are explained and the event selection for this work is covered.
 
 \section{Large Hadron Collider}
 
 The Large Hadron Collider located at the facilities of the European Organization of Nuclear Research (CERN) close to Geneva was built to extend the frontiers of modern particle physics by delivering high luminosities and reaching unprecedented high energies thereby providing the data for multiple particle physics experiments.
 
-The LHC is a circular particle detector with a circumference of \SI{26.7}{\kilo \metre} designed to  accelerate and collide two counter-rotating beams of protons. The protons are accelerated in bunches of up to \num{d11} protons at  energies up to \SI{7}{\tera \electronvolt} and a luminosity of \SI{d34}{\per\square\cm \per\s} achieving the record center-of-mass energy of up to \SI{14}{\tera \electronvolt}. The bunches are pre-accelerated by a number of accelerators before being inserted in the last, so called storage ring. An overview of the acceleration system is given in figure \ref{fig:accelerator_complex} and for more detailed information see the LHC design report. ~\cite{lhc_machine}. 
+The LHC is a circular particle detector with a circumference of \SI{26.7}{\kilo \metre} designed to  accelerate and collide two counter-rotating beams of protons. The protons are accelerated in bunches of up to \num{d11} protons at  energies up to \SI{6.5}{\tera \electronvolt} and a luminosity of \SI{d34}{\per\square\cm \per\s} achieving the record center-of-mass energy of up to \SI{13}{\tera \electronvolt}. The bunches are pre-accelerated by a number of accelerators before being inserted in the last, so called storage ring. An overview of the acceleration system is given in figure \ref{fig:accelerator_complex} and for more detailed information see the LHC design report. ~\cite{lhc_machine}. 
 The four interaction points, at which the beams are brought to collision, inhabit the main experiments of the LHC. Two of them are general purpose detectors, namely ATLAS~\cite{atlas} and CMS~\cite{cms}, the third is the LHCb~\cite{lhcb} focusing on \Pbottom physics and lastly ALICE~\cite{alice} used for investigating heavy ion collisions.Figure \ref{fig:LHC} shows a sketch of the LHC's location and the positions of the four main experiments.
 
 \begin{figure}[htbp]
@@ -47,7 +47,7 @@ The two calorimeters, being the electromagnetic calorimeter and the hadronic cal
 
 The Muon Spectrometer is a further tracking detector identifying particles crossing it as muons, as all other charged particles are usually stopped in the other components.
 
-In the following the concept of each detector component is briefly introduced~\cite{wermes} to then summarize how particles can be detected and distinguished.
+In the following the concept of each detector component is briefly introduced~\cite{wermes} to then summarize how particles can be detected and distinguished. The reconstruction of objects from the detector response is explained and an event selection for \tW candidates introduced.
 
 
 
@@ -63,11 +63,11 @@ In the following the concept of each detector component is briefly introduced~\c
 
 Tracking detectors are used to measure a charged particle's trajectory, momentum and charge value, of which two types are used in the ID of the ATLAS detector. The Pixel detector and the Semi Conductor Tracker (SCT) are silicon detectors and the Transition Radiation Tracker (TRT) is a straw-based tracking detector. For all detectors it holds true that they are surrounded by a magnetic field an cover a pseudorapidity range of $|\eta| < 2.5$. The magnetic field results in curved trajectories enabling an estimate of momentum and charge.\cite{leo}
 
-Pixel detectors are based on ionisation of charged particles in the semiconductor material. The induced charged is picked up by the detector's pixels providing a position information. To provide a 3-dimensional trajectory the pixel-chips are ordered in 4 layers around the beam pipe where the layer closest to the point of interaction called Insertable B-Layer (IBL) was added in 2015. It is located only \SI{3.3}{\centi \metre} from the beam pipe and allows to detect vertices very close to the interaction point mainly originating from \Pbottom quarks giving the layer its name.~\cite{pixel_run2}
+Pixel detectors are based on ionisation of charged particles in the semiconductor material. The induced charged is picked up by the detector's pixels providing a position information. To provide a 3-dimensional trajectory the pixel-chips are ordered in 4 layers around the beam pipe where the layer closest to the point of interaction, called Insertable B-Layer (IBL), was added in 2015. It is located only \SI{3.3}{\centi \metre} from the beam pipe and allows to detect vertices very close to the interaction point mainly originating from \Pbottom quarks giving the layer its name.~\cite{pixel_run2}
 
 The SCT as a silicon microstrip detector is the second silicon-based tracker immediately following on the pixel detector. It consists of modules of four silicon strip sensors organised in four barrel layers and eighteen planar endcap disks.
 
-The TRT is structured in straw tubes each tube being an individual drift chamber with a strong potential difference due to negatively charged walls. The tubes are filled by a gas mixture (xenon or argon) causing transversing charged particles to ionize and then by accelerated to the walls. A cascade is initiated and a measurable signal in the potential difference is measured. 
+The TRT is structured in straw tubes each tube being an individual drift chamber with a strong potential difference due to negatively charged walls. The tubes are filled by a gas mixture (\ce{Xe} or \ce{Ar}) causing transversing charged particles to ionize and then by accelerated to the walls. A cascade is initiated and a measurable signal in the potential difference is measured. 
 Between the tubes material is inserted resulting in transition radiation. This radiation has a cross section way higher for electrons thus adding particle information to the track information provided by the TRT.
 
 A particle being detected in a layer of the ID is called a hit. The record of hits gives an estimate on the particle's trajectory and can thereby also give information on the vertex the particle originates from. This vertex information is worth mentioning as for a an experiment with an event count as large as the ATLAS experiment's events interfere and information from so called pileup events can affect the event's information. As pileup originates from different events it can be separated from the event of interest by separating the vertices.
@@ -80,15 +80,17 @@ Calorimeters determine a transversing particle's energy by exploiting the format
 
 Electromagnetic calorimeters exploit the energy loss of electromagnetic interacting particles in matter. Mainly photons and electrons loose their energy based on pair production and Bremsstarhlung respectively. The energy loss initializes a cascade of particle decays called an electromagnetic shower.The decay stops when the shower particles do not hold sufficient energy for a decay anymore. The energy of the final state shower particles is picked up by the detector representing the initial particle's energy.
 The ATLAS ECAL is a sampling calorimeter, built of two alternating layers of absorber and detection layer. In the absorber the showers are induced to then be detected in the detection layers.
-shape, size, precision
+
 
 As the ECAL uses electromagnetic showers the hadronic calorimeter depends on hadronic shower evolution. Hadronic showers are initialzed due to ionisation or strong interaction with the material's nuclei. If the resulting particles still interact with the material a shower evolves.
+The hadronic tile calorimeter is made of alternating layers of steel absorbers and scintillators covering a pseudorapidity range of $|\eta| < 1.6$.
+The hadronic endcap calorimter (HEC) is liquid argon based and covers $1.4 < |\eta| < 3.1$
+Due to the larger size of hadronic showers the HCAL occupies more detector space than the ECAL.
 
-shape size precision
 
 \subsection{The Muon spectrometer}
 
-The second tracking detector of ATLAS is the muon spectrometer which is the outermost part of the detector. The task of the spectrometer is to detect charged particles transversing the calorimeter without being stopped or deploying their complete energy, and to do both collect trigger information and information on trajectory and momentum. Due to these two tasks the spectrometer is bifid with the first part being the trigger chamber covering a range of $|\eta|<2.4$, followed by the high-precision chamber with a range of $|\eta|<2.7$. The main detector's support feet cause a further gap at about $\phi = \ang{300}$ and $\phi = \ang{270}$.
+The second tracking detector of ATLAS is the muon spectrometer which is the outermost part of the detector. The task of the spectrometer is to detect charged particles traversing the calorimeter without being stopped or deploying their complete energy, and to do both collect trigger information and information on trajectory and momentum. Due to these two tasks the spectrometer is bifid with the first part being the trigger chamber covering a range of $|\eta|<2.4$, followed by the high-precision chamber with a range of $|\eta|<2.7$. The main detector's support feet cause a further gap at about $\phi = \ang{300}$ and $\phi = \ang{270}$.
 
 Normally the only charged particles left to be detected in the muon spectrometer are muons giving the component its name and allowing to provide good trigger information for researches interested in muons in the final event topology.
 
@@ -99,7 +101,7 @@ Normally the only charged particles left to be detected in the muon spectrometer
 
 The ATLAS coordinate system is a right-handed and right-angled coordinate system with the $z$-axis pointing along the LHC's beam pipe. The corresponding transverse plane is defined by the $x$-axis pointing towards the ring's centre while the $y$-axis points upwards. The origin of the system is defined by the nominal point of interaction. The polar angle $\theta$, is the angle between the $z$-axis and the $x$-$y$-plane and the azimuthal angle $\phi$ is the angle between the $x$- and the $y$-axis.
 
-Alternatively, as in this work, an event's topology is described by the azimuthal angle $\phi$, the pseudo-rapidity $\eta$, and the transverse momentum $pT$. The pseudo-rapidity replaces the polar angle and is defined as
+Alternatively, as in this work, an event's topology is described by the azimuthal angle $\phi$, the pseudo-rapidity $\eta$, and the transverse momentum \pT. The pseudo-rapidity replaces the polar angle and is defined as
 
 \begin{equation}
 \eta = \frac{1}{2} ln\left[ tan\left(\frac{\theta}{2}\right)\right].
@@ -108,7 +110,7 @@ Alternatively, as in this work, an event's topology is described by the azimutha
 The transverse momentum is defined by
 
 \begin{equation}
-pT = \sqrt{p_x^2 + p_y^2}
+\pT = \sqrt{p_x^2 + p_y^2}
 \end{equation}
 where $p_x$ and $p_y$ are the momenta along the corresponding axes. 
 
@@ -127,32 +129,90 @@ This section focuses on the detection and distinction of different particle type
 
 In order to reconstruct the particles in an event low level information is gathered using the direct detector output and then associated to the higher level particle information.
 
-The information from the ID is called a track and contains not only the trajectory but also how consistently a track hs hits in every layer. A track offers momentum and charge information and can be associated with a vertex and a possible energy deposition in a calorimeter. 
+The information from the ID is called a track and contains not only the trajectory but also how consistently a track holds hits in every layer. A track offers momentum and charge information and can be associated with a vertex and a possible energy deposition in a calorimeter. 
 The vertex reconstruction arising from the track information allows to define a primary vertex defined by the highest sum of squared transverse momenta while additional vertices are identified as pileup vertices.
 Secondary vertices originating from tracks connected to the original vertex can be collected to identify short-lived particles.
 
 The calorimeter data is summarised in clusters. Clusters are neighboring calorimeter cells with energy depositions significantly higher than the expected noise. A cluster is formed around a high energy deposition and can be associated to hadrons or jets or even to a corresponding track.
+
+In the following the higher order objects reconstructed from this basic information are introduced to then explain the decisions made in the event selection for the \tW channel.
+
+\begin{description}
+\item[Electrons] 
+are constructed from energy deposits in the EM associated with ID tracks.
+To improve the decision rule, a likelihood object quantity is constructed from the shape, the ratio of the calorimeter to tracker response, and a set of further variables suitable for a better discriminant. There are three settings for the likelihood object namely tight medium and loose depending on how restrictive the analysis is.
+Lastly an isolation quantity is defined based on cones around the track and the EM deposit to further decimate background and fake electrons.~\cite{ATLAS-CONF-2016-024}
+\item[Jets] are cones of particles originating from the common hadronisation of a quark or gluon. In the detector they are reconstructed using 3-dimensional topological clusters of calorimeter energy.~\cite{Aad:2016upy} In addition to this there is further information that can be associated to jets as an ID track or a vertex using a jet-vertex-tagger to minimize the impact of pile-up events and to associate to secondary vertices. For reconstruction the  antikt algorithm was used.~\cite{Cacciari:2008gp}
+\item[Muon] reconstruction uses MS hits matched with ID tracks. The choice can be further specified by applying a identification cuts based on MS/ID agreement and integrity of MS hit response. As for electrons isolation can be required.~\cite{Aad:2016jkr}
+\item[\Pbottom-jets] are jets originating from the decay of a \Pbottom quark and therefor a strong discriminant for events containing a \Ptop decay. The process of identifying a \Pbottom-jet is called \Pbottom-tagging and uses a multivariate discriminant. The topology of \Pbottom-jets is distinguishable from other jets due to amongst other secondary vertices, vertex alignment of a primary, a secondary \Pbottom vertex and a tertiary \Pcharm vertex, the decay length, and the characteristic energy scale.~\cite{Aad:2110203, ATL-PHYS-PUB-2016-012}
+\item[Missing transverse momentum]
+arises from momentum imbalance in the transverse plane. Momentum in the transverse plane should be preserved due to it being perpendicular to the beam axis and imbalance is an indicator for neutrins escaping the detector. It is calculated using two contributions, one being signals from fully reconstructed and calibrated particles and the other one is information of reconstructed charged particle tracks. ~\cite{Aaboud:2018tkc}  
+\end{description}
+
+In addition to this the ATLAS trigger system has to be mentioned. Although potentially deserving a chapter of its own for this work it is sufficient to just state  and briefly explain trigger information.
+
+Triggers are used to filter events before the actual event selection gets taken into account. Given the incredible luminosity of the LHC such a preselection is important to minimize the data actually processed by the more complicated analysis algorithms and selection schemes.
+The ATLAS trigger system consists of three trigger, namely the Level 1 (L1), Level 2 (L2), and the Event Filter (EF) where L2 and EF are generally referred to as the High-Level Trigger (HLT).
+
+The L1 is is completely hardware-based and its decision making process is motly based on information from the calorimeter and the muon trigger chambers. The decision step relies on high-\pT objects and their multiplicity in an event while also considering missing transverse momentum and the beam condition to provide a first and very broad event selection.
+
+The HLT is based on software and takes the L1 events as input. L2 defines so called regions of interest (ROI) as those regions in the angular plane where the trigger objects for L1 were detected and applies further trgger cuts to these objetcs.
+The EF fully analyzes the event based on the complete information available.
+
+This trigger information can be used for event selection making sure that certain final state objects are dominant in the topology and also to just apply a first, broad selection.
 
 
 
 \begin{figure}[htbp]
   \centering
   \includegraphics[scale=0.6]{figures_LHC/atlas-abstract}
-  \caption[Scheme of the ATLAS-detector's detection procedure]{Scheme of the ATLAS-detector showing examples of tyical particle detections. \cite{Pequenao:1095924}}
+  \caption[Scheme of the ATLAS-detector's detection procedure]{Scheme of the ATLAS-detector showing examples of typical particle detections. \cite{Pequenao:1095924}}
   \label{fig:atlas_sketch}
 \end{figure}
 
-\section{Monte Carlo Simulation}
 
-A Monte Carlo simulation is
+%A Monte Carlo simulation is a statistical simulation of a possibly deterministic system. 
 
-detector simulation runs on top of Monte Carlo simulation
+%detector simulation runs on top of Monte Carlo simulation
 
-Simulations are based on cross sections which can be calculated and measured in units of \textsc{barn} where \SI{1}{\barn} = \SI{1e-28}{\square \metre}
+%Simulations are based on cross sections which can be calculated and measured in units of \textsc{barn} where \SI{1}{\barn} = \SI{1e-28}{\square \metre}
 
-Simulations heavily rely on quantities than can both be calculated and measured in an experiment thus allowing for predictions and also for  controlling the theoretical values.
-In high energy particle physics there are mainly two such quantities cross section and branching ratio0
+%Simulations heavily rely on quantities than can both be calculated and measured in an experiment thus allowing for predictions and also for  controlling the theoretical values.
+%In high energy particle physics there are mainly two such quantities cross section and branching ratio0
 
-In collisions not only the valence quarks but also the sea quraks are relevant which can be explained by the valence quarks radiating gluons and quark antiquark pairs with no net flavour change.also explains the mass
+%In collisions not only the valence quarks but also the sea quarks are relevant which can be explained by the valence quarks radiating gluons and quark antiquark pairs with no net flavour change.also explains the mass
 
-\section{tW event topology}
+\section{tW event selection}
+
+The process separation of interest for this work is \tW \ttbar. Other backgrounds for the \tW channel are reduced by applying an event selection:
+
+
+\begin{itemize}
+\item A single electron or muon trigger
+\item Electrons: tightly identified, isolated, \ET > \SI{26}{\giga \electronvolt}
+\item Muons: tight isolation, \pT > \SI{26}{\giga \electronvolt}
+\item Opposite-charge lepton pair
+\item Leading lepton \pT > \SI{27}{\giga \electronvolt}
+\item Veto for a third lepton \pT > \SI{20}{\giga \electronvolt}
+\item A lepton must match the trigger
+\item At least one jet with: \pT > \SI{25}{\giga \electronvolt}, $|\eta|$ < \num{2.5}, tagged at \num{77} \% working point
+\end{itemize}
+
+After this preselection the events are categorized in regions based on the jet and \Pbottom-jet multiplicities. For this work the region with exactly two \Pbottom-tagged jets was used denoted as \texttt{2j2b}. This region has especially high impact from the NLO interference with a \Ptop\APtop final state.
+
+\section{Monte Carlo simulation}
+
+A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic but the problem and the amount of statistics requires this solution.
+
+Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. 
+For this work Monte Carlo is used to train neural networks on and provide the necesary truth information.
+To generate Monte Carlo one has to base it on quantities that are both possible to calculate but also to measure from experiments. This allows the experiment to be calibrated, the theory to be verified and the analysis to be tested on Monte Carlo.
+As systematics are based on models certain assumptions need to be made. If the model does not predict reality perfectly systematic uncertainties in the analysis arise from these assumptions. The mass of a particle for example is a quantity that has to be fixed to create a simulation. From the theory the mass can only be fixed within its uncertainty giving reason to several different values to base a simulation on.
+
+The  important quantities to base a simulation on for collider physics are the crosssection and the decay width. The crosssection states how high the probability for a certain interaction to occur is. The decay width states how high the probability for an initial state to decay into a certin final state is.
+
+To create Monte Carlo simulations for the ATLAS experiment to steps have to be taken. The first is to simulate the collision of two protons and the resulting events. The second task is to simulate how the detector sees these events taking his accuray and ineeficienceies into account. This tasks are performed by ATLAS Monte Carlo.
+
+The collision of two protons is not sufficiently described by just looking at the two valence quarks, namely two \Pup and one \Pdown quarks, instead one has to look at higher order states where a quark can radiate a gluon decaying into a quark antiquark pair. The multitude of these processes in a nucleon leads to a sea of quarks and gluons in addition to the three commonly states valence quraks determining nthe macroscopic properties of the proton.
+
+At the energy scale of the LHC the proton can be seen as a pool of these sea quarks rather than as a product of its three valance quarks. Parton density functions (PDFs) are defined to define the probabilty to find a parton of a certain flavour carrying a certain part of the proton's momentum and thereby describing the structure of the proton at high energy scales. The PDFs are determined in designated experiments and as they are not experiment dependent they can be used a a basis for a proton proton collision simualtion.

@@ -1,12 +1,22 @@
 % A few useful definitions.
 \newcommand{\mysim}{\sim\!}
 \newcommand{\mysimeq}{\simeq\!}
+\newcommand\eqdef{\mathrel{\overset{\makebox[0pt]{\mbox{\normalfont\tiny\sffamily def}}}{=}}}
+
 
 \newcommand{\pho}{\phantom{0}}
 \newcommand{\phplus}{\phantom{+}}
 
+\newcommand*{\stat}{\ensuremath{\text{stat.}}}
+\newcommand*{\sys}{\ensuremath{\text{sys.}}}
+\newcommand*{\PDF}{\ensuremath{\text{PDF}}}
+\newcommand*{\scale}{\ensuremath{\text{scale}}}
+
 % Better is to use the commath or physics packages.
 \newcommand{\dif}{\text{d}}
+
+%Command definitions for this thesis
+
 
 % HEP units - assuming you are using siunitx
 \ifthenelse{\texlive < 2011} {%
@@ -24,9 +34,23 @@
 
 % Particles - see also the hepnicenames/heppennames/hepparticles packages.
 \newcommand*{\KoS}{\ensuremath{K_{S}^{0}}\xspace}
+\newcommand*{\tW}{\ensuremath{\Pqt\PW}\xspace}
+\newcommand*{\ttbar}{\ensuremath{\Pqt\Paqt}\xspace}
+\newcommand*{\tchan}{$t$-channel\xspace}
+\newcommand*{\schan}{$s$-channel\xspace}
+\newcommand*{\tZ}{\ensuremath{\Pqt\PZ}\xspace}
+\newcommand*{\tZq}{\ensuremath{\Pqt\PZ\Pq}\xspace}
+\newcommand*{\PWH}{\ensuremath{\PW_\mathrm{H}}\xspace}
+\newcommand*{\PWL}{\ensuremath{\PW_\mathrm{L}}\xspace}
+\newcommand*{\mWH}{\ensuremath{m(\PWH)}\xspace}
+\newcommand*{\Wb}{\ensuremath{\PW\Pqb}\xspace}
 
 % Kinematics
 \newcommand*{\pTmiss}{\ensuremath{p_{\text{T}}^{\text{miss}}}\xspace}
+\newcommand*{\pT}{\ensuremath{p_{\text{T}}}\xspace}
+\newcommand*{\ET}{\ensuremath{E_{\text{T}}}\xspace}
+
+
 
 % If you use the siunitx package include any decimal number in \SI or \num
 % e.g. \num{2.3} \SI{2.3E4}{\GeV}. The decimal point will be replaced
