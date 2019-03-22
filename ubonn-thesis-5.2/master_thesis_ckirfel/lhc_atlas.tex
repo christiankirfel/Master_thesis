@@ -204,15 +204,63 @@ After this preselection the events are categorized in regions based on the jet a
 
 A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic but the problem and the amount of statistics requires this solution.
 
-Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. 
-For this work Monte Carlo is used to train neural networks on and provide the necesary truth information.
-To generate Monte Carlo one has to base it on quantities that are both possible to calculate but also to measure from experiments. This allows the experiment to be calibrated, the theory to be verified and the analysis to be tested on Monte Carlo.
+Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. As for for this work the classifying tools and event selection rules are tested and tuned based on simulations to achieve a better understanding of what efficiencies are to be expected in a data analysis. This provides the truth information to an event that is needed for supervised learning, see section x, and cannot be provided by data.
+
+A simulation has to be based on quantities that can be not only calculated from theoretical models but also measured from the experiment because an interplay between simulation and actual data is needed to adjust the simulation to the experimental circumstances. In collider physics predictions are mainly based on  the crosssection of an interaction stating how high the probability for certain interaction to occur is. In addition to that the decay width of a particle is needed to describe how particles generated in an interaction behave in the detector system.
+
+A proton proton collision is modeled by describing the protons as a sea of partons, the gluons and quarks their momentum is carried by, and then calculating the crosssections for these partons to interact individually. The technique of seeing the collision as an interaction of two individual partons while decoupling these interactions from the parton interactions in the individual protons is called factorization.
+For a parton carrying the fraction $x$ of the proton's momentum for a center-of-mass energy of $\hat{s}$  the crosssection $\sigma(p_1 p_2 \rightarrow X)$ to create a final state $X$ can be described as:
+
+
+\noindent\begin{minipage}{.5\linewidth}
+\begin{equation}
+	x_i = \frac{p_{parton,i}}{p_{proton}} 
+\end{equation}
+\end{minipage}%
+\begin{minipage}{.5\linewidth}
+\begin{equation}
+	\hat{s} = x_1 x_2 s
+\end{equation}
+\end{minipage}
+
+\begin{align}
+	\sigma ( p_1 p_2 \rightarrow X ) = \sum_{i,j = \Pquark, \APquark, \Pgluon} \int dx_i dx_j f_{i/p_1} ( x_i, \mu^2 ) f_{j/p_2} ( x_j, \mu^2 ) \cdot \hat{\sigma}_{ij} ( ij \rightarrow X; \hat{s}, \mu^2 )
+\end{align}
+
+There are two quantities in this equation not yet explained.
+The first on is the parton density function (PDF) of the proton denoted as $f_{i/p_m} ( x_i, \mu^2 )$. This is a function describing the probability that a parton with momentum fraction $x_i$ in the proton $k$ takes part in the hard scattering. The PDF is independent of the collision and has to be gained from experiments rather than through calculations.
+
+The second quantitity $\mu$ is the so called factorization scale. It describes to which degree the inteactions of the partons in the proton can be neclected. It is an arbitrary scale determining the precision of the simulation to some degree.
+
+\subsection{ATLAS simulation}
+
+The MC simulation for the ATLAS detector is generated in two steps.
+
+In the first step the actual collision is simulated defining the particles in the final state. The underlying algorithm is called Monte Carlo event generator.
+
+Secondly the response of the detector to these particles is simulated by the detector simulation allowing objects to be reconstructed from the event like from actual data gaining a comparison on every level of reconstruction.
+
+Furthermore a set of different options and generators can be chosen for the simulation. A few examples would be how a parton shower is simulated or to which degree multi parton interaction is taken into account.
+
+\subsection{Systematic uncertainties in Monte Carlo simulations}
+
+Usually the simulations use the leading order cross-section.
+When next-to-leading order diagrams become relevant the simulation has to be adapted. This results in different samples for different systematic uncertainties.
+
+In this work the system using the DR scheme is used as a nominal sample and a DS simulation is used as systematic sample
+
+\begin{align}
+\Aamp \Samp \Iamp \Damp \Atw \Att \ADR \ADS
+\end{align}
+
+
+%---------------------------------------------------------------------
+
 As systematics are based on models certain assumptions need to be made. If the model does not predict reality perfectly systematic uncertainties in the analysis arise from these assumptions. The mass of a particle for example is a quantity that has to be fixed to create a simulation. From the theory the mass can only be fixed within its uncertainty giving reason to several different values to base a simulation on.
 
-The  important quantities to base a simulation on for collider physics are the crosssection and the decay width. The crosssection states how high the probability for a certain interaction to occur is. The decay width states how high the probability for an initial state to decay into a certin final state is.
-
-To create Monte Carlo simulations for the ATLAS experiment to steps have to be taken. The first is to simulate the collision of two protons and the resulting events. The second task is to simulate how the detector sees these events taking his accuray and ineeficienceies into account. This tasks are performed by ATLAS Monte Carlo.
 
 The collision of two protons is not sufficiently described by just looking at the two valence quarks, namely two \Pup and one \Pdown quarks, instead one has to look at higher order states where a quark can radiate a gluon decaying into a quark antiquark pair. The multitude of these processes in a nucleon leads to a sea of quarks and gluons in addition to the three commonly states valence quraks determining nthe macroscopic properties of the proton.
 
 At the energy scale of the LHC the proton can be seen as a pool of these sea quarks rather than as a product of its three valance quarks. Parton density functions (PDFs) are defined to define the probabilty to find a parton of a certain flavour carrying a certain part of the proton's momentum and thereby describing the structure of the proton at high energy scales. The PDFs are determined in designated experiments and as they are not experiment dependent they can be used a a basis for a proton proton collision simualtion.
+
+\missingfigure{DR/DS}

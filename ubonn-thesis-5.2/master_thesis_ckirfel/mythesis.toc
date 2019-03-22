@@ -6,47 +6,49 @@
 \babel@toc {UKenglish}{}
 \babel@toc {ngerman}{}
 \babel@toc {UKenglish}{}
-\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}The Standard Model of Particle Physics}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}Interactions}{5}{section.2.1}
-\contentsline {section}{\numberline {2.2}Particles}{5}{section.2.2}
-\contentsline {section}{\numberline {2.3}Top physics}{5}{section.2.3}
-\contentsline {chapter}{\numberline {3}The LHC and the ATLAS detector}{7}{chapter.3}
-\contentsline {section}{\numberline {3.1}Large Hadron Collider}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}The ATLAS detector}{8}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Tracking detectors}{9}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}The ATLAS calorimeter system}{10}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}The Muon spectrometer}{11}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}The ATLAS coordinate system}{11}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Particle Detection in the ATLAS detector}{12}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}tW event selection}{14}{section.3.3}
-\contentsline {section}{\numberline {3.4}Monte Carlo simulation}{15}{section.3.4}
-\contentsline {chapter}{\numberline {4}The tW Channel}{17}{chapter.4}
-\contentsline {chapter}{\numberline {5}Machine Learning}{19}{chapter.5}
-\contentsline {section}{\numberline {5.1}The concept of machine learning}{19}{section.5.1}
-\contentsline {section}{\numberline {5.2}Neural Networks}{20}{section.5.2}
-\contentsline {subsubsection}{\nonumberline The input layer}{21}{section*.9}
-\contentsline {subsubsection}{\nonumberline Decision making process}{21}{section*.10}
-\contentsline {subsubsection}{\nonumberline Optimizers - Choosing the next step}{23}{section*.12}
-\contentsline {subsubsection}{\nonumberline Adaptive optimisers}{25}{section*.13}
-\contentsline {section}{\numberline {5.3}Regularisation and Optimisation}{26}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Dropout}{26}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Batch normalization}{26}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Adversarial Neural Networks}{27}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}The adversarial neural network}{28}{subsection.5.4.1}
-\contentsline {chapter}{\numberline {6}Hyperparameter optimisation of a classifying neural network}{31}{chapter.6}
-\contentsline {section}{\numberline {6.1}The input variables}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}The network architecture}{31}{section.6.2}
-\contentsline {section}{\numberline {6.3}Setup of the optimisation}{32}{section.6.3}
-\contentsline {section}{\numberline {6.4}Regularisation}{33}{section.6.4}
-\contentsline {chapter}{\numberline {7}Adversarial Neural Network}{35}{chapter.7}
-\contentsline {section}{\numberline {7.1}Setup of the first network}{35}{section.7.1}
-\contentsline {section}{\numberline {7.2}Setup of the second network}{35}{section.7.2}
-\contentsline {chapter}{\numberline {8}Conclusions}{37}{chapter.8}
-\contentsline {chapter}{\numberline {9}Machine Learning Tools}{39}{chapter.9}
-\contentsline {section}{\numberline {9.1}Keras}{39}{section.9.1}
-\contentsline {section}{\numberline {9.2}Tensorflow}{39}{section.9.2}
-\contentsline {chapter}{\nonumberline Bibliography}{41}{chapter*.18}
-\contentsline {chapter}{\numberline {A}Useful information}{43}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{45}{chapter*.19}
-\contentsline {chapter}{\nonumberline List of Tables}{47}{chapter*.20}
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\contentsline {chapter}{\numberline {2}The Standard Model of Particle Physics}{5}{chapter.2}% 
+\contentsline {section}{\numberline {2.1}Interactions}{5}{section.2.1}% 
+\contentsline {section}{\numberline {2.2}Particles}{5}{section.2.2}% 
+\contentsline {section}{\numberline {2.3}Top physics}{5}{section.2.3}% 
+\contentsline {chapter}{\numberline {3}The LHC and the ATLAS detector}{7}{chapter.3}% 
+\contentsline {section}{\numberline {3.1}Large Hadron Collider}{7}{section.3.1}% 
+\contentsline {section}{\numberline {3.2}The ATLAS detector}{8}{section.3.2}% 
+\contentsline {subsection}{\numberline {3.2.1}Tracking detectors}{9}{subsection.3.2.1}% 
+\contentsline {subsection}{\numberline {3.2.2}The ATLAS calorimeter system}{10}{subsection.3.2.2}% 
+\contentsline {subsection}{\numberline {3.2.3}The Muon spectrometer}{11}{subsection.3.2.3}% 
+\contentsline {subsection}{\numberline {3.2.4}The ATLAS coordinate system}{11}{subsection.3.2.4}% 
+\contentsline {subsection}{\numberline {3.2.5}Particle Detection in the ATLAS detector}{12}{subsection.3.2.5}% 
+\contentsline {section}{\numberline {3.3}tW event selection}{14}{section.3.3}% 
+\contentsline {section}{\numberline {3.4}Monte Carlo simulation}{15}{section.3.4}% 
+\contentsline {subsection}{\numberline {3.4.1}ATLAS simulation}{16}{subsection.3.4.1}% 
+\contentsline {subsection}{\numberline {3.4.2}Systematic uncertainties in Monte Carlo simulations}{16}{subsection.3.4.2}% 
+\contentsline {chapter}{\numberline {4}The tW Channel}{19}{chapter.4}% 
+\contentsline {chapter}{\numberline {5}Machine Learning}{21}{chapter.5}% 
+\contentsline {section}{\numberline {5.1}The concept of machine learning}{21}{section.5.1}% 
+\contentsline {section}{\numberline {5.2}Neural Networks}{22}{section.5.2}% 
+\contentsline {subsubsection}{\nonumberline The input layer}{23}{section*.9}% 
+\contentsline {subsubsection}{\nonumberline Decision making process}{23}{section*.10}% 
+\contentsline {subsubsection}{\nonumberline Optimizers - Choosing the next step}{25}{section*.12}% 
+\contentsline {subsubsection}{\nonumberline Adaptive optimisers}{27}{section*.13}% 
+\contentsline {section}{\numberline {5.3}Regularisation and Optimisation}{28}{section.5.3}% 
+\contentsline {subsection}{\numberline {5.3.1}Dropout}{28}{subsection.5.3.1}% 
+\contentsline {subsection}{\numberline {5.3.2}Batch normalization}{28}{subsection.5.3.2}% 
+\contentsline {section}{\numberline {5.4}Adversarial Neural Networks}{29}{section.5.4}% 
+\contentsline {subsection}{\numberline {5.4.1}The adversarial neural network}{30}{subsection.5.4.1}% 
+\contentsline {chapter}{\numberline {6}Hyperparameter optimisation of a classifying neural network}{33}{chapter.6}% 
+\contentsline {section}{\numberline {6.1}The input variables}{33}{section.6.1}% 
+\contentsline {section}{\numberline {6.2}The network architecture}{33}{section.6.2}% 
+\contentsline {section}{\numberline {6.3}Setup of the optimisation}{34}{section.6.3}% 
+\contentsline {section}{\numberline {6.4}Regularisation}{35}{section.6.4}% 
+\contentsline {chapter}{\numberline {7}Adversarial Neural Network}{37}{chapter.7}% 
+\contentsline {section}{\numberline {7.1}Setup of the first network}{37}{section.7.1}% 
+\contentsline {section}{\numberline {7.2}Setup of the second network}{37}{section.7.2}% 
+\contentsline {chapter}{\numberline {8}Conclusions}{39}{chapter.8}% 
+\contentsline {chapter}{\numberline {9}Machine Learning Tools}{41}{chapter.9}% 
+\contentsline {section}{\numberline {9.1}Keras}{41}{section.9.1}% 
+\contentsline {section}{\numberline {9.2}Tensorflow}{41}{section.9.2}% 
+\contentsline {chapter}{\nonumberline Bibliography}{43}{chapter*.18}% 
+\contentsline {chapter}{\numberline {A}Useful information}{45}{appendix.A}% 
+\contentsline {chapter}{\nonumberline List of Figures}{47}{chapter*.19}% 
+\contentsline {chapter}{\nonumberline List of Tables}{49}{chapter*.20}% 
