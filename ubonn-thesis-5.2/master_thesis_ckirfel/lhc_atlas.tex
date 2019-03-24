@@ -142,8 +142,8 @@ In the following the higher order objects reconstructed from this basic informat
 are constructed from energy deposits in the EM associated with ID tracks.
 To improve the decision rule, a likelihood object quantity is constructed from the shape, the ratio of the calorimeter to tracker response, and a set of further variables suitable for a better discriminant. There are three settings for the likelihood object namely tight medium and loose depending on how restrictive the analysis is.
 Lastly an isolation quantity is defined based on cones around the track and the EM deposit to further decimate background and fake electrons.~\cite{ATLAS-CONF-2016-024}
-\item[Jets] are cones of particles originating from the common hadronisation of a quark or gluon. In the detector they are reconstructed using 3-dimensional topological clusters of calorimeter energy.~\cite{Aad:2016upy} In addition to this there is further information that can be associated to jets as an ID track or a vertex using a jet-vertex-tagger to minimize the impact of pile-up events and to associate to secondary vertices. For reconstruction the  antikt algorithm was used.~\cite{Cacciari:2008gp}
-\item[Muon] reconstruction uses MS hits matched with ID tracks. The choice can be further specified by applying a identification cuts based on MS/ID agreement and integrity of MS hit response. As for electrons isolation can be required.~\cite{Aad:2016jkr}
+\item[Jets] are cones of particles originating from the common hadronisation of a quark or gluon. In the detector they are reconstructed using 3-dimensional topological clusters of calorimeter energy.~\cite{Aad:2016upy} In addition to this there is further information that can be associated to jets, {i.e.} an ID track or a vertex using a jet-vertex-tagger to minimize the impact of pile-up events and to associate to secondary vertices. For reconstruction the \antikt algorithm was used.~\cite{Cacciari:2008gp}
+\item[Muon] reconstruction uses MS hits matched with ID tracks. The choice can be further specified by applying an identification cut based on MS/ID agreement and integrity of MS hit response. As for electrons isolation can be required.~\cite{Aad:2016jkr}
 \item[\Pbottom-jets] are jets originating from the decay of a \Pbottom quark and therefor a strong discriminant for events containing a \Ptop decay. The process of identifying a \Pbottom-jet is called \Pbottom-tagging and uses a multivariate discriminant. The topology of \Pbottom-jets is distinguishable from other jets due to amongst other secondary vertices, vertex alignment of a primary, a secondary \Pbottom vertex and a tertiary \Pcharm vertex, the decay length, and the characteristic energy scale.~\cite{Aad:2110203, ATL-PHYS-PUB-2016-012}
 \item[Missing transverse momentum]
 arises from momentum imbalance in the transverse plane. Momentum in the transverse plane should be preserved due to it being perpendicular to the beam axis and imbalance is an indicator for neutrins escaping the detector. It is calculated using two contributions, one being signals from fully reconstructed and calibrated particles and the other one is information of reconstructed charged particle tracks. ~\cite{Aaboud:2018tkc}  
@@ -152,7 +152,7 @@ arises from momentum imbalance in the transverse plane. Momentum in the transver
 In addition to this the ATLAS trigger system has to be mentioned. Although potentially deserving a chapter of its own for this work it is sufficient to just state  and briefly explain trigger information.
 
 Triggers are used to filter events before the actual event selection gets taken into account. Given the incredible luminosity of the LHC such a preselection is important to minimize the data actually processed by the more complicated analysis algorithms and selection schemes.
-The ATLAS trigger system consists of three trigger, namely the Level 1 (L1), Level 2 (L2), and the Event Filter (EF) where L2 and EF are generally referred to as the High-Level Trigger (HLT).
+The ATLAS trigger system consists of three triggers, namely the Level 1 (L1), Level 2 (L2), and the Event Filter (EF) where L2 and EF are generally referred to as the High-Level Trigger (HLT).
 
 The L1 is is completely hardware-based and its decision making process is motly based on information from the calorimeter and the muon trigger chambers. The decision step relies on high-\pT objects and their multiplicity in an event while also considering missing transverse momentum and the beam condition to provide a first and very broad event selection.
 
@@ -202,11 +202,11 @@ After this preselection the events are categorized in regions based on the jet a
 
 \section{Monte Carlo simulation}
 
-A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic but the problem and the amount of statistics requires this solution.
+A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic but the problem and the amount of statistics suggest a stochastic approach.
 
-Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. As for for this work the classifying tools and event selection rules are tested and tuned based on simulations to achieve a better understanding of what efficiencies are to be expected in a data analysis. This provides the truth information to an event that is needed for supervised learning, see section x, and cannot be provided by data.
+Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. As for for this work the classifying tools and event selection rules are tested and tuned based on simulations to achieve a better understanding of what efficiencies are to be expected in a data analysis. This provides the truth information to an event that is needed for supervised learning, see section \ref{chp:ml}, and cannot be provided by data.
 
-A simulation has to be based on quantities that can be not only calculated from theoretical models but also measured from the experiment because an interplay between simulation and actual data is needed to adjust the simulation to the experimental circumstances. In collider physics predictions are mainly based on  the crosssection of an interaction stating how high the probability for certain interaction to occur is. In addition to that the decay width of a particle is needed to describe how particles generated in an interaction behave in the detector system.
+A simulation has to be based on quantities that can not only be calculated from theoretical models but also measured from the experiment because an interplay between simulation and actual data is needed to adjust the simulation to the experimental circumstances. In collider physics predictions are mainly based on  the crosssection of an interaction stating how high the probability for certain interaction to occur is. In addition to that the decay width of a particle is needed to describe how particles generated in an interaction behave in the detector system.
 
 A proton proton collision is modeled by describing the protons as a sea of partons, the gluons and quarks their momentum is carried by, and then calculating the crosssections for these partons to interact individually. The technique of seeing the collision as an interaction of two individual partons while decoupling these interactions from the parton interactions in the individual protons is called factorization.
 For a parton carrying the fraction $x$ of the proton's momentum for a center-of-mass energy of $\hat{s}$  the crosssection $\sigma(p_1 p_2 \rightarrow X)$ to create a final state $X$ can be described as:
@@ -234,7 +234,7 @@ The second quantitity $\mu$ is the so called factorization scale. It describes t
 
 \subsection{ATLAS simulation}
 
-The MC simulation for the ATLAS detector is generated in two steps.
+The MC simulation for the ATLAS detector is generated in two steps.~\cite{atlasmontecarlo}
 
 In the first step the actual collision is simulated defining the particles in the final state. The underlying algorithm is called Monte Carlo event generator.
 
@@ -244,23 +244,44 @@ Furthermore a set of different options and generators can be chosen for the simu
 
 \subsection{Systematic uncertainties in Monte Carlo simulations}
 
-Usually the simulations use the leading order cross-section.
-When next-to-leading order diagrams become relevant the simulation has to be adapted. This results in different samples for different systematic uncertainties.
+Simulations as described earlier have to be based on certain assumptions about the input parameters especially in those cases where the theory does not offer a precise result. This results in systematic uncertainties arising from the simulations and it cannot be clear how good the actual data is represented by the assumptions made.
+In those cases different Monte Carlo samples are produced each representing a different assumption about the initial parameters showing first of all how the data should behave with these scaled paramters and allowing to test whether the systematic or the original sample fits better to the data. 
+These samples of Monte Carlo will just be referred to as systematics in this work.
 
-In this work the system using the DR scheme is used as a nominal sample and a DS simulation is used as systematic sample
+Usually the simulations use the leading order cross-section.
+When next-to-leading order diagrams become relevant the simulation has to be adapted resulting in different samples for different orders.
+This work focuses on the \tW and \ttbar events interfering at NLO as described in \ref{chp:tw}
+The total NLO amplitude is the sum of the of singly resonant diagrams and all doubly resonant diagrams:
 
 \begin{align}
-\Aamp \Samp \Iamp \Damp \Atw \Att \ADR \ADS
+\Aamp = \Atw + \Att
 \end{align}
 
+Calculating the cross-section requires the square of this amplitude:
+
+\begin{align}
+|\Aamp|^2 &= |\Atw|^2 + 2 \mathcal{R} \{ \Atw \Att^{\ast} \} + |\Att|^2 \\
+&\equiv \Samp + \Iamp + \Damp
+\end{align}
+
+As a nominal sample in this work the Diagram Removal approach, denoted as DR, is used. It fully removes the \Att amplitude and thus both the pure \ttbar contribution as well as the interference term vanish.
+
+\begin{align}
+| \ADR |^2 = \Samp
+\end{align}
+
+Alternatively the Diagram Subtraction or DS can be used which is in this work represented by the systematics sample. It introduces a gauge invariant term that cancels the \ttbar contribution and in a simplified way can be written as
+
+\begin{align}
+| \ADS |^2 &= \Samp + \Iamp + \Damp - \widetilde{\Damp}\\
+&\approx \Samp + \Iamp.
+\end{align}
+
+The nominal samples were produced using a full ATLAS detector simulation implemented in \GEANTfour and the systamtic samples were mostly simulated using \ATLFASTtwo.~\cite{geant, atlfast}
+
+The events were generated by \POWHEG\PYTHIA8.~\cite{pythia}
 
 %---------------------------------------------------------------------
 
-As systematics are based on models certain assumptions need to be made. If the model does not predict reality perfectly systematic uncertainties in the analysis arise from these assumptions. The mass of a particle for example is a quantity that has to be fixed to create a simulation. From the theory the mass can only be fixed within its uncertainty giving reason to several different values to base a simulation on.
-
-
-The collision of two protons is not sufficiently described by just looking at the two valence quarks, namely two \Pup and one \Pdown quarks, instead one has to look at higher order states where a quark can radiate a gluon decaying into a quark antiquark pair. The multitude of these processes in a nucleon leads to a sea of quarks and gluons in addition to the three commonly states valence quraks determining nthe macroscopic properties of the proton.
-
-At the energy scale of the LHC the proton can be seen as a pool of these sea quarks rather than as a product of its three valance quarks. Parton density functions (PDFs) are defined to define the probabilty to find a parton of a certain flavour carrying a certain part of the proton's momentum and thereby describing the structure of the proton at high energy scales. The PDFs are determined in designated experiments and as they are not experiment dependent they can be used a a basis for a proton proton collision simualtion.
 
 \missingfigure{DR/DS}

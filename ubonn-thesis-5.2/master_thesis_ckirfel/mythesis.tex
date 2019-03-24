@@ -36,6 +36,7 @@
 \usepackage{siunitx}
 \usepackage{hepnicenames}
 \usepackage{hyperref}
+\usepackage{subcaption}
 
 %------------------------------------------------------------------------------
 % Instead of colouring  links, cites, table of contents etc.
@@ -67,31 +68,32 @@
 \addbibresource{atlas_refs.bib}
 \addbibresource{sm_refs.bib}
 \addbibresource{montecarlo_refs.bib}
+\addbibresource{intro_refs.bib}
 %\addbibresource{../refs/standard_refs-biber.bib}
 
 %------------------------------------------------------------------------------
 % The following definitions are used to produce the title pages
 % needed at various stages
-\newcommand{\thesistitle}{Title of the Thesis}
-\newcommand*{\thesisauthor}{Author's name}
-\newcommand*{\thesistown}{Place of birth}
+\newcommand{\thesistitle}{Hyperparameter Optimisation of an Adversarial Neural Network in the \tW channel at  \SI{13}{\tera \electronvolt} with ATLAS}
+\newcommand*{\thesisauthor}{Christian Kirfel}
+\newcommand*{\thesistown}{Mechernich}
 \renewcommand*{\InstituteName}{\PI}
 \renewcommand*{\inInstitute}{\inPI}
 \renewcommand*{\InstituteAddress}{\PIaddress}
 % Adjust \thesisreferee...text depending on male/female referee
 \newcommand*{\thesisrefereeonetext}{1.\ Gutachter}
-\newcommand*{\thesisrefereeone}{Prof.\ Dr.\ John Smith}
-\newcommand*{\thesisrefereetwotext}{2.\ Gutachterin}
-\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Anne Jones}
+\newcommand*{\thesisrefereeone}{Prof.\ Dr.\ Ian {C.} Brock}
+\newcommand*{\thesisrefereetwotext}{2.\ Gutachter}
+\newcommand*{\thesisrefereetwo}{Prof.\ Dr.\ Klaus Desch}
 % Date when thesis was submitted (Master/Diplom)
 % Year or Month, Year when thesis was submitted (PhD)
-\newcommand*{\thesissubmit}{XX.YY.2016}
+\newcommand*{\thesissubmit}{05.04.2019}
 % \newcommand*{\thesissubmit}{Month 2016}
 % Date of thesis examination (PhD)
 \newcommand*{\thesispromotion}{XX.YY.2016}
 % Month and year of the final printed version of the thesis
-\newcommand*{\thesismonth}{MMM}
-\newcommand*{\thesisyear}{2016}
+\newcommand*{\thesismonth}{April}
+\newcommand*{\thesisyear}{2019}
 \newcommand*{\thesisnumber}{BONN-IR-2016-XXX}
 
 
@@ -110,7 +112,7 @@
 % A simple \include command just inserts a \clearpage before and after the file
 % Note that \includeonly can be quite picky! Do not forget to put a
 % comma after the filename, otherwise it will simply be ignored!
-%\includeonly{%
+\includeonly{%
 %	lhc_atlas,
 %	standard_model,
 %	machine_learning,
@@ -118,7 +120,8 @@
 %   thesis_intro,
 %   thesis_appendix,
 %   thesis_acknowledge
-% }
+	tW_channel
+}
 
 %------------------------------------------------------------------------------
 % Give a list of directories where figures can be found. Do not leave
@@ -217,7 +220,6 @@
 \include{sigmoid}
 \include{adversarial_NN}
 \include{Conclusions}
-\include{Keras}
 % Uncomment the following command to get references per chapter.
 % Put it inside the file or change \include to \input if you do not want the references
 % on a separate page

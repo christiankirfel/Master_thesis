@@ -1997,55 +1997,9 @@
     <bcf:datasource type="file" datatype="bibtex">atlas_refs.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex">sm_refs.bib</bcf:datasource>
     <bcf:datasource type="file" datatype="bibtex">montecarlo_refs.bib</bcf:datasource>
+    <bcf:datasource type="file" datatype="bibtex">intro_refs.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">standard_model</bcf:citekey>
-    <bcf:citekey order="2">PDG</bcf:citekey>
-    <bcf:citekey order="3">standard_model</bcf:citekey>
-    <bcf:citekey order="4">PDG</bcf:citekey>
-    <bcf:citekey order="5">thomson</bcf:citekey>
-    <bcf:citekey order="5">griffiths</bcf:citekey>
-    <bcf:citekey order="6">atlas</bcf:citekey>
-    <bcf:citekey order="7">lhc_machine</bcf:citekey>
-    <bcf:citekey order="8">lhc_machine</bcf:citekey>
-    <bcf:citekey order="9">atlas</bcf:citekey>
-    <bcf:citekey order="10">cms</bcf:citekey>
-    <bcf:citekey order="11">lhcb</bcf:citekey>
-    <bcf:citekey order="12">alice</bcf:citekey>
-    <bcf:citekey order="13">Mobs:2636343</bcf:citekey>
-    <bcf:citekey order="14">Mobs:2636343</bcf:citekey>
-    <bcf:citekey order="15">Jean-Luc:841555</bcf:citekey>
-    <bcf:citekey order="16">Jean-Luc:841555</bcf:citekey>
-    <bcf:citekey order="17">wermes</bcf:citekey>
-    <bcf:citekey order="18">Pequenao:1095924</bcf:citekey>
-    <bcf:citekey order="19">Pequenao:1095924</bcf:citekey>
-    <bcf:citekey order="20">leo</bcf:citekey>
-    <bcf:citekey order="21">pixel_run2</bcf:citekey>
-    <bcf:citekey order="22">wermes</bcf:citekey>
-    <bcf:citekey order="23">ATLAS-CONF-2016-024</bcf:citekey>
-    <bcf:citekey order="24">Aad:2016upy</bcf:citekey>
-    <bcf:citekey order="25">Cacciari:2008gp</bcf:citekey>
-    <bcf:citekey order="26">Aad:2016jkr</bcf:citekey>
-    <bcf:citekey order="27">Aad:2110203</bcf:citekey>
-    <bcf:citekey order="27">ATL-PHYS-PUB-2016-012</bcf:citekey>
-    <bcf:citekey order="28">Aaboud:2018tkc</bcf:citekey>
-    <bcf:citekey order="29">Pequenao:1095924</bcf:citekey>
-    <bcf:citekey order="30">Pequenao:1095924</bcf:citekey>
-    <bcf:citekey order="31">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="32">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="33">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="34">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="35">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="36">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="37">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="38">2014arXiv1412.6980K</bcf:citekey>
-    <bcf:citekey order="39">2014arXiv1406.2661G</bcf:citekey>
-    <bcf:citekey order="40">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="41">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="42">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="43">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="44">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="45">tensorflow2015-whitepaper</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">
