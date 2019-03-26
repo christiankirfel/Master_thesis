@@ -23,13 +23,12 @@ The structure was achieved within reason and the computational power constraints
 
 The artificial neural networks in this thesis were creates using the Keras python library.~\cite{chollet2015keras} 
 Keras is an application programming interface written in python and able to run on Tensorflow, CNTK or Theano. It was developed by google and summarizes the necessary calculations for running a deep neural network training in fast and easy modules.
-The backend is the package responsible for the underlying vector calculations needed for the network setup and training. In this work the tensorflow packag was used for backend.~\cite{chollet2015keras}
+The backend is the package responsible for the underlying vector calculations needed for the network setup and training. In this work the tensorflow packag was used for backend.~\cite{tensorflow2015-whitepaper}
 
 \subsection{Final setup of the network}
 
 This subsection introduces the final setup of the classifying network
 
-\cite{tensorflow2015-whitepaper}
 
 \section{The input variables}
 
@@ -57,7 +56,13 @@ In this work a testseries was performed, training a network for a wide range com
 
 The good region lays between about x and y layers and x and y nodes each
 
+\missingfigure{complexity}
+
+\missingfigure{comparehighandlow}
+
 Two different activation functions come to use in the neural network, the main function connects the nodes in the hidden layers while the last one converts the outputto a value between \num{0} and \num{1}. 
+
+\missingfigure{elurelu}
 
 Furthermore the activation function for the hidden layer is elu
 the activation function 
@@ -65,7 +70,7 @@ the activation function
 \section{Setup of the optimisation}
 
 For the most part of the optimisation SGD was used as the optimiser and its tuning is shown in this section in detail.
-Adam was also tested out bot ot fully tuned.
+Adam was also tested out but not fully tuned due to constraints on tim and computational resources.
 
 \subsection{Choice of the optimiser}
 
