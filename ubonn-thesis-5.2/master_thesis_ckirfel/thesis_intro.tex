@@ -7,23 +7,20 @@
 \chapter{Introduction}
 \label{sec:intro}
 
-One of my predominant childhood memories is Lego\textsuperscript{\textregistered}.~\cite{lego} Lego is a system of interlocking plastic bricks allowing to build a nearly unlimited variety of structures ranging from medieval castles to models of particle detectors.~\cite{atlas_lego} Although the set of differently shaped bricks available to the player has greatly increased over the years I still see Lego's appeal and charm in the simple concept of a limited set of elemental pieces enabling an inspired user to build almost anything he or she could think of.
+One of my most influencing childhood experiences is {Lego\textsuperscript{\textregistered}}~\cite{lego}. Lego is a system of interlocking plastic bricks allowing to build a nearly unlimited variety of structures ranging from medieval castles to models of particle detectors~\cite{atlas_lego}. Although the set of differently shaped bricks available to the player has greatly increased over the years, I still see Lego's appeal and charm in the originally simple concept of a limited set of elemental pieces, enabling an inspired user to construct almost anything he or she could think of.
 
-This fascination for a concept of an elegant basis of elementary pieces that form everything has stayed with me through my life and education and I found it again in the Standard Model of Particle Physics.~\cite{thomson}
-The Standard Model of Particle Physics summarizes the set of elementary particles currently known and their interactions and represents all the tools necessary to explain our world at least to a great extent.
+This fascination for an elegant concept of elementary pieces that form everything has stayed with me through my life and education. I found it again in the Standard Model of Particle Physics (SMPP)~\cite{thomson}.
+The SMPP summarizes the set of elementary particles currently known and their interactions. They represent all the tools necessary to explain our world at least to a great extent.
+Carried by this inspiration I found my way into high energy collider physics and eventually, with this thesis, had the great opportunity of working with the ATLAS collaboration and taking part in an experiment extending the frontiers of modern physics.
 
-Carried by this inspiration I found my way into high energy collider physics and eventually with this thesis had the great opportunity of working with the ATLAS collaboration and in an experiment extending the frontiers of modern physics.
-
-When it comes to researching at the level of particle physics a common approach is to generate an energy high enough to create new particles. Additionally the rate of events generated in these experiments has to be extremely high which generates the task of filtering for interesting events.
-
+When it comes to particle physics research, a conventional approach is to collide common particles at energies high enough to create new particles. Additionally, in order to filter collisions for event of interest, one needs to have a high rate of events to generate a sufficient sample size.
 It suggests itself to apply machine learning techniques on the task of filtering events at collider experiments.
+In this work, an adversarial neural network~\cite{Louppe:2016ylz} is introduced. It adds the promise of minimising the sensitivity of a selection model for systematic uncertainties to the network's classification task.
 
-In this work an a so called adversarial neural network is introduced for \tW/\ttbar separation which adds the promise to minimize the impact of systematic uncertainties on a classification model.
-
-At first an introduction to the state of the art for particle physics is given introducing the Standard Model and presenting further information on physics incorporating \Ptop -quarks motivating the difficulties in separating the \tW from the \ttbar channel.
-The Large Hadron Collider and the ATLAS detector are introduced explaining how events are reconstructed in the detector and how simulations for the experiment are generated.
-The concept of machine learning is described with a focus on neural networks, adversarial neural networks and their parameters.
-Finally the setup and training of a classifying neural network is described and then used as basis for the setup of an adversarial neural network.
+At first, an introduction to the state of the art for particle physics is given. The SMPP is introduced and further information on physics incorporating top-quarks is presented thereby motivating the difficulties in separating the Standard Model process from its background and reducing its systematic uncertainties.
+Secondly the Large Hadron Collider and the ATLAS detector are introduced to explain how events are generated and reconstructed in the detector and how simulations for the experiment are generated.
+Then the concept of machine learning is described with a focus on neural networks and adversarial neural networks including their hyper-parameters.
+Finally, the setup and training of a classifying neural network is described and then used as basis for the setup of an adversarial neural network.
 The results using an adversarial neural network are discussed based on the promises it might offer for an analysis highly dependent on systematic uncertainties.
 
 

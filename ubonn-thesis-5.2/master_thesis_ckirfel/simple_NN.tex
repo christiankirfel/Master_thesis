@@ -3,43 +3,98 @@
 
 The basis of the adversarial neural network is formed by a common neural network trained on signal/background classification the output of which is then given to the adversary creating a negative backfeed for the training.
 
-Before the adversarial, second network is added the classifying network is optimised on its own to make sure that its set-up is sufficient for the classification task.
-During the adversarial training this set-up can be updated if the structure is not optimised for the additional task of a model independent of systematics.
+Before the adversarial, second network is added, the classifying network is optimised on its own to make sure that its setup is sufficient for the classification task.
+During the adversarial training this setup can be updated if the structure is not optimised for the additional task of a model independent of systematics.
 
 This chapter describes the hyperparameter optimisation of the first network starting with the motivation  of the input information.
-The second section explains the choice of the architecture followed by the step-wise set-up of the optimiser.
+The second section explains the choice of the architecture followed by the step-wise setup of the optimiser.
 Lastly regularisation of the network is tested and described.
 The overall aim of the description is to provide some understanding on the parameters available and their correlations and impact on the model to not only use these insights for the adversarial training but also to motivate possible problem solutions later on.
 
 
-To train the network and to test its performance all the parts need to be in place. Therefore for all hyperparameters had to be initialized with values assumed to be around a good setup. Initially this was accomplished by starting with a very simple network using a miniml set of hyperparamters which were then worked up to a more and more optimised network. The results shown in this work are going to be based on the final choice of hyperparamters where only one paramter is then varied to explain the impact of the tuning. For that reason the first section will already introduce the final network structure which is then step by step to be motivated.
+To train the network and to test its performance all its parts need to be in place. Therefore all hyperparameters had to be initialized with values assumed to be around a good setup. Initially this was accomplished by starting with a very simple network using a minimal set of hyperparamters which were then elaborated to a more and more optimised network. The results shown in this work are going to be based on the final choice of hyperparamters where only one parameter is then varied to explain the impact of the tuning. For that reason the first section will already introduce the final network structure which is then step by step to be motivated.
 
 The structure was achieved within reason and the computational power constraints.
 
 
 \section{Technical details}
 
-\subsection{Machine learning libraries}
-
 The artificial neural networks in this thesis were creates using the Keras python library.~\cite{chollet2015keras} 
 Keras is an application programming interface written in python and able to run on Tensorflow, CNTK or Theano. It was developed by google and summarizes the necessary calculations for running a deep neural network training in fast and easy modules.
 The backend is the package responsible for the underlying vector calculations needed for the network setup and training. In this work the tensorflow packag was used for backend.~\cite{tensorflow2015-whitepaper}
 
-\subsection{Final setup of the network}
+\section{Final setup of the network}
 
-This subsection introduces the final setup of the classifying network
+This section describes the fully optimised classifier which is then parameter-wise varied during this chapter to motivate the particular choices.
+The hyperparamters are listed and the loss curve, the ROC curve and the final separation are introduced as they are the main tools a training performance is evaluated by in this thesis.
+
+
+\begin{itemize}
+\item Input: \num{14} variables motivated by a BDT variable scan.
+\item Hidden layers: \num{6} elu layers $\times$ \num{128} nodes each
+\item Output layer: \num{1} sigmoid node
+\item Optimisation: SGD, lr $=0.06$, mom $=0.3$, no nesterov, no decay
+\item Duration: 600 epochs
+\end{itemize}
 
 
 \section{The input variables}
 
-got bdt variables
+There were two sets of input parameters tested for the classifier.
+The first one is a set of simple kinemativ variables trying to exploit a neural network's ability to deduce all further information from the complete basis.
+The second set of variables uses more complex variables based on the most significant variables for a boosted decision tree usage on the same problem.
+The variable sets used were:
 
-compared to simple kinematic
 
-\begin{figure}
-	\centering
-	\includegraphics[width=\figwidth]{figures_simpleNN/test_simple.png}
-\end{figure}
+
+\begin{table}[!htb]
+    \caption{Global caption}
+    \begin{minipage}{.5\linewidth}
+      \caption{}
+      \centering
+		\begin{tabular}{l|l}
+		Variable                              & Branch                            \\
+		\pTmiss                & met                               \\ \hline
+		$|\eta_{jet1}|$ & absEta\_Jet1 \\ \hline
+		$|\eta_{jet1}|$ & absEta\_Jet2 \\ \hline
+		$|\eta_{lep1}|$ & absEta\_Lep1 \\ \hline
+		$|\eta_{lep2}|$ & absEta\_Lep2 \\ \hline
+		${\pT}_{jet1}$  & pT\_jet1    \\ \hline
+		${\pT}_{jet2}$    & pT\_jet2     \\ \hline
+		${\pT}_{lep1}$    & pT\_lep1     \\ \hline
+		${\pT}_{lep2}$    & pT\_lep2     \\ \hline
+		$\phi_{jet1}$   & phi\_jet1    \\ \hline
+		$\phi_{jet2}$   & phi\_jet2    \\ \hline
+		$\phi_{lep1}$   & phi\_lep1    \\ \hline
+		$\phi_{lep2}$   & phi\_lep2    \\ \hline
+		\end{tabular}
+    \end{minipage}%
+    \begin{minipage}{.5\linewidth}
+      \centering
+        \caption{}
+		\begin{tabular}{l|l}
+		\hline
+		Variable & Branch                        \\ \hline
+		         & mass\_lep1jet2                \\ \hline
+		         & pTsys\_lep1lep2met            \\ \hline
+		         & pTsys\_jet1jet2               \\ \hline
+		         & mass\_lep1jet1                \\ \hline
+		         & deltapT\_lep1\_jet1           \\ \hline
+		         & deltaR\_lep1\_jet2            \\ \hline
+		         & deltaR\_lep1lep2\_jet2        \\ \hline
+		         & mass\_lep2jet1                \\ \hline
+		         & pT\_jet2                      \\ \hline
+		         & deltaR\_lep1\_jet1            \\ \hline
+		         & deltaR\_lep1lep2\_jet1jet2met \\ \hline
+		         & deltaR\_lep2\_jet2            \\ \hline
+		         & cent\_lep2jet2                \\ \hline
+		         & deltaR\_lep2\_jet1            \\ \hline
+		\end{tabular}
+    \end{minipage} 
+\end{table}
+
+
+As the performance is significantly worse for the set of simple variables the set of complex variables approved by another analysis were chosen for the other tests.
 
 
 
@@ -56,7 +111,26 @@ In this work a testseries was performed, training a network for a wide range com
 
 The good region lays between about x and y layers and x and y nodes each
 
-\missingfigure{complexity}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures_simpleNN/minimal_loss.eps}
+        \caption{Minimal loss}
+        \label{fig:minimal_loss}
+    \end{subfigure}%
+    ~ 
+    \begin{subfigure}[b]{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{figures_simpleNN/minimal_diff.eps}
+        \caption{Minimal loss difference}
+        \label{fig:minimal_diff}
+    \end{subfigure}
+    \caption{Caption place holder}
+    \label{fig:net_complexity}
+\end{figure}
+
+
 
 \missingfigure{comparehighandlow}
 
