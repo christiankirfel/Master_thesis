@@ -1,47 +1,76 @@
 \chapter{Hyperparameter optimisation of a classifying neural network}
 \label{chp:simpleNN}
 
-The basis of the adversarial neural network is formed by a common neural network trained on signal/background classification the output of which is then given to the adversary creating a negative backfeed for the training.
-
+The adversarial neural network is based on a common classifying neural network trained on signal/background separation. The output of that network is then used as input for the adversary to create a negative back-feed for the classifier.
 Before the adversarial, second network is added, the classifying network is optimised on its own to make sure that its setup is sufficient for the classification task.
-During the adversarial training this setup can be updated if the structure is not optimised for the additional task of a model independent of systematics.
+During the adversarial training this setup can be updated if the structure is not optimised for the additional task of a model less sensitive to systematic uncertainties.
 
-This chapter describes the hyperparameter optimisation of the first network starting with the motivation  of the input information.
+This chapter describes the hyper-parameter optimisation of the first network starting with the motivation of the input information.
 The second section explains the choice of the architecture followed by the step-wise setup of the optimiser.
 Lastly regularisation of the network is tested and described.
-The overall aim of the description is to provide some understanding on the parameters available and their correlations and impact on the model to not only use these insights for the adversarial training but also to motivate possible problem solutions later on.
+The overall aim of the description is to provide some understanding on the hyper-parameters available and their correlations. The impact of the hyper-parameters on the training results is presented not only to introduce their function but also to motivate possible solutions later on.
 
+To train the network and to test its performance all its parts need to be in place. Therefore all hyper-parameters had to be initialized with values assumed to represent a good setup. Initially this was accomplished by starting with a very simple network using a minimal set of hyper-parameters which were then elaborated to a more and more optimised network. The results shown in this work are going to be based on the final choice of hyper-parameters where only one parameter is then varied at a time to explain the impact of the particular tuning. For that reason section~\ref{sec:simplesetup} will already introduce the final network structure which is then step by step to be explained and motivated.
 
-To train the network and to test its performance all its parts need to be in place. Therefore all hyperparameters had to be initialized with values assumed to be around a good setup. Initially this was accomplished by starting with a very simple network using a minimal set of hyperparamters which were then elaborated to a more and more optimised network. The results shown in this work are going to be based on the final choice of hyperparamters where only one parameter is then varied to explain the impact of the tuning. For that reason the first section will already introduce the final network structure which is then step by step to be motivated.
-
-The structure was achieved within reason and the computational power constraints.
+The structure was achieved within reason and the computational power constraints. There certainly are hyper-parameters that deserve more attention and in addition to that there are alternative setups for the whole network that were not tested. A further investigation of network optimisation is without a doubt very promising.
 
 
 \section{Technical details}
+\label{sec:technicals}
 
-The artificial neural networks in this thesis were creates using the Keras python library.~\cite{chollet2015keras} 
+The artificial neural networks in this thesis were created using the Keras python library~\cite{chollet2015keras}.
 Keras is an application programming interface written in python and able to run on Tensorflow, CNTK or Theano. It was developed by google and summarizes the necessary calculations for running a deep neural network training in fast and easy modules.
-The backend is the package responsible for the underlying vector calculations needed for the network setup and training. In this work the tensorflow packag was used for backend.~\cite{tensorflow2015-whitepaper}
+The backend is the package responsible for the underlying vector calculations needed for the network setup and training. In this work the Tensorflow package was used as a backend~\cite{tensorflow2015-whitepaper}.
 
 \section{Final setup of the network}
+\label{sec:simplesetup}
 
 This section describes the fully optimised classifier which is then parameter-wise varied during this chapter to motivate the particular choices.
-The hyperparamters are listed and the loss curve, the ROC curve and the final separation are introduced as they are the main tools a training performance is evaluated by in this thesis.
+The hyperparamters are listed and the loss curve, the ROC curve and the final separation are introduced as they are the main tools a training performance is evaluated by in this thesis. For the sake of completeness the agreement between nominal and systematic response is also shown as it will be a standard inclusion for the plots during the adversarial training.
 
 
 \begin{itemize}
 \item Input: \num{14} variables motivated by a BDT variable scan.
-\item Hidden layers: \num{6} elu layers $\times$ \num{128} nodes each
-\item Output layer: \num{1} sigmoid node
-\item Optimisation: SGD, lr $=0.06$, mom $=0.3$, no nesterov, no decay
+\item Hidden layers: \num{6} \ELU layers $\times$ \num{128} nodes each
+\item Output layer: \num{1} \SIGMOID node
+\item Optimisation: SGD, \LEARNINGR $=0.06$, momentum $=0.3$, no nesterov, no decay
 \item Duration: 600 epochs
 \end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{standard_separation}
+        \caption{}
+        \label{fig:simple:final:sepa}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{standard_syst}
+        \caption{}
+        \label{fig:simple:final:syst}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{standard_ROC}
+		\caption{}
+		\label{fig:simple:final:roc}
+	\end{subfigure}
+\quad
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{standard_losses}
+		\caption{}
+		\label{fig:simple:final:loss}
+	\end{subfigure}
+    \caption{Figure~\subref{fig:simple:final:sepa} shows the response of the classifier. The solid lines represent the training sample and the dashed lines the test sample. Figure~\subref{fig:simple:final:syst} shows the difference for response in systematic and nominal samples. The solid lines represent the nominal samples and the dashed line the systematic sample. Figure~\subref{fig:simple:final:roc} shows the ROC-curve. The dashed line is the training curve and the solid line is the test curve. Figure~\subref{fig:simple:final:loss} diagrams the losses with dashed for test and solid for training.}
+	\label{fig:simple:final}
+\end{figure}
 
 
 \section{The input variables}
 
 There were two sets of input parameters tested for the classifier.
-The first one is a set of simple kinemativ variables trying to exploit a neural network's ability to deduce all further information from the complete basis.
+The first one is a set of simple kinematic variables. This is tested to exploit a neural network's ability to deduce all further information from the complete basis of a system.
 The second set of variables uses more complex variables based on the most significant variables for a boosted decision tree usage on the same problem.
 The variable sets used were:
 
@@ -93,40 +122,74 @@ The variable sets used were:
     \end{minipage} 
 \end{table}
 
+Figure \ref{fig:vars} shows a comparison of the separation and the loss curves for both variable sets. It is visible that for the set of simple variables the network runs into overtraining after about \num{200} epochs~\ref{fig:vars:simple:loss} because \losstrain and \losstest start to diverge. This also results in a bad separation with a strong disagreement between the two samples. There is an argument for testing a simple set of variables for a shorter training duration. However, this optimisation process would be a project of its own. Furthermore, in this work one has to keep in mind that the network is supposed to be used in adversarial setup later. This demands for a longer training period and a large number of good features to be available. Otherwise the probability of finding a classifier less sensitive to a systematic uncertainty decreases and the behaviour of the losses has to supervised very carefully.
 
-As the performance is significantly worse for the set of simple variables the set of complex variables approved by another analysis were chosen for the other tests.
+Showing an overall good performance the set of complex variables as suggested by the boosted decision tree variable scan performed in the xy analysis was chosen. Please note that the set of variables in the paper referred to does not fully agree with the variables used in this work. The reason being that the variables were adopted while the research was still ongoing.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{standard_separation}
+        \caption{}
+        \label{fig:vars:standard:sep}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{simple_vars_separation}
+        \caption{}
+        \label{fig:vars:simple:sep}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{standard_losses}
+		\caption{}
+		\label{fig:vars:standard:loss}
+	\end{subfigure}
+\quad
+	\begin{subfigure}[b]{0.45\textwidth}
+		\includegraphics[width=\textwidth]{simple_vars_losses}
+		\caption{}
+		\label{fig:vars:simple:loss}
+	\end{subfigure}
+    \caption{Figure~\subref{fig:vars:standard:sep} and figure~\subref{fig:vars:simple:sep} show the separation for the complex and simple variables respectively. The losses for the variable sets are diagrammed in figure~\subref{fig:vars:standard:loss} and figure~\subref{fig:vars:simple:loss}.}
+	\label{fig:vars}
+\end{figure}
+
+
 
 
 
 \section{The network architecture}
 
-The architecture of the neural network is formed by its nodes and layers. The choice of the architecture is nontrivial and as a lot of aspect's of machine learning not an exact science.
+The architecture of the neural network is formed by its nodes and layers. The choice of the architecture is nontrivial and, as a lot of aspect's of machine learning, not an exact science.
 However, one can make some assumptions about the appropriate architecture.
-First of all the complexity of the model should about match the complexity of the task assigned. Although it usually is not trivial to find an estimator for a task's complexity and even less to match it to a certain architecture a test series often leads to a good estimate. Another possible thought is the amount of variables necessary to fully describe a system resulting in the minimum variable number necessary to input in the network which also gives a first estimate on how large the architecture should at least be.
-Both the depth and the overall size of the model play a role. A simplified way of describing is by saying that the depth defines how often the input is processed during the network while the number of nodes is the number of features that can be kept during each step of processing.
+First of all the complexity of the model should about match the complexity of the task assigned. Although it usually is not trivial to find an estimator for a task's complexity and even less to match it to a certain architecture, a test series often leads to a good estimate. Another possible thought is the amount of variables necessary to fully describe a system resulting in the minimum variable number necessary to input in the network. This also gives a first estimate on how large the architecture should at least be.
+Both the depth and the overall size of the model play a role. A simplified way of explaining these two properties is by saying that the depth defines how often the input is processed while the number of nodes is the number of features that can be kept during each step of processing.
 
-In general an architecture that is too deep and wide will pick up too many features too fast and overtrains before it gets to a good minimum. This can be seen in an early divergence between the training loss and the validation loss. An architecture too simple is not able to pick up the features of the task at all and is not learning at all. The loss stays constant or changes very slowly.
+In general an architecture that is too deep and wide will pick up too many features too fast and overtrains before it gets to a good minimum. This can be seen in an early divergence between the training loss and the validation loss. An architecture too simple is not able to pick up the features of the task at all resulting in no learning process. The loss stays constant or changes very slowly.
 
-In this work a testseries was performed, training a network for a wide range combinations of nodes and layers. For the sake of simplicity the number of nodes per layer was kept constant during each training. Two variables were then plotted against the size of the architecture. First the overall smallest loss the model achieved during the training was plotted. The other variable was the minimal difference between the training and the validation loss. To keep it simple the complexity of the architecture was defined as the product of nodes and layers. These are certainly not the most sophisticated indicators for the model's complexity and its performance. Nonetheless the plots show that region of good performance exists which was chosen for this analysis.
+In this work a test-series was performed, training a network for a wide range of combinations of nodes and layers. For the sake of simplicity the number of nodes per layer was kept constant during each training. Two variables were then plotted against the size of the architecture. First the overall smallest loss the model achieved during the training was plotted. The other variable was the minimal difference between the training and the validation loss. To keep it simple the complexity of the architecture was defined as the product of nodes and layers. These are certainly not the most sophisticated indicators for the model's complexity and its performance. However, the plots do allow for some sophisticated guesses for a good choice of architecture.
 
-The good region lays between about x and y layers and x and y nodes each
+Figure~\ref{fig:minimal_loss} shows that more complex architectures also achieve smaller loss values. This unfortunately is not a clear sign for an overall good performance as heavily overtrained networks will achieve low loss values as well. Therefore, a second estimator was taken into account. Figure~\ref{fig:minimal_diff} shows the minimal difference between \losstrain and \losstest achieved during the whole training process. There are two regions showing a small difference. The first is the region of very simple architectures. This however, is a result of a slow learning process. No features are being picked up that differentiate between the two sets used for loss evaluation. The second region, \numrange{500}{800}, was used as the region of choice before heavy overtraining occurs. Finally, a more complex architecture in this region, comprising \num{6} layers with \num{128} nodes each, was chosen. Although this choice seems fairly arbitrary at this point, there is arguments for a complex architecture as it can always be regulated using dropout if need be.
+
+
 
 \begin{figure}[htbp]
     \centering
-    \begin{subfigure}[b]{0.5\textwidth}
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures_simpleNN/minimal_loss.eps}
         \caption{Minimal loss}
         \label{fig:minimal_loss}
     \end{subfigure}%
-    ~ 
-    \begin{subfigure}[b]{0.5\textwidth}
+\quad
+    \begin{subfigure}[b]{0.45\textwidth}
         \centering
         \includegraphics[width=\textwidth]{figures_simpleNN/minimal_diff.eps}
         \caption{Minimal loss difference}
         \label{fig:minimal_diff}
     \end{subfigure}
-    \caption{Caption place holder}
+    \caption{Figure~\subref{fig:minimal_loss} shows the minimal overall loss achieved during the training for the range of architectures. Figure~\subref{fig:minimal_diff} shows the minimal difference between \losstrain and \losstest achieved.}
     \label{fig:net_complexity}
 \end{figure}
 
@@ -134,22 +197,153 @@ The good region lays between about x and y layers and x and y nodes each
 
 \missingfigure{comparehighandlow}
 
-Two different activation functions come to use in the neural network, the main function connects the nodes in the hidden layers while the last one converts the outputto a value between \num{0} and \num{1}. 
+In addition to the choice of the architecture the activation function for the layers has to be set.
+Two different activation functions come to use in the neural network. The main function connects the nodes in the hidden layers while the last one converts the output to a value between \num{0} and \num{1}. For the output the sigmoid function is a natural choice and no other activations were tested.
+For the hidden layers \ELU and \RELU were tested. Figure~\ref{fig:activ} shows a comparison of the ROC-curve and the loss development for both activation-functions. For \RELU a strong disagreement between training- and test-sample occurs and \ELU became the activation function of choice. Further activation-functions were not tested due to time constraints.
 
-\missingfigure{elurelu}
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{standard_losses}
+        \caption{}
+        \label{fig:activ:standard:loss}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{relu_losses}
+        \caption{}
+        \label{fig:activ:relu:loss}
+    \end{subfigure}
+
+    \begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{standard_ROC}
+		\caption{}
+		\label{fig:activ:standard:roc}
+	\end{subfigure}
+\quad
+	\begin{subfigure}[b]{0.48\textwidth}
+		\includegraphics[width=\textwidth]{relu_ROC}
+		\caption{}
+		\label{fig:activ:relu:roc}
+	\end{subfigure}
+    \caption{Figure~\subref{fig:activ:standard:loss} and figure~\subref{fig:activ:relu:loss} show the losses for SGD and Adam respectively. The ROC-curves for the different activation-functions are diagrammed in figure~\subref{fig:activ:standard:roc} and figure~\subref{fig:activ:relu:roc}.}
+	\label{fig:activ}
+\end{figure}
 
 Furthermore the activation function for the hidden layer is elu
 the activation function 
 
 \section{Setup of the optimisation}
 
-For the most part of the optimisation SGD was used as the optimiser and its tuning is shown in this section in detail.
-Adam was also tested out but not fully tuned due to constraints on tim and computational resources.
+For the most part of the optimisation SGD was used as the optimiser and its tuning is shown in detail.
+Adam was also tested out but not fully tuned due to constraints on time and computational resources.
+In subsection~\ref{sec:optimiser:choice} a brief overview of the performance using Adam is given. Section~\ref{sec:optimiser:tuning} describes the fine tuning of the SGD optimiser in more detail.
 
 \subsection{Choice of the optimiser}
+\label{sec:optimiser:choice}
+
+A classic gradient-based optimiser, SGD, is compared to adam as an adaptive optimiser. Figure~\ref{fig:opti} compares the loss development for both optimisers. It is obvious that adam behaves strangely and it was therefore discarded. It is possible that adam could outperform SGD for a better tuning of its hyper-parameters and it certainly is worth testing out if the computational power is provided.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{standard_losses}
+        \caption{}
+        \label{fig:opti:standard}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{adam_losses}
+        \caption{}
+        \label{fig:opti:adam}
+    \end{subfigure}
+    \caption{Loss curves for SGD~\subref{fig:opti:standard} and adam~\subref{fig:opti:adam}.}
+	\label{fig:opti}
+\end{figure}
 
 \subsection{Tuning the optimiser}
+\label{sec:optimiser:tuning}
+
+As described in section\ref{sec:optimisation} an optimiser has several hyper-parameters of its own. In this section the learning rate, the momentum with the option of Nesterov, and the decay parameter will be probed.
+For the learning rate a range of values between a small learning rate of \num{0.001} and high learning rates up to \num{0.5} were tested to investigate the behaviour. The choice was based on how high the oscillations are and how efficiently the training converges. High learning rates were discarded for an increased probability of overtraining and a lot of unwanted oscillations while small learning rates made the training unnecessarily slow and inefficient. Figure~\ref{fig:lr} shows a comparison of the network losses for a small learning rate of \num{0.001}~\ref{fig:lr:small} and a relatively large learning rate of \num{0.2}~\ref{fig:lr:large}. For the small learing rate there are no signs of overtraining and no oscillations visible. However, the training converges slowly. For a high learning rate the \losstrain and \losstest show larger divergence and each curve shows more oscillations individually. In the end an intermediate learning rate of \num{0.06} is chosen.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{smalllr_losses}
+        \caption{}
+        \label{fig:lr:small}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.48\textwidth}
+        \includegraphics[width=\textwidth]{largelr_losses}
+        \caption{}
+        \label{fig:lr:large}
+    \end{subfigure}
+    \caption{Loss behaviour for learning rates of different scales. Figure~\subref{fig:lr:small} shows losses for \num{0.001} and figure~\subref{fig:lr:large} for~\num{0.2}.}
+	\label{fig:lr}
+\end{figure}
+
+In this setup dropout is used. That makes it a bit more difficult to see the clear signs of overtraining. For a plot that shows it see section~\ref{sec:dropout}.
+
+Like the learning rate the momentum was scanned over a wide range of values. Again he risk of overtraining and the amount of oscillations was evaluated against the overall training efficiency. This resulted in a final value of \num{0.3}.
+
+The decay parameter was tested to see its effect on the loss behaviour. Figure~\ref{fig:decay} shows the standard loss behaviour compared to losses for a decay value of \num{1e-6}. When decay is used the losses~\ref{fig:decay:decay} become slightly more stable and plateau a bit earlier and for a higher value. Overall no significant improvement is visible. For that reason decay is not included in the final setup of the classifier. It was kept as an option for the later combination of the classifier and the adversary where it might help keeping the model close to the optimum while slowly updating to a model less sensitive to systematics.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{standard_losses}
+        \caption{}
+        \label{fig:decay:standard}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{decay_losses}
+        \caption{}
+        \label{fig:decay:decay}
+    \end{subfigure}
+    \caption{Comparison of usual loss behaviour and loss behaviour including a decay paramter. Figure~\subref{fig:decay:standard} shows the losses without decay. Figure~\subref{fig:decay:decay} shows the losses for a decay parameter of \num{1e-6}}
+	\label{fig:decay}
+\end{figure}
+
+The final setup for the optimiser is:
+
 
 
 
 \section{Regularisation}
+
+The two regularisation tools tested were dropout-layers and batch-normalisation layers. Dropout has the main purpose of regularising a network while batch-normalisation focuses on keeping all outputs on the same order which indirectly also helps the regularisation of the network.
+Dropout is tested for a range of values defining the percentage of nodes turned off per iteration step. Batch-normalisation is just tested in the default setup to investigate its effects.
+
+\subsection{Dropout}
+\label{sec:dropout}
+
+A dropout layer is added to each hidden layer of the network.
+Figure~\ref{fig:dropout} shows the impact of dropout on the behaviour of the losses. For only \num{1} percent dropout compared to the default \num{10} percent overtraining occurs relatively early. For a very high dropout of \num{80} percent the losses behave strangely. The curve becomes more linear and converges less efficiently. In conclusion, dropout is a valuable addition to the network. It makes changing the architecture and the optimiser more pardoning and is a simple way to adjust a network without rearranging all hyper-parameters.
+
+\begin{figure}[htbp]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{lowdrop_losses}
+        \caption{}
+        \label{fig:dropout:low}
+    \end{subfigure}
+\quad
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth]{highdrop_losses}
+        \caption{}
+        \label{fig:dropout:high}
+    \end{subfigure}
+    \caption{Comparison of usual loss behaviour and loss behaviour including high dropout. Figure~\subref{fig:dropout:low} shows the losses for a dropout of \num{0.01}. Figure~\subref{fig:dropout:high} shows the losses for a dropout of \num{0.8}}
+	\label{fig:dropout}
+\end{figure}
+
+makes clear that full structure is very interdepndent
+
+overtraining very visible
+
+more linear and less focused
+
+\subsection{Batch Normalisation}

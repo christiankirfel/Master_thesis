@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  26 MAR 2019 20:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  27 MAR 2019 19:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2189,32 +2189,35 @@ LaTeX Warning: Label `fig:2' multiply defined.
 
 LaTeX Warning: Label `sub@fig:2' multiply defined.
 
-) (./machine_learning.aux) (./simple_NN.aux) (./sigmoid.aux)
-(./adversarial_NN.aux) (./Conclusions.aux) (./thesis_appendix.aux))
+) (./machine_learning.aux) (./simple_NN.aux
+
+LaTeX Warning: Label `fig:dropout' multiply defined.
+
+) (./adversarial_NN.aux) (./Conclusions.aux) (./thesis_appendix.aux))
 \openout1 = `mythesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 155.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 155.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 156.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 155.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 155.
-LaTeX Font Info:    ... okay on input line 155.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -2265,7 +2268,7 @@ Package caption Info: End \AtBeginDocument code.
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `default' on line 155.
+. Activating mapping `default' on line 156.
 .................................................
 Package scrdate Info: \dategerman not defined.
 (scrdate)             \todaysname probably cannot use \dayname@german.
@@ -2310,10 +2313,10 @@ Package biblatex Warning: The following entry could not be found
 (biblatex)                LaTeX afterwards.
 
 )
-Package biblatex Info: Reference section=0 on input line 155.
-Package biblatex Info: Reference segment=0 on input line 155.
+Package biblatex Info: Reference section=0 on input line 156.
+Package biblatex Info: Reference segment=0 on input line 156.
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring ON on input line 155.
+Package hyperref Info: Link coloring ON on input line 156.
  (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -2322,15 +2325,15 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count467
 )
-LaTeX Info: Redefining \ref on input line 155.
-LaTeX Info: Redefining \pageref on input line 155.
-LaTeX Info: Redefining \nameref on input line 155.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
 
 (./mythesis.out) (./mythesis.out)
 \@outlinefile=\write6
 \openout6 = `mythesis.out'.
 
-LaTeX Info: Redefining \microtypecontext on input line 155.
+LaTeX Info: Redefining \microtypecontext on input line 156.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2346,45 +2349,45 @@ File: mt-ppl.cfg 2005/11/16 v1.6 microtype config. file: Palatino (RS)
 )
 ABD: EveryShipout initializing macros
 \c__siunitx_mathsf_int=\count468
-LaTeX Font Info:    Try loading font information for OML+zplm on input line 155
+LaTeX Font Info:    Try loading font information for OML+zplm on input line 156
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlzplm.fd
 File: omlzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OML/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMS+zplm on input line 155
+LaTeX Font Info:    Try loading font information for OMS+zplm on input line 156
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omszplm.fd
 File: omszplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMS/zplm.
 )
-LaTeX Font Info:    Try loading font information for OMX+zplm on input line 155
+LaTeX Font Info:    Try loading font information for OMX+zplm on input line 156
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omxzplm.fd
 File: omxzplm.fd 2002/09/08 Fontinst v1.914 font definitions for OMX/zplm.
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 155.
+(Font)              scaled to size 11.40997pt on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 155.
+(Font)              scaled to size 8.33606pt on input line 156.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 155.
+(Font)              scaled to size 6.25204pt on input line 156.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 155.
+(Font)              scaled to size 11.40997pt on input line 156.
 
 (/usr/share/texlive/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 8.33606pt on input line 155.
+(Font)              scaled to size 8.33606pt on input line 156.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 6.25204pt on input line 155.
-LaTeX Font Info:    Try loading font information for OT1+zplm on input line 155
+(Font)              scaled to size 6.25204pt on input line 156.
+LaTeX Font Info:    Try loading font information for OT1+zplm on input line 156
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1zplm.fd
@@ -2406,25 +2409,25 @@ Package microtype Info: Loading generic protrusion settings for font family
 
 (../cover/Master_Submit_Title.tex)
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 188.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `T1/ppl/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ppl/b/n' tried instead on input line 188.
+(Font)              Font shape `T1/ppl/b/n' tried instead on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 188.
+(Font)              scaled to size 21.61124pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 188.
+(Font)              scaled to size 15.0049pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 188.
+(Font)              scaled to size 12.50409pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 21.61124pt on input line 188.
+(Font)              scaled to size 21.61124pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 15.0049pt on input line 188.
+(Font)              scaled to size 15.0049pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 12.50409pt on input line 188.
+(Font)              scaled to size 12.50409pt on input line 189.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 188.
+(Font)              scaled to size 10.42007pt on input line 189.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 10.42007pt on input line 188.
+(Font)              scaled to size 10.42007pt on input line 189.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
@@ -2435,26 +2438,26 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 
 ]
 Document mythesis, Info: Draft/submission version of a Masterthesis
-LaTeX Font Info:    Try loading font information for T1+phv on input line 197.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 198.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1phv.fd
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 197.
+(Font)              scaled to size 10.40245pt on input line 198.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `phv' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 198.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.40245pt on input line 197.
+(Font)              scaled to size 10.40245pt on input line 198.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 197.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 198.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 19.70294pt on input line 197.
+(Font)              scaled to size 19.70294pt on input line 198.
 Package tocbasic Info: character protrusion at toc deactivated on input line 19
-7.
+8.
  (./mythesis.toc
 [3
 
@@ -2464,395 +2467,90 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 19
 \openout7 = `mythesis.toc'.
 
  [4]
-\openout2 = `thesis_intro.aux'.
-
- (./thesis_intro.tex
-chapter 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 7.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 7.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 23.63593pt on input line 7.
-LaTeX Font Info:    Try loading font information for TS1+ppl on input line 10.
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)) [1
-
-
-
-
-
-] [2]
-\openout2 = `thesis_acknowledge.aux'.
-
-
-(./thesis_acknowledge.tex
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 8.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
-File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `pcr' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-) [3
-
-
-
-
-]
-\openout2 = `standard_model.aux'.
-
-
-(./standard_model.tex [4
-
-
-
-
-]
-chapter 2.
-Package epstopdf Info: Source file: <figures_SM/standard_model.eps>
-(epstopdf)                    date: 2019-03-19 20:51:54
-(epstopdf)                    size: 1544959 bytes
-(epstopdf)             Output file: <figures_SM/standard_model-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2019-03-19 20:54:14
-(epstopdf)                    size: 1449165 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_SM/standard_model-
-eps-converted-to.pdf figures_SM/standard_model.eps>
-(epstopdf)             \includegraphics on input line 24.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures_SM/standard_model-eps-convert
-ed-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> a
-llowed
-<figures_SM/standard_model-eps-converted-to.pdf, id=294, 1046.91125pt x 1001.74
-25pt>
-File: figures_SM/standard_model-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_SM/standard_model-eps-converted-to.pdf>
-Package pdftex.def Info: figures_SM/standard_model-eps-converted-to.pdf  used o
-n input line 24.
-(pdftex.def)             Requested size: 451.58598pt x 432.10127pt.
-LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 31.
-LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 11.39996pt on input line 31.
-[5] [6 <./figures_SM/standard_model-eps-converted-to.pdf>]
-
-LaTeX Warning: Reference `chp:tW' on page 7 undefined on input line 105.
-
-[7]
-
-LaTeX Warning: Reference `chp:tW' on page 8 undefined on input line 115.
-
-
-LaTeX Warning: Reference `chp:lhc_atlas' on page 8 undefined on input line 134.
-
-
-[8]
-LaTeX Font Info:    Font shape `U/TXuprcal/m/n' will be
-(Font)              scaled to size 10.51207pt on input line 153.
-LaTeX Font Info:    Font shape `U/TXuprcal/m/n' will be
-(Font)              scaled to size 7.68005pt on input line 153.
-LaTeX Font Info:    Font shape `U/TXuprcal/m/n' will be
-(Font)              scaled to size 5.76004pt on input line 153.
-) [9]
-\openout2 = `lhc_atlas.aux'.
-
- (./lhc_atlas.tex [10
-
-
-
-
-]
-chapter 3.
-<figures_LHC/CCC-v2018-print-v2.jpg, id=361, 1445.4pt x 1284.8pt>
-File: figures_LHC/CCC-v2018-print-v2.jpg Graphic file (type jpg)
-<use figures_LHC/CCC-v2018-print-v2.jpg>
-Package pdftex.def Info: figures_LHC/CCC-v2018-print-v2.jpg  used on input line
- 23.
-(pdftex.def)             Requested size: 361.27016pt x 321.12079pt.
-[11]
-<figures_LHC/CERN-all-experiments.jpg, id=375, 781.92125pt x 563.10374pt>
-File: figures_LHC/CERN-all-experiments.jpg Graphic file (type jpg)
-<use figures_LHC/CERN-all-experiments.jpg>
-Package pdftex.def Info: figures_LHC/CERN-all-experiments.jpg  used on input li
-ne 30.
-(pdftex.def)             Requested size: 312.76295pt x 225.2375pt.
- [12 <./figures_LHC/CCC-v2018-print-v2.jpg>]
-<figures_LHC/atlas-detector.jpg, id=386, 3161.8125pt x 2032.59375pt>
-File: figures_LHC/atlas-detector.jpg Graphic file (type jpg)
-<use figures_LHC/atlas-detector.jpg>
-Package pdftex.def Info: figures_LHC/atlas-detector.jpg  used on input line 56.
-
-(pdftex.def)             Requested size: 474.25142pt x 304.8759pt.
-
-Overfull \hbox (22.66544pt too wide) in paragraph at lines 56--57
- [][] 
- []
-
-[13 <./figures_LHC/CERN-all-experiments.jpg>] [14 <./figures_LHC/atlas-detector
-.jpg>] [15] [16]
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 10.40245pt on input line 147.
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <8> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 7.59998pt on input line 147.
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <6> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 147.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 5.69998pt on input line 147.
- [17]
-<figures_LHC/atlas-abstract.jpg, id=439, 766.3029pt x 604.1772pt>
-File: figures_LHC/atlas-abstract.jpg Graphic file (type jpg)
-<use figures_LHC/atlas-abstract.jpg>
-Package pdftex.def Info: figures_LHC/atlas-abstract.jpg  used on input line 168
-.
-(pdftex.def)             Requested size: 459.78528pt x 362.50911pt.
-
-Overfull \hbox (8.1993pt too wide) in paragraph at lines 168--169
- [][] 
- []
-
-[18 <./figures_LHC/atlas-abstract.jpg>] [19] [20]
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 287.
-) [21]
-\openout2 = `tW_channel.aux'.
-
- (./tW_channel.tex
-[22
-
-
-
-
-]
-chapter 4.
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <20.74> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 19.70294pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 13.67995pt on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/bx/sl' in size <12> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 1.
-LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 11.39996pt on input line 1.
-<figures_SM/ttbar_ttbar_1-BW.pdf, id=483, 686.67393pt x 459.0519pt>
-File: figures_SM/ttbar_ttbar_1-BW.pdf Graphic file (type pdf)
-<use figures_SM/ttbar_ttbar_1-BW.pdf>
-Package pdftex.def Info: figures_SM/ttbar_ttbar_1-BW.pdf  used on input line 7.
-
-(pdftex.def)             Requested size: 148.96269pt x 99.58464pt.
-
-Overfull \hbox (13.48552pt too wide) in paragraph at lines 7--8
- [][] 
- []
-
-<figures_SM/ttbar_ttbar_2-BW.pdf, id=484, 455.9093pt x 465.36385pt>
-File: figures_SM/ttbar_ttbar_2-BW.pdf Graphic file (type pdf)
-<use figures_SM/ttbar_ttbar_2-BW.pdf>
-Package pdftex.def Info: figures_SM/ttbar_ttbar_2-BW.pdf  used on input line 14
-.
-(pdftex.def)             Requested size: 97.55945pt x 99.58464pt.
-<figures_SM/ttbar_ttbar_3-BW.pdf, id=485, 682.86612pt x 455.2441pt>
-File: figures_SM/ttbar_ttbar_3-BW.pdf Graphic file (type pdf)
-<use figures_SM/ttbar_ttbar_3-BW.pdf>
-Package pdftex.def Info: figures_SM/ttbar_ttbar_3-BW.pdf  used on input line 21
-.
-(pdftex.def)             Requested size: 149.37659pt x 99.58464pt.
-
-Overfull \hbox (13.89941pt too wide) in paragraph at lines 21--22
- [][] 
- []
-
-) [23 <./figures_SM/ttbar_ttbar_1-BW.pdf> <./figures_SM/ttbar_ttbar_2-BW.pdf> <
-./figures_SM/ttbar_ttbar_3-BW.pdf>]
-\openout2 = `machine_learning.aux'.
-
- (./machine_learning.tex [24
-
-
-
-
-]
-chapter 5.
-[25]
-Package epstopdf Info: Source file: <figures_ML/nodes_nomenclature.eps>
-(epstopdf)                    date: 2019-02-23 18:14:47
-(epstopdf)                    size: 177982 bytes
-(epstopdf)             Output file: <figures_ML/nodes_nomenclature-eps-converte
-d-to.pdf>
-(epstopdf)                    date: 2019-02-26 11:48:09
-(epstopdf)                    size: 56854 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/nodes_nomenclat
-ure-eps-converted-to.pdf figures_ML/nodes_nomenclature.eps>
-(epstopdf)             \includegraphics on input line 31.
-Package epstopdf Info: Output file is already uptodate.
-<figures_ML/nodes_nomenclature-eps-converted-to.pdf, id=511, 1855.93375pt x 118
-1.41376pt>
-File: figures_ML/nodes_nomenclature-eps-converted-to.pdf Graphic file (type pdf
-)
-<use figures_ML/nodes_nomenclature-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/nodes_nomenclature-eps-converted-to.pdf  us
-ed on input line 31.
-(pdftex.def)             Requested size: 334.05367pt x 212.6453pt.
-LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 32.
-LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 7.91925pt on input line 32.
-LaTeX Font Info:    Font shape `U/TXuprcal/m/n' will be
-(Font)              scaled to size 9.60007pt on input line 32.
-LaTeX Font Info:    Font shape `U/TXuprcal/m/n' will be
-(Font)              scaled to size 7.29605pt on input line 32.
-
-Underfull \vbox (badness 1902) has occurred while \output is active []
-
- [26 <./figures_ML/nodes_nomenclature-eps-converted-to.pdf>] [27]
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 66.
-
-Package epstopdf Info: Source file: <figures_ML/sigmoid.eps>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 15299 bytes
-(epstopdf)             Output file: <figures_ML/sigmoid-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 7441 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/sigmoid-eps-con
-verted-to.pdf figures_ML/sigmoid.eps>
-(epstopdf)             \includegraphics on input line 71.
-Package epstopdf Info: Output file is already uptodate.
-<figures_ML/sigmoid-eps-converted-to.pdf, id=533, 361.35pt x 216.81pt>
-File: figures_ML/sigmoid-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_ML/sigmoid-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/sigmoid-eps-converted-to.pdf  used on input
- line 71.
-(pdftex.def)             Requested size: 108.40584pt x 65.04349pt.
-Package epstopdf Info: Source file: <figures_ML/tanh.eps>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 12488 bytes
-(epstopdf)             Output file: <figures_ML/tanh-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 6406 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/tanh-eps-conver
-ted-to.pdf figures_ML/tanh.eps>
-(epstopdf)             \includegraphics on input line 72.
-Package epstopdf Info: Output file is already uptodate.
-<figures_ML/tanh-eps-converted-to.pdf, id=534, 361.35pt x 216.81pt>
-File: figures_ML/tanh-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_ML/tanh-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/tanh-eps-converted-to.pdf  used on input li
-ne 72.
-(pdftex.def)             Requested size: 108.40584pt x 65.04349pt.
-Package epstopdf Info: Source file: <figures_ML/relu.eps>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 14050 bytes
-(epstopdf)             Output file: <figures_ML/relu-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 6982 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/relu-eps-conver
-ted-to.pdf figures_ML/relu.eps>
-(epstopdf)             \includegraphics on input line 77.
-Package epstopdf Info: Output file is already uptodate.
-<figures_ML/relu-eps-converted-to.pdf, id=535, 361.35pt x 216.81pt>
-File: figures_ML/relu-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_ML/relu-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/relu-eps-converted-to.pdf  used on input li
-ne 77.
-(pdftex.def)             Requested size: 108.40584pt x 65.04349pt.
-Package epstopdf Info: Source file: <figures_ML/elu.eps>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 15126 bytes
-(epstopdf)             Output file: <figures_ML/elu-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-03-09 16:20:20
-(epstopdf)                    size: 7211 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/elu-eps-convert
-ed-to.pdf figures_ML/elu.eps>
-(epstopdf)             \includegraphics on input line 82.
-Package epstopdf Info: Output file is already uptodate.
-<figures_ML/elu-eps-converted-to.pdf, id=536, 361.35pt x 216.81pt>
-File: figures_ML/elu-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_ML/elu-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/elu-eps-converted-to.pdf  used on input lin
-e 82.
-(pdftex.def)             Requested size: 108.40584pt x 65.04349pt.
-[28 <./figures_ML/sigmoid-eps-converted-to.pdf> <./figures_ML/tanh-eps-converte
-d-to.pdf> <./figures_ML/relu-eps-converted-to.pdf> <./figures_ML/elu-eps-conver
-ted-to.pdf>] [29] [30] [31]
-Package epstopdf Info: Source file: <figures_ML/dropout.eps>
-(epstopdf)                    date: 2019-02-26 19:13:15
-(epstopdf)                    size: 24978 bytes
-(epstopdf)             Output file: <figures_ML/dropout-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-26 19:14:59
-(epstopdf)                    size: 9660 bytes
-(epstopdf)             Command: <repstopdf --outfile=figures_ML/dropout-eps-con
-verted-to.pdf figures_ML/dropout.eps>
-(epstopdf)             \includegraphics on input line 201.
-Package epstopdf Info: Output file is already uptodate.
-
-
-pdfTeX warning: /usr/bin/pdflatex (file ./figures_ML/dropout-eps-converted-to.p
-df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<figures_ML/dropout-eps-converted-to.pdf, id=608, 3108.61375pt x 2000.47375pt>
-File: figures_ML/dropout-eps-converted-to.pdf Graphic file (type pdf)
-<use figures_ML/dropout-eps-converted-to.pdf>
-Package pdftex.def Info: figures_ML/dropout-eps-converted-to.pdf  used on input
- line 201.
-(pdftex.def)             Requested size: 310.8796pt x 200.0591pt.
-[32]
-Underfull \vbox (badness 1033) has occurred while \output is active []
-
- [33 <./figures_ML/dropout-eps-converted-to.pdf>]
-LaTeX Font Info:    Try loading font information for U+fplmbb on input line 244
-.
-
-(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [34]
-
-Package caption Warning: \label without proper reference on input line 263.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:ANN_sketch' on page 35 undefined on input line 25
-8.
-
-<figures_ML/ANN_sketch.png, id=640, 3270.2175pt x 1839.87375pt>
-File: figures_ML/ANN_sketch.png Graphic file (type png)
-<use figures_ML/ANN_sketch.png>
-Package pdftex.def Info: figures_ML/ANN_sketch.png  used on input line 262.
-(pdftex.def)             Requested size: 406.42462pt x 228.6361pt.
-<figures_ML/losses_paper.png, id=645, 869.2475pt x 810.02625pt>
-File: figures_ML/losses_paper.png Graphic file (type png)
-<use figures_ML/losses_paper.png>
-Package pdftex.def Info: figures_ML/losses_paper.png  used on input line 277.
-(pdftex.def)             Requested size: 451.58598pt x 420.82056pt.
-[35 <./figures_ML/ANN_sketch.png>]) [36 <./figures_ML/losses_paper.png>]
 \openout2 = `simple_NN.aux'.
 
-
-(./simple_NN.tex
+ (./simple_NN.tex
 chapter 6.
-[37
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 23.63593pt on input line 1.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [37
 
 
 
 
-] [38]
+
+
+
+
+
+
+
+]
+LaTeX Font Info:    Try loading font information for TS1+ppl on input line 33.
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
+)
+<./plots_simpleNN/standard_separation.png, id=186, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/standard_separation.png Graphic file (type png)
+<use ./plots_simpleNN/standard_separation.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_separation.png  used on inpu
+t line 43.
+(pdftex.def)             Requested size: 216.75934pt x 162.57004pt.
+<./plots_simpleNN/standard_syst.png, id=188, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/standard_syst.png Graphic file (type png)
+<use ./plots_simpleNN/standard_syst.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_syst.png  used on input line
+ 49.
+(pdftex.def)             Requested size: 216.75934pt x 162.57004pt.
+<./plots_simpleNN/standard_ROC.png, id=189, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/standard_ROC.png Graphic file (type png)
+<use ./plots_simpleNN/standard_ROC.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_ROC.png  used on input line 
+55.
+(pdftex.def)             Requested size: 216.75934pt x 162.57004pt.
+<./plots_simpleNN/standard_losses.png, id=190, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/standard_losses.png Graphic file (type png)
+<use ./plots_simpleNN/standard_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_losses.png  used on input li
+ne 61.
+(pdftex.def)             Requested size: 216.75934pt x 162.57004pt.
+ [38] [39 <./plots_simpleNN/standard_separation.png> <./plots_simpleNN/standard
+_syst.png> <./plots_simpleNN/standard_ROC.png> <./plots_simpleNN/standard_losse
+s.png>]
+File: ./plots_simpleNN/standard_separation.png Graphic file (type png)
+<use ./plots_simpleNN/standard_separation.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_separation.png  used on inpu
+t line 132.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/simple_vars_separation.png, id=221, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/simple_vars_separation.png Graphic file (type png)
+<use ./plots_simpleNN/simple_vars_separation.png>
+Package pdftex.def Info: ./plots_simpleNN/simple_vars_separation.png  used on i
+nput line 138.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+File: ./plots_simpleNN/standard_losses.png Graphic file (type png)
+<use ./plots_simpleNN/standard_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_losses.png  used on input li
+ne 144.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/simple_vars_losses.png, id=222, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/simple_vars_losses.png Graphic file (type png)
+<use ./plots_simpleNN/simple_vars_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/simple_vars_losses.png  used on input
+ line 150.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+ [40] [41 <./plots_simpleNN/simple_vars_separation.png> <./plots_simpleNN/simpl
+e_vars_losses.png>]
 Package epstopdf Info: Source file: <figures_simpleNN/minimal_loss.eps>
 (epstopdf)                    date: 2019-03-26 17:37:21
 (epstopdf)                    size: 25932 bytes
@@ -2862,21 +2560,21 @@ d-to.pdf>
 (epstopdf)                    size: 8053 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures_simpleNN/minimal_l
 oss-eps-converted-to.pdf figures_simpleNN/minimal_loss.eps>
-(epstopdf)             \includegraphics on input line 118.
+(epstopdf)             \includegraphics on input line 181.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_simpleNN/minimal_loss-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures_simpleNN/minimal_loss-eps-converted-to.pdf, id=671, 505.89pt x 361.35p
+<figures_simpleNN/minimal_loss-eps-converted-to.pdf, id=246, 505.89pt x 361.35p
 t>
 File: figures_simpleNN/minimal_loss-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures_simpleNN/minimal_loss-eps-converted-to.pdf>
 Package pdftex.def Info: figures_simpleNN/minimal_loss-eps-converted-to.pdf  us
-ed on input line 118.
-(pdftex.def)             Requested size: 225.79298pt x 161.2827pt.
+ed on input line 181.
+(pdftex.def)             Requested size: 203.21231pt x 145.15497pt.
 Package epstopdf Info: Source file: <figures_simpleNN/minimal_diff.eps>
 (epstopdf)                    date: 2019-03-26 17:37:21
 (epstopdf)                    size: 27011 bytes
@@ -2886,99 +2584,129 @@ d-to.pdf>
 (epstopdf)                    size: 8190 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures_simpleNN/minimal_d
 iff-eps-converted-to.pdf figures_simpleNN/minimal_diff.eps>
-(epstopdf)             \includegraphics on input line 125.
+(epstopdf)             \includegraphics on input line 188.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_simpleNN/minimal_diff-eps-con
 verted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.
 5> allowed
-<figures_simpleNN/minimal_diff-eps-converted-to.pdf, id=672, 505.89pt x 361.35p
+<figures_simpleNN/minimal_diff-eps-converted-to.pdf, id=247, 505.89pt x 361.35p
 t>
 File: figures_simpleNN/minimal_diff-eps-converted-to.pdf Graphic file (type pdf
 )
 <use figures_simpleNN/minimal_diff-eps-converted-to.pdf>
 Package pdftex.def Info: figures_simpleNN/minimal_diff-eps-converted-to.pdf  us
-ed on input line 125.
-(pdftex.def)             Requested size: 225.79298pt x 161.2827pt.
+ed on input line 188.
+(pdftex.def)             Requested size: 203.21231pt x 145.15497pt.
+LaTeX Font Info:    Font shape `U/msa/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 192.
+LaTeX Font Info:    Font shape `U/msb/m/n' will be
+(Font)              scaled to size 7.91925pt on input line 192.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 198.
+File: ./plots_simpleNN/standard_losses.png Graphic file (type png)
+<use ./plots_simpleNN/standard_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_losses.png  used on input li
+ne 207.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/relu_losses.png, id=253, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/relu_losses.png Graphic file (type png)
+<use ./plots_simpleNN/relu_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/relu_losses.png  used on input line 2
+13.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+File: ./plots_simpleNN/standard_ROC.png Graphic file (type png)
+<use ./plots_simpleNN/standard_ROC.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_ROC.png  used on input line 
+219.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/relu_ROC.png, id=254, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/relu_ROC.png Graphic file (type png)
+<use ./plots_simpleNN/relu_ROC.png>
+Package pdftex.def Info: ./plots_simpleNN/relu_ROC.png  used on input line 225.
 
-Overfull \hbox (4.161pt too wide) in paragraph at lines 116--129
- [][]  [] 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [39])
-[40 <./figures_simpleNN/minimal_loss-eps-converted-to.pdf> <./figures_simpleNN/
-minimal_diff-eps-converted-to.pdf>] [41]
-\openout2 = `sigmoid.aux'.
-
- (./sigmoid.tex
-\gptboxheight=\skip107
-\gptboxwidth=\skip108
-\gptboxtext=\box72
-Package epstopdf Info: Source file: <sigmoid.eps>
-(epstopdf)                    date: 2019-02-26 11:48:10
-(epstopdf)                    size: 19942 bytes
-(epstopdf)             Output file: <sigmoid-eps-converted-to.pdf>
-(epstopdf)                    date: 2019-02-26 11:48:10
-(epstopdf)                    size: 3523 bytes
-(epstopdf)             Command: <repstopdf --outfile=sigmoid-eps-converted-to.p
-df sigmoid.eps>
-(epstopdf)             \includegraphics on input line 112.
-Package epstopdf Info: Output file is already uptodate.
-<sigmoid-eps-converted-to.pdf, id=706, 361.35pt x 252.945pt>
-File: sigmoid-eps-converted-to.pdf Graphic file (type pdf)
-<use sigmoid-eps-converted-to.pdf>
-Package pdftex.def Info: sigmoid-eps-converted-to.pdf  used on input line 112.
-(pdftex.def)             Requested size: 361.34912pt x 252.94438pt.
-) [42
-
-
- <./sigmoid-eps-converted-to.pdf>]
-\openout2 = `adversarial_NN.aux'.
-
- (./adversarial_NN.tex
-chapter 7.
-
-LaTeX Warning: Reference `chp:simple_NN' on page 43 undefined on input line 6.
-
-
-LaTeX Warning: Reference `chp:simple_NN' on page 43 undefined on input line 13.
-
-
-) [43
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+[42 <./figures_simpleNN/minimal_loss-eps-converted-to.pdf> <./figures_simpleNN/
+minimal_diff-eps-converted-to.pdf>]
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 242.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 11.39996pt on input line 242.
+File: ./plots_simpleNN/standard_losses.png Graphic file (type png)
+<use ./plots_simpleNN/standard_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_losses.png  used on input li
+ne 250.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/adam_losses.png, id=289, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/adam_losses.png Graphic file (type png)
+<use ./plots_simpleNN/adam_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/adam_losses.png  used on input line 2
+56.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
 
 
+LaTeX Warning: Reference `label' on page 43 undefined on input line 267.
+
+[43 <./plots_simpleNN/relu_losses.png> <./plots_simpleNN/relu_ROC.png>]
+<./plots_simpleNN/smalllr_losses.png, id=304, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/smalllr_losses.png Graphic file (type png)
+<use ./plots_simpleNN/smalllr_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/smalllr_losses.png  used on input lin
+e 274.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/largelr_losses.png, id=305, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/largelr_losses.png Graphic file (type png)
+<use ./plots_simpleNN/largelr_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/largelr_losses.png  used on input lin
+e 280.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+
+[44 <./plots_simpleNN/adam_losses.png> <./plots_simpleNN/smalllr_losses.png> <.
+/plots_simpleNN/largelr_losses.png>]
+File: ./plots_simpleNN/standard_losses.png Graphic file (type png)
+<use ./plots_simpleNN/standard_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/standard_losses.png  used on input li
+ne 297.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/decay_losses.png, id=320, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/decay_losses.png Graphic file (type png)
+<use ./plots_simpleNN/decay_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/decay_losses.png  used on input line 
+303.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/lowdrop_losses.png, id=325, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/lowdrop_losses.png Graphic file (type png)
+<use ./plots_simpleNN/lowdrop_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/lowdrop_losses.png  used on input lin
+e 328.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+<./plots_simpleNN/highdrop_losses.png, id=326, 462.528pt x 346.896pt>
+File: ./plots_simpleNN/highdrop_losses.png Graphic file (type png)
+<use ./plots_simpleNN/highdrop_losses.png>
+Package pdftex.def Info: ./plots_simpleNN/highdrop_losses.png  used on input li
+ne 334.
+(pdftex.def)             Requested size: 203.21231pt x 152.41238pt.
+) [45 <./plots_simpleNN/decay_losses.png>]
+[46 <./plots_simpleNN/lowdrop_losses.png> <./plots_simpleNN/highdrop_losses.png
+>] [50
 
 
-]
-\openout2 = `Conclusions.aux'.
-
- (./Conclusions.tex [44
-
-
-
-
-]
-chapter 8.
-) [45] [46
 
 
 
 ]
 chapter without number
-[47] [48] [49]
-\openout2 = `thesis_appendix.aux'.
-
- (./thesis_appendix.tex [50
-
-
-
-]
-chapter A.
-) [51] [52
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 232.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `pcr' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [51] [52] [53]
+[56
 
 
 
@@ -2989,10 +2717,10 @@ Package tocbasic Info: character protrusion at lof deactivated on input line 25
 \tf@lof=\write8
 \openout8 = `mythesis.lof'.
 
- [53
+ [57
 
 
-] [54
+] [58
 
 
 ]
@@ -3002,18 +2730,17 @@ Package tocbasic Info: character protrusion at lot deactivated on input line 25
 \tf@lot=\write9
 \openout9 = `mythesis.lot'.
 
- [55]
+ [59]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 273.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 273.
  (./mythesis.aux
 (./thesis_intro.aux) (./thesis_acknowledge.aux) (./standard_model.aux)
 (./lhc_atlas.aux) (./tW_channel.aux) (./machine_learning.aux) (./simple_NN.aux)
-(./sigmoid.aux) (./adversarial_NN.aux) (./Conclusions.aux)
-(./thesis_appendix.aux))
+(./adversarial_NN.aux) (./Conclusions.aux) (./thesis_appendix.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 273.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 273.
 Package rerunfilecheck Info: File `mythesis.out' has not changed.
-(rerunfilecheck)             Checksum: 57F33551A68884FE1E768EC631897C11;3200.
+(rerunfilecheck)             Checksum: 34C5FF7B87DA5BCD961EDAFDAE221455;928.
 
 
 LaTeX Warning: There were undefined references.
@@ -3026,33 +2753,159 @@ Package logreq Info: Writing requests to 'mythesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45825 strings out of 494757
- 880606 string characters out of 6175784
- 1475237 words of memory out of 5000000
- 47894 multiletter control sequences out of 15000+600000
- 640111 words of font info for 361 fonts, out of 8000000 for 9000
+ 45405 strings out of 494757
+ 873681 string characters out of 6175784
+ 1474575 words of memory out of 5000000
+ 47670 multiletter control sequences out of 15000+600000
+ 615863 words of font info for 284 fonts, out of 8000000 for 9000
  85 hyphenation exceptions out of 8191
- 73i,18n,82p,10387b,3407s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-public/mathpazo/fplmbb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ma
-thpazo/fplmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fpl
-mri.pfb></usr/share/texmf/fonts/type1/public/tex-gyre/qtmri.pfb></usr/share/tex
-live/texmf-dist/fonts/type1/public/txuprcal/txuprcal-reg.pfb></usr/share/texliv
-e/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/
-urw/helvetic/uhvbo8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatin
-o/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on mythesis.pdf (59 pages, 7836615 bytes).
+ 73i,16n,95p,10387b,3407s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.12} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{appendix.A} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.8} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.7.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.7.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.7} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.5.3.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.5.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.5} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.4} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.4} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.3} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.5} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.2.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.3.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.3} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.2} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.4} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.2} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.2.1.1} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.2.1} has been referenced but does not exist
+, replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.2} has been referenced but does not exist, 
+replaced by a fixed one
+
+pdfTeX warning (dest): name{chapter.1} has been referenced but does not exist, 
+replaced by a fixed one
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/mathpazo/fplmri.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic
+/uhvb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb>
+</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplbi8a.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/font
+s/type1/urw/palatino/uplri8a.pfb>
+Output written on mythesis.pdf (22 pages, 571926 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 833 compressed objects within 9 object streams
- 203 named destinations out of 1000 (max. 500000)
- 68068 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 581 PDF objects out of 1000 (max. 8388607)
+ 486 compressed objects within 5 object streams
+ 124 named destinations out of 1000 (max. 500000)
+ 57037 words of extra memory for PDF output out of 61914 (max. 10000000)
 

@@ -40,20 +40,26 @@
 \contentsline {section}{\numberline {5.4}Adversarial Neural Networks}{33}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}The adversarial neural network}{34}{subsection.5.4.1}
 \contentsline {chapter}{\numberline {6}Hyperparameter optimisation of a classifying neural network}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Technical details}{37}{section.6.1}
+\contentsline {section}{\numberline {6.1}Technical details}{38}{section.6.1}
 \contentsline {section}{\numberline {6.2}Final setup of the network}{38}{section.6.2}
 \contentsline {section}{\numberline {6.3}The input variables}{38}{section.6.3}
-\contentsline {section}{\numberline {6.4}The network architecture}{38}{section.6.4}
-\contentsline {section}{\numberline {6.5}Setup of the optimisation}{40}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Choice of the optimiser}{41}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Tuning the optimiser}{41}{subsection.6.5.2}
-\contentsline {section}{\numberline {6.6}Regularisation}{41}{section.6.6}
-\contentsline {chapter}{\numberline {7}Adversarial Neural Network}{43}{chapter.7}
-\contentsline {section}{\numberline {7.1}Setup of the first network}{43}{section.7.1}
-\contentsline {section}{\numberline {7.2}Choice of architecture}{43}{section.7.2}
-\contentsline {section}{\numberline {7.3}Optimisation setup}{43}{section.7.3}
-\contentsline {chapter}{\numberline {8}Conclusions}{45}{chapter.8}
-\contentsline {chapter}{\nonumberline Bibliography}{47}{chapter*.20}
-\contentsline {chapter}{\numberline {A}Useful information}{51}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{53}{chapter*.21}
-\contentsline {chapter}{\nonumberline List of Tables}{55}{chapter*.22}
+\contentsline {section}{\numberline {6.4}The network architecture}{40}{section.6.4}
+\contentsline {section}{\numberline {6.5}Setup of the optimisation}{42}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Choice of the optimiser}{43}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Tuning the optimiser}{43}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.6}Regularisation}{45}{section.6.6}
+\contentsline {subsection}{\numberline {6.6.1}Dropout}{45}{subsection.6.6.1}
+\contentsline {subsection}{\numberline {6.6.2}Batch Normalisation}{45}{subsection.6.6.2}
+\contentsline {chapter}{\numberline {7}Adversarial Neural Network}{47}{chapter.7}
+\contentsline {section}{\numberline {7.1}Prerequisites}{47}{section.7.1}
+\contentsline {section}{\numberline {7.2}Setup of the classical adversary}{47}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Choice of the adversary's architecture}{47}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Choice of the optimisation}{47}{subsection.7.2.2}
+\contentsline {section}{\numberline {7.3}Alternate setups of the adversary}{47}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Uncompressed input}{47}{subsection.7.3.1}
+\contentsline {subsection}{\numberline {7.3.2}Compressed input}{47}{subsection.7.3.2}
+\contentsline {chapter}{\numberline {8}Conclusions}{49}{chapter.8}
+\contentsline {chapter}{\nonumberline Bibliography}{51}{chapter*.11}
+\contentsline {chapter}{\numberline {A}Useful information}{55}{appendix.A}
+\contentsline {chapter}{\nonumberline List of Figures}{57}{chapter*.12}
+\contentsline {chapter}{\nonumberline List of Tables}{59}{chapter*.13}
