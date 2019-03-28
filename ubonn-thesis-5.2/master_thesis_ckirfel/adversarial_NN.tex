@@ -2,34 +2,68 @@
 \label{chp:ANN}
 
 In this chapter the setup and training of the Adversarial Neural Network is described. The Network did not achieve the desired results in its initial configuration.
-For this reason different configurations for the implementation of the network structure are presented in addition to the hyperparamter investigations.
-The first part of the chapter focuses on the initial run of the ANN using the base network presented in chapter~\ref{chp:simple_NN}. The results are investigated and the hyperparameters are adapted using an initial setup for the second network.
-The second network is investigated trying out a number of significantly different setups.
-The problems with the initial setup are discussed and used to motivate a different approach adapting the network input which is then also investigated.
-Lastly the effectiveness of the two models is discussed presenting possible future steps as the training and setup were strongly limited by the time constraint of this work.
-As in chapter~\ref{chp:simpleNN} the final setup is presented first and its hyper-parameters are then step-wise motivated. 
-\section{Prerequisites}
+For this reason different configurations for the implementation of the network structure are presented in addition to the hyper-parameter investigations.
+In total three main approaches to the adversarial neural network were tested. The first one uses the understanding earned from training the classifier and the original approach introduced in the paper \enquote{Learning to pivot with Adversarial Networks}~\cite{Louppe:2016ylz}. The second approach uses a hidden layer as input for th adversary instead of using the output of the classifier. Lastly the information of the hidden layer is compressed to a smaller layer before being transferred to the adversary.
+
+The first section of the chapter focuses on the initial run of the ANN using the base network presented in chapter~\ref{chp:simple_NN}. The results are investigated and the hyper-parameters are adapted using an initial setup for the second network. The problems with this setup are explained and possible reasons are listed.
+The second section describes the approach of using hidden layers as input. The results are compared to the initial approach and conclusions are drawn.
+The third approach deals with further adapting the information from the hidden layer and is described in the third section.
+Lastly the approaches are compared and possible further steps are listed.
+
+\section*{Prerequisites}
 
 The technical details for the setup are the same as for the classifying network as introduced in section~\ref{sec:technicals}.
 The adversarial setup uses the classifier trained and tuned in chapter~\ref{chp:simple_NN} as a basis. For the classical setup this output is used as input for the adversarial network.
-To tune the hyperparameters of the second network the classifier was left unchanged at first. Later on the internal hyper-parameters of the optimiser were adapted to improve the overall result.
+
+In general both the classifier and the adversary are pre-trained. That means they are trained on their tasks without using a combined loss-function to generate better starting conditions for the adversarial training iterations.
+In addition to that, observing the losses of the networks during the pre-training indicates whether the networks influence each other.
+
+\missingfigure{pre-training}
 
 
 
-\section{Setup of the classical adversary}
+\section{Approach \RNum{1}: classical neural network}
 
-\subsection{Choice of the adversary's architecture}
+The initial setup uses the classifier as trained in chapter~\ref{chp:simpleNN} and an adversary inspired by this structure. Optimisation and activation stayed the same while the architecture was simplified to factor the one-dimensional input into the system.
+\todo{Show results}
+It becomes clear that the optimised hyper-parameters for the classifier are not suitable for the task of training an adversarial neural network. This is an important insight because it means that the adversary is not something one can just add to a model to improve certain features. Instead, it is an integral aspect of a whole training procedure of its own. The next steps taken during the analysis presented here try to investigate further what the performance of the combined network is strongly correlated with and how to understand what the network suffers from.
 
-\subsection{Choice of the optimisation}
+A hyper-parameter scan focused on the optimisation was performed. The results for a very low learning rate and a non-existing momentum are shown indfsfesefef.
+With a slow optimisation the training becomes more stable and both networks start learning. This is assumed to be due to the fact that in an adversarial training not just a minimum is sought. Instead, the classifier is first moved close to a minimum and then supposed to stay close that model of decent classification while also slowly adapting to features less sensitive to the systematic uncertainty.
 
-As for the classifier SGD and Adam were tested for the adversarial neural network. Adam is shown for its bad performance. SGD is tested in full detail.
+Unfortunately even with these updated hyper-parameters no model is found that is sufficiently independent on systematics. On its own both networks improve their performance but in combination the classifier does not find a model that significantly downgrades the performance of the adversary.
+The worst case scenario is that this is due to no such model existing. It is very well possible that for this particular task there is no training that is independent of systematics.
+A simple change would be the set of input parameters. However, this would cause a whole new training problem. For that reason another aspect, the input of the adversary, was looked into. At this point the adversary is just feed the sigmoid-output of the single, final node of the classifier. As mentioned earlier the amount of variables and the complexity of the architecture should be scaled with the task. Possibly the single output is enough to see a systematic dependency but not sufficient to improve the model using this insight. Approach \RNum{2} is based on this thought.
 
-put adam in appendix
+\missingfigure{low lr for ANN}
 
-\section{Alternate setups of the adversary}
+\begin{minipage}{.5\linewidth}
+Inhalt...
+\end{minipage}
+\quad
+\begin{minipage}{.5\linewidth}
+Inhalt...
+\end{minipage}
 
-With the initial setup suggested in the adversary kept on being succesful at its task while the classifier did not get significantly less dependent on systematics. A possible assumption one can make is that the information provided by the last node is not sufficient to make the influence of the adversary count. Alternatively the insentive provided by the optimiser might not be iterated effectively. Therefore, instead of using the final layer of the classififer as input the last hidden layer is used. Alternatively a further hidden layer is added that contains less nodes than the final hidden layer to balance the information.
+\section{Approach \RNum{2}: hidden layer input}
 
-\subsection{Uncompressed input}
+The amount of information given to the adversary is the output of one single node. This does not justify the usage of complex architecture and it allows now insight in the deeper dependencies of the classification model. Alternatively one can use the last hidden layer of the classifier which can be described as the final model the sigmoid-decision is based on. This is not fully correct as all dependencies of the model created in the last step are excluded this way. Nevertheless, it is a viable approximation worth testing.
 
-\subsection{Compressed input}
+This approach simply inputs the last hidden layer into the adversary without changing any other hyper-parameters. A hyper-parameter scan is then performed to teest the behaviour of the network.
+
+\missingfigure{approach 2}
+
+Using this setup the losses behave as desired. At one point the adversary fails to gain any information while the classifier keeps on learning. The combined loss decreases. On the hindsight the model is very unstable and for many hyper-parameter setups it just stops working properly. Furthermore, the improvement on the sensitivity does not visibly improve. It might be possible to further research whether small achievements were made but now only the behaviour and not the effect of an adversarial network was created.
+
+\section{Approach \RNum{3}: compressed hidden layer input}
+
+After using only a single input node in the classical approach and \num{128} nodes in the second approach, an intermediate number of inputs is tested. For approach \RNum{3} a second to last layer with only \num{16} nodes is added to the classifier and then fed into the adversary. This way the input dimension is closer to the dimension of the classifier. In addition to that it promises to control the instability of the second approach.
+
+Parallel to the other approaches a hyper-parameter scan was performed.
+
+\missingfigure{approach3}
+
+
+\section{Summary}
+
+In conclusion the approach for an adversarial neural network as suggested in the paper \enquote{Learning to pivot with Adversarial Networks}~\cite{Louppe:2016ylz} has not been able to achieve the promised results for an \tW-\ttbar-separation. It was however possible to show the desired behaviour of the two adversarial networks. It has been shown that the input to the adversary is essential and a part of the analysis that would deserve more research. Furthermore, the adversarial neural network has proven to be a structure of its own rather than just two arbitrary classifiers combined. They have to be built around an unhurried optimisation process allowing both networks to slowly learn from different areas of the system's topology.

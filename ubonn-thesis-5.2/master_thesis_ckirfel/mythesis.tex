@@ -37,6 +37,8 @@
 \usepackage{hepnicenames}
 \usepackage{hyperref}
 \usepackage{subcaption}
+%For quotes
+\usepackage{epigraph}
 
 %------------------------------------------------------------------------------
 % Instead of colouring  links, cites, table of contents etc.
@@ -69,12 +71,13 @@
 \addbibresource{sm_refs.bib}
 \addbibresource{montecarlo_refs.bib}
 \addbibresource{intro_refs.bib}
+\addbibresource{tW_refs.bib}
 %\addbibresource{../refs/standard_refs-biber.bib}
 
 %------------------------------------------------------------------------------
 % The following definitions are used to produce the title pages
 % needed at various stages
-\newcommand{\thesistitle}{Hyperparameter Optimisation of an Adversarial Neural Network in the \tW channel at  \SI{13}{\tera \electronvolt} with ATLAS}
+\newcommand{\thesistitle}{Hyperparameter Optimisation of an Adversarial Neural Network in the \tW channel at \SI{13}{\tera \electronvolt} with ATLAS}
 \newcommand*{\thesisauthor}{Christian Kirfel}
 \newcommand*{\thesistown}{Mechernich}
 \renewcommand*{\InstituteName}{\PI}
@@ -112,16 +115,16 @@
 % A simple \include command just inserts a \clearpage before and after the file
 % Note that \includeonly can be quite picky! Do not forget to put a
 % comma after the filename, otherwise it will simply be ignored!
-\includeonly{%
+%\includeonly{%
 %	lhc_atlas,
 %	standard_model,
 %	machine_learning,
-	simple_NN
+%	simple_NN
 %   thesis_intro,
 %   thesis_appendix,
 %   thesis_acknowledge
 %	tW_channel
-}
+%}
 
 %------------------------------------------------------------------------------
 % Give a list of directories where figures can be found. Do not leave
@@ -132,6 +135,7 @@
   {../figs/graphics/}%
   {../feynmf/}%
   {./plots_simpleNN/}%
+  {./figures_SM/} %
 }
 
 %------------------------------------------------------------------------------

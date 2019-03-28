@@ -77,7 +77,6 @@ The variable sets used were:
 
 
 \begin{table}[!htb]
-    \caption{Global caption}
     \begin{minipage}{.5\linewidth}
       \caption{}
       \centering
@@ -286,7 +285,7 @@ For the learning rate a range of values between a small learning rate of \num{0.
 
 In this setup dropout is used. That makes it a bit more difficult to see the clear signs of overtraining. For a plot that shows it see section~\ref{sec:dropout}.
 
-Like the learning rate the momentum was scanned over a wide range of values. Again he risk of overtraining and the amount of oscillations was evaluated against the overall training efficiency. This resulted in a final value of \num{0.3}.
+Like the learning rate the momentum was scanned over a wide range of values. Again he risk of overtraining and the amount of oscillations was evaluated against the overall training efficiency. This resulted in a final value of \num{0.3}. In addition, the test of using Nesterov momentum did not lead to any significant effects. It was therefore not utilized.
 
 The decay parameter was tested to see its effect on the loss behaviour. Figure~\ref{fig:decay} shows the standard loss behaviour compared to losses for a decay value of \num{1e-6}. When decay is used the losses~\ref{fig:decay:decay} become slightly more stable and plateau a bit earlier and for a higher value. Overall no significant improvement is visible. For that reason decay is not included in the final setup of the classifier. It was kept as an option for the later combination of the classifier and the adversary where it might help keeping the model close to the optimum while slowly updating to a model less sensitive to systematics.
 
