@@ -39,6 +39,7 @@
 \usepackage{subcaption}
 %For quotes
 \usepackage{epigraph}
+\usepackage{tikz}
 
 %------------------------------------------------------------------------------
 % Instead of colouring  links, cites, table of contents etc.
@@ -105,8 +106,7 @@
 % English regardless of the language of the thesis
 \newcommand{\thesisabstract}{%
   \begin{otherlanguage}{UKenglish}
-    This is your thesis abstract. It may be in a language that is
-    different from the rest of your thesis.
+  Neural networks are widely used for signal to background separation in high energy collider physics. Neural networks trained on Monte Carlo simulations are highly sensitive to systematic uncertainties. A proposed techique to diminish this sensitivity is an adversarial neural network consisting of two networks that are trained against each other. The first network tries to separate between signal and background while the second network tries to separate between a nominal signal sample and a systematic signal sample. A Minimax decision rule is used to achieve a good signal to background classification for the first network and a bad nominal to systematics for the second network. In this work an adversarial neural network trained on \tW dilepton channel Monte Carlo simulations with \ttbar background using the ATLAS detector is introduced. Testing and tuning of the hyperparameters is presented for both networks as well as three different approaches to the setup of the adversarial neural network.
   \end{otherlanguage}
 }
 
@@ -119,7 +119,9 @@
 %	lhc_atlas,
 %	standard_model,
 %	machine_learning,
-%	simple_NN
+%	adversarial_NN,
+%	simple_NN,
+%	Conclusions,
 %   thesis_intro,
 %   thesis_appendix,
 %   thesis_acknowledge
@@ -136,6 +138,9 @@
   {../feynmf/}%
   {./plots_simpleNN/}%
   {./figures_SM/} %
+  {./plots_ANN_app1/} %
+  {./plots_ANN_app2/} %
+  {./plots_ANN_app3/} %
 }
 
 %------------------------------------------------------------------------------

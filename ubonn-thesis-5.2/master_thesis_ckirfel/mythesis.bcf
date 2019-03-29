@@ -1971,23 +1971,25 @@
     <bcf:citekey order="37">atlfast</bcf:citekey>
     <bcf:citekey order="38">pythia</bcf:citekey>
     <bcf:citekey order="39">feyn_repo</bcf:citekey>
-    <bcf:citekey order="40">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="41">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="40">NN_sketch</bcf:citekey>
+    <bcf:citekey order="41">NN_sketch</bcf:citekey>
     <bcf:citekey order="42">chollet2015keras</bcf:citekey>
     <bcf:citekey order="43">chollet2015keras</bcf:citekey>
     <bcf:citekey order="44">chollet2015keras</bcf:citekey>
     <bcf:citekey order="45">chollet2015keras</bcf:citekey>
     <bcf:citekey order="46">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="47">2014arXiv1412.6980K</bcf:citekey>
-    <bcf:citekey order="48">2014arXiv1406.2661G</bcf:citekey>
-    <bcf:citekey order="49">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="50">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="47">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="48">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="49">2014arXiv1412.6980K</bcf:citekey>
+    <bcf:citekey order="50">2014arXiv1406.2661G</bcf:citekey>
     <bcf:citekey order="51">Louppe:2016ylz</bcf:citekey>
     <bcf:citekey order="52">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="53">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="54">tensorflow2015-whitepaper</bcf:citekey>
-    <bcf:citekey order="55">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="56">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="53">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="54">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="55">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="56">tensorflow2015-whitepaper</bcf:citekey>
+    <bcf:citekey order="57">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="58">Louppe:2016ylz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

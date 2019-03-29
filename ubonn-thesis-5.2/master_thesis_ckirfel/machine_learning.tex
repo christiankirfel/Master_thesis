@@ -24,7 +24,52 @@ A very commonly used machine learning technique is the\emph{artificial neural ne
 The artificial neural network, or just neural network, is one of the most commonly applied approaches to machine learning. Its structure and naming is inspired by the neurons forming the human nervous system.
 
 Instead of living neurons, a neural network consists of numerous very simple processors, called nodes.
- These nodes are usually structured into several layers as presented in figure\todo{todo}. In addition, there are several ways to structure and connect these nodes, frequently matching a certain problem. In this explanation, only the most commonly way is explained. In that case each node of a middle layer is getting input from each node in its predecessor and is outputting to each node of the following layer. This obviously is only true in one direction for the extreme layers, input and output. A simple view of communication between nodes is shown in figure \ref{fig:nodes_nomenclature} describing the step between a node and the previous layer. This is called a feed-forward neural network, the math of which will be described in detail later.
+ These nodes are usually structured into several layers as presented in figure~\ref{fig:NN:tikz:sketch}. In addition, there are several ways to structure and connect these nodes, frequently matching a certain problem. In this explanation, only the most commonly way is explained. In that case each node of a middle layer is getting input from each node in its predecessor and is outputting to each node of the following layer. This obviously is only true in one direction for the extreme layers, input and output. A simple view of communication between nodes is shown in figure \ref{fig:nodes_nomenclature} describing the step between a node and the previous layer. This is called a feed-forward neural network, the math of which will be described in detail later.
+ 
+\begin{figure}
+\centering
+\def\layersep{2.5cm}
+
+\begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+    \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+    \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+    \tikzstyle{input neuron}=[neuron, fill=green!50];
+    \tikzstyle{output neuron}=[neuron, fill=red!50];
+    \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+    \tikzstyle{annot} = [text width=4em, text centered]
+
+    % Draw the input layer nodes
+    \foreach \name / \y in {1,...,4}
+    % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+        \node[input neuron, pin=left:Input \#\y] (I-\name) at (0,-\y) {};
+
+    % Draw the hidden layer nodes
+    \foreach \name / \y in {1,...,5}
+        \path[yshift=0.5cm]
+            node[hidden neuron] (H-\name) at (\layersep,-\y cm) {};
+
+    % Draw the output layer node
+    \node[output neuron,pin={[pin edge={->}]right:Output}, right of=H-3] (O) {};
+
+    % Connect every node in the input layer with every node in the
+    % hidden layer.
+    \foreach \source in {1,...,4}
+        \foreach \dest in {1,...,5}
+            \path (I-\source) edge (H-\dest);
+
+    % Connect every node in the hidden layer with the output layer
+    \foreach \source in {1,...,5}
+        \path (H-\source) edge (O);
+
+    % Annotate the layers
+    \node[annot,above of=H-1, node distance=1cm] (hl) {Hidden layer};
+    \node[annot,left of=hl] {Input layer};
+    \node[annot,right of=hl] {Output layer};
+\end{tikzpicture}
+\caption[Sketch of a typical neural network structure]{Sketch of the typical neural network structure~\cite{NN_sketch}.}
+\label{fig:NN:tikz:sketch}
+\end{figure}
+ 
 
 \begin{figure}[htbp]
 	\centering
@@ -80,7 +125,7 @@ Exponential Linear Unit, \textsc{ELU} &$f(x) =
     x  & \quad \text{if } x \geq 0
   \end{cases}$      &        \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figures_ML/elu}}         \\ 
 \end{tabular}
-\caption{Selection of activation functions taken from the Keras documentation. \cite{chollet2015keras}}
+\caption[Selection of activation function]{Selection of activation functions taken from the Keras documentation. \cite{chollet2015keras}}
 \label{tab:activation_functions}
 \end{table}
 
@@ -102,7 +147,7 @@ The loss is the most important indicator for the training quality. This training
 \subsubsection{Optimisers - Choosing the next step}
 \label{sec:optimisation}
 
-The probability interaction of the nodes combined with the loss function enables a network not only to create a model but also to evaluate it. The last missing part is an algorithm that can estimate a step to a model that further minimises the loss. One could certainly do this randomly until the network finds a very low costed decision rule if infinite computational power was provided, but that would neither be an efficient nor the desired learning process.
+The probability interaction of the nodes combined with the loss function enables a network not only to create a model but also to evaluate it. The last missing part is an algorithm that can estimate a step to a model that further minimises the loss. These training steps are referred to as \emph{epochs}. One could certainly do this randomly until the network finds a very low costed decision rule if infinite computational power was provided, but that would neither be an efficient nor the desired learning process.
 
 The output of each node in the final layer is defined by the weighted and biased information of the previous nodes, and lastly the activation function. For one connection, there are three variables that have impact on the loss, the weight, the bias, and the activation. Summarising this information for all nodes in a vector defines the \emph{loss-vector}. The gradient of this vector is an estimator for the impact of each parameter on the overall loss and thereby gives a preferred direction for the model. Updating a network's parameters based on this gradient is called \emph{backpropagation}. The algorithm works as follows:
 
@@ -207,13 +252,17 @@ Dropout is added to each layer of a network and can also be restricted to a subs
 
 In supervised learning, the training result is strongly dependent on the set of data the network is trained on. This means that the performance might change dramatically when the test data is very different. one can imagine a classifier distinguishing between images of cars and apples. If the training set contains predominantly green cars, the colour green might become a strong indicator for the classification \enquote{car}. In general, the colour is not be a defining property of a car and the network will perform slightly worse when trying to classify cars of a different colour. Formally such a change of input is called a \emph{covariance shift}.
 
-A way to reduce the effect of covariance shift is batch normalization. The general output and connections between nodes in a neural network is not necessarily limited, allowing for certain connections to be extremely dominant and overshadowing other features. This is to be avoided as the dominance of some features might just be present in the training sample. This can be achieved by normalizing the output of each layer in the network to the total output and thereby minimising the effects of strongly overrepresented features. This is done by normalizing each output to the mini-batch mean $\mu_B$ and the mini-batch standard deviation $\sigma_B^2$:
+A way to reduce the effect of covariance shift is batch normalization. The general output and connections between nodes in a neural network is not necessarily limited, allowing for certain connections to be extremely dominant and overshadowing other features. This is to be avoided as the dominance of some features might just be present in the training sample. This can be achieved by normalizing the output of each layer in the network to the total output and thereby minimising the effects of strongly overrepresented features. This is done by normalizing each output to the mini-batch mean $\mu_B$ and the mini-batch standard deviation $\sigma_B^2$. The normalised output, $x_{i,norm}$, then becomes:
 
 \begin{align}
     \mu_B = \frac{1}{m} \sum_i x_i,\\
     \sigma_B^2 = \frac{1}{m} \sum_i (x_i - \mu_B)^2,\\
     x_{i,norm} = \frac{x_i - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}}.
 \end{align}
+
+\section{Receiver operating characteristic curve}
+
+The receiver operating characteristic (ROC) curve is is a graphical plot for a binary classifier. The y-axis shows the true positive rate (TPR); {i.e.}, the precentage of correctly assigned labels of value $\hat{y}$. The x-axis shows the false positive rate (FPR) and represents the percentage of wrongly assigned $\hat{y}$ labels. The ROC curve can be used to evaluate the model generated by a classifier. A diagonal curve means the model is as good as a random guess. Curves below the diagonal are worse than a random guess and can indicate that something is going wrong in the training process. A good measure is the are under curve (AUC). The AUC indicates the overall quality of a model.
 
 
 

@@ -58,6 +58,34 @@ In the following the concept of each detector component is briefly introduced~\c
   \label{fig:atlas}
 \end{figure}
 
+\subsection{The ATLAS coordinate system}
+
+The ATLAS coordinate system is a right-handed and right-angled coordinate system with the $z$-axis pointing along the LHC's beam pipe. The corresponding transverse plane is defined by the $x$-axis pointing towards the ring's centre while the $y$-axis points upwards. The origin of the system is defined by the nominal point of interaction. The polar angle, $\theta$, is the angle between the $z$-axis and the $x$-$y$-plane and the azimuthal angle, $\phi$, is the angle between the $x$- and the $y$-axis.
+
+Alternatively, as in this work, an event's topology is described by the azimuthal angle $\phi$, the pseudo-rapidity, $\eta$, and the transverse momentum, \pT. The pseudo-rapidity replaces the polar angle and is defined as
+
+\begin{equation}
+\eta = \frac{1}{2} ln\left[ tan\left(\frac{\theta}{2}\right)\right] \approx \arctanh\frac{p_z}{E}.
+\end{equation}
+
+The transverse momentum is defined as
+
+\begin{equation}
+\pT = \sqrt{p_x^2 + p_y^2},
+\end{equation}
+where $p_x$ and $p_y$ are the momenta along the corresponding axes. 
+
+The angular variables are defined within
+
+\begin{equation}
+\eta \in [-\infty,\infty],\,
+\phi \in [-\pi,\pi].
+\end{equation}
+
+
+The shape of the ATLAS detector makes the cylindrical system the obvious choice. This comes with the additional benefit of a well defined transverse plane where the sum of all vectors in the final state should be zero because the initial state has no transverse momentum.
+
+
 
 \subsection{Tracking detectors}
 
@@ -97,31 +125,6 @@ Normally the only charged particles left to be detected in the muon spectrometer
 
 
 
-\subsection{The ATLAS coordinate system}
-
-The ATLAS coordinate system is a right-handed and right-angled coordinate system with the $z$-axis pointing along the LHC's beam pipe. The corresponding transverse plane is defined by the $x$-axis pointing towards the ring's centre while the $y$-axis points upwards. The origin of the system is defined by the nominal point of interaction. The polar angle $\theta$ is the angle between the $z$-axis and the $x$-$y$-plane and the azimuthal angle $\phi$ is the angle between the $x$- and the $y$-axis.
-
-Alternatively, as in this work, an event's topology is described by the azimuthal angle $\phi$, the pseudo-rapidity $\eta$, and the transverse momentum \pT. The pseudo-rapidity replaces the polar angle and is defined as
-
-\begin{equation}
-\eta = \frac{1}{2} ln\left[ tan\left(\frac{\theta}{2}\right)\right].
-\end{equation}
-
-The transverse momentum is defined by
-
-\begin{equation}
-\pT = \sqrt{p_x^2 + p_y^2}
-\end{equation}
-where $p_x$ and $p_y$ are the momenta along the corresponding axes. 
-
-The angular variables are defined within
-
-\begin{equation}
-\eta \in [-\infty,\infty],\,
-\phi \in [-\pi,\pi].
-\end{equation}
-
-This cylindrical system makes use of the shape of the ATLAS detector and the momentum conversation of the transverse plane due to it being perpendicular to all initial beam momenta.
 
 \subsection{Particle Detection in the ATLAS detector}
 
@@ -184,105 +187,102 @@ This trigger information can be used for event selection making sure that certai
 
 \section{tW event selection}
 
-The process separation of interest for this work is \tW \ttbar. Other backgrounds for the \tW channel are reduced by applying an event selection:
+The process that this work focuses on is the \tW-channel in the dilepton decay mode, and its most relevant background process: top-quark pair-production, \ttbar.
+Other backgrounds for the \tW channel are reduced by applying an event selection:
 
 
 \begin{itemize}
 \item A single electron or muon trigger
 \item Electrons: tightly identified, isolated, \ET > \SI{26}{\giga \electronvolt}
 \item Muons: tight isolation, \pT > \SI{26}{\giga \electronvolt}
-\item Opposite-charge lepton pair
+\item A pair of leptons with opposite electric charge
 \item Leading lepton \pT > \SI{27}{\giga \electronvolt}
 \item Veto for a third lepton \pT > \SI{20}{\giga \electronvolt}
 \item A lepton must match the trigger
 \item At least one jet with: \pT > \SI{25}{\giga \electronvolt}, $|\eta|$ < \num{2.5}, tagged at \num{77} \% working point
 \end{itemize}
 
-After this preselection the events are categorized in regions based on the jet and \Pbottom-jet multiplicities. For this work the region with exactly two \Pbottom-tagged jets was used denoted as \texttt{2j2b}. This region has especially high impact from the NLO interference with a \Ptop\APtop final state.
+After this preselection the events are categorized in regions based on the jet and \Pbottom-jet multiplicities. For this work the region with exactly two \Pbottom-tagged jets was used, denoted as \texttt{2j2b}. This region has especially high impact from the NLO interference with a \ttbar final state.
 
 \section{Monte Carlo simulation}
 
-A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic but the problem and the amount of statistics suggest a stochastic approach.
+A Monte Carlo simulation is a computer based stochastic calculation of a process that in principle could be deterministic. However, the problem and the amount of statistics suggest a stochastic approach.
 
-Monte Carlo for the ATLAS detector is the simulation of detector events to calibrate the performance and generate an estimator to compare model and measurement. As for for this work the classifying tools and event selection rules are tested and tuned based on simulations to achieve a better understanding of what efficiencies are to be expected in a data analysis. This provides the truth information to an event that is needed for supervised learning, see section \ref{chp:ml}, and cannot be provided by data.
+Monte Carlo, in the context of the ATLAS experiment, is the simulation of physics processes used to calibrate the performance of the detector and to compare model and measurement. As for for this work, the classifying tools and event selection rules are tested and tuned based on simulations to achieve a better understanding of what efficiencies are to be expected in a data analysis. This provides the truth labels to an event that is needed for supervised learning, see section \ref{chp:ml}, and cannot be provided by data.
 
-A simulation has to be based on quantities that can not only be calculated from theoretical models but also measured during the experiment because an interplay between simulation and actual data is needed to adjust the simulation to the experimental circumstances. In collider physics predictions are mainly based on  the cross-section of an interaction stating how high the probability for certain interaction is. In addition to that the decay width of a particle is needed to describe how particles generated in an interaction behave in the detector system.
+A simulation has to be based on quantities that can not only be calculated from theoretical models but also measured during the experiment, because the models should reflect reality in terms of physics processes and detector effects. In collider physics, predictions are mainly based on  the cross-section of an interaction stating how high the probability for certain interaction is. In addition, the decay width of a particle is needed to describe how particles generated in an interaction behave in the detector system.
 
-A proton-proton collision is modeled by describing the protons as a sea of partons, {i.e.}, the gluons and quarks their momentum is carried by, and then calculating the cross-sections for these partons to interact individually. The technique of seeing the collision as an interaction of two individual partons while decoupling these interactions from the parton interactions in the individual protons is called factorization.
-For a parton carrying the fraction $x$ of the proton's momentum for a center-of-mass energy of $\hat{s}$  the cross-section $\sigma(p_1 p_2 \rightarrow X)$ to create a final state $X$ can be described as:
-
-
-\noindent\begin{minipage}{.5\linewidth}
+A proton-proton collision is modeled by describing the protons as a sea of partons, {i.e.}, the gluons and quarks their momentum is carried by, and then calculating the cross-sections for these partons to interact. The technique of seeing the collision as an interaction of two individual partons while decoupling these interactions from the parton interactions in the individual protons is called factorization.
+For a parton carrying a fraction $x$ of the proton's momentum for a center-of-mass energy, $\hat{s}$, the cross-section, $\sigma(p_1 p_2 \rightarrow X)$, to create a final state $X$ can be described as:
+%
 \begin{equation}
-	x_i = \frac{p_{parton,i}}{p_{proton}} 
+	x_i = \frac{p_{parton,i}}{p_{proton}}, 
 \end{equation}
-\end{minipage}%
-\begin{minipage}{.5\linewidth}
+%
+%
 \begin{equation}
-	\hat{s} = x_1 x_2 s
+	\hat{s} = x_1 x_2 s,
 \end{equation}
-\end{minipage}
-
+%
+%
 \begin{align}
-	\sigma ( p_1 p_2 \rightarrow X ) = \sum_{i,j = \Pquark, \APquark, \Pgluon} \int dx_i dx_j f_{i/p_1} ( x_i, \mu^2 ) f_{j/p_2} ( x_j, \mu^2 ) \cdot \hat{\sigma}_{ij} ( ij \rightarrow X; \hat{s}, \mu^2 )
+	\sigma ( p_1 p_2 \rightarrow X ) = \sum_{i,j = \Pquark, \APquark, \Pgluon} \int dx_i dx_j f_{i/p_1} ( x_i, \mu^2 ) f_{j/p_2} ( x_j, \mu^2 ) \cdot \hat{\sigma}_{ij} ( ij \rightarrow X; \hat{s}, \mu^2 ).
+	\label{eq:factorisation}
 \end{align}
-
-There are two quantities in this equation not yet explained.
-The first on is the parton density function (PDF) of the proton denoted as $f_{i/p_m} ( x_i, \mu^2 )$. This is a function describing the probability that a parton with momentum fraction $x_i$ in the proton $k$ takes part in the hard scattering. The PDF is independent of the collision and has to be gained from experiments rather than through calculations.
+%
+There are two quantities in equation~\ref{eq:factorisation} not yet explained.
+The parton density function (PDF), $f_{i/p_m} ( x_i, \mu^2 )$ denotes the probability of a parton with a certain momentum fraction, $x_i$, in the proton $k$ takes part in the hard scattering.
+The PDF is independent of the collision and has to be gained from experiments rather than through calculations.
 
 The second quantity $\mu$ is the so called factorization scale. It describes to which degree the interactions of the partons in the proton can be neglected. It is an arbitrary scale determining the precision of the simulation to some degree.
 
 \subsection{ATLAS simulation}
 
-The MC simulation for the ATLAS detector is generated in two steps.~\cite{atlasmontecarlo}
+The MC simulation for the ATLAS detector is generated in two steps~\cite{atlasmontecarlo}.
+In the first step the actual collision is simulated, defining the particles in the final state. The underlying algorithm is called Monte Carlo event generator.
 
-In the first step the actual collision is simulated defining the particles in the final state. The underlying algorithm is called Monte Carlo event generator.
+Secondly, the response to these particles is simulated by the detector simulation allowing objects to be reconstructed from the event similar to actual data gaining a comparison on every level of reconstruction.
 
-Secondly the response of the detector to these particles is simulated by the detector simulation allowing objects to be reconstructed from the event like from actual data gaining a comparison on every level of reconstruction.
-
-Furthermore a set of different options and generators can be chosen for the simulation. Examples would be how a parton shower is simulated or to which degree multi parton interaction is taken into account.
+Furthermore, a set of different options and generators can be chosen for the simulation. Examples would be how a parton shower is simulated or to which degree multi-parton interaction is taken into account.
 
 \subsection{Systematic uncertainties in Monte Carlo simulations}
 \label{sec:systmc}
 
-Simulations as described earlier have to be based on certain assumptions about the input parameters especially in those cases where the theory does not offer a precise result. This results in systematic uncertainties arising from the simulations and it is not obvious how good the actual data is represented by the assumptions made.
-In those cases different Monte Carlo samples are produced each representing a different assumption about the initial parameters showing first of all how the data should behave with these scaled paramters and allowing to test whether the systematic or the original sample fits better to the data. 
+Simulations, as described earlier, have to be based on certain assumptions about the input parameters. This is especially true in those cases for which the theory does not offer a precise result. This results in systematic uncertainties arising from the simulations, which should be taken into account when performing an analysis.
+In those cases different Monte Carlo samples are produced, each representing a different assumption about the initial parameters; showing first of all how the data should behave with these scaled parameters and allowing to test whether the systematic or the original sample fits better to the data. 
 These samples of Monte Carlo will just be referred to as systematics in this work.
 
-Usually the simulations use the leading order cross-section.
-When next-to-leading order diagrams become relevant the simulation has to be adapted resulting in different samples for different orders.
-This work focuses on the \tW and \ttbar events interfering at NLO as described in \ref{chp:tw}
+Usually the simulations use the leading order diagrams.
+When next-to-leading order diagrams become relevant, the simulation sometimes has to be adapted resulting in different samples for different orders.
+This work focuses on the \tW and \ttbar events interfering at NLO as described in section~\ref{chp:tw}
 The total NLO amplitude is the sum of the of singly resonant diagrams and all doubly resonant diagrams:
 
 \begin{align}
-\Aamp = \Atw + \Att
+\Aamp = \Atw + \Att.
 \end{align}
 
 Calculating the cross-section requires the square of this amplitude:
 
 \begin{align}
-|\Aamp|^2 &= |\Atw|^2 + 2 \mathcal{R} \{ \Atw \Att^{\ast} \} + |\Att|^2 \\
-&\equiv \Samp + \Iamp + \Damp
+|\Aamp|^2 &= |\Atw|^2 + 2 \mathcal{R} \{ \Atw \Att^{\ast} \} + |\Att|^2, \\
+&\equiv \Samp + \Iamp + \Damp.
 \end{align}
 
-As a nominal sample in this work the Diagram Removal approach, denoted as DR, is used. It fully removes the \Att amplitude and thus both the pure \ttbar contribution as well as the interference term vanish.
+The Diagram Removal approach is used as a nominal sample, denoted as DR, is used. It fully removes the \Att amplitude and thus both the pure \ttbar contribution as well as the interference term vanish.
 
 \begin{align}
 | \ADR |^2 = \Samp
 \end{align}
 
-Alternatively the Diagram Subtraction or DS can be used which is in this work represented by the systematics sample. It introduces a gauge invariant term that cancels the \ttbar contribution and in a simplified way can be written as
+Alternatively the Diagram Subtraction or DS can be used, which is in this work represented by the systematics sample. It introduces a gauge invariant term that cancels the \ttbar contribution and in a simplified way, can be written as
 
 \begin{align}
-| \ADS |^2 &= \Samp + \Iamp + \Damp - \widetilde{\Damp}\\
+| \ADS |^2 &= \Samp + \Iamp + \Damp - \widetilde{\Damp},\\
 &\approx \Samp + \Iamp.
 \end{align}
 
-The nominal samples were produced using a full ATLAS detector simulation implemented in \GEANTfour and the systematic samples were mostly simulated using \ATLFASTtwo.~\cite{geant, atlfast}. The systematic samples used in this thesis were produced using \GEANTfour as a DS sample requires a full simulation.
+The nominal samples were produced using a full ATLAS detector simulation implemented in \GEANTfour and the systematic samples were mostly simulated using \ATLFASTtwo~\cite{geant, atlfast}. The systematic samples used in this thesis were produced using \GEANTfour as a DS sample requires a full simulation.
 
-The events were generated by \POWHEG\PYTHIA8.~\cite{pythia}
+The events were generated by \POWHEG\PYTHIA8~\cite{pythia}.
 
 %---------------------------------------------------------------------
-
-
-\missingfigure{DR/DS}
