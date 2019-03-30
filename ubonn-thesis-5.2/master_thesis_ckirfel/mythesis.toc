@@ -48,9 +48,9 @@
 \contentsline {section}{\numberline {6.2}Final setup of the network}{42}{section.6.2}
 \contentsline {section}{\numberline {6.3}The input variables}{42}{section.6.3}
 \contentsline {section}{\numberline {6.4}The network architecture}{44}{section.6.4}
-\contentsline {section}{\numberline {6.5}Setup of the optimisation}{47}{section.6.5}
-\contentsline {subsection}{\numberline {6.5.1}Choice of the optimiser}{48}{subsection.6.5.1}
-\contentsline {subsection}{\numberline {6.5.2}Tuning the optimiser}{48}{subsection.6.5.2}
+\contentsline {section}{\numberline {6.5}Setup of the optimisation}{46}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Choice of the optimiser}{46}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Tuning the optimiser}{47}{subsection.6.5.2}
 \contentsline {section}{\numberline {6.6}Regularisation}{50}{section.6.6}
 \contentsline {subsection}{\numberline {6.6.1}Dropout}{50}{subsection.6.6.1}
 \contentsline {subsection}{\numberline {6.6.2}Batch normalisation}{50}{subsection.6.6.2}

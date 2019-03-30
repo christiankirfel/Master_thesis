@@ -29,8 +29,8 @@
 \contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Network performance of the classifier}}{43}{figure.caption.22}
 \contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Performance of the classifier using different variables}}{45}{figure.caption.24}
 \contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Network performance's dependency on the architecture}}{46}{figure.caption.25}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Classifier losses for a complex architecture}}{46}{figure.caption.26}
-\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Classifier performance for different activation functions}}{47}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Classifier losses for a complex architecture}}{47}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Classifier performance for different activation functions}}{48}{figure.caption.27}
 \contentsline {figure}{\numberline {\relax 6.6}{\ignorespaces Classifier losses for different optimisers}}{48}{figure.caption.28}
 \contentsline {figure}{\numberline {\relax 6.7}{\ignorespaces Classifier loss for different learning rates}}{49}{figure.caption.29}
 \contentsline {figure}{\numberline {\relax 6.8}{\ignorespaces Performance of the classifier with decay}}{49}{figure.caption.30}
