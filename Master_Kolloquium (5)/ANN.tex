@@ -8,8 +8,18 @@
     \begin{block}{Run 1}
 \begin{itemize}
     \item Same hyper-parameters for both networks
-    \item Adversary parallel, 3 layers only
+    \item Adversary uses only 3 layers
 \end{itemize}
+    \end{block}
+    \begin{block}{Setup}
+    \begin{itemize}
+    \item Input: \num{14} variables motivated by a BDT variable scan.
+    \item Hidden layers: \num{6}(\num{3}) \ELU layers $\times$ \num{128} nodes each
+    \item Output layer: \num{1} \SIGMOID node
+    \item Optimisation: SGD, Learning rate $=0.06$, momentum $=0.3$, no nesterov, no decay
+    \item Duration: 400 iteration
+    \item $\lambda = 10$
+    \end{itemize}
     \end{block}
 \end{frame}
 
@@ -37,11 +47,15 @@
 \end{frame}
 
 \begin{frame}{Approach 1}
-    \begin{block}{Run 2}
-\begin{itemize}
-    \item Classifier as originally optimised
-    \item Adversary parallel, 3 layers only
-\end{itemize}
+\begin{block}{Setup of the adversary}
+    \begin{itemize}
+    \item Input: \num{14} variables motivated by a BDT variable scan.
+    \item Hidden layers: \num{3} \ELU layers $\times$ \num{32} nodes each
+    \item Output layer: \num{1} \SIGMOID node
+    \item Optimisation: SGD, Learning rate $=0.001$, momentum $=0.$, no nesterov, no decay
+    \item Duration: 400 iteration
+    \item $\lambda = 0.1$
+    \end{itemize}
     \end{block}
 \end{frame}
 
