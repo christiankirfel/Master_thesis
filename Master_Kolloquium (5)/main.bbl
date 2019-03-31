@@ -1,0 +1,233 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 2.9 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{chollet2015keras}{misc}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{1}{}{%
+        {{hash=14134a39113404b1f80969c9ccc1f71e}{%
+           family={Chollet},
+           familyi={C\bibinitperiod},
+           given={François},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{fullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{bibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorbibnamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authornamehash}{2f3cf4de7406c8a08275677188d056f8}
+      \strng{authorfullhash}{2f3cf4de7406c8a08275677188d056f8}
+      \field{sortinit}{C}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{\url{https://keras.io}}
+      \field{title}{Keras}
+      \field{year}{2015}
+    \endentry
+    \entry{2014arXiv1406.2661G}{article}{}
+      \name{author}{8}{}{%
+        {{hash=b8309a3e80e90bd0b1aa74558c5e9741}{%
+           family={{Goodfellow}},
+           familyi={G\bibinitperiod},
+           given={Ian\bibnamedelima J.},
+           giveni={I\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=a341d25f80a8118cdbb90b272adc8b4f}{%
+           family={{Pouget-Abadie}},
+           familyi={P\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod}}}%
+        {{hash=9e80f4779b032f68a6106e1424345450}{%
+           family={{Mirza}},
+           familyi={M\bibinitperiod},
+           given={Mehdi},
+           giveni={M\bibinitperiod}}}%
+        {{hash=743dd6cdaa6639320289d219d351d7b7}{%
+           family={{Xu}},
+           familyi={X\bibinitperiod},
+           given={Bing},
+           giveni={B\bibinitperiod}}}%
+        {{hash=e8151f1b8f85a048cacb34f374ec922b}{%
+           family={{Warde-Farley}},
+           familyi={W\bibinitperiod},
+           given={David},
+           giveni={D\bibinitperiod}}}%
+        {{hash=9ca00ffd7cc35f7cfb8f698aa9239c76}{%
+           family={{Ozair}},
+           familyi={O\bibinitperiod},
+           given={Sherjil},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ccec1ccd2e1aa86960eb2e872c6b7020}{%
+           family={{Courville}},
+           familyi={C\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=40a8e4774982146adc2688546f54efb2}{%
+           family={{Bengio}},
+           familyi={B\bibinitperiod},
+           given={Yoshua},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{28c80b82fce5cf9430bd3acb1557943f}
+      \strng{fullhash}{013d741ee9b7741be2bb987dd83f1374}
+      \strng{bibnamehash}{28c80b82fce5cf9430bd3acb1557943f}
+      \strng{authorbibnamehash}{28c80b82fce5cf9430bd3acb1557943f}
+      \strng{authornamehash}{28c80b82fce5cf9430bd3acb1557943f}
+      \strng{authorfullhash}{013d741ee9b7741be2bb987dd83f1374}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eid}{arXiv:1406.2661}
+      \field{eprintclass}{stat.ML}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv e-prints}
+      \field{month}{6}
+      \field{title}{{Generative Adversarial Networks}}
+      \field{year}{2014}
+      \field{pages}{arXiv:1406.2661}
+      \range{pages}{-1}
+      \verb{eprint}
+      \verb 1406.2661
+      \endverb
+      \keyw{Statistics - Machine Learning,Computer Science - Machine Learning}
+    \endentry
+    \entry{Louppe:2016ylz}{article}{}
+      \name{author}{3}{}{%
+        {{hash=832b9967410c05c324eec6e9b19da71e}{%
+           family={Louppe},
+           familyi={L\bibinitperiod},
+           given={Gilles},
+           giveni={G\bibinitperiod}}}%
+        {{hash=778b55a021579eb233fa0b710c1b543f}{%
+           family={Kagan},
+           familyi={K\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=0003024ea8011848862cbf896b544a27}{%
+           family={Cranmer},
+           familyi={C\bibinitperiod},
+           given={Kyle},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{fullhash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{bibnamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authorbibnamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authornamehash}{b1ef0c222753069509c0f0ba27920f08}
+      \strng{authorfullhash}{b1ef0c222753069509c0f0ba27920f08}
+      \field{sortinit}{L}
+      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{stat.ME}
+      \field{eprinttype}{arXiv}
+      \field{title}{{Learning to Pivot with Adversarial Networks}}
+      \field{year}{2016}
+      \verb{eprint}
+      \verb 1611.01046
+      \endverb
+    \endentry
+    \entry{tensorflow2015-whitepaper}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8d40077fa9a7d3b3b0643f1b85b2427c}{%
+           family={{Martin Abadi}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \strng{fullhash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \strng{bibnamehash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \strng{authorbibnamehash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \strng{authornamehash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \strng{authorfullhash}{8d40077fa9a7d3b3b0643f1b85b2427c}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Software available from tensorflow.org}
+      \field{title}{{TensorFlow}: Large-Scale Machine Learning on Heterogeneous Systems}
+      \field{year}{2015}
+      \verb{urlraw}
+      \verb http://tensorflow.org/
+      \endverb
+      \verb{url}
+      \verb http://tensorflow.org/
+      \endverb
+    \endentry
+    \entry{standard_model}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=873f554a53d0522c4317a2c43d46460d}{%
+           family={{MissMJ}},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{873f554a53d0522c4317a2c43d46460d}
+      \strng{fullhash}{873f554a53d0522c4317a2c43d46460d}
+      \strng{bibnamehash}{873f554a53d0522c4317a2c43d46460d}
+      \strng{authorbibnamehash}{873f554a53d0522c4317a2c43d46460d}
+      \strng{authornamehash}{873f554a53d0522c4317a2c43d46460d}
+      \strng{authorfullhash}{873f554a53d0522c4317a2c43d46460d}
+      \field{sortinit}{M}
+      \field{sortinithash}{cfd219b90152c06204fab207bc6c7cab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{[Online; accessed 03-March-2019]}
+      \field{title}{Elementary particles included in the Standard Model}
+      \field{year}{2006}
+      \verb{urlraw}
+      \verb https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
+      \endverb
+      \verb{url}
+      \verb https://commons.wikimedia.org/wiki/File:Standard_Model_of_Elementary_Particles.svg
+      \endverb
+    \endentry
+    \entry{Pequenao:1095924}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=09e214119185ac51997b4face21351a1}{%
+           family={Pequenao},
+           familyi={P\bibinitperiod},
+           given={Joao},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{09e214119185ac51997b4face21351a1}
+      \strng{fullhash}{09e214119185ac51997b4face21351a1}
+      \strng{bibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorbibnamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authornamehash}{09e214119185ac51997b4face21351a1}
+      \strng{authorfullhash}{09e214119185ac51997b4face21351a1}
+      \field{sortinit}{P}
+      \field{sortinithash}{8d51b3d5b78d75b54308d706b9bbe285}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{3}
+      \field{title}{{Computer generated image of the whole ATLAS detector}}
+      \field{year}{2008}
+      \verb{urlraw}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+      \verb{url}
+      \verb http://cds.cern.ch/record/1095924
+      \endverb
+    \endentry
+  \enddatalist
+  \missing{NN_sketch}
+\endrefsection
+\endinput
+

@@ -1,0 +1,58 @@
+\definecolor{erlangenblack}{RGB}{0,0,0}
+\definecolor{erlangenwhite}{RGB}{255,255,255}
+\definecolor{erlangenlightgrey}{RGB}{210,210,210}%Textfarbe Header wenn frei
+\definecolor{erlangenlightergrey}{RGB}{230,230,230}
+\definecolor{erlangendarkgrey}{RGB}{72,72,50}
+\definecolor{erlangenblue}{RGB}{26,47,87}%dünne Leiste oben
+\definecolor{erlangenlyellow}{RGB}{255,255,255}
+\definecolor{blues}{RGB}{47,76,133}%Farbe oben Leiste
+\definecolor{logo_blue}{RGB}{0,77,255}
+\definecolor{logo_blue_dark}{RGB}{0,44,145}
+\definecolor{logo_grey}{RGB}{115,115,97}
+\definecolor{logo_yellow}{RGB}{255,178,0}
+
+
+%\setbeamerfont{<bleh>}{family=, size=, shape=, series=}
+
+\setbeamercolor{frametitle}{bg=erlangenlightergrey,fg=logo_blue}
+
+\setbeamercolor{titlepage}{bg=erlangenlightgrey}
+\setbeamercolor{titlepage main}{bg=erlangenwhite,fg=erlangendarkgrey}
+
+\setbeamercolor{headerline title}{fg=erlangenwhite,bg=logo_blue}
+\setbeamercolor{headerline border}{bg=logo_yellow}
+
+\setbeamercolor{footerline topborder}{bg=erlangenblue}
+\setbeamercolor{footerline}{bg=erlangendarkgrey,fg=erlangenwhite}
+
+\setbeamercolor{section in head/foot}{fg=erlangenwhite}
+\setbeamertemplate{section in head/foot shaded}[default][50]
+\setbeamerfont{section in head/foot}{size=\scriptsize, shape=\bfseries}
+
+\setbeamercolor{alerted text}{fg=erlangenlyellow}
+\setbeamercolor{background canvas}{bg=white}
+\setbeamercolor{structure}{bg=erlangenwhite, fg=blues}
+
+% blocks
+\setbeamercolor{block title}          {bg=erlangenlightgrey,fg=logo_grey}
+\setbeamercolor{block body}           {bg=logo_grey,fg=black}
+\setbeamercolor{block title example}  {bg=erlangenlightgrey,fg=erlangenblue}
+\setbeamercolor{block body example}   {bg=erlangenlightergrey,fg=erlangendarkgrey}
+\setbeamercolor{block title alerted}  {bg=erlangenwhite, fg=erlangenblack}
+\setbeamercolor{block body alerted}   {bg=erlangenlightergrey,fg=erlangendarkgrey}
+
+%\usecolortheme{rose}
+%\useinnertheme[shadow]{rounded}
+%\usecolortheme{dolphin}
+%\useoutertheme{infolines}
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
