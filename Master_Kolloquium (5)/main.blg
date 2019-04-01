@@ -1,8 +1,8 @@
 [0] Config.pm:302> INFO - This is Biber 2.9
 [0] Config.pm:305> INFO - Logfile is 'main.blg'
-[18] biber:313> INFO - === Mon Apr  1, 2019, 14:36:17
-[57] Biber.pm:371> INFO - Reading 'main.bcf'
-[107] Biber.pm:857> INFO - Found 6 citekeys in bib section 0
+[18] biber:313> INFO - === Mon Apr  1, 2019, 18:24:21
+[58] Biber.pm:371> INFO - Reading 'main.bcf'
+[108] Biber.pm:857> INFO - Found 6 citekeys in bib section 0
 [121] Biber.pm:3981> INFO - Processing section 0
 [128] Biber.pm:4154> INFO - Looking for bibtex format file 'bibliography.bib' for section 0
 [135] bibtex.pm:1468> INFO - LaTeX decoding ...
@@ -10,10 +10,10 @@
 [145] Utils.pm:169> WARN - Duplicate entry key: '2014arXiv1406.2661G' in file 'bibliography.bib', skipping ...
 [150] Utils.pm:169> WARN - month field 'Mar' in entry 'Pequenao:1095924' is not an integer - this will probably not sort properly.
 [164] Utils.pm:169> WARN - month field 'Jun' in entry '2014arXiv1406.2661G' is not an integer - this will probably not sort properly.
-[180] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[180] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
+[179] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[179] UCollate.pm:68> INFO - Overriding locale 'en-UK' defaults 'variable = shifted' with 'variable = non-ignorable'
 [180] Biber.pm:3809> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'en-UK'
 [180] Biber.pm:3815> INFO - No sort tailoring available for locale 'en-UK'
-[188] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
-[190] bbl.pm:720> INFO - Output to main.bbl
-[195] Biber.pm:110> INFO - WARNINGS: 3
+[187] bbl.pm:617> INFO - Writing 'main.bbl' with encoding 'UTF-8'
+[189] bbl.pm:720> INFO - Output to main.bbl
+[194] Biber.pm:110> INFO - WARNINGS: 3
