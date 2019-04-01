@@ -1,8 +1,8 @@
 \beamer@slide {fig:my_label}{3}
-\beamer@slide {fig:my_label}{4}
 \beamer@slide {fig:my_label}{5}
 \beamer@slide {fig:my_label}{6}
 \beamer@slide {fig:my_label}{7}
+\beamer@slide {fig:my_label}{8}
 \beamer@slide {fig:nlo:tw}{9}
 \beamer@slide {sub@fig:nlo:tw}{9}
 \beamer@slide {fig:nlo:ttbar}{9}
@@ -11,7 +11,6 @@
 \beamer@slide {sub@fig:nlo:ttbar}{10}
 \beamer@slide {fig:nlo:tw}{10}
 \beamer@slide {sub@fig:nlo:tw}{10}
-\beamer@slide {fig:NN:tikz:sketch}{14}
 \beamer@slide {fig:simple:final:sepa}{21}
 \beamer@slide {sub@fig:simple:final:sepa}{21}
 \beamer@slide {fig:simple:final:syst}{21}

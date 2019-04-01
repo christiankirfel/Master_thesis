@@ -1,5 +1,5 @@
-\documentclass[10pt]{beamer}
-\usepackage{ngerman}
+\documentclass[10pt, UKenglish]{beamer}
+\usepackage{babel}
 \usepackage[utf8]{inputenc}  
 \usepackage{geometry}
 \usepackage[customcolors]{hf-tikz}
@@ -22,7 +22,7 @@
 \usepackage{charter}
 \setbeamercovered{transparent=20}
 \setbeamertemplate{navigation symbols}{}
-\sisetup{locale = DE, separate-uncertainty = true}
+\sisetup{separate-uncertainty = true}
 \usepackage[version=4]{mhchem}
 \usepackage{tikz}
 \usepackage{hepnames}
@@ -30,6 +30,7 @@
 \usepackage{color}
 \usepackage{thesis_defs}
 \usepackage{subcaption}
+\usepackage{xcolor}
 
 
 \usepackage[backend=biber]{biblatex}
@@ -68,9 +69,9 @@
   \ifnum\inserttotalframenumber>45\relax
     \renewcommand\step{0pt}
   \fi%
-  \pgfmathsetmacro{\aux}{360/8}
+  \pgfmathsetmacro{\aux}{360/32}
   \begin{tikzpicture}[remember picture,overlay, rotate=90+\aux]
-  \foreach \i in {0,1,...,8}
+  \foreach \i in {0,1,...,32}
     \fill[logo_blue] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
@@ -90,7 +91,7 @@
 \begin{document} 
 
 \title[Bachelorvortrag]{Hyperparameter Optimisation of an Adversarial Neural Network in the \tW channel at \SI{13}{\tera \electronvolt} with ATLAS}
-\subtitle{\today}
+\subtitle{4. April 2019}
 \author{Christian Kirfel}
 \institute{Universtität Bonn}
         
