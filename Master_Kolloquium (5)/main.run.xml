@@ -53,13 +53,13 @@
       <file>blx-dm.def</file>
       <file>blx-compat.def</file>
       <file>biblatex.def</file>
-      <file>standard.bbx</file>
       <file>numeric.bbx</file>
+      <file>standard.bbx</file>
       <file>numeric.cbx</file>
       <file>biblatex.cfg</file>
+      <file>UKenglish.lbx</file>
       <file>british.lbx</file>
       <file>english.lbx</file>
-      <file>UKenglish.lbx</file>
     </requires>
   </internal>
   <external package="biblatex" priority="5" active="0">

@@ -289,7 +289,7 @@ Mathematically, this comes down to a minimax decision rule or a competition betw
     \min_{Net1} \max_{Net2} V(Net1, Net2) = \mathbb{E}_{\mathit{x} \sim \rho_{data}} [ log Net1(\mathit{x}) ] + \mathbb{E}_{\mathit{z} \sim \rho_{sys}} [ log (1 - Net2(\mathit{z}) ) ].
 \end{align}
 %
-$V(Net1, Net2)$ is the combined value function for the two adversary networks. The first network is trained to be an optimal classifier represented by $log Net1(\mathit{x})$ while the second network is trained to distinguish between the nominal and systematics distribution $\mathit{z} \sim \rho_{sys}$ represented by $log (1 - Net2(\mathit{z}))$.
+$V(Net1, Net2)$ is the combined value function for the two adversary networks. The first network is trained to be an optimal classifier, called classifier, represented by $log Net1(\mathit{x})$ while the second network, called the adversary, is trained to distinguish between the nominal and systematics distribution $\mathit{z} \sim \rho_{sys}$ represented by $log (1 - Net2(\mathit{z}))$.
 
  In theory, the first classifier should be trained slowly and kept close to its optimum while the second network slowly learns and allows the first network to adapt to it. This is achieved by training the two networks successively over multiple iterations using a combined value function.
 A combined loss function is used as the value function. It is just the difference between the two separate loss functions with a hyper-parameter, $\lambda$, to control the impact of the adversary as shown in equation \eqref{eq:adversarial_loss}:
@@ -301,13 +301,13 @@ A combined loss function is used as the value function. It is just the differenc
 %
 In the first step of each iteration, the first network is trained using the combined loss function, $\mathcal{L}$. In the second step, the adversary is trained using its simple loss function $L_{net2}$. Each of the networks has the usual set of hyper-parameters to optimise explained in detail in the previous sections
 
-For this thesis, the adversarial network is set up by building a classifying network. The information of the classifier is then fed into both the classifier's output layer and the adversarial network creating a second model based on the first network's model. The networks are then trained successively controlling the combined and separate losses. Figure \ref{fig:ANN_sketch} shows a sketch of the setup.
+For this thesis, the adversarial network is set up by building a classifying network. The information of the classifier is then fed into both the classifier's output layer and the adversarial network creating a second model based on the first network's model. The networks are then trained successively controlling the combined and separate losses. Figure~\ref{fig:ANN_sketch} shows a sketch of the setup.
 %
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.9\textwidth]{figures_ML/ANN_sketch.png}
-	\label{fig:ANN_sketch}
 	\caption[Adversarial setup sketched]{Sketch of the network setup. The middle part is the classifier. The model generated is fed into both the second network and the classifier's output. This way the two losses $L_{net1}$ and $L_{net2}$ are generated. Furthermore the training of the classifier immediately affects both output models.}
+	\label{fig:ANN_sketch}
 \end{figure}
 %
 The hyperparameter $\lambda$ is set to tune the impact of the second network on the model. A large $\lambda$ leads to a very pivotal model but can also decrease the overall quality of the classifier.

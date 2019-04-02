@@ -4,19 +4,19 @@
 
 
 \chapter{The LHC and the ATLAS detector}
-\label{lhc_atlas}
+\label{chp:lhc_atlas}
 
 
-For most researches in modern particle physics there are two main constraints. The first one arises from the statistical nature of decay and creation processes in particle physics. Many of the most interesting events occur extremely rarely and call for large amount of data or more precisely high luminosity, to achieve statistically significant results. Secondly the energy scale of particle physics is enormously high and therefore the energy needed to allow breaking the structure of particles below the nuclear scale. 
+For most researches in modern particle physics there are two main constraints. The first one arises from the statistical nature of decay and creation processes in particle physics. Many of the most interesting events occur extremely rarely and call for large amount of data or more precisely high luminosity, to achieve statistically significant results. Secondly the energy provided has to be sufficiently high to overcome the large binding energy of hadrons. 
 
-This work was carried out using simulations based on the ATLAS~\cite{atlas} detector at the Large Hadron Collider (LHC)~\cite{lhc_machine} which offers both a record breaking center-of-mass energy and luminosity. This chapter summarises both machines and provides the knowledge necessary to understand the simulations used. First of all, a summary of the machines' parts and their technical details is given, followed by a description of how the detector detects particles and how their properties are measured. Simulations of detector events are explained and the event selection for this work is covered.
+This work was carried out using simulations based on the ATLAS~\cite{atlas} detector at the Large Hadron Collider (LHC)~\cite{lhc_machine} which offers both a record breaking center-of-mass energy and luminosity. This chapter summarises both machines and provides the knowledge necessary to understand the simulations used. First of all, a summary of the machines' parts and their technical details is given, followed by a description of how the detector detects particles and how their properties are measured. A brief introduction into how detector events are simulated is presented.
 
 \section{Large Hadron Collider}
 
-The Large Hadron Collider, located at the facilities of the European Organization of Nuclear Research (CERN) close to Geneva, was built to extend the frontiers of modern particle physics by delivering high luminosities and reaching unprecedented high energies thereby providing the data benefitting multiple particle physics experiments.
+The Large Hadron Collider, located at the facilities of the European Organization of Nuclear Research (CERN) close to Geneva, was built to extend the frontiers of modern particle physics by delivering high luminosities and reaching unprecedented high energies, thereby providing the data benefiting multiple particle physics experiments.
 
-The LHC is a circular particle collider with a circumference of \SI{26.7}{\kilo \metre} designed to  accelerate and collide two counter-rotating proton beams. The protons are accelerated in bunches of up to \num{d11} protons at  energies up to \SI{6.5}{\tera \electronvolt} and a luminosity of \SI{d34}{\per\square\cm \per\s}, achieving the record center-of-mass energy of up to \SI{13}{\tera \electronvolt}. The bunches are pre-accelerated by a number of accelerators before being inserted in the last, so called, storage ring. An overview of the acceleration system is given in figure \ref{fig:accelerator_complex} and for more detailed information one can refer to the LHC design report.~\cite{lhc_machine}. 
-The four main interaction points, at which the beams are brought to collision, contain the main experiments of the LHC. Two of them are general purpose detectors, namely ATLAS~\cite{atlas} and CMS.~\cite{cms} The third is the LHCb~\cite{lhcb} which focuses on bottom-quark physics. Lastly, ALICE~\cite{alice} is used for investigating heavy ion collisions. Figure \ref{fig:LHC} shows a sketch of the LHC's location and the positions of the four main experiments.
+The LHC is a circular particle collider with a circumference of \SI{26.7}{\kilo \metre} designed to  accelerate and collide two counter-rotating proton beams. The protons are accelerated in bunches of up to \num{d11} protons, at energies up to \SI{6.5}{\tera \electronvolt}. This way, the record breaking luminosity of \SI{d34}{\per\square\cm \per\s} and center-of-mass energy of up to \SI{13}{\tera \electronvolt} is achieved. The bunches are pre-accelerated by a number of accelerators before being inserted in the last, so called, storage ring. An overview of the acceleration system is given in figure \ref{fig:accelerator_complex} and for more detailed information one can refer to the LHC design report~\cite{lhc_machine}. 
+The four main interaction points, at which the beams are brought to collision, contain the main experiments of the LHC. Two of them are general purpose detectors, namely ATLAS~\cite{atlas} and CMS~\cite{cms}. That means they are designed to cover a wide range of final states rather than focusing on a single analysis. The third is the LHCb~\cite{lhcb} which focuses on bottom-quark physics. Lastly, ALICE~\cite{alice} is used for investigating heavy ion collisions. Figure \ref{fig:LHC} shows a sketch of the LHC's location and the positions of the four main experiments.
 
 \begin{figure}[htbp]
 \centering
@@ -37,17 +37,17 @@ The four main interaction points, at which the beams are brought to collision, c
 
 \section{The ATLAS detector}
 
-The ATLAS detector is a general purpose detector meaning it aims at covering a maximum number of final states, enabling reasearchers in may topics of particle physics to use its data.
+The ATLAS detector is a general purpose detector meaning it aims at covering a maximum number of final states. This allows for many topics of research within the realm of particle physics.
 
-ATLAS, \enquote{A Toroidal LHC Apparatus} has the distinguishing structure of a general purpose detector, its innermost part formed by tracking detectors directly surrounding the interaction point, followed by calorimeters, and a final layer for muon tracking. All the components are visualized in figure~\ref{fig:atlas} including two humans to give an impression of the detector's size.
+ATLAS, \enquote{A Toroidal LHC Apparatus} has the distinguishing structure of a general purpose detector. Its innermost part is formed by tracking detectors directly surrounding the interaction point, followed by calorimeters, and a final layer for muon tracking. All the components are visualized in figure~\ref{fig:atlas} including two humans to give an impression of the detector's size.
 
-The innermost tracking detectors are summarized under the name Inner Detector (ID) and consist of two silicon detectors namely the Pixel Detector and the Semi Conductor Tracker as well as a straw detector named Transition Radiation Tracker. The Inner Detector allows for precise measurement of not only charged particles' position, and thus vertex information, but also for their charge and momentum.
+The innermost tracking detectors are summarized under the name Inner Detector (ID). The ID consists of two silicon detectors namely the Pixel Detector and the Semi Conductor Tracker as well as a straw detector named Transition Radiation Tracker. It allows for precise measurement of not only charged particles' position, and thus \emph{vertex} information, but also for their charge and momentum. A vertex is the origin of an interaction and decay determined by the intersection of tracks.  It is, however, not able to detect neutral particles.
 
-The calorimeter system is divided into two components, being the electromagnetic calorimeter and the hadronic calorimeter, allow to measure the energy of particles by stopping them in the detector material.
+The calorimeter system is divided into two components, being the electromagnetic calorimeter and the hadronic calorimeter. It allows to measure the energy deposited by particles in the detector material.
 
 The Muon Spectrometer is the last tracking detector which identifies particles crossing it as muons, as all other charged particles are usually stopped in the calorimeter system.
 
-In the following the concept of each detector component is briefly introduced~\cite{wermes} to then summarize how particles can be detected and distinguished. The reconstruction of objects from the detector response is explained and an event selection for \tW candidates introduced.
+In the following sections the detector's components are outlined in more detail~\cite{wermes} to then summarize how particles can be detected and distinguished. At first, an introduction to the coordinate system is given. The reconstruction of objects from the detector response is explained and an event selection for \tW candidates introduced.
 
 
 
@@ -63,62 +63,67 @@ In the following the concept of each detector component is briefly introduced~\c
 The ATLAS coordinate system is a right-handed and right-angled coordinate system with the $z$-axis pointing along the LHC's beam pipe. The corresponding transverse plane is defined by the $x$-axis pointing towards the ring's centre while the $y$-axis points upwards. The origin of the system is defined by the nominal point of interaction. The polar angle, $\theta$, is the angle between the $z$-axis and the $x$-$y$-plane and the azimuthal angle, $\phi$, is the angle between the $x$- and the $y$-axis.
 
 Alternatively, as in this work, an event's topology is described by the azimuthal angle $\phi$, the pseudo-rapidity, $\eta$, and the transverse momentum, \pT. The pseudo-rapidity replaces the polar angle and is defined as
-
+%
 \begin{equation}
 \eta = \frac{1}{2} ln\left[ tan\left(\frac{\theta}{2}\right)\right] \approx \arctanh\frac{p_z}{E}.
 \end{equation}
-
+%
 The transverse momentum is defined as
-
+%
 \begin{equation}
 \pT = \sqrt{p_x^2 + p_y^2},
 \end{equation}
 where $p_x$ and $p_y$ are the momenta along the corresponding axes. 
-
+%
 The angular variables are defined within
-
+%
 \begin{equation}
-\eta \in [-\infty,\infty],\,
-\phi \in [-\pi,\pi].
+\eta \in (-\infty,\infty),\,
+\phi \in [-\pi,\pi).
 \end{equation}
-
-
+%
+Lastly the angular separation of two objects can be measured using their $R$-value. The angular difference, $\Delta R$, is defined as:
+\begin{align}
+\Delta R = \sqrt{\Delta \eta^2 + \Delta \phi^2}.
+\end{align}
+%
 The shape of the ATLAS detector makes the cylindrical system the obvious choice. This comes with the additional benefit of a well defined transverse plane where the sum of all vectors in the final state should be zero because the initial state has no transverse momentum.
 
 
 
 \subsection{Tracking detectors}
 
-Tracking detectors are used to measure a charged particle's trajectory, momentum and charge value, of which two types are used in the ID of the ATLAS detector. The Pixel detector and the Semi Conductor Tracker (SCT) are silicon detectors and the Transition Radiation Tracker (TRT) is a straw-based tracking detector. For all detectors it holds true that they are surrounded by a magnetic field and cover a pseudorapidity range of $|\eta| < 2.5$. The magnetic field results in curved trajectories enabling an estimate of momentum and charge.\cite{leo}
+Tracking detectors are used to measure a charged particle's trajectory, momentum and charge. Two types of such trackers are used in the ID of the ATLAS detector. The Pixel detector and the Semi Conductor Tracker (SCT) are silicon detectors and the Transition Radiation Tracker (TRT) is a straw-based tracking detector. For all parts of the ID it holds true that they are surrounded by a magnetic field and cover a pseudorapidity range of $|\eta| < 2.5$. The magnetic field results in curved trajectories enabling an estimate of momentum and charge\cite{leo}.
 
-Pixel detectors are based on ionisation of charged particles in the semiconductor material. The induced charge is picked up by the detector's pixels providing a position information. To provide a 3-dimensional trajectory the pixel-chips are ordered in 4 layers around the beam pipe where the layer closest to the point of interaction, called Insertable B-Layer (IBL), was added in 2015. It is located only \SI{3.3}{\centi \metre} from the beam pipe and allows to detect vertices very close to the interaction point mainly originating from \Pbottom-quarks giving the layer its name.~\cite{pixel_run2}
+Pixel detectors are based on the effect of ionisation of semiconductor material when a particle traverses it. The induced charge is picked up by the detector's pixels providing information regarding the particle's position. To provide a 3-dimensional trajectory, the pixel-chips are ordered in 4 layers around the beam pipe, where the layer closest to the point of interaction, called Insertable B-Layer (IBL), was added in 2015. It is located only \SI{3.3}{\centi \metre} from the beam pipe and allows to detect vertices very close to the interaction point mainly originating from bottom-quarks giving, the layer its name~\cite{pixel_run2}.
 
-The SCT as a silicon microstrip detector is the second silicon-based tracker immediately following on the pixel detector. It consists of modules of four silicon strip sensors organised in four barrel layers and eighteen planar endcap disks.
+The SCT, a silicon microstrip detector, is the second silicon-based tracker immediately following the pixel detector. It consists of modules of four silicon strip sensors organised in four barrel layers and eighteen planar endcap disks.
 
-The TRT is structured in straw tubes each tube being an individual drift chamber with a strong potential difference due to negatively charged walls. The tubes are filled with a gas mixture (\ce{Xe} or \ce{Ar}) causing transversing charged particles to ionize and then by accelerated to the walls. A cascade is initiated and a measurable signal in the potential difference is measured. 
-Between the tubes material is inserted resulting in transition radiation. This radiation has a cross section way higher for electrons than for other particles over a wide range of energy thus adding particle information to the track information provided by the TRT.
+The TRT is a structure composed of straw tube detectors. Each straw tube is an individual drift chamber with a strong potential difference due to negatively charged walls and a negatively charged wire at the center. The tubes are filled with a gas mixture (\ce{Xe} or \ce{Ar}) causing traversing charged particles to ionise the gas. The resulting ions are accelerated to the walls. The drifting particles cause a cascade effect that is then read as a hit related to the time the cascade particles drifted within the tube.
+Between the tubes, material is inserted resulting in transition radiation. This radiation has a cross section much higher for electrons than for other particles over a wide range of energy thus adding possible electron identification to the track information provided by the TRT.
 
-A particle being detected in a layer of the ID is called a hit. The record of hits gives an estimate on the particle's trajectory and can thereby also provide information on the vertex the particle originates from. This vertex information is worth mentioning as for a an experiment with an event count as large as the ATLAS experiment's events interfere and information from so called pileup events can affect the event's information. As pileup originates from different events it can be separated from the event of interest by separating the vertices.
+A particle being detected in a layer of the ID is called a hit. The record of consecutive hits within the ID gives an estimate on the particle's trajectory and can thereby also provide information on the vertex the particle originates from. This vertex information is useful for an experiment with a luminosity as high as that of the ATLAS experiment because events interfere and information from so called \emph{pileup} events can affect the event's information. Pileup events or objects originates from additional proton-proton collisions. If the secondary collision happens at the same time as the original hard scattering the pileup is called \emph{in-time} and the events become superimposed. Additionally, the reaction time of the calorimeters can lead to objects originating from different bunch-crossings to interfere with the event, leading to \emph{out-of-time pileup}. As pileup originates from different events it can be separated from the event of interest by separating the vertices.
 
 \subsection{The ATLAS calorimeter system}
 
-The ATLAS calorimeter system is divided into three main parts. The electromagnetic (EM) calorimeter, comprising a barrel and two end-caps, and the hadron calorimeter, built by a tile calorimeter, consisting of a a barrel and two so called "extended barrels", and the hadron end-caps. The third part is the forward calorimeter which additionally focuses on electromagnetic interaction. The tile calorimeter is scintillator-based apart from that the main part of the calorimeter system is based on liquid argon. The components cover a pseudorapidity range of $|\eta| < 4.9$
+The ATLAS calorimeter system is divided into three main parts. The electromagnetic calorimeter (ECAL), comprising a barrel and two end-caps, and the hadron calorimeter (HCAL), built by a tile calorimeter, consisting of a a barrel and two so called "extended barrels", and the hadron end-caps. The third part is the forward calorimeter which additionally focuses on electromagnetic interaction. The tile calorimeter is scintillator-based apart from that the main part of the calorimeter system is based on liquid argon. The components cover a pseudorapidity range of $|\eta| < 4.9$
 
-Calorimeters determine a traversing particle's energy by exploiting the formation of particle showers.~\cite{wermes} Due to inelastic collisions in the detector's material, the energy of the original particle is distributed on a cascade of secondary particles finally stopped by ionization. The resulting charge or photons can be measured as an estimate of the initial energy.
+Calorimeters determine a traversing particle's energy by exploiting the formation of \emph{particle showers}~\cite{wermes}. Due to inelastic collisions in the detector's material, the energy of the original particle is distributed on a cascade of secondary particles finally stopped by ionisation. The resulting charge or photons can be measured as an estimate of the initial energy.
 
-Electromagnetic calorimeters exploit the energy loss of electromagnetically interacting particles in matter. Mainly photons and electrons loose their energy based on pair production and Bremsstrahlung respectively. The energy loss initializes a cascade of particle decays called an electromagnetic shower. The decay stops when the shower particles do not hold sufficient energy for a decay anymore. The energy of the final state shower particles is picked up by the detector representing the initial particle's energy.
+Electromagnetic calorimeters exploit the energy loss of electromagnetically interacting particles in matter. Mainly photons and electrons loose their energy based on pair production and Bremsstrahlung respectively. The energy loss initialises a cascade of particle decays called an \emph{electromagnetic shower}~\cite{wermes}. The decay stops when the shower particles do not hold sufficient energy for a decay anymore. The energy of the final state shower particles is picked up by the detector representing the initial particle's energy.
 The ATLAS ECAL is a sampling calorimeter, built of two alternating layers of absorber and detection material. In the absorber the showers are induced to subsequently be detected in the detection layers.
+The barrel part covers a range of $|\eta| < 1.475$ and the end-caps consisting of two coaxial wheels cover $1.375 < |\eta| < 3.2$
 
 
-As the ECAL uses electromagnetic showers the hadronic calorimeter depends on hadronic shower evolution. Hadronic showers are initialized due to ionisation or strong interaction with the material's nuclei. If the resulting particles still interact with the material a shower evolves.
+As the ECAL uses electromagnetic showers, the hadron calorimeter depends on \emph{hadronic shower} evolution. Hadronic showers are initialized due to ionisation or strong interaction with the material's nuclei. If the resulting particles still interact with the material, a shower ensues.
 The hadronic tile calorimeter is made of alternating layers of steel absorbents and scintillators covering a pseudorapidity range of $|\eta| < 1.6$.
-The hadronic endcap calorimter (HEC) is liquid argon-based and covers $1.4 < |\eta| < 3.1$
+The hadronic endcap calorimter (HEC) is liquid argon-based and covers $1.4 < |\eta| < 3.1$. Additionally, in the a high-density forward calorimeter covers $3.1 < |\eta| < 4.9$
 Due to the larger size of hadronic showers the HCAL occupies more detector space than the ECAL.
 
 
 \subsection{The Muon spectrometer}
 
-The second tracking detector of ATLAS is the muon spectrometer which is the outermost part of the detector. The task of the spectrometer is to detect charged particles traversing the calorimeter without being stopped or deploying their complete energy, and to do both collect trigger information and information on trajectory and momentum. Due to these two tasks the spectrometer is bifid with the first part being the trigger chamber covering a range of $|\eta|<2.4$, followed by the high-precision chamber with a range of $|\eta|<2.7$. The main detector's support feet cause a further gap at about $\phi = \ang{300}$ and $\phi = \ang{270}$.
+The second tracking component of ATLAS is the muon spectrometer (MS) which is the outermost part of the detector. The task of the spectrometer is to detect charged particles traversing the calorimeter without being stopped or depositing their complete energy, and to collect trigger information and information on trajectory and momentum. In order to accomplish these tasks the spectrometer is bifid with the first part being the trigger chamber covering a range of $|\eta|<2.4$, followed by the high-precision chamber with a range of $|\eta|<2.7$. The main detector's support feet cause a further gap at about $\phi = \ang{300}$ and $\phi = \ang{270}$.
 
 Normally the only charged particles left to be detected in the muon spectrometer are muons giving the component its name and allowing to provide good trigger information for researches interested in muons in the final event topology.
 
@@ -130,39 +135,38 @@ Normally the only charged particles left to be detected in the muon spectrometer
 
 This section focuses on the detection and distinction of different particle types in the ATLAS detector. The capability and combined information of the detector components is introduced giving an explanation of the general working principle and also of the characteristics defining the events in this work. Figure \ref{fig:atlas_sketch} gives an overview of typical particle interactions and detections.
 
-In order to reconstruct the particles in an event low level information is gathered using the direct detector output and then associated to the higher level particle information.
-
-The information from the ID is called a track and contains not only the trajectory but also tells how consistently a track holds hits in every layer. A track offers momentum and charge information and can be associated with a vertex and a possible energy deposition in a calorimeter. 
+In order to reconstruct the particles in an event, low level information is gathered using the direct detector output and then associated to the higher level particle information.
+The information from the ID is called a track and contains not only the trajectory but also tells how consistently a track holds hits in every layer. A track offers momentum and electric charge information and can be associated with a vertex and a possible energy deposition in a calorimeter. 
 The vertex reconstruction arising from the track information allows to define a primary vertex defined by the highest sum of squared transverse momenta while additional vertices are identified as pileup vertices.
 Secondary vertices originating from tracks connected to the original vertex can be collected to identify short-lived particles.
 
-The calorimeter data is summarised in clusters. Clusters are neighboring calorimeter cells with energy depositions significantly higher than the expected noise. A cluster is formed around a high energy deposition and can be associated to hadrons or jets or even to a corresponding track.
+The calorimeter data is summarised in clusters. Clusters are neighboring calorimeter cells with energy depositions significantly higher than the expected noise. A cluster is formed around a high energy deposition and can be associated to hadrons or even to a corresponding track.
 
-In the following the higher order objects reconstructed from this basic information are introduced to then explain the decisions made in the event selection for the \tW channel.
+In the following, the higher order objects reconstructed from this basic information and are introduced to then explain the decisions made in the event selection for the \tW channel.
 
 \begin{description}
 \item[Electrons] 
 are constructed from energy deposits in the EM associated with ID tracks.
 To improve the decision rule, a likelihood object quantity is constructed from the shape and the ratio of the calorimeter to tracker response, and a set of further variables suitable for a better discriminant. There are three settings for the likelihood object namely tight medium and loose depending on how restrictive the analysis is.
-Lastly an isolation quantity is defined based on cones around the track and the EM deposit to further decimate background and fake electrons.~\cite{ATLAS-CONF-2016-024}
-\item[Jets] are cones of particles originating from the common hadronisation of a quark or gluon. In the detector they are reconstructed using 3-dimensional topological clusters of calorimeter energy.~\cite{Aad:2016upy} In addition to this there is further information that can be associated to jets, {i.e.}, an ID track or a vertex using a jet-vertex-tagger to minimize the impact of pile-up events and to associate to secondary vertices. For reconstruction the \antikt algorithm was used.~\cite{Cacciari:2008gp}
-\item[Muon] reconstruction uses MS hits matched with ID tracks. The choice can be further specified by applying an identification cut based on MS/ID agreement and integrity of MS hit response. As for electrons isolation can be required.~\cite{Aad:2016jkr}
-\item[\Pbottom-jets] are jets originating from the decay of a \Pbottom-quark and therefor a strong discriminant for events containing a \Ptop decay. The process of identifying a \Pbottom-jet is called \Pbottom-tagging and uses a multivariate discriminant. The topology of \Pbottom-jets is distinguishable from other jets due to for example clear secondary vertices, vertex alignment of a primary, a secondary \Pbottom-vertex and a tertiary \Pcharm-vertex, the decay length, and the characteristic energy scale.~\cite{Aad:2110203, ATL-PHYS-PUB-2016-012}
+Lastly an isolation quantity is defined based on cones around the track and the EM deposit to further decimate background and lower the probability to label non-electron objects as electrons~\cite{ATLAS-CONF-2016-024}.
+\item[Jets] are cones of particles originating from the common hadronisation of a quark or gluon. In the detector, they are reconstructed using 3-dimensional topological clusters of energy deposited in the calorimeters~\cite{Aad:2016upy}. In addition, there is further information that can be associated to jets: {i.e.}, an ID track or a vertex using a jet-vertex-tagger to minimize the impact of pile-up events and to associate to secondary vertices. For reconstruction the \antikt\xspace algorithm was used~\cite{Cacciari:2008gp}.
+\item[Muon] reconstruction uses MS hits matched with ID tracks. The choice can be further specified by applying an identification cut based on MS/ID agreement and the integrity of MS hit response. As for electrons isolation can be required~\cite{Aad:2016jkr}.
+\item[\Pbottom-jets] are jets originating from the decay of a bottom-quark and therefore a strong discriminant for events containing a top-quark decay. The process of identifying a \Pbottom-jet is called \Pbottom-\emph{tagging} and uses a multivariate discriminant. The topology of \Pbottom-jets is distinguishable from other jets due to for example clear secondary vertices, vertex alignment of a primary, a secondary \Pbottom-vertex and a tertiary \Pcharm-vertex, the decay length, and the characteristic energy scale~\cite{Aad:2110203, ATL-PHYS-PUB-2016-012}.
 \item[Missing transverse momentum]
-arises from momentum imbalance in the transverse plane. Momentum in the transverse plane should be preserved due to it being perpendicular to the beam axis and imbalance is an indicator for neutrinos escaping the detector. It is calculated using two contributions, one being signals from fully reconstructed and calibrated particles and the other one is information from reconstructed charged particle tracks. ~\cite{Aaboud:2018tkc}  
+, \pTmiss, arises from momentum imbalance in the transverse plane. Momentum in the transverse plane should be preserved due to it being perpendicular to the beam axis and imbalance is an indicator for neutrinos escaping the detector without depositing their energy in the calorimeter system. It is calculated using two contributions: signals from fully reconstructed and calibrated particles, and information from reconstructed charged particle tracks~\cite{Aaboud:2018tkc}.
 \end{description}
 
-In addition to this the ATLAS trigger system has to be mentioned. Although potentially deserving a chapter of its own for this work it is sufficient to just state  and briefly explain trigger information.
+In addition, the ATLAS trigger system is a crucial component to analysis. Although potentially deserving a chapter of its own, for this work it is sufficient to just state  and briefly explain trigger information.
 
-Triggers are used to filter events before the actual event selection is taken into account. Given the incredible luminosity of the LHC such a preselection is important to minimize the data actually processed by the more complicated analysis algorithms and selection schemes.
-The ATLAS trigger system consists of three triggers, namely the Level 1 (L1), Level 2 (L2), and the Event Filter (EF) where L2 and EF are generally referred to as the High-Level Trigger (HLT).
+Triggers are used to filter events before the actual event selection is taken into account. Given the incredible luminosity of the LHC, such a preselection is important to minimize the data actually processed by individual analyses and selection schemes.
+The ATLAS trigger system consists of three triggers: namely the Level 1 (L1), Level 2 (L2), and the Event Filter (EF), where L2 and EF are generally referred to as the High-Level Trigger (HLT).
 
-The L1 is is completely hardware-based and its decision making process is motly based on information from the calorimeter and the muon trigger chambers. The decision step relies on high-\pT objects and their multiplicity in an event while also considering missing transverse momentum and the beam condition to provide a first and very broad event selection.
+The L1 is completely hardware-based and its decision making process mostly rests upon information from the calorimeter and the muon trigger chambers. The decision step relies on high-\pT objects and their multiplicity in an event while also considering missing transverse momentum and the beam condition to provide a first and very broad event selection.
 
-The HLT is based on software and takes the L1 events as input. L2 defines so called regions of interest (ROI) as those regions in the angular plane where the trigger objects for L1 were detected and applies further trgger cuts to these objetcs.
+The HLT is software-based and takes the L1 events as input. The L2-trigger defines regions of interest (ROI) as regions in the angular plane where the objects for L1 were detected, and applies a further cut to these objects.
 The EF fully analyzes the event based on the complete information available.
 
-This trigger information can be used for event selection making sure that certain final state objects are dominant in the topology and also to just apply a first, broad selection.
+This trigger information can be used for event selection, making sure that certain final state objects are dominant in the topology and also applies a first, broad selection.
 
 
 
@@ -240,7 +244,6 @@ The second quantity $\mu$ is the so called factorization scale. It describes to 
 
 The MC simulation for the ATLAS detector is generated in two steps~\cite{atlasmontecarlo}.
 In the first step the actual collision is simulated, defining the particles in the final state. The underlying algorithm is called Monte Carlo event generator.
-
 Secondly, the response to these particles is simulated by the detector simulation allowing objects to be reconstructed from the event similar to actual data gaining a comparison on every level of reconstruction.
 
 Furthermore, a set of different options and generators can be chosen for the simulation. Examples would be how a parton shower is simulated or to which degree multi-parton interaction is taken into account.
@@ -254,7 +257,7 @@ These samples of Monte Carlo will just be referred to as systematics in this wor
 
 Usually the simulations use the leading order diagrams.
 When next-to-leading order diagrams become relevant, the simulation sometimes has to be adapted resulting in different samples for different orders.
-This work focuses on the \tW and \ttbar events interfering at NLO as described in section~\ref{chp:tw}
+This work focuses on the \tW and \ttbar events interfering at NLO as described in section~\ref{sec:tw}.
 The total NLO amplitude is the sum of the of singly resonant diagrams and all doubly resonant diagrams:
 
 \begin{align}
@@ -268,10 +271,10 @@ Calculating the cross-section requires the square of this amplitude:
 &\equiv \Samp + \Iamp + \Damp.
 \end{align}
 
-The Diagram Removal approach is used as a nominal sample, denoted as DR, is used. It fully removes the \Att amplitude and thus both the pure \ttbar contribution as well as the interference term vanish.
+The Diagram Removal approach is used as a nominal sample, denoted as DR, is used. It fully removes the \Att amplitude and thus both the pure \ttbar contribution as well as the interference term vanish. The amplitude then becomes:
 
 \begin{align}
-| \ADR |^2 = \Samp
+| \ADR |^2 = \Samp.
 \end{align}
 
 Alternatively the Diagram Subtraction or DS can be used, which is in this work represented by the systematics sample. It introduces a gauge invariant term that cancels the \ttbar contribution and in a simplified way, can be written as
