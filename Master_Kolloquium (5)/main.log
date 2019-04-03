@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  2 APR 2019 20:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2018.10.12)  3 APR 2019 14:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2006,9 +2006,6 @@ LaTeX Warning: Label `fig:my_label' multiply defined.
 
 LaTeX Warning: Label `fig:my_label' multiply defined.
 
-
-LaTeX Warning: Label `fig:my_label' multiply defined.
-
 ) (./ml.aux) (./simple.aux) (./ml_adversarial.aux
 
 LaTeX Warning: Label `fig:nlo:ttbar' multiply defined.
@@ -2028,12 +2025,6 @@ LaTeX Warning: Label `fig:simple:final:sepa' multiply defined.
 
 
 LaTeX Warning: Label `sub@fig:simple:final:sepa' multiply defined.
-
-
-LaTeX Warning: Label `fig:simple:final:syst' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:simple:final:syst' multiply defined.
 
 
 LaTeX Warning: Label `fig:simple:final:sepa' multiply defined.
@@ -2444,7 +2435,7 @@ Package epstopdf Info: Source file: <Standard_Model_of_Elementary_Particles.eps
 (epstopdf)                    size: 1444413 bytes
 (epstopdf)             Command: <repstopdf --outfile=Standard_Model_of_Elementa
 ry_Particles-eps-converted-to.pdf Standard_Model_of_Elementary_Particles.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 
 
@@ -2457,14 +2448,14 @@ File: Standard_Model_of_Elementary_Particles-eps-converted-to.pdf Graphic file
 (type pdf)
 <use Standard_Model_of_Elementary_Particles-eps-converted-to.pdf>
 Package pdftex.def Info: Standard_Model_of_Elementary_Particles-eps-converted-t
-o.pdf  used on input line 27.
+o.pdf  used on input line 25.
 (pdftex.def)             Requested size: 177.97255pt x 170.29396pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 27.
+LaTeX Info: Redefining \HepProcess on input line 25.
 [3
 
 
@@ -2480,54 +2471,54 @@ Package epstopdf Info: Source file: <Standard_Model_of_Elementary_Particles.eps
 (epstopdf)                    size: 1444413 bytes
 (epstopdf)             Command: <repstopdf --outfile=Standard_Model_of_Elementa
 ry_Particles-eps-converted-to.pdf Standard_Model_of_Elementary_Particles.eps>
-(epstopdf)             \includegraphics on input line 27.
+(epstopdf)             \includegraphics on input line 25.
 Package epstopdf Info: Output file is already uptodate.
 File: Standard_Model_of_Elementary_Particles-eps-converted-to.pdf Graphic file 
 (type pdf)
 <use Standard_Model_of_Elementary_Particles-eps-converted-to.pdf>
 Package pdftex.def Info: Standard_Model_of_Elementary_Particles-eps-converted-t
-o.pdf  used on input line 27.
+o.pdf  used on input line 25.
 (pdftex.def)             Requested size: 177.97255pt x 170.29396pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 27.
+LaTeX Info: Redefining \HepProcess on input line 25.
 [4
 
 ]
-<./feynman_diagrams/tW_channel.pdf, id=98, 693.94376pt x 459.0519pt>
+<./feynman_diagrams/tW_channel.pdf, id=92, 693.94376pt x 459.0519pt>
 File: ./feynman_diagrams/tW_channel.pdf Graphic file (type pdf)
 <use ./feynman_diagrams/tW_channel.pdf>
 Package pdftex.def Info: ./feynman_diagrams/tW_channel.pdf  used on input line 
-57.
+55.
 (pdftex.def)             Requested size: 122.9164pt x 81.30891pt.
-<./feynman_diagrams/ttbar_ttbar_1-BW.pdf, id=99, 686.67393pt x 459.0519pt>
+<./feynman_diagrams/ttbar_ttbar_1-BW.pdf, id=93, 686.67393pt x 459.0519pt>
 File: ./feynman_diagrams/ttbar_ttbar_1-BW.pdf Graphic file (type pdf)
 <use ./feynman_diagrams/ttbar_ttbar_1-BW.pdf>
 Package pdftex.def Info: ./feynman_diagrams/ttbar_ttbar_1-BW.pdf  used on input
- line 57.
+ line 55.
 (pdftex.def)             Requested size: 122.9164pt x 82.17047pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 57.
+LaTeX Info: Redefining \HepProcess on input line 55.
 [5
 
  <./feynman_diagrams/tW_channel.pdf> <./feynman_diagrams/ttbar_ttbar_1-BW.pdf>]
-<./figures_theory/CERN-all-experiments.jpg, id=122, 781.92125pt x 563.10374pt>
+<./figures_theory/CERN-all-experiments.jpg, id=116, 781.92125pt x 563.10374pt>
 File: ./figures_theory/CERN-all-experiments.jpg Graphic file (type jpg)
 <use ./figures_theory/CERN-all-experiments.jpg>
 Package pdftex.def Info: ./figures_theory/CERN-all-experiments.jpg  used on inp
-ut line 85.
+ut line 83.
 (pdftex.def)             Requested size: 193.59044pt x 139.40941pt.
 Missing character: There is no ; in font nullfont!
 Missing character: There is no ; in font nullfont!
 
-Overfull \hbox (4.55153pt too wide) detected at line 85
+Overfull \hbox (4.55153pt too wide) detected at line 83
 [][][] $[]$[][][][][][][][] $[]$[][][][][][] 
  []
 
@@ -2536,7 +2527,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 85.
+LaTeX Info: Redefining \HepProcess on input line 83.
 [6
 
  <./figures_theory/CERN-all-experiments.jpg>]
@@ -2549,96 +2540,87 @@ Package epstopdf Info: Source file: <lhc_atlas_combination.eps>
 (epstopdf)                    size: 3755651 bytes
 (epstopdf)             Command: <repstopdf --outfile=lhc_atlas_combination-eps-
 converted-to.pdf lhc_atlas_combination.eps>
-(epstopdf)             \includegraphics on input line 94.
+(epstopdf)             \includegraphics on input line 92.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./lhc_atlas_combination-eps-converted-t
 o.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allow
 ed
-<lhc_atlas_combination-eps-converted-to.pdf, id=136, 3913.62125pt x 2709.12125p
+<lhc_atlas_combination-eps-converted-to.pdf, id=127, 3913.62125pt x 2709.12125p
 t>
 File: lhc_atlas_combination-eps-converted-to.pdf Graphic file (type pdf)
 <use lhc_atlas_combination-eps-converted-to.pdf>
 Package pdftex.def Info: lhc_atlas_combination-eps-converted-to.pdf  used on in
-put line 94.
+put line 92.
 (pdftex.def)             Requested size: 245.83282pt x 170.14641pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:my_label}
-) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.94 \end{frame}
-                
+
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 94.
+LaTeX Info: Redefining \HepProcess on input line 92.
 [7
 
  <./lhc_atlas_combination-eps-converted-to.pdf>]
-<./figures_theory/atlas_detector.jpg, id=153, 3161.8125pt x 2032.59375pt>
+<./figures_theory/atlas_detector.jpg, id=143, 3161.8125pt x 2032.59375pt>
 File: ./figures_theory/atlas_detector.jpg Graphic file (type jpg)
 <use ./figures_theory/atlas_detector.jpg>
 Package pdftex.def Info: ./figures_theory/atlas_detector.jpg  used on input lin
-e 103.
+e 101.
 (pdftex.def)             Requested size: 245.83282pt x 158.02061pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:my_label}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.103 \end{frame}
+l.101 \end{frame}
                  
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 103.
+LaTeX Info: Redefining \HepProcess on input line 101.
 [8
 
  <./figures_theory/atlas_detector.jpg>]
-<figures_theory/atlas_quer.jpg, id=165, 903.375pt x 732.7375pt>
+<figures_theory/atlas_quer.jpg, id=153, 903.375pt x 732.7375pt>
 File: figures_theory/atlas_quer.jpg Graphic file (type jpg)
 <use figures_theory/atlas_quer.jpg>
-Package pdftex.def Info: figures_theory/atlas_quer.jpg  used on input line 113.
+Package pdftex.def Info: figures_theory/atlas_quer.jpg  used on input line 111.
 
 (pdftex.def)             Requested size: 245.83282pt x 199.39587pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:my_label}
 ) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \end{frame}
+l.111 \end{frame}
                  
-Overfull \vbox (11.49994pt too high) detected at line 113
- []
-
-
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 113.
+LaTeX Info: Redefining \HepProcess on input line 111.
 [9
 
  <./figures_theory/atlas_quer.jpg>]
-<feynman_diagrams/tW-decay.pdf, id=177, 625.96065pt x 486.43661pt>
+<feynman_diagrams/tW-decay.pdf, id=163, 625.96065pt x 486.43661pt>
 File: feynman_diagrams/tW-decay.pdf Graphic file (type pdf)
 <use feynman_diagrams/tW-decay.pdf>
-Package pdftex.def Info: feynman_diagrams/tW-decay.pdf  used on input line 160.
+Package pdftex.def Info: feynman_diagrams/tW-decay.pdf  used on input line 158.
 
 (pdftex.def)             Requested size: 122.91406pt x 95.51164pt.
-<./feynman_diagrams/ttbar-decay.pdf, id=178, 683.0267pt x 570.30154pt>
+<./feynman_diagrams/ttbar-decay.pdf, id=164, 683.0267pt x 570.30154pt>
 File: ./feynman_diagrams/ttbar-decay.pdf Graphic file (type pdf)
 <use ./feynman_diagrams/ttbar-decay.pdf>
 Package pdftex.def Info: ./feynman_diagrams/ttbar-decay.pdf  used on input line
- 160.
+ 158.
 (pdftex.def)             Requested size: 122.91406pt x 102.62373pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 160.
+LaTeX Info: Redefining \HepProcess on input line 158.
 [10
 
  <./feynman_diagrams/tW-decay.pdf> <./feynman_diagrams/ttbar-decay.pdf>])
@@ -2680,7 +2662,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_misc/brain-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<./figures_misc/brain-eps-converted-to.pdf, id=239, 559.08875pt x 400.49625pt>
+<./figures_misc/brain-eps-converted-to.pdf, id=225, 559.08875pt x 400.49625pt>
 File: ./figures_misc/brain-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures_misc/brain-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures_misc/brain-eps-converted-to.pdf  used on inp
@@ -2702,7 +2684,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_misc/machine-eps-converted-to
 .pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowe
 d
-<./figures_misc/machine-eps-converted-to.pdf, id=240, 23.08624pt x 23.08624pt>
+<./figures_misc/machine-eps-converted-to.pdf, id=226, 23.08624pt x 23.08624pt>
 File: ./figures_misc/machine-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures_misc/machine-eps-converted-to.pdf>
 Package pdftex.def Info: ./figures_misc/machine-eps-converted-to.pdf  used on i
@@ -2743,7 +2725,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_theory/net_structure-eps-conv
 erted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5
 > allowed
-<./figures_theory/net_structure-eps-converted-to.pdf, id=260, 1518.67375pt x 13
+<./figures_theory/net_structure-eps-converted-to.pdf, id=246, 1518.67375pt x 13
 50.04375pt>
 File: ./figures_theory/net_structure-eps-converted-to.pdf Graphic file (type pd
 f)
@@ -2848,30 +2830,42 @@ LaTeX Info: Redefining \HepProcess on input line 40.
 [18
 
 ]
-<./figures_simple/standard_separation.png, id=311, 462.528pt x 346.896pt>
+<./figures_simple/standard_separation.png, id=296, 462.528pt x 346.896pt>
 File: ./figures_simple/standard_separation.png Graphic file (type png)
 <use ./figures_simple/standard_separation.png>
 Package pdftex.def Info: ./figures_simple/standard_separation.png  used on inpu
 t line 70.
 (pdftex.def)             Requested size: 122.91406pt x 92.18106pt.
-<./figures_simple/standard_syst.png, id=313, 462.528pt x 346.896pt>
-File: ./figures_simple/standard_syst.png Graphic file (type png)
-<use ./figures_simple/standard_syst.png>
-Package pdftex.def Info: ./figures_simple/standard_syst.png  used on input line
- 70.
-(pdftex.def)             Requested size: 122.91406pt x 92.18106pt.
-<./figures_simple/standard_ROC.png, id=314, 462.528pt x 346.896pt>
+<./figures_simple/standard_ROC.png, id=298, 462.528pt x 346.896pt>
 File: ./figures_simple/standard_ROC.png Graphic file (type png)
 <use ./figures_simple/standard_ROC.png>
 Package pdftex.def Info: ./figures_simple/standard_ROC.png  used on input line 
 70.
 (pdftex.def)             Requested size: 122.91406pt x 92.18106pt.
-<./figures_simple/standard_losses.png, id=315, 462.528pt x 346.896pt>
-File: ./figures_simple/standard_losses.png Graphic file (type png)
-<use ./figures_simple/standard_losses.png>
-Package pdftex.def Info: ./figures_simple/standard_losses.png  used on input li
-ne 70.
-(pdftex.def)             Requested size: 122.91406pt x 92.18106pt.
+Package epstopdf Info: Source file: <./figures_simple/standard_losses.eps>
+(epstopdf)                    date: 2019-04-03 09:43:59
+(epstopdf)                    size: 51096 bytes
+(epstopdf)             Output file: <./figures_simple/standard_losses-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-04-03 12:00:45
+(epstopdf)                    size: 22157 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures_simple/standard_
+losses-eps-converted-to.pdf ./figures_simple/standard_losses.eps>
+(epstopdf)             \includegraphics on input line 70.
+Package epstopdf Info: Output file is already uptodate.
+
+
+pdfTeX warning: /usr/bin/pdflatex (file ./figures_simple/standard_losses-eps-co
+nverted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1
+.5> allowed
+<./figures_simple/standard_losses-eps-converted-to.pdf, id=299, 462.72874pt x 3
+46.29375pt>
+File: ./figures_simple/standard_losses-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figures_simple/standard_losses-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures_simple/standard_losses-eps-converted-to.pdf 
+ used on input line 70.
+(pdftex.def)             Requested size: 122.91406pt x 91.98404pt.
 
 Overfull \vbox (17.77565pt too high) detected at line 70
  []
@@ -2884,12 +2878,13 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
 LaTeX Info: Redefining \HepProcess on input line 70.
 [19
 
- <./figures_simple/standard_separation.png> <./figures_simple/standard_syst.png
-> <./figures_simple/standard_ROC.png> <./figures_simple/standard_losses.png>])
+ <./figures_simple/standard_separation.png> <./figures_simple/standard_ROC.png>
+ <./figures_simple/standard_losses-eps-converted-to.pdf>])
 \openout2 = `ml_adversarial.aux'.
 
- (./ml_adversarial.tex
-<feynman_diagrams/tw-NLO.pdf, id=338, 683.0267pt x 569.05513pt>
+
+(./ml_adversarial.tex
+<feynman_diagrams/tw-NLO.pdf, id=353, 683.0267pt x 569.05513pt>
 File: feynman_diagrams/tw-NLO.pdf Graphic file (type pdf)
 <use feynman_diagrams/tw-NLO.pdf>
 Package pdftex.def Info: feynman_diagrams/tw-NLO.pdf  used on input line 49.
@@ -2931,20 +2926,47 @@ LaTeX Info: Redefining \HepProcess on input line 49.
 
 
  <./feynman_diagrams/tw-NLO.pdf>]
+Overfull \vbox (0.78844pt too high) detected at line 72
+ []
+
+
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 53.
+LaTeX Info: Redefining \HepProcess on input line 72.
 [21
+
+]
+<./figures_simple/standard_syst.png, id=384, 462.528pt x 346.896pt>
+File: ./figures_simple/standard_syst.png Graphic file (type png)
+<use ./figures_simple/standard_syst.png>
+Package pdftex.def Info: ./figures_simple/standard_syst.png  used on input line
+ 81.
+(pdftex.def)             Requested size: 245.83282pt x 184.37802pt.
+
+Overfull \hbox (10.24672pt too wide) has occurred while \output is active
+ []$  
+ []
+
+LaTeX Info: Redefining \HepProcess on input line 81.
+[22
+
+ <./figures_simple/standard_syst.png>]
+Overfull \hbox (10.24672pt too wide) has occurred while \output is active
+ []$  
+ []
+
+LaTeX Info: Redefining \HepProcess on input line 87.
+[23
 
 ]
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 77.
-[22
+LaTeX Info: Redefining \HepProcess on input line 110.
+[24
 
 ]
 Package epstopdf Info: Source file: <figures_theory/ANN_paper.eps>
@@ -2956,19 +2978,19 @@ pdf>
 (epstopdf)                    size: 641524 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures_theory/ANN_paper-e
 ps-converted-to.pdf figures_theory/ANN_paper.eps>
-(epstopdf)             \includegraphics on input line 93.
+(epstopdf)             \includegraphics on input line 126.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_theory/ANN_paper-eps-converte
 d-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> al
 lowed
-<figures_theory/ANN_paper-eps-converted-to.pdf, id=377, 957.5775pt x 363.3575pt
+<figures_theory/ANN_paper-eps-converted-to.pdf, id=413, 957.5775pt x 363.3575pt
 >
 File: figures_theory/ANN_paper-eps-converted-to.pdf Graphic file (type pdf)
 <use figures_theory/ANN_paper-eps-converted-to.pdf>
 Package pdftex.def Info: figures_theory/ANN_paper-eps-converted-to.pdf  used on
- input line 93.
+ input line 126.
 (pdftex.def)             Requested size: 307.28987pt x 116.60388pt.
 Missing character: There is no ; in font nullfont!
 
@@ -2976,8 +2998,8 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 93.
-[23
+LaTeX Info: Redefining \HepProcess on input line 126.
+[25
 
  <./figures_theory/ANN_paper-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <figures_theory/losses_paper.eps>
@@ -2989,22 +3011,22 @@ to.pdf>
 (epstopdf)                    size: 88313 bytes
 (epstopdf)             Command: <repstopdf --outfile=figures_theory/losses_pape
 r-eps-converted-to.pdf figures_theory/losses_paper.eps>
-(epstopdf)             \includegraphics on input line 101.
+(epstopdf)             \includegraphics on input line 134.
 Package epstopdf Info: Output file is already uptodate.
 
 
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_theory/losses_paper-eps-conve
 rted-to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5>
  allowed
-<figures_theory/losses_paper-eps-converted-to.pdf, id=392, 974.64125pt x 677.53
+<figures_theory/losses_paper-eps-converted-to.pdf, id=429, 974.64125pt x 677.53
 125pt>
 File: figures_theory/losses_paper-eps-converted-to.pdf Graphic file (type pdf)
 <use figures_theory/losses_paper-eps-converted-to.pdf>
 Package pdftex.def Info: figures_theory/losses_paper-eps-converted-to.pdf  used
- on input line 101.
+ on input line 134.
 (pdftex.def)             Requested size: 276.559pt x 192.25067pt.
 
-Overfull \vbox (4.35474pt too high) detected at line 101
+Overfull \vbox (4.35474pt too high) detected at line 134
  []
 
 
@@ -3012,8 +3034,8 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 101.
-[24
+LaTeX Info: Redefining \HepProcess on input line 134.
+[26
 
  <./figures_theory/losses_paper-eps-converted-to.pdf>])
 LaTeX Info: Redefining \HepProcess on input line 141.
@@ -3025,7 +3047,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 8.
-[25
+[27
 
 
 
@@ -3035,206 +3057,233 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 27.
-[26
-
-]
-<app1/full_classic_losses.png, id=429, 462.528pt x 346.896pt>
-File: app1/full_classic_losses.png Graphic file (type png)
-<use app1/full_classic_losses.png>
-Package pdftex.def Info: app1/full_classic_losses.png  used on input line 50.
-(pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
-nal:sepa}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50 \end{frame}
-                pdfTeX warning (ext4): destination with the same identifier (na
-me{sub@fig:simple:final:sepa}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50 \end{frame}
-                
-<app1/full_classic_syst.png, id=430, 462.528pt x 346.896pt>
-File: app1/full_classic_syst.png Graphic file (type png)
-<use app1/full_classic_syst.png>
-Package pdftex.def Info: app1/full_classic_syst.png  used on input line 50.
-(pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
-pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
-nal:syst}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50 \end{frame}
-                pdfTeX warning (ext4): destination with the same identifier (na
-me{sub@fig:simple:final:syst}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.50 \end{frame}
-                
-Overfull \hbox (10.24672pt too wide) has occurred while \output is active
- []$  
- []
-
-LaTeX Info: Redefining \HepProcess on input line 50.
-[27
-
- <./app1/full_classic_losses.png> <./app1/full_classic_syst.png>]
-Overfull \hbox (10.24672pt too wide) has occurred while \output is active
- []$  
- []
-
-LaTeX Info: Redefining \HepProcess on input line 63.
 [28
 
 ]
-<app1/half_classic_losses.png, id=452, 462.528pt x 346.896pt>
-File: app1/half_classic_losses.png Graphic file (type png)
-<use app1/half_classic_losses.png>
-Package pdftex.def Info: app1/half_classic_losses.png  used on input line 85.
+File: ./figures_simple/standard_syst.png Graphic file (type png)
+<use ./figures_simple/standard_syst.png>
+Package pdftex.def Info: ./figures_simple/standard_syst.png  used on input line
+ 62.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \end{frame}
+l.62 \end{frame}
                 pdfTeX warning (ext4): destination with the same identifier (na
 me{sub@fig:simple:final:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \end{frame}
+l.62 \end{frame}
                 
-<app1/half_classic_syst.png, id=453, 462.528pt x 346.896pt>
+<app1/full_classic_syst.png, id=466, 462.528pt x 346.896pt>
+File: app1/full_classic_syst.png Graphic file (type png)
+<use app1/full_classic_syst.png>
+Package pdftex.def Info: app1/full_classic_syst.png  used on input line 62.
+(pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
+<app1/full_classic_losses.png, id=467, 462.528pt x 346.896pt>
+File: app1/full_classic_losses.png Graphic file (type png)
+<use app1/full_classic_losses.png>
+Package pdftex.def Info: app1/full_classic_losses.png  used on input line 62.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (3.99055pt too high) detected at line 62
+ []
+
+
+Overfull \hbox (10.24672pt too wide) has occurred while \output is active
+ []$  
+ []
+
+LaTeX Info: Redefining \HepProcess on input line 62.
+[29
+
+ <./app1/full_classic_syst.png> <./app1/full_classic_losses.png>]
+Overfull \hbox (10.24672pt too wide) has occurred while \output is active
+ []$  
+ []
+
+LaTeX Info: Redefining \HepProcess on input line 75.
+[30
+
+]
+File: app1/full_classic_syst.png Graphic file (type png)
+<use app1/full_classic_syst.png>
+Package pdftex.def Info: app1/full_classic_syst.png  used on input line 110.
+(pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
+pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
+nal:sepa}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{sub@fig:simple:final:sepa}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 \end{frame}
+                 
+<app1/half_classic_syst.png, id=490, 462.528pt x 346.896pt>
 File: app1/half_classic_syst.png Graphic file (type png)
 <use app1/half_classic_syst.png>
-Package pdftex.def Info: app1/half_classic_syst.png  used on input line 85.
+Package pdftex.def Info: app1/half_classic_syst.png  used on input line 110.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \end{frame}
-                pdfTeX warning (ext4): destination with the same identifier (na
-me{sub@fig:simple:final:syst}) has been already used, duplicate ignored
+l.110 \end{frame}
+                 pdfTeX warning (ext4): destination with the same identifier (n
+ame{sub@fig:simple:final:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.85 \end{frame}
-                
+l.110 \end{frame}
+                 
+<app1/half_classic_losses.png, id=491, 462.528pt x 346.896pt>
+File: app1/half_classic_losses.png Graphic file (type png)
+<use app1/half_classic_losses.png>
+Package pdftex.def Info: app1/half_classic_losses.png  used on input line 110.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (3.99055pt too high) detected at line 110
+ []
+
+
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 85.
-[29
+LaTeX Info: Redefining \HepProcess on input line 110.
+[31
 
- <./app1/half_classic_losses.png> <./app1/half_classic_syst.png>]
-<figures_theory/ANN_sketch.png, id=465, 3270.2175pt x 1839.87375pt>
+ <./app1/half_classic_syst.png> <./app1/half_classic_losses.png>]
+<figures_theory/ANN_sketch.png, id=504, 3270.2175pt x 1839.87375pt>
 File: figures_theory/ANN_sketch.png Graphic file (type png)
 <use figures_theory/ANN_sketch.png>
-Package pdftex.def Info: figures_theory/ANN_sketch.png  used on input line 99.
+Package pdftex.def Info: figures_theory/ANN_sketch.png  used on input line 124.
+
 (pdftex.def)             Requested size: 245.83282pt x 138.29338pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 99.
-[30
+LaTeX Info: Redefining \HepProcess on input line 124.
+[32
 
  <./figures_theory/ANN_sketch.png>]
-<app2/app2_losses2.pdf, id=476, 462.52798pt x 346.89601pt>
-File: app2/app2_losses2.pdf Graphic file (type pdf)
-<use app2/app2_losses2.pdf>
-Package pdftex.def Info: app2/app2_losses2.pdf  used on input line 123.
+File: app1/half_classic_syst.png Graphic file (type png)
+<use app1/half_classic_syst.png>
+Package pdftex.def Info: app1/half_classic_syst.png  used on input line 160.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \end{frame}
+l.160 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:simple:final:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \end{frame}
+l.160 \end{frame}
                  
-<app2/app2_syst.pdf, id=477, 462.52798pt x 346.89601pt>
+<app2/app2_syst.pdf, id=515, 462.52798pt x 346.89601pt>
 File: app2/app2_syst.pdf Graphic file (type pdf)
 <use app2/app2_syst.pdf>
-Package pdftex.def Info: app2/app2_syst.pdf  used on input line 123.
+Package pdftex.def Info: app2/app2_syst.pdf  used on input line 160.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \end{frame}
+l.160 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:simple:final:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \end{frame}
+l.160 \end{frame}
                  
+<app2/app2_losses2.pdf, id=516, 462.52798pt x 346.89601pt>
+File: app2/app2_losses2.pdf Graphic file (type pdf)
+<use app2/app2_losses2.pdf>
+Package pdftex.def Info: app2/app2_losses2.pdf  used on input line 160.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (3.99055pt too high) detected at line 160
+ []
+
+
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 123.
-[31
+LaTeX Info: Redefining \HepProcess on input line 160.
+[33
 
- <./app2/app2_losses2.pdf> <./app2/app2_syst.pdf
+ <./app2/app2_syst.pdf> <./app2/app2_losses2.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./app2/app2_syst.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
+pdfTeX warning: /usr/bin/pdflatex (file ./app2/app2_losses2.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >]
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 135.
-[32
+LaTeX Info: Redefining \HepProcess on input line 172.
+[34
 
 ]
-<app3/app3_losses2.pdf, id=582, 462.52798pt x 346.89601pt>
-File: app3/app3_losses2.pdf Graphic file (type pdf)
-<use app3/app3_losses2.pdf>
-Package pdftex.def Info: app3/app3_losses2.pdf  used on input line 156.
+File: app2/app2_syst.pdf Graphic file (type pdf)
+<use app2/app2_syst.pdf>
+Package pdftex.def Info: app2/app2_syst.pdf  used on input line 206.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \end{frame}
+l.206 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:simple:final:sepa}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \end{frame}
+l.206 \end{frame}
                  
-<app3/app3_syst.pdf, id=583, 462.52798pt x 346.89601pt>
+<app3/app3_syst.pdf, id=619, 462.52798pt x 346.89601pt>
 File: app3/app3_syst.pdf Graphic file (type pdf)
 <use app3/app3_syst.pdf>
-Package pdftex.def Info: app3/app3_syst.pdf  used on input line 156.
+Package pdftex.def Info: app3/app3_syst.pdf  used on input line 206.
 (pdftex.def)             Requested size: 144.4266pt x 108.32004pt.
 pdfTeX warning (ext4): destination with the same identifier (name{fig:simple:fi
 nal:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \end{frame}
+l.206 \end{frame}
                  pdfTeX warning (ext4): destination with the same identifier (n
 ame{sub@fig:simple:final:syst}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.156 \end{frame}
+l.206 \end{frame}
                  
+<app3/app3_losses2.pdf, id=620, 462.52798pt x 346.89601pt>
+File: app3/app3_losses2.pdf Graphic file (type pdf)
+<use app3/app3_losses2.pdf>
+Package pdftex.def Info: app3/app3_losses2.pdf  used on input line 206.
+(pdftex.def)             Requested size: 138.2795pt x 103.70966pt.
+
+Overfull \vbox (3.99055pt too high) detected at line 206
+ []
+
+
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 156.
-[33
+LaTeX Info: Redefining \HepProcess on input line 206.
+[35
 
- <./app3/app3_losses2.pdf> <./app3/app3_syst.pdf
+ <./app3/app3_syst.pdf> <./app3/app3_losses2.pdf
 
-pdfTeX warning: /usr/bin/pdflatex (file ./app3/app3_syst.pdf): PDF inclusion: m
-ultiple pdfs with page group included in a single page
+pdfTeX warning: /usr/bin/pdflatex (file ./app3/app3_losses2.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
 >])
 \openout2 = `conclusion.aux'.
 
@@ -3243,32 +3292,24 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 15.
-[34
+LaTeX Info: Redefining \HepProcess on input line 32.
+[36
 
 
 
 ]
-Overfull \hbox (10.24672pt too wide) has occurred while \output is active
- []$  
- []
-
-LaTeX Info: Redefining \HepProcess on input line 36.
-[35
-
-]
-<xkcd.png, id=696, 372.39125pt x 440.64626pt>
+<xkcd.png, id=724, 372.39125pt x 440.64626pt>
 File: xkcd.png Graphic file (type png)
 <use xkcd.png>
-Package pdftex.def Info: xkcd.png  used on input line 44.
+Package pdftex.def Info: xkcd.png  used on input line 40.
 (pdftex.def)             Requested size: 122.91406pt x 145.4406pt.
 
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 44.
-[36
+LaTeX Info: Redefining \HepProcess on input line 40.
+[37
 
  <./xkcd.png>])
 \openout2 = `backup.aux'.
@@ -3290,7 +3331,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_theory/network-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<./figures_theory/network-eps-converted-to.pdf, id=707, 2198.2125pt x 1841.8812
+<./figures_theory/network-eps-converted-to.pdf, id=736, 2198.2125pt x 1841.8812
 6pt>
 File: ./figures_theory/network-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures_theory/network-eps-converted-to.pdf>
@@ -3308,7 +3349,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 28.
-[37
+[38
 
 
 
@@ -3327,7 +3368,7 @@ Package epstopdf Info: Output file is already uptodate.
 
 pdfTeX warning: /usr/bin/pdflatex (file ./nodes_nomenclature-eps-converted-to.p
 df): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<nodes_nomenclature-eps-converted-to.pdf, id=724, 1855.93375pt x 1181.41376pt>
+<nodes_nomenclature-eps-converted-to.pdf, id=752, 1855.93375pt x 1181.41376pt>
 File: nodes_nomenclature-eps-converted-to.pdf Graphic file (type pdf)
 <use nodes_nomenclature-eps-converted-to.pdf>
 Package pdftex.def Info: nodes_nomenclature-eps-converted-to.pdf  used on input
@@ -3344,7 +3385,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 37.
-[38
+[39
 
  <./nodes_nomenclature-eps-converted-to.pdf>]
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
@@ -3352,14 +3393,6 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 52.
-[39
-
-]
-Overfull \hbox (10.24672pt too wide) has occurred while \output is active
- []$  
- []
-
-LaTeX Info: Redefining \HepProcess on input line 62.
 [40
 
 ]
@@ -3367,7 +3400,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 73.
+LaTeX Info: Redefining \HepProcess on input line 62.
 [41
 
 ]
@@ -3375,8 +3408,16 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 93.
+LaTeX Info: Redefining \HepProcess on input line 73.
 [42
+
+]
+Overfull \hbox (10.24672pt too wide) has occurred while \output is active
+ []$  
+ []
+
+LaTeX Info: Redefining \HepProcess on input line 93.
+[43
 
 ]
 Package epstopdf Info: Source file: <./figures_theory/dropout.eps>
@@ -3395,7 +3436,7 @@ Package epstopdf Info: Output file is already uptodate.
 pdfTeX warning: /usr/bin/pdflatex (file ./figures_theory/dropout-eps-converted-
 to.pdf): PDF inclusion: found PDF version <1.7>, but at most version <1.5> allo
 wed
-<./figures_theory/dropout-eps-converted-to.pdf, id=777, 3108.61375pt x 2000.473
+<./figures_theory/dropout-eps-converted-to.pdf, id=805, 3108.61375pt x 2000.473
 75pt>
 File: ./figures_theory/dropout-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figures_theory/dropout-eps-converted-to.pdf>
@@ -3413,7 +3454,7 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 103.
-[43
+[44
 
  <./figures_theory/dropout-eps-converted-to.pdf>]
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
@@ -3421,15 +3462,15 @@ Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []
 
 LaTeX Info: Redefining \HepProcess on input line 109.
-[44
+[45
 
 ]
 Overfull \hbox (10.24672pt too wide) has occurred while \output is active
  []$  
  []
 
-LaTeX Info: Redefining \HepProcess on input line 113.
-[45
+LaTeX Info: Redefining \HepProcess on input line 155.
+[46
 
 ])
 \tf@nav=\write9
@@ -3459,10 +3500,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 45435 strings out of 494757
- 899799 string characters out of 6175784
- 1331222 words of memory out of 5000000
- 47797 multiletter control sequences out of 15000+600000
+ 45444 strings out of 494757
+ 899988 string characters out of 6175784
+ 1332954 words of memory out of 5000000
+ 47806 multiletter control sequences out of 15000+600000
  568773 words of font info for 123 fonts, out of 8000000 for 9000
  81 hyphenation exceptions out of 8191
  68i,25n,108p,10405b,2295s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3474,12 +3515,6 @@ es not exist, replaced by a fixed one
 
 pdfTeX warning (dest): name{cite.0@2014arXiv1406.2661G} has been referenced but
  does not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@Pequenao:1095924} has been referenced but do
-es not exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{cite.0@standard_model} has been referenced but does
- not exist, replaced by a fixed one
 
  </gpfs/share/home/s6chkirf/.texlive2017/texmf-var/fonts/pk/ljfour/jknappen/ec/
 ecss2488.600pk>{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc} </gp
@@ -3505,10 +3540,10 @@ xmf-dist/fonts/type1/public/txfonts/rtxmi.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/newtx/rtxmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/txfonts/rtxr.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfss1000.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb>
-Output written on main.pdf (45 pages, 14065932 bytes).
+Output written on main.pdf (46 pages, 14064578 bytes).
 PDF statistics:
- 1132 PDF objects out of 1200 (max. 8388607)
- 631 compressed objects within 7 object streams
+ 1165 PDF objects out of 1200 (max. 8388607)
+ 637 compressed objects within 7 object streams
  114 named destinations out of 1000 (max. 500000)
  309 words of extra memory for PDF output out of 10000 (max. 10000000)
 

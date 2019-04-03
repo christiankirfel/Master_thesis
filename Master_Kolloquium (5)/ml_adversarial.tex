@@ -48,10 +48,43 @@
 \end{columns}
 \end{frame}
 
-\begin{frame}{dr ds}
-
+\begin{frame}{Interference in Monte Carlo}
+\begin{block}{Amplitude}
+\vspace{-0.3cm}
+\begin{align*}
+|\Aamp|^2 &= |\Atw|^2 + 2 \mathcal{R} \{ \Atw \Att^{\ast} \} + |\Att|^2, \\
+&\equiv \Samp + \Iamp + \Damp.
+\end{align*}
+\end{block}
+\begin{block}{Diagram Removal - DR}
+\vspace{-0.3cm}
+\begin{align*}
+| \ADR |^2 = \Samp.
+\end{align*}
+\end{block}
+\begin{block}{Diagram Subtraction - DS}
+\vspace{-0.3cm}
+\begin{align*}
+| \ADS |^2 &= \Samp + \Iamp + \Damp - \widetilde{\Damp},\\
+&\approx \Samp + \Iamp.
+\end{align*}
+\end{block}
 \end{frame}
 
+\begin{frame}{Sensitivity to systemativ uncertainty}
+\vspace{-0.2cm}
+\begin{figure}
+        \includegraphics[width=0.8\textwidth]{standard_syst}
+%        \caption{Response divided by sample}
+%        \label{fig:simple:final:syst}
+\end{figure}
+\end{frame}
+
+\begin{frame}[c]
+\begin{center}
+\Huge Adversarial Neural Network
+\end{center}
+\end{frame}
 
 \begin{frame}{Challenge 2 - Sensitivity to systematic uncertainties}
 \begin{block}{Problem 2}

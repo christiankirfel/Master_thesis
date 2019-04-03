@@ -19,7 +19,7 @@
     \item Input: Classifier output
     \item Hidden layers: \num{3}(\num{6}) \ELU layers $\times$ \num{128} nodes each
     \item Output layer: \num{1} \SIGMOID node
-    \item Optimisation: SGD, learning rate $=0.06$, momentum $=0.3$, no nesterov, no decay
+    \item Optimisation: SGD, \textcolor{red}{learning rate} $=0.06$, momentum $=0.3$, no nesterov, no decay
     \item Duration: 400 iterations
     \item $\lambda = 10$
     \end{itemize}
@@ -27,61 +27,86 @@
 \end{frame}
 
 \begin{frame}{Approach 1 - Run 1 - Results}
+\vspace{-0.3cm}
     \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{app1/full_classic_losses.png}
-        %\caption{}
+        \includegraphics[width=\textwidth]{standard_syst}
+        \caption{Simple}
         \label{fig:simple:final:sepa}
     \end{subfigure}
 \quad
     \begin{subfigure}[b]{0.47\textwidth}
         \includegraphics[width=\textwidth]{app1/full_classic_syst.png}
-        %\caption{}
+        \caption{Adversarial}
         \label{fig:simple:final:syst}
     \end{subfigure}
     \end{figure}
+    \vspace{-0.9cm}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \begin{figure}
+            \includegraphics[width=0.9\textwidth]{app1/full_classic_losses.png}
+    %        \caption{Response divided by sample}
+    %        \label{fig:simple:final:syst}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
     \begin{itemize}
-        \item Both losses decreasing
+        \item Inferior separation
         \item Only combined losses depend on $\lambda$
-        \item Bad separation
-        \item High sensitivity to systematics
+        \item Systematics drawn to background
     \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Approach 1 - Optimisation}
 \begin{block}{Setup of the adversary}
     \begin{itemize}
-    \item Input: \num{14} variables motivated by a BDT variable scan.
+    \item Input: Classifier output
     \item Hidden layers: \num{3} \ELU layers $\times$ \num{32} nodes each
     \item Output layer: \num{1} \SIGMOID node
-    \item Optimisation: SGD, Learning rate $=0.001$, momentum $=0.$, no nesterov, no decay
-    \item Duration: 400 iteration
+    \item Optimisation: SGD, l\textcolor{red}{earning rate} $=0.001$, momentum $=0.$, no nesterov, no decay
+    \item Duration: 400 iterations
     \item $\lambda = 0.1$
     \end{itemize}
     \end{block}
 \end{frame}
 
 \begin{frame}{Approach 1 - Run 2 - Results}
+\vspace{-0.3cm}
     \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{app1/half_classic_losses.png}
-        %\caption{}
+        \includegraphics[width=\textwidth]{app1/full_classic_syst.png}
+        \caption{Run 1}
         \label{fig:simple:final:sepa}
     \end{subfigure}
 \quad
     \begin{subfigure}[b]{0.47\textwidth}
         \includegraphics[width=\textwidth]{app1/half_classic_syst.png}
-        %\caption{}
+        \caption{Run 2}
         \label{fig:simple:final:syst}
     \end{subfigure}
     \end{figure}
+    \vspace{-0.9cm}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \begin{figure}
+            \includegraphics[width=0.9\textwidth]{app1/half_classic_losses.png}
+    %        \caption{Response divided by sample}
+    %        \label{fig:simple:final:syst}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
     \begin{itemize}
-        \item Visible separation
-        \item Adversary loss stops falling
-        \item No improvement in the sensitivity visible
+        \item Improved separation
+        \item Slightly improved sensitivity
+        \item Only combined losses depend on $\lambda$
     \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Approach 2}
@@ -100,26 +125,38 @@
 
 
 \begin{frame}{Approach 2 Results}
+\vspace{-0.3cm}
     \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{app2/app2_losses2.pdf}
-        %\caption{}
+        \includegraphics[width=\textwidth]{app1/half_classic_syst.png}
+        \caption{Approach 1}
         \label{fig:simple:final:sepa}
     \end{subfigure}
 \quad
     \begin{subfigure}[b]{0.47\textwidth}
         \includegraphics[width=\textwidth]{app2/app2_syst.pdf}
-        %\caption{}
+        \caption{Approach 2}
         \label{fig:simple:final:syst}
     \end{subfigure}
     \end{figure}
-        \begin{itemize}
-            \item Losses behave as desired
-            \item steep rise, although partially due to scale
-            \item $\lambda$ almost unusable due to difference in magnitude
-            \item still high sensitivity
-        \end{itemize}
+    \vspace{-0.9cm}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \begin{figure}
+            \includegraphics[width=0.9\textwidth]{app2/app2_losses2.pdf}
+    %        \caption{Response divided by sample}
+    %        \label{fig:simple:final:syst}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{itemize}
+        \item Even better separation
+        \item Still visible disagreement
+        \item Losses behave as expected
+    \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}{Approach 3}
@@ -135,22 +172,35 @@
 \end{frame}
 
 \begin{frame}{Approach 3 Results}
+\vspace{-0.3cm}
     \begin{figure}[htbp]
     \centering
     \begin{subfigure}[b]{0.47\textwidth}
-        \includegraphics[width=\textwidth]{app3/app3_losses2.pdf}
-        %\caption{}
+        \includegraphics[width=\textwidth]{app2/app2_syst.pdf}
+        \caption{Approach 2}
         \label{fig:simple:final:sepa}
     \end{subfigure}
 \quad
     \begin{subfigure}[b]{0.47\textwidth}
         \includegraphics[width=\textwidth]{app3/app3_syst.pdf}
-        %\caption{}
+        \caption{Approach 3}
         \label{fig:simple:final:syst}
     \end{subfigure}
     \end{figure}
-        \begin{itemize}
-            \item Almost no difference
-            \item Slightly higher stability
-        \end{itemize}
+    \vspace{-0.9cm}
+    \begin{columns}
+    \begin{column}{0.5\textwidth}
+    \begin{figure}
+            \includegraphics[width=0.9\textwidth]{app3/app3_losses2.pdf}
+    %        \caption{Response divided by sample}
+    %        \label{fig:simple:final:syst}
+    \end{figure}
+    \end{column}
+    \begin{column}{0.5\textwidth}
+    \begin{itemize}
+        \item No clear further improvement
+        \item Higher stability
+    \end{itemize}
+    \end{column}
+    \end{columns}
 \end{frame}
