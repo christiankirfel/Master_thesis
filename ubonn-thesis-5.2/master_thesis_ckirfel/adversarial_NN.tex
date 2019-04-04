@@ -39,7 +39,7 @@ As already stated, the initial setup uses the classifier as trained in chapter~\
         \caption{}
         \label{fig:app1:classic:syst}
     \end{subfigure}
-    \caption{Results for an adversarial neural network using the classic approach and hyper-parameters adopted from the classifier. Figure~\subref{fig:app1:classic:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref{fig:app1:classic:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.}
+    \caption[ANN results for a standard setup]{Results for an adversarial neural network using the classic approach and hyper-parameters adopted from the classifier. Figure~\subref{fig:app1:classic:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref{fig:app1:classic:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.}
 	\label{fig:app1:classic}
 \end{figure}
 
@@ -66,7 +66,7 @@ A simple change would be the set of input parameters. However, this would cause 
         \caption{}
         \label{fig:app1:half:syst}
     \end{subfigure}
-    \caption{Results for an adversarial neural network using low learning rate and no momentum for the classifier. Figure~\subref{fig:app1:half:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref{fig:app1:half:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.}
+    \caption[ANN results for optimised parameters]{Results for an adversarial neural network using low learning rate and no momentum for the classifier. Figure~\subref{fig:app1:half:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref{fig:app1:half:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.}
 	\label{fig:app1:half}
 \end{figure}
 
@@ -101,7 +101,7 @@ This approach simply inputs the last hidden layer into the adversary without cha
 		\caption{Systematic-Sensitivity}
 		\label{fig:app2:syst}
 	\end{subfigure}
-    \caption{Performance plots for the second approach.}
+    \caption[ANN results approach \RNum{2}]{Performance plots for the second approach. Both a slightly better separation and a lower sensitivity are visible.}
 	\label{fig:app2}
 \end{figure}
 %
@@ -122,7 +122,7 @@ A further interesting behaviour was achieved for a relatively high learning rate
         \caption{Separation of systematic and nominal in the response.}
         \label{fig:app2:highlr:syst}
     \end{subfigure}
-    \caption{Behaviour of approach \RNum{2} for a learning rate of \num{0.2}}
+    \caption[ANN approach \RNum{2}, high learning rate]{Behaviour of approach \RNum{2} for a learning rate of \num{0.2} showing a loss behaviour that could motivate a deeper analysis.}
 	\label{fig:app2:highlr}
 \end{figure}
 
@@ -158,7 +158,7 @@ Figure~\ref{fig:app3} shows the result for an effective setup. The setup is abou
 		\caption{Systematic sensitivity}
 		\label{fig:app3:syst}
 	\end{subfigure}
-    \caption{Performance of approach \RNum{3}}
+    \caption[ANN results approach \RNum{3}]{Performance of approach \RNum{3}. The plots show no significant improvements. The losses behave as expected.}
 	\label{fig:app3}
 \end{figure}
 
@@ -175,7 +175,7 @@ Figure~\ref{fig:app3} shows the result for an effective setup. The setup is abou
         \caption{}
         \label{fig:app3:down:losses}
     \end{subfigure}
-    \caption{Miscellaneous loss plots for approach \RNum{3}. Figure~\ref{fig:app3:classiclr:losses} shows the losses for a learning rate of \num{0.06} and figure~\ref{fig:app3:down:losses} for \num{0.001}.}
+    \caption[Misc plots approach \RNum{3}]{Miscellaneous loss plots for approach \RNum{3}. Figure~\ref{fig:app3:classiclr:losses} shows the losses for a learning rate of \num{0.06} and figure~\ref{fig:app3:down:losses} for \num{0.001}.}
 	\label{fig:app3:misc}
 \end{figure}
 \section{Summary}

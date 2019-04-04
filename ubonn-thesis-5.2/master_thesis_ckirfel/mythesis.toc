@@ -12,10 +12,10 @@
 \contentsline {subsection}{\numberline {2.1.1}Force carrier particles}{5}{subsection.2.1.1}
 \contentsline {subsection}{\numberline {2.1.2}Matter particles}{7}{subsection.2.1.2}
 \contentsline {section}{\numberline {2.2}Top-quark physics}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Top-quark production}{8}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.1}Top-quark production}{7}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Top-quark decay}{8}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}The \ensuremath {\Pqt \PW }\xspace channel}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Kinematics of particle colliders}{9}{section.2.3}
+\contentsline {section}{\numberline {2.3}Kinematics of particle colliders}{10}{section.2.3}
 \contentsline {chapter}{\numberline {3}The LHC and the ATLAS detector}{13}{chapter.3}
 \contentsline {section}{\numberline {3.1}Large Hadron Collider}{13}{section.3.1}
 \contentsline {section}{\numberline {3.2}The ATLAS detector}{14}{section.3.2}
@@ -31,10 +31,10 @@
 \contentsline {chapter}{\numberline {4}Machine Learning}{25}{chapter.4}
 \contentsline {section}{\numberline {4.1}The concept of machine learning}{25}{section.4.1}
 \contentsline {section}{\numberline {4.2}Neural Networks}{26}{section.4.2}
-\contentsline {subsubsection}{\nonumberline The input layer}{26}{section*.14}
-\contentsline {subsubsection}{\nonumberline Decision making process}{27}{section*.15}
-\contentsline {subsubsection}{\nonumberline Optimisers - Choosing the next step}{29}{section*.17}
-\contentsline {subsubsection}{\nonumberline Adaptive optimisers}{31}{section*.18}
+\contentsline {subsubsection}{\nonumberline The input layer}{26}{section*.15}
+\contentsline {subsubsection}{\nonumberline Decision making process}{27}{section*.16}
+\contentsline {subsubsection}{\nonumberline Optimisers - Choosing the next step}{29}{section*.18}
+\contentsline {subsubsection}{\nonumberline Adaptive optimisers}{31}{section*.19}
 \contentsline {section}{\numberline {4.3}Regularisation and Optimisation}{32}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Dropout}{32}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Batch normalization}{33}{subsection.4.3.2}
@@ -56,9 +56,9 @@
 \contentsline {section}{\numberline {6.1}Approach \uppercase {i\relax }: classical neural network}{52}{section.6.1}
 \contentsline {section}{\numberline {6.2}Approach \uppercase {ii\relax }: hidden layer input}{54}{section.6.2}
 \contentsline {section}{\numberline {6.3}Approach \uppercase {iii\relax }: compressed hidden layer input}{55}{section.6.3}
-\contentsline {section}{\numberline {6.4}Summary}{55}{section.6.4}
+\contentsline {section}{\numberline {6.4}Summary}{57}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusions}{59}{chapter.7}
-\contentsline {chapter}{\nonumberline Bibliography}{61}{chapter*.39}
-\contentsline {chapter}{\numberline {A}Useful information}{65}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.40}
-\contentsline {chapter}{\nonumberline List of Tables}{69}{chapter*.41}
+\contentsline {chapter}{\nonumberline Bibliography}{61}{chapter*.40}
+\contentsline {chapter}{\numberline {A}Monte Carlo simulations}{65}{appendix.A}
+\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.42}
+\contentsline {chapter}{\nonumberline List of Tables}{69}{chapter*.43}

@@ -66,7 +66,7 @@ Instead of living neurons, a neural network consists of numerous very simple pro
     \node[annot,left of=hl] {Input layer};
     \node[annot,right of=hl] {Output layer};
 \end{tikzpicture}
-\caption[Sketch of a typical neural network structure]{Sketch of the typical neural network structure~\cite{NN_sketch}.}
+\caption[Sketch of a typical neural network structure]{Sketch of the typical neural network structure. In this example only one hidden layer is included and the output is a single node~\cite{NN_sketch}.}
 \label{fig:NN:tikz:sketch}
 \end{figure}
  
@@ -74,7 +74,7 @@ Instead of living neurons, a neural network consists of numerous very simple pro
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale=0.18]{figures_ML/nodes_nomenclature.eps}
-	\caption[Network parameter nomenclature]{Network propagation from layer $(L-1)$ to layer $L$}
+	\caption[Network parameter nomenclature]{Network propagation from layer $(L-1)$ to layer $L$. The linear functions and the nomenclature of the parameters are indicated.}
 	\label{fig:nodes_nomenclature}
 \end{figure}
 
@@ -98,7 +98,7 @@ This is completely different for the human nervous system, which relies on a cer
 The input of every node is the weighted output of all previous nodes, as shown in equation~\eqref{eq:node_input}. $z_j^L$ is the input to the $j$-th node in the $L$-th layer. $\omega_{jk}^L$ is the weight from the $k$-th node in the previous layer to this node, $a_k^{L-1}$ is that node's output, and $b_k$ the relevant bias; representing a possible intercept of the functionality. The sum indicates that all $k$ previous nodes contribute to the input to the $j$-th node.
 
 
-The weight allows a network to predict which variables are correlated or allow for better decision rules when combined. In addition, the weights can just define the strongest variables and features. Furthermore, the output of each node is a non-linear combination of the input. This means the output can range from just one and zero to an exponential function. This is called the \emph{activation-function} of a node. A common choice is the sigmoid function as presented in equation \eqref{eq:sigmoid_activation}.~\cite{chollet2015keras}
+The weight allows a network to predict which variables are correlated or allow for better decision rules when combined. In addition, the weights can just define the strongest variables and features. Furthermore, the output of each node is a non-linear combination of the input. This means the output can range from just one and zero to an exponential function. This is called the \emph{activation-function} of a node. A common choice is the sigmoid function as presented in equation \eqref{eq:sigmoid_activation}~\cite{chollet2015keras}.
 
 \begin{align}
     a_j^L = \sigma ( z_j^L ) = \frac{1}{1 + e^{z_j^L}}
@@ -125,7 +125,7 @@ Exponential Linear Unit, \textsc{ELU} &$f(x) =
     x  & \quad \text{if } x \geq 0
   \end{cases}$      &        \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figures_ML/elu}}         \\ 
 \end{tabular}
-\caption[Selection of activation function]{Selection of activation functions taken from the Keras documentation. \cite{chollet2015keras}}
+\caption[Selection of activation function]{Selection of activation functions taken from the Keras documentation~\cite{chollet2015keras}.}
 \label{tab:activation_functions}
 \end{table}
 
@@ -225,7 +225,7 @@ The model's parameters are then updated according to:
 \section{Regularisation and Optimisation}
 
 Fluctuations and noise in the training sample can be a big problem for a model trained on the sample. A neural network might pick noise and random fluctuations up as features of its decision rule which basically is the process of \emph{overfitting}.
-The network observes way more features to work with than those actually present in reality or even in a different fraction of the sample used by the training. The most extreme scenario is that the network is large and deep enough to pick up every single feature in the training sample. If that happens, the training error becomes very low and indicates a very good decision rule. For a different sample this decision rule is at most very unreliable but probably strictly wrong resulting in a high test sample error. The network just picked up and remembered every single feature in the training sample instead of general correlations and thus becomes a mask of the sample.
+The network observes way more features to work with than those actually present in reality or even in a different fraction of the sample used by the training. The most extreme scenario is that the network is wide and deep enough to pick up every single feature in the training sample. If that happens, the training error becomes very low and indicates a very good decision rule. For a different sample this decision rule is at most very unreliable but probably strictly wrong resulting in a high test sample error. The network just picked up and remembered every single feature in the training sample instead of general correlations and thus becomes a mask of the sample.
 
 A possible way to solve this issue is stopping the training early or finding an elaborate estimator to stop on. This way, noisy features would not yet be part of the discriminant. This might in turn also lead to a suboptimal result of the overall training as one cannot be sure that the correct features always get included first.
 
@@ -234,14 +234,14 @@ More sophisticated approaches are called \emph{regularisations} of a neural netw
 \subsection{Dropout}
 \label{sec:dropout}
 
-Dropout can be described as an additional layer which attempts to hinder the network from relying on less dominant features. In essence a dropout layer removes different nodes in each iteration. This forces the network to build models that are not based on strong correlations between nodes, making the weights less interdependent. In short, it means training several neural networks depending on which nodes are turned on during a training epoch which it keeps the training in motion for a large number of epochs. Figure~\ref{fig:dropout} sketches the process.
+Dropout can be described as an additional layer which attempts to hinder the network from relying on less dominant features. In essence a dropout layer removes different nodes in each iteration. This forces the network to build models that are not based on strong correlations between nodes, making the weights less interdependent. In short, it means training several neural networks depending on which nodes are turned on during a training epoch which it keeps the training in motion for a high number of epochs. Figure~\ref{fig:dropout} sketches the process.
 
 Dropout is added to each layer of a network and can also be restricted to a subset of layers. It slows down the training as the additional motion decelerates the process of finding a minimum. However, it also accelerates each epoch slightly as it simplifies the network architecture. 
 
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[scale = 0.1]{figures_ML/dropout.eps}
-	\caption[Dropout Sketch]{Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefor not connected to the other nodes.}
+	\caption[Dropout Sketch]{Sketch of network before and after the inclusion of dropout. On the left hand side dropout is not applied and all nodes are connected. On the right hand side the dashed circles are nodes excluded by dropout and therefore not connected to the other nodes.}
 	\label{fig:dropout}
 \end{figure}
 
@@ -310,7 +310,7 @@ For this thesis, the adversarial network is set up by building a classifying net
 	\label{fig:ANN_sketch}
 \end{figure}
 %
-The hyperparameter $\lambda$ is set to tune the impact of the second network on the model. A large $\lambda$ leads to a very pivotal model but can also decrease the overall quality of the classifier.
+The hyperparameter $\lambda$ is set to tune the impact of the second network on the model. A high $\lambda$ leads to a very pivotal model but can also decrease the overall quality of the classifier.
 
 In order to better understand the figures shown in chapter \ref{chp:ANN}, the three loss values of an adversarial neural network will be introduced as the last part of this chapter.
 The first loss belongs to the classifier and is expected to first increase as the adversary finds a good model and to decrease once a more pivotal model is found. 

@@ -8,39 +8,39 @@
 \babel@toc {UKenglish}{}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Standard Model particles}}{6}{figure.caption.3}
-\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces \ensuremath {\Pqt \Paqt }\xspace pair production feynman diagrams at LO}}{8}{figure.caption.4}
-\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Single-top-production diagrams}}{9}{figure.caption.5}
-\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Final state of a \ensuremath {\Pqt \PW }\xspace decay}}{10}{figure.caption.6}
-\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Comparison of the final state of a \ensuremath {\Pqt \Paqt }\xspace and \ensuremath {\Pqt \PW }\xspace event}}{10}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 2.1}{\ignorespaces Standard Model of Particle Physics}}{6}{figure.caption.4}
+\contentsline {figure}{\numberline {\relax 2.2}{\ignorespaces \ensuremath {\Pqt \Paqt }\xspace pair production feynman diagrams at LO}}{8}{figure.caption.5}
+\contentsline {figure}{\numberline {\relax 2.3}{\ignorespaces Single-top-production diagrams}}{9}{figure.caption.6}
+\contentsline {figure}{\numberline {\relax 2.4}{\ignorespaces Final state of a \ensuremath {\Pqt \PW }\xspace decay}}{9}{figure.caption.7}
+\contentsline {figure}{\numberline {\relax 2.5}{\ignorespaces Comparison of the final state of a \ensuremath {\Pqt \Paqt }\xspace and \ensuremath {\Pqt \PW }\xspace event}}{10}{figure.caption.8}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Sketch of the LHC accelerator complex}}{14}{figure.caption.8}
-\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Sketch of the LHC ring.}}{15}{figure.caption.9}
-\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Sketch of the ATLAS detector}}{16}{figure.caption.10}
-\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Scheme of the ATLAS-detector's detection procedure}}{21}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 3.1}{\ignorespaces Sketch of the LHC accelerator complex}}{14}{figure.caption.9}
+\contentsline {figure}{\numberline {\relax 3.2}{\ignorespaces Sketch of the LHC ring.}}{15}{figure.caption.10}
+\contentsline {figure}{\numberline {\relax 3.3}{\ignorespaces Sketch of the ATLAS detector}}{16}{figure.caption.11}
+\contentsline {figure}{\numberline {\relax 3.4}{\ignorespaces Scheme of the ATLAS detector's detection procedure}}{21}{figure.caption.12}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Sketch of a typical neural network structure}}{26}{figure.caption.12}
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Network parameter nomenclature}}{27}{figure.caption.13}
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Dropout Sketch}}{33}{figure.caption.19}
-\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Adversarial setup sketched}}{36}{figure.caption.20}
-\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Exemplary loss of an adversarial network structure}}{37}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Sketch of a typical neural network structure}}{26}{figure.caption.13}
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Network parameter nomenclature}}{27}{figure.caption.14}
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Dropout Sketch}}{33}{figure.caption.20}
+\contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Adversarial setup sketched}}{36}{figure.caption.21}
+\contentsline {figure}{\numberline {\relax 4.5}{\ignorespaces Exemplary loss of an adversarial network structure}}{37}{figure.caption.22}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network performance of the classifier}}{41}{figure.caption.22}
-\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Performance of the classifier using different variables}}{43}{figure.caption.24}
-\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Network performance's dependency on the architecture}}{44}{figure.caption.25}
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Classifier losses for a complex architecture}}{45}{figure.caption.26}
-\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Classifier performance for different activation functions}}{46}{figure.caption.27}
-\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Classifier losses for different optimisers}}{46}{figure.caption.28}
-\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Classifier loss for different learning rates}}{47}{figure.caption.29}
-\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Performance of the classifier with decay}}{48}{figure.caption.30}
-\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Performance of the classifier for different dropout percentages}}{48}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Network performance of the classifier}}{41}{figure.caption.23}
+\contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Performance of the classifier using different variables}}{43}{figure.caption.25}
+\contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Network performance's dependency on the architecture}}{44}{figure.caption.26}
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Classifier losses for a complex architecture}}{45}{figure.caption.27}
+\contentsline {figure}{\numberline {\relax 5.5}{\ignorespaces Classifier performance for different activation functions}}{46}{figure.caption.28}
+\contentsline {figure}{\numberline {\relax 5.6}{\ignorespaces Classifier losses for different optimisers}}{46}{figure.caption.29}
+\contentsline {figure}{\numberline {\relax 5.7}{\ignorespaces Classifier loss for different learning rates}}{47}{figure.caption.30}
+\contentsline {figure}{\numberline {\relax 5.8}{\ignorespaces Performance of the classifier with decay}}{48}{figure.caption.31}
+\contentsline {figure}{\numberline {\relax 5.9}{\ignorespaces Performance of the classifier for different dropout percentages}}{48}{figure.caption.32}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces Results for an adversarial neural network using the classic approach and hyper-parameters adopted from the classifier. Figure~\subref {fig:app1:classic:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref {fig:app1:classic:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.\relax }}{52}{figure.caption.33}
-\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces Results for an adversarial neural network using low learning rate and no momentum for the classifier. Figure~\subref {fig:app1:half:losses} shows the losses; top to bottom: classifier, adversary, and combined loss. Figure~\subref {fig:app1:half:syst} shows the separation for the nominal and the systematic sample; solid blue for nominal, dashed green for systematic, and red for the background.\relax }}{53}{figure.caption.34}
-\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces Performance plots for the second approach.\relax }}{54}{figure.caption.35}
-\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces Behaviour of approach \uppercase {ii\relax } for a learning rate of \num {0.2}\relax }}{55}{figure.caption.36}
-\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces Performance of approach \uppercase {iii\relax }\relax }}{56}{figure.caption.37}
-\contentsline {figure}{\numberline {\relax 6.6}{\ignorespaces Miscellaneous loss plots for approach \uppercase {iii\relax }. Figure~\ref {fig:app3:classiclr:losses} shows the losses for a learning rate of \num {0.06} and figure~\ref {fig:app3:down:losses} for \num {0.001}.\relax }}{56}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 6.1}{\ignorespaces ANN results for a standard setup}}{52}{figure.caption.34}
+\contentsline {figure}{\numberline {\relax 6.2}{\ignorespaces ANN results for optimised parameters}}{53}{figure.caption.35}
+\contentsline {figure}{\numberline {\relax 6.3}{\ignorespaces ANN results approach \uppercase {ii\relax }}}{54}{figure.caption.36}
+\contentsline {figure}{\numberline {\relax 6.4}{\ignorespaces ANN approach \uppercase {ii\relax }, high learning rate}}{55}{figure.caption.37}
+\contentsline {figure}{\numberline {\relax 6.5}{\ignorespaces ANN results approach \uppercase {iii\relax }}}{56}{figure.caption.38}
+\contentsline {figure}{\numberline {\relax 6.6}{\ignorespaces Misc plots approach \uppercase {iii\relax }}}{56}{figure.caption.39}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

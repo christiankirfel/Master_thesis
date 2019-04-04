@@ -30,7 +30,7 @@ The hyperparamters are listed and the loss curve, the ROC curve, and the final s
 
 
 \begin{itemize}
-\item Input: \num{14} variables motivated by a BDT variable scan\cite{Finelli:2667560}.
+\item Input: \num{14} variables motivated by a BDT variable scan~\cite{Finelli:2667560}.
 \item Hidden layers: \num{6} \ELU layers $\times$ \num{128} nodes each
 \item Output layer: \num{1} \SIGMOID node
 \item Optimisation: SGD, Learning rate $=0.06$, momentum $=0.3$, no nesterov, no decay
@@ -122,7 +122,7 @@ The variable sets used were:
 %
 Figure \ref{fig:vars} shows a comparison of the separation and the loss curves for both variable sets. It is visible that for the set of simple variables the network runs into overtraining after about \num{200} epochs visible in plot~\ref{fig:vars:simple:loss} because \losstrain and \losstest start to diverge. This also results in a bad separation with a strong disagreement between the two samples. One way overtraining could be avoided using simple kinematic variables would be to stop earlier; in this case after about 200 epochs. There is an argument for testing a simple set of variables for a shorter training duration. However, this optimisation process would be a project of its own because all the other parameter would have to be optimised accordingly. Furthermore, in this work one has to keep in mind that the network is supposed to be used in adversarial setup later. This demands for a longer training period and a large number of features, with a strong separating potential, to be available. Otherwise the probability of finding a classifier, less sensitive to a systematic uncertainty, decreases and the behaviour of the losses has to supervised very carefully.
 
-Showing an overall good performance, the set of complex variables, as suggested by the boosted decision tree variable scan, performed in the analysis \enquote{Measurement of the cross-section for the production of a \PW boson in association with a top quark at \SI{13}{\tera \electronvolt}} was chosen\cite{Finelli:2667560}. Please note that the set of variables in the paper referred to does not always agree because the set used in this work was just inspired by it.
+Showing an overall good performance, the set of complex variables, as suggested by the boosted decision tree variable scan, performed in the analysis \enquote{Measurement of the cross-section for the production of a \PW boson in association with a top quark at \SI{13}{\tera \electronvolt}} was chosen~\cite{Finelli:2667560}. Please note that the set of variables in the paper referred to does not always agree because the set used in this work was just inspired by it.
 
 \begin{figure}[htbp]
     \centering
@@ -203,7 +203,7 @@ Although this choice seems fairly arbitrary at this point, there is arguments fo
 \begin{figure}[htbp]
 	\centering
 	\includegraphics[width=0.8\textwidth]{complex_arch_losses}
-	\caption[Classifier losses for a complex architecture]{Loss function for the classifier for \num{8} layers and \num{512} nodes each.}
+	\caption[Classifier losses for a complex architecture]{Loss function for the classifier for \num{8} layers and \num{512} nodes each. A large disagreement between the two curves is visible which is a sign for overtraining.}
 	\label{fig:complex_arch}
 \end{figure}
 
@@ -273,7 +273,7 @@ A classic gradient-based optimiser, SGD, is compared to the adaptive optimiser, 
 \label{sec:optimiser:tuning}
 
 As described in section~\ref{sec:optimisation}, an optimiser has several hyper-parameters of its own. In this section, the learning rate, the momentum with the option of Nesterov, and the decay parameter will be probed.
-For the learning rate, a range of values between a small learning rate of \num{0.001} and high learning rates up to \num{0.5} were tested to investigate the effect on the network's ability to approach a minimum. The choice was based on how high the oscillations of the losses are and how efficiently the training converges. High learning rates were discarded for an increased probability of overtraining and a lot of unwanted oscillations while small learning rates made the training unnecessarily slow and inefficient. Figure~\ref{fig:lr} shows a comparison of the network losses for a small learning rate of \num{0.001} in subfigure~\ref{fig:lr:small} and a relatively large learning rate of \num{0.2} in subfigure~\ref{fig:lr:large}. For the small learning rate there are no signs of overtraining and no oscillations visible. However, the training converges slowly. For a high learning rate the \losstrain and \losstest show larger divergence and each curve shows more oscillations individually. In the end, an intermediate learning rate of \num{0.06} is chosen.
+For the learning rate, a range of values between a small learning rate of \num{0.001} and high learning rates up to \num{0.5} were tested to investigate the effect on the network's ability to approach a minimum. The choice was based on how high the oscillations of the losses are and how efficiently the training converges. High learning rates were discarded for an increased probability of overtraining and a lot of unwanted oscillations while small learning rates made the training unnecessarily slow and inefficient. Figure~\ref{fig:lr} shows a comparison of the network losses for a small learning rate of \num{0.001} in subfigure~\ref{fig:lr:small} and a relatively high learning rate of \num{0.2} in subfigure~\ref{fig:lr:large}. For the small learning rate there are no signs of overtraining and no oscillations visible. However, the training converges slowly. For a high learning rate the \losstrain and \losstest show larger divergence and each curve shows more oscillations individually. In the end, an intermediate learning rate of \num{0.06} is chosen.
 %
 \begin{figure}[htbp]
     \centering
