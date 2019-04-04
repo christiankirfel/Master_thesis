@@ -1,6 +1,6 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \babel@toc {UKenglish}{}
-\beamer@sectionintoc {1}{Outline}{2}{0}{1}
-\beamer@sectionintoc {2}{Setting the scene}{3}{0}{2}
-\beamer@sectionintoc {3}{Machine Learning}{11}{0}{3}
+\beamer@sectionintoc {1}{Setting the scene}{2}{0}{1}
+\beamer@sectionintoc {2}{Neural Networks}{11}{0}{2}
+\beamer@sectionintoc {3}{Adversarial NN}{20}{0}{3}
 \beamer@sectionintoc {4}{Results}{27}{0}{4}

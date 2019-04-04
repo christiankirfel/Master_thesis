@@ -71,9 +71,9 @@
   \ifnum\inserttotalframenumber>45\relax
     \renewcommand\step{0pt}
   \fi%
-  \pgfmathsetmacro{\aux}{360/32}
+  \pgfmathsetmacro{\aux}{360/35}
   \begin{tikzpicture}[remember picture,overlay, rotate=90+\aux]
-  \foreach \i in {0,1,...,32}
+  \foreach \i in {0,1,...,35}
     \fill[logo_blue] 
       (0,0) -- (-\i*\aux:\radius) arc  (-\i*\aux:-(\i+1)*\aux+\step:\radius) -- cycle;
   \foreach \i in {1,...,\insertframenumber}
@@ -123,20 +123,16 @@
 \end{frame}
 \addtobeamertemplate{navigation symbols}{\vspace*{0.8cm}\hfill\circcounter\hspace*{0.7cm}}
 
-\section{Outline}
+\section{Setting the scene}
 
 \include{intro}
 
-
-\section{Setting the scene}
-
 \include{theory}
 
-\section{Machine Learning}
-
-
+\section{Neural Networks}
 \include{ml}
 \include{simple}
+\section{Adversarial NN}
 \include{ml_adversarial}
 \section{Results}
 
