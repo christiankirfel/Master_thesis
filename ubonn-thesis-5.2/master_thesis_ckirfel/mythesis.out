@@ -12,41 +12,46 @@
 \BOOKMARK [1][]{section.3.1}{Large Hadron Collider}{chapter.3}% 12
 \BOOKMARK [1][]{section.3.2}{The ATLAS detector}{chapter.3}% 13
 \BOOKMARK [2][]{subsection.3.2.1}{The ATLAS coordinate system}{section.3.2}% 14
-\BOOKMARK [2][]{subsection.3.2.2}{Tracking detectors}{section.3.2}% 15
+\BOOKMARK [2][]{subsection.3.2.2}{The Inner Detector}{section.3.2}% 15
 \BOOKMARK [2][]{subsection.3.2.3}{The ATLAS calorimeter system}{section.3.2}% 16
-\BOOKMARK [2][]{subsection.3.2.4}{The Muon spectrometer}{section.3.2}% 17
-\BOOKMARK [2][]{subsection.3.2.5}{Particle Detection in the ATLAS detector}{section.3.2}% 18
-\BOOKMARK [1][]{section.3.3}{tW event selection}{chapter.3}% 19
-\BOOKMARK [1][]{section.3.4}{Monte Carlo simulation}{chapter.3}% 20
+\BOOKMARK [2][]{subsection.3.2.4}{The Muon Spectrometer}{section.3.2}% 17
+\BOOKMARK [2][]{subsection.3.2.5}{Particle detection in the ATLAS detector}{section.3.2}% 18
+\BOOKMARK [1][]{section.3.3}{t-3mu -1mu W-3mu -1mu \040 event selection}{chapter.3}% 19
+\BOOKMARK [1][]{section.3.4}{Monte Carlo simulations}{chapter.3}% 20
 \BOOKMARK [2][]{subsection.3.4.1}{ATLAS simulation}{section.3.4}% 21
 \BOOKMARK [2][]{subsection.3.4.2}{Systematic uncertainties in Monte Carlo simulations}{section.3.4}% 22
 \BOOKMARK [0][]{chapter.4}{Machine Learning}{}% 23
 \BOOKMARK [1][]{section.4.1}{The concept of machine learning}{chapter.4}% 24
 \BOOKMARK [1][]{section.4.2}{Neural Networks}{chapter.4}% 25
-\BOOKMARK [1][]{section.4.3}{Regularisation and Optimisation}{chapter.4}% 26
-\BOOKMARK [2][]{subsection.4.3.1}{Dropout}{section.4.3}% 27
-\BOOKMARK [2][]{subsection.4.3.2}{Batch normalization}{section.4.3}% 28
-\BOOKMARK [1][]{section.4.4}{Receiver operating characteristic curve}{chapter.4}% 29
-\BOOKMARK [1][]{section.4.5}{Adversarial Neural Networks}{chapter.4}% 30
-\BOOKMARK [2][]{subsection.4.5.1}{The adversarial neural network}{section.4.5}% 31
-\BOOKMARK [0][]{chapter.5}{Hyperparameter optimisation of a classifying neural network}{}% 32
-\BOOKMARK [1][]{section.5.1}{Technical details}{chapter.5}% 33
-\BOOKMARK [1][]{section.5.2}{Final setup of the network}{chapter.5}% 34
-\BOOKMARK [1][]{section.5.3}{The input variables}{chapter.5}% 35
-\BOOKMARK [1][]{section.5.4}{The network architecture}{chapter.5}% 36
-\BOOKMARK [1][]{section.5.5}{Setup of the optimisation}{chapter.5}% 37
-\BOOKMARK [2][]{subsection.5.5.1}{Choice of the optimiser}{section.5.5}% 38
-\BOOKMARK [2][]{subsection.5.5.2}{Tuning the optimiser}{section.5.5}% 39
-\BOOKMARK [1][]{section.5.6}{Regularisation}{chapter.5}% 40
-\BOOKMARK [2][]{subsection.5.6.1}{Dropout}{section.5.6}% 41
-\BOOKMARK [2][]{subsection.5.6.2}{Batch normalisation}{section.5.6}% 42
-\BOOKMARK [0][]{chapter.6}{Adversarial Neural Network}{}% 43
-\BOOKMARK [1][]{section.6.1}{Approach i: classical neural network}{chapter.6}% 44
-\BOOKMARK [1][]{section.6.2}{Approach ii: hidden layer input}{chapter.6}% 45
-\BOOKMARK [1][]{section.6.3}{Approach iii: compressed hidden layer input}{chapter.6}% 46
-\BOOKMARK [1][]{section.6.4}{Summary}{chapter.6}% 47
-\BOOKMARK [0][]{chapter.7}{Conclusions}{}% 48
-\BOOKMARK [0][]{chapter*.40}{Bibliography}{}% 49
-\BOOKMARK [0][]{appendix.A}{Monte Carlo simulations}{}% 50
-\BOOKMARK [0][]{chapter*.42}{List of Figures}{}% 51
-\BOOKMARK [0][]{chapter*.43}{List of Tables}{}% 52
+\BOOKMARK [2][]{subsection.4.2.1}{The input layer}{section.4.2}% 26
+\BOOKMARK [2][]{subsection.4.2.2}{Decision making process}{section.4.2}% 27
+\BOOKMARK [2][]{subsection.4.2.3}{Optimisers - Choosing the next step}{section.4.2}% 28
+\BOOKMARK [2][]{subsection.4.2.4}{Adaptive optimisers}{section.4.2}% 29
+\BOOKMARK [1][]{section.4.3}{Regularisation and Optimisation}{chapter.4}% 30
+\BOOKMARK [2][]{subsection.4.3.1}{Dropout}{section.4.3}% 31
+\BOOKMARK [2][]{subsection.4.3.2}{Batch normalization}{section.4.3}% 32
+\BOOKMARK [1][]{section.4.4}{Receiver operating characteristic curve}{chapter.4}% 33
+\BOOKMARK [1][]{section.4.5}{Adversarial Neural Networks}{chapter.4}% 34
+\BOOKMARK [2][]{subsection.4.5.1}{The adversarial neural network}{section.4.5}% 35
+\BOOKMARK [0][]{chapter.5}{Hyperparameter optimisation of a classifying neural network}{}% 36
+\BOOKMARK [1][]{section.5.1}{Technical details}{chapter.5}% 37
+\BOOKMARK [1][]{section.5.2}{Final setup of the network}{chapter.5}% 38
+\BOOKMARK [1][]{section.5.3}{The input variables}{chapter.5}% 39
+\BOOKMARK [1][]{section.5.4}{The network architecture}{chapter.5}% 40
+\BOOKMARK [1][]{section.5.5}{Setup of the optimisation}{chapter.5}% 41
+\BOOKMARK [2][]{subsection.5.5.1}{Choice of the optimiser}{section.5.5}% 42
+\BOOKMARK [2][]{subsection.5.5.2}{Tuning the optimiser}{section.5.5}% 43
+\BOOKMARK [1][]{section.5.6}{Regularisation}{chapter.5}% 44
+\BOOKMARK [2][]{subsection.5.6.1}{Dropout}{section.5.6}% 45
+\BOOKMARK [2][]{subsection.5.6.2}{Batch normalisation}{section.5.6}% 46
+\BOOKMARK [0][]{chapter.6}{Adversarial Neural Network}{}% 47
+\BOOKMARK [1][]{section.6.1}{Approach i: classical neural network}{chapter.6}% 48
+\BOOKMARK [1][]{section.6.2}{Approach ii: hidden layer input}{chapter.6}% 49
+\BOOKMARK [1][]{section.6.3}{Approach iii: compressed hidden layer input}{chapter.6}% 50
+\BOOKMARK [1][]{section.6.4}{Summary}{chapter.6}% 51
+\BOOKMARK [0][]{chapter.7}{Conclusions}{}% 52
+\BOOKMARK [0][]{chapter*.35}{Bibliography}{}% 53
+\BOOKMARK [0][]{appendix.A}{Monte Carlo simulations}{}% 54
+\BOOKMARK [0][]{appendix.B}{Pre-training losses}{}% 55
+\BOOKMARK [0][]{chapter*.39}{List of Figures}{}% 56
+\BOOKMARK [0][]{chapter*.40}{List of Tables}{}% 57

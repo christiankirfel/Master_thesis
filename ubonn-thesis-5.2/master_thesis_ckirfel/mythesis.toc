@@ -7,58 +7,59 @@
 \babel@toc {ngerman}{}
 \babel@toc {UKenglish}{}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
-\contentsline {chapter}{\numberline {2}Theoretical basics}{5}{chapter.2}
-\contentsline {section}{\numberline {2.1}The Standard Model of Particle Physics}{5}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Force carrier particles}{5}{subsection.2.1.1}
-\contentsline {subsection}{\numberline {2.1.2}Matter particles}{7}{subsection.2.1.2}
-\contentsline {section}{\numberline {2.2}Top-quark physics}{7}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Top-quark production}{7}{subsection.2.2.1}
-\contentsline {subsection}{\numberline {2.2.2}Top-quark decay}{8}{subsection.2.2.2}
-\contentsline {subsection}{\numberline {2.2.3}The \ensuremath {\Pqt \PW }\xspace channel}{8}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Kinematics of particle colliders}{10}{section.2.3}
-\contentsline {chapter}{\numberline {3}The LHC and the ATLAS detector}{13}{chapter.3}
-\contentsline {section}{\numberline {3.1}Large Hadron Collider}{13}{section.3.1}
-\contentsline {section}{\numberline {3.2}The ATLAS detector}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}The ATLAS coordinate system}{15}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Tracking detectors}{17}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}The ATLAS calorimeter system}{17}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}The Muon spectrometer}{18}{subsection.3.2.4}
-\contentsline {subsection}{\numberline {3.2.5}Particle Detection in the ATLAS detector}{18}{subsection.3.2.5}
-\contentsline {section}{\numberline {3.3}tW event selection}{20}{section.3.3}
-\contentsline {section}{\numberline {3.4}Monte Carlo simulation}{21}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}ATLAS simulation}{22}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Systematic uncertainties in Monte Carlo simulations}{22}{subsection.3.4.2}
-\contentsline {chapter}{\numberline {4}Machine Learning}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}The concept of machine learning}{25}{section.4.1}
-\contentsline {section}{\numberline {4.2}Neural Networks}{26}{section.4.2}
-\contentsline {subsubsection}{\nonumberline The input layer}{26}{section*.15}
-\contentsline {subsubsection}{\nonumberline Decision making process}{27}{section*.16}
-\contentsline {subsubsection}{\nonumberline Optimisers - Choosing the next step}{29}{section*.18}
-\contentsline {subsubsection}{\nonumberline Adaptive optimisers}{31}{section*.19}
-\contentsline {section}{\numberline {4.3}Regularisation and Optimisation}{32}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Dropout}{32}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Batch normalization}{33}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Receiver operating characteristic curve}{34}{section.4.4}
-\contentsline {section}{\numberline {4.5}Adversarial Neural Networks}{34}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}The adversarial neural network}{34}{subsection.4.5.1}
-\contentsline {chapter}{\numberline {5}Hyperparameter optimisation of a classifying neural network}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Technical details}{40}{section.5.1}
-\contentsline {section}{\numberline {5.2}Final setup of the network}{40}{section.5.2}
-\contentsline {section}{\numberline {5.3}The input variables}{40}{section.5.3}
-\contentsline {section}{\numberline {5.4}The network architecture}{42}{section.5.4}
-\contentsline {section}{\numberline {5.5}Setup of the optimisation}{44}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Choice of the optimiser}{45}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Tuning the optimiser}{45}{subsection.5.5.2}
-\contentsline {section}{\numberline {5.6}Regularisation}{47}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Dropout}{48}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Batch normalisation}{49}{subsection.5.6.2}
-\contentsline {chapter}{\numberline {6}Adversarial Neural Network}{51}{chapter.6}
-\contentsline {section}{\numberline {6.1}Approach \uppercase {i\relax }: classical neural network}{52}{section.6.1}
-\contentsline {section}{\numberline {6.2}Approach \uppercase {ii\relax }: hidden layer input}{54}{section.6.2}
-\contentsline {section}{\numberline {6.3}Approach \uppercase {iii\relax }: compressed hidden layer input}{55}{section.6.3}
-\contentsline {section}{\numberline {6.4}Summary}{57}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusions}{59}{chapter.7}
-\contentsline {chapter}{\nonumberline Bibliography}{61}{chapter*.40}
-\contentsline {chapter}{\numberline {A}Monte Carlo simulations}{65}{appendix.A}
-\contentsline {chapter}{\nonumberline List of Figures}{67}{chapter*.42}
-\contentsline {chapter}{\nonumberline List of Tables}{69}{chapter*.43}
+\contentsline {chapter}{\numberline {2}Theoretical basics}{3}{chapter.2}
+\contentsline {section}{\numberline {2.1}The Standard Model of Particle Physics}{3}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Force carrier particles}{3}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}Matter particles}{5}{subsection.2.1.2}
+\contentsline {section}{\numberline {2.2}Top-quark physics}{5}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Top-quark production}{5}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Top-quark decay}{6}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}The \ensuremath {\Pqt \PW }\xspace channel}{6}{subsection.2.2.3}
+\contentsline {section}{\numberline {2.3}Kinematics of particle colliders}{7}{section.2.3}
+\contentsline {chapter}{\numberline {3}The LHC and the ATLAS detector}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Large Hadron Collider}{11}{section.3.1}
+\contentsline {section}{\numberline {3.2}The ATLAS detector}{12}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}The ATLAS coordinate system}{13}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}The Inner Detector}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}The ATLAS calorimeter system}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}The Muon Spectrometer}{16}{subsection.3.2.4}
+\contentsline {subsection}{\numberline {3.2.5}Particle detection in the ATLAS detector}{16}{subsection.3.2.5}
+\contentsline {section}{\numberline {3.3}\ensuremath {\Pqt \PW }\xspace event selection}{18}{section.3.3}
+\contentsline {section}{\numberline {3.4}Monte Carlo simulations}{19}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}ATLAS simulation}{20}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Systematic uncertainties in Monte Carlo simulations}{20}{subsection.3.4.2}
+\contentsline {chapter}{\numberline {4}Machine Learning}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}The concept of machine learning}{23}{section.4.1}
+\contentsline {section}{\numberline {4.2}Neural Networks}{24}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}The input layer}{24}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Decision making process}{25}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Optimisers - Choosing the next step}{27}{subsection.4.2.3}
+\contentsline {subsection}{\numberline {4.2.4}Adaptive optimisers}{29}{subsection.4.2.4}
+\contentsline {section}{\numberline {4.3}Regularisation and Optimisation}{30}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Dropout}{30}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Batch normalization}{31}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Receiver operating characteristic curve}{32}{section.4.4}
+\contentsline {section}{\numberline {4.5}Adversarial Neural Networks}{32}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}The adversarial neural network}{32}{subsection.4.5.1}
+\contentsline {chapter}{\numberline {5}Hyperparameter optimisation of a classifying neural network}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Technical details}{38}{section.5.1}
+\contentsline {section}{\numberline {5.2}Final setup of the network}{38}{section.5.2}
+\contentsline {section}{\numberline {5.3}The input variables}{38}{section.5.3}
+\contentsline {section}{\numberline {5.4}The network architecture}{40}{section.5.4}
+\contentsline {section}{\numberline {5.5}Setup of the optimisation}{42}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Choice of the optimiser}{43}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Tuning the optimiser}{43}{subsection.5.5.2}
+\contentsline {section}{\numberline {5.6}Regularisation}{45}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Dropout}{46}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Batch normalisation}{47}{subsection.5.6.2}
+\contentsline {chapter}{\numberline {6}Adversarial Neural Network}{49}{chapter.6}
+\contentsline {section}{\numberline {6.1}Approach \uppercase {i\relax }: classical neural network}{50}{section.6.1}
+\contentsline {section}{\numberline {6.2}Approach \uppercase {ii\relax }: hidden layer input}{51}{section.6.2}
+\contentsline {section}{\numberline {6.3}Approach \uppercase {iii\relax }: compressed hidden layer input}{53}{section.6.3}
+\contentsline {section}{\numberline {6.4}Summary}{53}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusions}{55}{chapter.7}
+\contentsline {chapter}{\nonumberline Bibliography}{57}{chapter*.35}
+\contentsline {chapter}{\numberline {A}Monte Carlo simulations}{61}{appendix.A}
+\contentsline {chapter}{\numberline {B}Pre-training losses}{63}{appendix.B}
+\contentsline {chapter}{\nonumberline List of Figures}{65}{chapter*.39}
+\contentsline {chapter}{\nonumberline List of Tables}{67}{chapter*.40}

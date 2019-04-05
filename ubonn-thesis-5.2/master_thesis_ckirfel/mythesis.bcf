@@ -1986,14 +1986,16 @@
     <bcf:citekey order="52">Louppe:2016ylz</bcf:citekey>
     <bcf:citekey order="53">Louppe:2016ylz</bcf:citekey>
     <bcf:citekey order="54">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="55">chollet2015keras</bcf:citekey>
-    <bcf:citekey order="56">tensorflow2015-whitepaper</bcf:citekey>
-    <bcf:citekey order="57">cntk</bcf:citekey>
-    <bcf:citekey order="58">theano</bcf:citekey>
-    <bcf:citekey order="59">Finelli:2667560</bcf:citekey>
-    <bcf:citekey order="60">Finelli:2667560</bcf:citekey>
-    <bcf:citekey order="61">Louppe:2016ylz</bcf:citekey>
-    <bcf:citekey order="62">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="55">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="56">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="57">chollet2015keras</bcf:citekey>
+    <bcf:citekey order="58">tensorflow2015-whitepaper</bcf:citekey>
+    <bcf:citekey order="59">cntk</bcf:citekey>
+    <bcf:citekey order="60">theano</bcf:citekey>
+    <bcf:citekey order="61">Finelli:2667560</bcf:citekey>
+    <bcf:citekey order="62">Finelli:2667560</bcf:citekey>
+    <bcf:citekey order="63">Louppe:2016ylz</bcf:citekey>
+    <bcf:citekey order="64">Louppe:2016ylz</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="none">

@@ -1525,7 +1525,7 @@
       \field{labeltitlesource}{title}
       \field{month}{8}
       \field{note}{General Photo}
-      \field{title}{{The CERN accelerator complex - August 2018. Complexe des accélérateurs du CERN - Août 2018}}
+      \field{title}{{The CERN accelerator complex - August 2018.}}
       \field{year}{2018}
       \verb{urlraw}
       \verb http://cds.cern.ch/record/2636343
@@ -1554,7 +1554,7 @@
       \field{labeltitlesource}{title}
       \field{month}{5}
       \field{note}{AC Collection. Legacy of AC. Pictures from 1992 to 2002.}
-      \field{title}{{Overall view of LHC experiments.. Vue d'ensemble des experiences du LHC.}}
+      \field{title}{{Overall view of LHC experiments.}}
       \field{year}{1998}
       \verb{urlraw}
       \verb https://cds.cern.ch/record/841555
@@ -1648,7 +1648,7 @@
       \field{title}{Teqhniques for Nuclear and Particle Physics Experiments}
       \field{year}{1994}
     \endentry
-    \entry{pixel_run2}{article}{}
+    \entry{pixel_run2}{inproceedings}{}
       \name{author}{1}{}{%
         {{hash=4e05bd17e215b0ad3d2d55d7c05b75f1}{%
            family={{ATLAS Collaboration}},
@@ -1808,7 +1808,7 @@
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Eur. Phys. J.}
       \field{number}{5}
-      \field{title}{{Muon reconstruction performance of the ATLAS detector in proton–proton collision data at $\sqrt{s}$ =13 TeV}}
+      \field{title}{{Muon reconstruction performance of the ATLAS detector in proton–proton collision data at \Ecms =\SI{13}{\tera \electronvolt}}}
       \field{volume}{C76}
       \field{year}{2016}
       \field{pages}{292}
@@ -1838,7 +1838,6 @@
       \field{labeltitlesource}{title}
       \field{journaltitle}{JINST}
       \field{month}{12}
-      \field{note}{111 pages plus author list + cover page (128 pages total), 55 figures, 17 tables, submitted to JINST, All figures including auxiliary figures are available at http://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/PERF-2012-04/}
       \field{number}{CERN-PH-EP-2015-216}
       \field{title}{{Performance of $b$-Jet Identification in the ATLAS Experiment. Performance of $b$-Jet Identification in the ATLAS Experiment}}
       \field{volume}{11}
@@ -1905,7 +1904,7 @@
       \field{eprinttype}{arXiv}
       \field{journaltitle}{Eur. Phys. J.}
       \field{number}{11}
-      \field{title}{{Performance of missing transverse momentum reconstruction with the ATLAS detector using proton-proton collisions at $\sqrt{s}$ = 13 TeV}}
+      \field{title}{{Performance of missing transverse momentum reconstruction with the ATLAS detector using proton-proton collisions at \Ecms =\SI{13}{\tera \electronvolt}}}
       \field{volume}{C78}
       \field{year}{2018}
       \field{pages}{903}
@@ -1918,21 +1917,17 @@
       \endverb
     \endentry
     \entry{atlasmontecarlo}{article}{}
-      \true{moreauthor}
-      \true{morelabelname}
       \name{author}{1}{}{%
-        {{hash=9ecfda666f0459b6c19c8c962038a023}{%
-           family={Aad},
-           familyi={A\bibinitperiod},
-           given={G.},
-           giveni={G\bibinitperiod}}}%
+        {{hash=4e05bd17e215b0ad3d2d55d7c05b75f1}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
       }
-      \strng{namehash}{ae55f906ac43ce98f52f0b2b76f11197}
-      \strng{fullhash}{ae55f906ac43ce98f52f0b2b76f11197}
-      \strng{bibnamehash}{ae55f906ac43ce98f52f0b2b76f11197}
-      \strng{authorbibnamehash}{ae55f906ac43ce98f52f0b2b76f11197}
-      \strng{authornamehash}{ae55f906ac43ce98f52f0b2b76f11197}
-      \strng{authorfullhash}{ae55f906ac43ce98f52f0b2b76f11197}
+      \strng{namehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{fullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{bibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorbibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authornamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorfullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
       \field{sortinit}{3}
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
@@ -1984,21 +1979,19 @@
     \endentry
     \entry{atlfast}{article}{}
       \name{author}{1}{}{%
-        {{hash=fc6a488a884abbb4dfd4e3b020142828}{%
-           family={and},
-           familyi={a\bibinitperiod},
-           given={Takashi\bibnamedelima Yamanaka},
-           giveni={T\bibinitperiod\bibinitdelim Y\bibinitperiod}}}%
+        {{hash=4e05bd17e215b0ad3d2d55d7c05b75f1}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
       }
       \list{publisher}{1}{%
         {{IOP} Publishing}%
       }
-      \strng{namehash}{fc6a488a884abbb4dfd4e3b020142828}
-      \strng{fullhash}{fc6a488a884abbb4dfd4e3b020142828}
-      \strng{bibnamehash}{fc6a488a884abbb4dfd4e3b020142828}
-      \strng{authorbibnamehash}{fc6a488a884abbb4dfd4e3b020142828}
-      \strng{authornamehash}{fc6a488a884abbb4dfd4e3b020142828}
-      \strng{authorfullhash}{fc6a488a884abbb4dfd4e3b020142828}
+      \strng{namehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{fullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{bibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorbibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authornamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorfullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
       \field{sortinit}{3}
       \field{sortinithash}{a4b52e5432884761f50fb9571273b93e}
       \field{labelnamesource}{author}
@@ -2292,8 +2285,8 @@
       \strng{authorbibnamehash}{98e24cac450840ae03ddb2cfcd18d393}
       \strng{authornamehash}{98e24cac450840ae03ddb2cfcd18d393}
       \strng{authorfullhash}{98e24cac450840ae03ddb2cfcd18d393}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{eprintclass}{cs.SC}
@@ -2310,42 +2303,10 @@
       \keyw{Computer Science - Symbolic Computation,Computer Science - Learning,Computer Science - Mathematical Software}
     \endentry
     \entry{Finelli:2667560}{inproceedings}{}
-      \name{author}{7}{}{%
-        {{hash=c2a8c29cfbe78ae0212ac453abd3a875}{%
-           family={Finelli},
-           familyi={F\bibinitperiod},
-           given={Kevin\bibnamedelima Daniel},
-           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
-        {{hash=a9a2c2ab49f9d22ada419c860edfae6b}{%
-           family={Suster},
-           familyi={S\bibinitperiod},
-           given={Carl},
-           giveni={C\bibinitperiod}}}%
-        {{hash=af81454f2601d643bd83dfc37ef8c9c6}{%
-           family={Brock},
-           familyi={B\bibinitperiod},
-           given={Ian},
-           giveni={I\bibinitperiod}}}%
-        {{hash=1283c02ff02c642d3b6cd7f56eb3f3c0}{%
-           family={Davis},
-           familyi={D\bibinitperiod},
-           given={Douglas},
-           giveni={D\bibinitperiod}}}%
-        {{hash=4c267d214a895082db7d4a7951044352}{%
-           family={Kruse},
-           familyi={K\bibinitperiod},
-           given={Mark},
-           giveni={M\bibinitperiod}}}%
-        {{hash=0672466dc7c3a8cec050e5ac091fd0ac}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Rui},
-           giveni={R\bibinitperiod}}}%
-        {{hash=ecab8ba72c767a1f527cc76076f94ed0}{%
-           family={Moles-Valls},
-           familyi={M\bibinithyphendelim V\bibinitperiod},
-           given={Regina},
-           giveni={R\bibinitperiod}}}%
+      \name{author}{1}{}{%
+        {{hash=4e05bd17e215b0ad3d2d55d7c05b75f1}{%
+           family={{ATLAS Collaboration}},
+           familyi={A\bibinitperiod}}}%
       }
       \list{institution}{1}{%
         {CERN}%
@@ -2353,19 +2314,19 @@
       \list{location}{1}{%
         {Geneva}%
       }
-      \strng{namehash}{71a11eda62ff5cfc1d91b810b1ddd18d}
-      \strng{fullhash}{1923c4f9282989cd4665e4d8c36f7812}
-      \strng{bibnamehash}{71a11eda62ff5cfc1d91b810b1ddd18d}
-      \strng{authorbibnamehash}{71a11eda62ff5cfc1d91b810b1ddd18d}
-      \strng{authornamehash}{71a11eda62ff5cfc1d91b810b1ddd18d}
-      \strng{authorfullhash}{1923c4f9282989cd4665e4d8c36f7812}
-      \field{sortinit}{5}
-      \field{sortinithash}{3c19c3776b658b3558e9e2e4840c01e2}
+      \strng{namehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{fullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{bibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorbibnamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authornamehash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \strng{authorfullhash}{4e05bd17e215b0ad3d2d55d7c05b75f1}
+      \field{sortinit}{6}
+      \field{sortinithash}{57e57fb8451e7fcfa45d1e069f6d3136}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{3}
       \field{number}{ATL-COM-PHYS-2019-222}
-      \field{title}{{Measurement of the cross-section for the production of a W boson in association with a top quark at 13TeV}}
+      \field{title}{{Measurement of the cross-section for the production of a \PW-boson in association with a top quark at \SI{13}{\tera \electronvolt}}}
       \field{year}{2019}
       \verb{urlraw}
       \verb https://cds.cern.ch/record/2667560

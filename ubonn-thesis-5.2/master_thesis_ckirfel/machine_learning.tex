@@ -79,13 +79,13 @@ Instead of living neurons, a neural network consists of numerous very simple pro
 \end{figure}
 
 
-\subsubsection{The input layer}
+\subsection{The input layer}
 
 To understand a task and draw reasonable conclusions, the underlying system has to be understood at first, which means its features need to be determined and summarised. The human brain is capable of investigating unknown systems and learning the features that are the most unique or interesting ones. For that, the nervous system uses its senses to explore the system and process them later. To allow a machine to do something similar, the unknown system has to be represented in a way that it is clear for the network, what to look out for. This usually is the task that requires most preprocessing by the user. The simplest case is to submit a list of variables to the network. In particle physics, this could be kinematic variables of the final reconstructed objects in an event.
 
 The input to a neural network is given to the input layer of nodes and subsequently processed through each following layer. For diverse tasks, different layers might deal with various parts of the information. However, in this work the linear way of giving all information used to an input layer and then processing it is used.
 
-\subsubsection{Decision making process}
+\subsection{Decision making process}
 
 Computers representing nothing more than very powerful calculators, excel at performing high numbers of clearly defined calculations. This requires a precisely elaborated task containing no uncertainty.
 This is completely different for the human nervous system, which relies on a certain uncertainty when processing information through a net of neuron cells. In this net, the output of every neuron is taken as input for the surrounding neurons. The challenge of machine learning is to represent this fuzziness by many, somewhat discrete calculations. In a neural network, the neurons and their fuzzy interactions are represented by the nodes. Like neurons, each node can use input from many other nodes to create a new output signal. Thereby the sets of input information can be linked to each other in numerous ways. Combined with a weighting system, this allows one to create complex models and match a variety of problems.
@@ -113,8 +113,8 @@ The sigmoid function has an output between \num{0} and \num{1}, which is frequen
 
 Name                    & Function & Plot \\ \hline
 Sigmoid                 &$f(x) = \frac{1}{1 + e ^{-x}}$        &   \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figures_ML/sigmoid}}              \\ \hline
-Tangens Hyperbolicus    &$f(x) = \frac{2}{1 + e ^{-2x}} -1$        &        \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figures_ML/tanh}}         \\ \hline
-Rectified Linear Unit, \textsc{ReLu}   &$f(x) =
+Hyperbolic tangent    &$f(x) = \frac{2}{1 + e ^{-2x}} -1$        &        \raisebox{-0.5\height}{\includegraphics[scale=0.3]{figures_ML/tanh}}         \\ \hline
+Rectified Linear unit, \textsc{ReLu}   &$f(x) =
   \begin{cases}
     0       & \quad \text{if } x < 0\\
     x  & \quad \text{if } x \geq 0
@@ -144,7 +144,7 @@ In supervised learning, the network is trained with a set of labeled data. Each 
 
 The loss is the most important indicator for the training quality. This training quality must not be mixed up with the overall quality of generated model. Only after a test on a different sample or real data the model can be fully evaluated.
 
-\subsubsection{Optimisers - Choosing the next step}
+\subsection{Optimisers - Choosing the next step}
 \label{sec:optimisation}
 
 The probability interaction of the nodes combined with the loss function enables a network not only to create a model but also to evaluate it. The last missing part is an algorithm that can estimate a step to a model that further minimises the loss. These training steps are referred to as \emph{epochs}. One could certainly do this randomly until the network finds a very low costed decision rule if infinite computational power was provided, but that would neither be an efficient nor the desired learning process.
@@ -201,7 +201,7 @@ Finally, it can be helpful to decrease the learning rate of the network stepwise
     \eta^{\prime} = \frac{\eta}{1 + \phi t}.
 \end{align}
 %
-\subsubsection{Adaptive optimisers}
+\subsection{Adaptive optimisers}
 
 In addition to the merely gradient based optimisers, there are \emph{adaptive optimisers}. Learning rate and momentum as previously described are difficult to tune to every part of the training process as the topology of the problem might rapidly change. Therefore adaptive optimisers update their parameters based on the training process. From all of the adaptive optimisers~\cite{chollet2015keras} \emph{Adam} is probably the most popular~\cite{2014arXiv1412.6980K}. \emph{Adam} updates both its learning rate and momentum over the course of the training based on an exponentially decaying average of past gradients and squared gradients. The average makes sure that the parameters keep getting updated based on past steps. They should be decaying, as otherwise, the parameters would rapidly shrink. The decay of the averages is defined by a hyperparameter $\beta$ resulting in this gradient definitions:
 %
@@ -262,7 +262,7 @@ A way to reduce the effect of covariance shift is batch normalization. The gener
 
 \section{Receiver operating characteristic curve}
 
-The receiver operating characteristic (ROC) curve is is a graphical plot for a binary classifier. The y-axis shows the true positive rate (TPR); {i.e.}, the precentage of correctly assigned labels of value $\hat{y}$. The x-axis shows the false positive rate (FPR) and represents the percentage of wrongly assigned $\hat{y}$ labels. The ROC curve can be used to evaluate the model generated by a classifier. A diagonal curve means the model is as good as a random guess. Curves below the diagonal are worse than a random guess and can indicate that something is going wrong in the training process. A good measure is the are under curve (AUC). The AUC indicates the overall quality of a model.
+The receiver operating characteristic (ROC) curve is is a graphical plot for a binary classifier. The y-axis shows the true positive rate (TPR); {i.e.}, the precentage of correctly assigned labels of value $\hat{y}$. The x-axis shows the false positive rate (FPR) and represents the percentage of wrongly assigned $\hat{y}$ labels. The ROC curve can be used to evaluate the quality of a model generated by a classifier. A diagonal curve means the model is as good as a random guess. Curves below the diagonal are worse than a random guess and can indicate that something is going wrong in the training process. A good measure is the \emph{Area Under the Curve} (AUC). The AUC indicates the overall quality of a model.
 
 
 
@@ -270,7 +270,7 @@ The receiver operating characteristic (ROC) curve is is a graphical plot for a b
 
 \section{Adversarial Neural Networks}
 
-This main part of this work is the examination and training of an adversarial neural network. An adversarial neural network consists of a classifying network and a second network that tries to regularise the output of the first classifying network.
+The main part of this work is the examination and training of an adversarial neural network. An adversarial neural network consists of a classifying network and a second network that tries to regularise the output of the first classifying network.
 %
 In this section, the concept of an adversarial neural network is motivated and the underlying mathematics as originally stated in paper~\cite{2014arXiv1406.2661G} are presented.
 For more information about an approach directly tested on physics, one can refer to "Learning to Pivot with Adversarial Networks"~\cite{Louppe:2016ylz}.
@@ -305,8 +305,8 @@ For this thesis, the adversarial network is set up by building a classifying net
 %
 \begin{figure}[htbp]
 	\centering
-	\includegraphics[width=0.9\textwidth]{figures_ML/ANN_sketch.png}
-	\caption[Adversarial setup sketched]{Sketch of the network setup. The middle part is the classifier. The model generated is fed into both the second network and the classifier's output. This way the two losses $L_{net1}$ and $L_{net2}$ are generated. Furthermore the training of the classifier immediately affects both output models.}
+	\includegraphics[width=0.9\textwidth]{figures_ML/ANN_paper}
+	\caption[Adversarial setup sketched]{Sketch of the adversarial network setup. The classifier is shown in blue. Its output is fed into the adversary, indicated by the green square. The dependency on the nuisance parameter and the combination is shown by the red square. This way the two losses $L_{f}$ and $L_{r}$ are generated. Furthermore the training of the classifier immediately affects both output models. Sketch based on~\cite{Louppe:2016ylz}.}
 	\label{fig:ANN_sketch}
 \end{figure}
 %
